@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dspace-dc-types>
+
+    <!-- Schema -->
+    <schema>
+        <name>protocol</name>
+        <namespace>http://example.org/schema/protocol</namespace>
+    </schema>
+
+    <!-- CORE METADATA -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>title</element>
+        <scope_note>Title of the protocol or method</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>description</element>
+        <scope_note>General description or abstract of the protocol</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>doi</element>
+        <scope_note>Persistent identifier (DOI) assigned to the protocol</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>version</element>
+        <scope_note>Version number of the protocol</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>status</element>
+        <scope_note>Status of the protocol (draft, published, deprecated)</scope_note>
+    </dc-type>
+
+    <!-- AUTHORS / CONTRIBUTORS -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>contributor</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of a contributor or author</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>contributor</element>
+        <qualifier>orcid</qualifier>
+        <scope_note>ORCID identifier of the contributor</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>contributor</element>
+        <qualifier>role</qualifier>
+        <scope_note>Role of the contributor (author, editor, reviewer)</scope_note>
+    </dc-type>
+
+    <!-- STEPS -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>step</element>
+        <qualifier>number</qualifier>
+        <scope_note>Sequential number of the protocol step</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>step</element>
+        <qualifier>description</qualifier>
+        <scope_note>Instructional description of the step</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>step</element>
+        <qualifier>duration</qualifier>
+        <scope_note>Estimated time required to complete the step</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>step</element>
+        <qualifier>temperature</qualifier>
+        <scope_note>Temperature condition for the step (if applicable)</scope_note>
+    </dc-type>
+
+    <!-- MATERIALS / REAGENTS -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>material</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of a material, reagent, or consumable</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>material</element>
+        <qualifier>quantity</qualifier>
+        <scope_note>Quantity of the material used</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>material</element>
+        <qualifier>unit</qualifier>
+        <scope_note>Unit of measurement for the material quantity</scope_note>
+    </dc-type>
+
+    <!-- EQUIPMENT -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>equipment</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of equipment or instrument used</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>equipment</element>
+        <qualifier>model</qualifier>
+        <scope_note>Model or specification of the equipment</scope_note>
+    </dc-type>
+
+    <!-- PARAMETERS (CRITICAL FOR YOUR USE CASE) -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>parameter</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of a controlled parameter (e.g., laser power, dwell time)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>parameter</element>
+        <qualifier>value</qualifier>
+        <scope_note>Value assigned to the parameter</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>parameter</element>
+        <qualifier>unit</qualifier>
+        <scope_note>Unit of the parameter value</scope_note>
+    </dc-type>
+
+    <!-- FILES / MEDIA -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>attachment</element>
+        <qualifier>file</qualifier>
+        <scope_note>Associated file (image, PDF, dataset)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>attachment</element>
+        <qualifier>description</qualifier>
+        <scope_note>Description of the attached file</scope_note>
+    </dc-type>
+
+    <!-- LINKED DATA -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>related</element>
+        <qualifier>dataset</qualifier>
+        <scope_note>Identifier of a dataset generated using this protocol</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>protocol</schema>
+        <element>related</element>
+        <qualifier>publication</qualifier>
+        <scope_note>Related publication describing or using the protocol</scope_note>
+    </dc-type>
+
+    <!-- LICENSE -->
+    <dc-type>
+        <schema>protocol</schema>
+        <element>license</element>
+        <scope_note>Usage license of the protocol (e.g., CC-BY)</scope_note>
+    </dc-type>
+
+</dspace-dc-types>

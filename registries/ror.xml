@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dspace-dc-types>
+
+    <schema>
+        <name>ror</name>
+        <namespace>http://ror.org/schema/2.0/organization</namespace>
+    </schema>
+
+    <!-- ADMIN -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>admin</element>
+        <qualifier>created_date</qualifier>
+        <scope_note>Date the ROR record was created (ISO 8601 format: YYYY-MM-DD)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>admin</element>
+        <qualifier>created_schema_version</qualifier>
+        <scope_note>ROR schema version used at record creation (allowed: 1.0, 2.0, 2.1)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>admin</element>
+        <qualifier>modified_date</qualifier>
+        <scope_note>Date the ROR record was last modified (ISO 8601 format)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>admin</element>
+        <qualifier>modified_schema_version</qualifier>
+        <scope_note>ROR schema version used at last modification (allowed: 1.0, 2.0, 2.1)</scope_note>
+    </dc-type>
+
+    <!-- CORE -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>id</element>
+        <scope_note>Persistent ROR identifier as a URI (pattern: https://ror.org/0xxxxxxxx)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>status</element>
+        <scope_note>Current lifecycle status of the organization (allowed: active, inactive, withdrawn)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>types</element>
+        <scope_note>Organization category (controlled vocabulary: education, funder, healthcare, company, archive, nonprofit, government, facility, other)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>established</element>
+        <scope_note>Year the organization was established (numeric year or empty)</scope_note>
+    </dc-type>
+
+    <!-- NAMES -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>name</element>
+        <qualifier>value</qualifier>
+        <scope_note>Textual name of the organization (non-empty string)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>name</element>
+        <qualifier>type</qualifier>
+        <scope_note>Name classification (allowed: acronym, alias, label, ror_display)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>name</element>
+        <qualifier>lang</qualifier>
+        <scope_note>Language of the name using ISO 639-1 two-letter code (e.g., en, de) or empty</scope_note>
+    </dc-type>
+
+    <!-- LOCATIONS -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>geonames_id</qualifier>
+        <scope_note>GeoNames identifier for the location (integer)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of the place as defined by GeoNames</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>lat</qualifier>
+        <scope_note>Latitude coordinate in decimal degrees or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>lng</qualifier>
+        <scope_note>Longitude coordinate in decimal degrees or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>continent_code</qualifier>
+        <scope_note>Continent code (AF, AN, AS, EU, NA, OC, SA) or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>continent_name</qualifier>
+        <scope_note>Continent name (Africa, Antarctica, Asia, Europe, Oceania, South America, North America) or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>country_code</qualifier>
+        <scope_note>ISO 3166-1 alpha-2 country code (two uppercase letters) or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>country_name</qualifier>
+        <scope_note>Full country name corresponding to the country code or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>subdivision_code</qualifier>
+        <scope_note>Country subdivision code (1–3 alphanumeric characters, e.g., state or province code) or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>location</element>
+        <qualifier>subdivision_name</qualifier>
+        <scope_note>Name of the country subdivision (state, region, province) or empty</scope_note>
+    </dc-type>
+
+    <!-- LINKS -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>link</element>
+        <qualifier>value</qualifier>
+        <scope_note>URL associated with the organization (e.g., homepage or Wikipedia page)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>link</element>
+        <qualifier>type</qualifier>
+        <scope_note>Type of link (allowed: website, wikipedia)</scope_note>
+    </dc-type>
+
+    <!-- DOMAINS -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>domain</element>
+        <scope_note>Internet domain name associated with the organization (must follow domain name pattern)</scope_note>
+    </dc-type>
+
+    <!-- EXTERNAL IDS -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>external_id</element>
+        <qualifier>type</qualifier>
+        <scope_note>Identifier system (allowed: fundref, grid, isni, wikidata)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>external_id</element>
+        <qualifier>preferred</qualifier>
+        <scope_note>Preferred identifier value for the given external ID type or empty</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>external_id</element>
+        <qualifier>all</qualifier>
+        <scope_note>All known identifier values for the given external ID type (repeatable, non-empty strings)</scope_note>
+    </dc-type>
+
+    <!-- RELATIONSHIPS -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>relationship</element>
+        <qualifier>type</qualifier>
+        <scope_note>Relationship type to another organization (allowed: related, parent, child, successor, predecessor)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>relationship</element>
+        <qualifier>id</qualifier>
+        <scope_note>ROR identifier (URI) of the related organization</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>ror</schema>
+        <element>relationship</element>
+        <qualifier>label</qualifier>
+        <scope_note>Human-readable name of the related organization</scope_note>
+    </dc-type>
+
+</dspace-dc-types>

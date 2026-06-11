@@ -1,0 +1,517 @@
+<?xml version="1.0"?>
+<dspace-dc-types>
+    <dspace-header>
+        <title>E-RIHS Service Schema</title>
+    </dspace-header>
+
+    <dc-schema>
+        <name>service</name>
+        <namespace>https://e-rihs.io/schema/service-v1.0.schema.json</namespace>
+    </dc-schema>
+
+    <!-- Core identifiers and titles -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>id</element>
+        <scope_note>Internal handle/identifier of the service record.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>title</element>
+        <scope_note>Service title as used in E-RIHS (e.g. access service name or technique name).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>summary</element>
+        <scope_note>Brief description of the service, summarizing what it offers.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>description</element>
+        <scope_note>Longer description or documentation of the service.</scope_note>
+    </dc-type>
+
+    <!-- Status / readiness / language -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>readinessLevel</element>
+        <scope_note>Readiness level of the service, based on a controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>operatingLanguage</element>
+        <scope_note>Language in which the team operates or in which tools are presented.</scope_note>
+    </dc-type>
+
+    <!-- Support activities -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>supportActivity</element>
+        <scope_note>Support activity associated with this service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>supportActivity</element>
+        <qualifier>type</qualifier>
+        <scope_note>Type(s) of support provided, from a controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>supportActivity</element>
+        <qualifier>provider</qualifier>
+        <scope_note>Identifier of the support provider (organisation).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>supportActivity</element>
+        <qualifier>summary</qualifier>
+        <scope_note>Summary description of the support.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>supportActivity</element>
+        <qualifier>startDate</qualifier>
+        <scope_note>Support start date.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>supportActivity</element>
+        <qualifier>endDate</qualifier>
+        <scope_note>Support end date (if applicable).</scope_note>
+    </dc-type>
+
+    <!-- Techniques and platforms -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>technique</element>
+        <scope_note>Service technique selected from a controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>technique</element>
+        <qualifier>other</qualifier>
+        <scope_note>Other free-text techniques not covered by the controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>platform</element>
+        <scope_note>E-RIHS platform code(s) associated with the service.</scope_note>
+    </dc-type>
+
+    <!-- Application / access requirements -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>applicationRequired</element>
+        <scope_note>Whether an application is required to access the service.</scope_note>
+    </dc-type>
+
+    <!-- Providers -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>provider</element>
+        <scope_note>Service provider record (organisation or person) offering the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>provider</element>
+        <qualifier>id</qualifier>
+        <scope_note>Identifier of the provider with respect to the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>provider</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of the provider with respect to the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>provider</element>
+        <qualifier>role</qualifier>
+        <scope_note>Role of the provider with respect to the service, from a controlled list.</scope_note>
+    </dc-type>
+
+    <!-- Contacts -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>contact</element>
+        <scope_note>Contact information for the service (email or phone).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>contact</element>
+        <qualifier>email</qualifier>
+        <scope_note>Email address for the service contact.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>contact</element>
+        <qualifier>phone</qualifier>
+        <scope_note>Phone number for the service contact.</scope_note>
+    </dc-type>
+
+    <!-- Research disciplines and questions -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>researchDiscipline</element>
+        <scope_note>Research discipline in which the service has experience, from a controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>researchDiscipline</element>
+        <qualifier>narrower</qualifier>
+        <scope_note>More precise free-text research disciplines.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>question</element>
+        <scope_note>Typical research questions the service is designed to answer.</scope_note>
+    </dc-type>
+
+    <!-- Functions and methods -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>function</element>
+        <scope_note>Service functions or practical activities the service is used for.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>method</element>
+        <scope_note>Method statements (referenced methods) related to this service.</scope_note>
+    </dc-type>
+
+    <!-- Measurable properties and materials -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>measurableProperty</element>
+        <qualifier>class</qualifier>
+        <scope_note>Class of measurable property that can be studied by this service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>measurableProperty</element>
+        <qualifier>material</qualifier>
+        <scope_note>Materials for which the measurable property can be studied, from a controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>measurableProperty</element>
+        <qualifier>materialOther</qualifier>
+        <scope_note>Other free-text materials for the measurable property.</scope_note>
+    </dc-type>
+
+    <!-- Resources -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>resource</element>
+        <scope_note>Collections, objects, samples, archives, or other resources made accessible by the service.</scope_note>
+    </dc-type>
+
+    <!-- Limitations -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>limitation</element>
+        <scope_note>Description of limitations in access provision by the service.</scope_note>
+    </dc-type>
+
+    <!-- Team members -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>teamMember</element>
+        <scope_note>Person in the team working on this service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>teamMember</element>
+        <qualifier>id</qualifier>
+        <scope_note>Identifier of the person (as defined in the system).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>teamMember</element>
+        <qualifier>role</qualifier>
+        <scope_note>Roles that the person has in the team, from a controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>teamMember</element>
+        <qualifier>startDate</qualifier>
+        <scope_note>Date when the person joined the service team.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>teamMember</element>
+        <qualifier>endDate</qualifier>
+        <scope_note>Date when the person left the service team.</scope_note>
+    </dc-type>
+
+    <!-- Links -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>url</qualifier>
+        <scope_note>Resolvable URL related to the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>type</qualifier>
+        <scope_note>Type of link, from a controlled list.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>website</qualifier>
+        <scope_note>Website link related to the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>tutorial</qualifier>
+        <scope_note>Tutorial link for using or understanding the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>support</qualifier>
+        <scope_note>Support or helpdesk link for the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>download</qualifier>
+        <scope_note>Download link for software, tools, or related materials.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>social_media</qualifier>
+        <scope_note>Social media link associated with the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>presentation</qualifier>
+        <scope_note>Presentation or slide deck link describing the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>documentation</qualifier>
+        <scope_note>Documentation link providing detailed information on the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>publication</qualifier>
+        <scope_note>Publication link (article, report, etc.) about the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>data_repository</qualifier>
+        <scope_note>Data repository link where service outputs or datasets are stored.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>code_repository</qualifier>
+        <scope_note>Code repository link (e.g. Git) related to the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>link</element>
+        <qualifier>other</qualifier>
+        <scope_note>Other link type related to the service.</scope_note>
+    </dc-type>
+    <!-- References -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>reference</element>
+        <scope_note>Reference related to the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>reference</element>
+        <qualifier>citation</qualifier>
+        <scope_note>Citation text for the reference.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>reference</element>
+        <qualifier>url</qualifier>
+        <scope_note>URL associated with the reference.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>reference</element>
+        <qualifier>role</qualifier>
+        <scope_note>Role of the reference, from a controlled list.</scope_note>
+    </dc-type>
+
+    <!-- Example inputs / outputs -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>exampleOutput</element>
+        <scope_note>Example output dataset (PID or URL) demonstrating data produced by the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>exampleInput</element>
+        <scope_note>Example input dataset (PID or URL) demonstrating data required by the service.</scope_note>
+    </dc-type>
+
+    <!-- Versioning and dates -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>version</element>
+        <scope_note>Service version identifier.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>versionDate</element>
+        <scope_note>Date from which this version of the service is offered.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>creationDate</element>
+        <scope_note>Creation date of the service in a formal capacity.</scope_note>
+    </dc-type>
+
+    <!-- Data management plan (DMP) -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>dmp</element>
+        <scope_note>Service data management plan details or reference.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>dmp</element>
+        <qualifier>variation</qualifier>
+        <scope_note>Variation from the standard E-RIHS data management plan.</scope_note>
+    </dc-type>
+
+    <!-- Dataflow / input-output descriptions -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>dataflowDescription</element>
+        <scope_note>Reference or description of the service dataflow.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>outputDescription</element>
+        <scope_note>Description of all raw and processed outputs created by the service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>inputDescription</element>
+        <scope_note>Description of required input formats or files for the service.</scope_note>
+    </dc-type>
+
+    <!-- Comments and keywords -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>comment</element>
+        <scope_note>Other comments about this access or service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>keyword</element>
+        <scope_note>Additional service keywords not covered by other fields.</scope_note>
+    </dc-type>
+
+    <!-- Access units and cost -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>accessUnit</element>
+        <scope_note>Service access period unit, from a controlled list of period units.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>hoursPerUnit</element>
+        <scope_note>Access hours per unit, relating time units to actual activity time.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>service</schema>
+        <element>accessUnitCost</element>
+        <scope_note>Service access unit cost in Euro.</scope_note>
+    </dc-type>
+
+    <!-- Service active flag -->
+
+    <dc-type>
+        <schema>service</schema>
+        <element>active</element>
+        <scope_note>Whether the service is currently open for access.</scope_note>
+    </dc-type>
+
+</dspace-dc-types>

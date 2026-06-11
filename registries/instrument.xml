@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+<dspace-dc-types>
+
+    <dspace-header>
+        <title>PIDINST Instrument Schema</title>
+    </dspace-header>
+
+    <dc-schema>
+        <name>instrument</name>
+        <namespace>https://github.com/rdawg-pidinst/schema/blob/master/schema.rst</namespace>
+    </dc-schema>
+
+    <!-- Identifier -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <scope_note>Unique identifier of the instrument instance.</scope_note>
+    </dc-type>
+<!--
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>type</qualifier>
+        <scope_note>Type of the identifier (e.g. Handle).</scope_note>
+    </dc-type>
+-->
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>ark</qualifier>
+        <scope_note>ARK identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>arxiv</qualifier>
+        <scope_note>ARXIV identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>bibcode</qualifier>
+        <scope_note>BIBCODE identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>crossref</qualifier>
+        <scope_note>CROSSREF FUNDER ID identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>doi</qualifier>
+        <scope_note>DOI identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>ean13</qualifier>
+        <scope_note>EAN13 identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>eissn</qualifier>
+        <scope_note>EISSN identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>grid</qualifier>
+        <scope_note>GRID identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>handle</qualifier>
+        <scope_note>HANDLE identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>igsn</qualifier>
+        <scope_note>IGSN identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>isbn</qualifier>
+        <scope_note>ISBN identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>isni</qualifier>
+        <scope_note>ISNI identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>issn</qualifier>
+        <scope_note>ISSN identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>istc</qualifier>
+        <scope_note>ISTC identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>lissn</qualifier>
+        <scope_note>LISSN identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>lsid</qualifier>
+        <scope_note>LSID identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>orcid</qualifier>
+        <scope_note>ORCID identifier associated with the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>other_id</qualifier>
+        <scope_note>Other identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>pmid</qualifier>
+        <scope_note>PMID identifier related to the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>purl</qualifier>
+        <scope_note>PURL identifier (persistent URL) for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>raid</qualifier>
+        <scope_note>RAID identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>ror</qualifier>
+        <scope_note>ROR identifier associated with the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>rrid</qualifier>
+        <scope_note>RRID identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>upc</qualifier>
+        <scope_note>UPC identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>urn</qualifier>
+        <scope_note>URN identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>url</qualifier>
+        <scope_note>URL used as identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>uuid</qualifier>
+        <scope_note>UUID identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>guid</qualifier>
+        <scope_note>GUID identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>viaf</qualifier>
+        <scope_note>VIAF identifier related to the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>w3id</qualifier>
+        <scope_note>W3ID identifier (persistent URI) for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>wikidata</qualifier>
+        <scope_note>WIKIDATA identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>serial_no</qualifier>
+        <scope_note>Serial number identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>georem</qualifier>
+        <scope_note>GEOREM identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>product_no</qualifier>
+        <scope_note>Product number identifier for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>identifier</element>
+        <qualifier>in_house_id</qualifier>
+        <scope_note>Institute-given identifier (in-house ID) for the instrument.</scope_note>
+    </dc-type>
+
+    <!-- Schema version -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>schemaVersion</element>
+        <scope_note>Version of the PIDINST schema used.</scope_note>
+    </dc-type>
+
+    <!-- Landing page -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>landingPage</element>
+        <scope_note>Resolvable URL of the instrument landing page.</scope_note>
+    </dc-type>
+
+    <!-- Name -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>name</element>
+        <scope_note>Name of the instrument.</scope_note>
+    </dc-type>
+
+    <!-- Owner -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>owner</element>
+        <scope_note>Institution responsible for the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>owner</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of the owner institution.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>owner</element>
+        <qualifier>contact</qualifier>
+        <scope_note>Contact email of the owner.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>owner</element>
+        <qualifier>identifier</qualifier>
+        <scope_note>Identifier of the owner (preferably globally unique).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>owner</element>
+        <qualifier>identifierType</qualifier>
+        <scope_note>Type of owner identifier.</scope_note>
+    </dc-type>
+
+    <!-- Manufacturer -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>manufacturer</element>
+        <scope_note>Manufacturer or developer of the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>manufacturer</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of the manufacturer.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>manufacturer</element>
+        <qualifier>identifier</qualifier>
+        <scope_note>Identifier of the manufacturer.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>manufacturer</element>
+        <qualifier>identifierType</qualifier>
+        <scope_note>Type of manufacturer identifier.</scope_note>
+    </dc-type>
+
+    <!-- Model -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>model</element>
+        <scope_note>Model or type of the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>model</element>
+        <qualifier>name</qualifier>
+        <scope_note>Model name.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>model</element>
+        <qualifier>identifier</qualifier>
+        <scope_note>Model identifier.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>model</element>
+        <qualifier>identifierType</qualifier>
+        <scope_note>Type of model identifier.</scope_note>
+    </dc-type>
+
+    <!-- Description -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>description</element>
+        <scope_note>Technical description of the instrument.</scope_note>
+    </dc-type>
+
+    <!-- Instrument Type -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>instrumentType</element>
+        <scope_note>Classification of the instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>instrumentType</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of the instrument type.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>instrumentType</element>
+        <qualifier>identifier</qualifier>
+        <scope_note>Identifier of the instrument type.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>instrumentType</element>
+        <qualifier>identifierType</qualifier>
+        <scope_note>Type of instrument type identifier.</scope_note>
+    </dc-type>
+
+    <!-- Measured Variable -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>measuredVariable</element>
+        <scope_note>Variable(s) measured by the instrument.</scope_note>
+    </dc-type>
+
+    <!-- Date -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>date</element>
+        <scope_note>Date relevant to the instrument (ISO 8601).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>date</element>
+        <qualifier>type</qualifier>
+        <scope_note>Type of date (Commissioned, DeCommissioned).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>date</element>
+        <qualifier>commissioned</qualifier>
+        <scope_note>Commissioned date</scope_note>
+    </dc-type>
+    
+    <dc-type>
+        <schema>instrument</schema>
+        <element>date</element>
+        <qualifier>decommissioned</qualifier>
+        <scope_note>Commissioned date</scope_note>
+    </dc-type>
+
+    <!-- Related Identifier -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>relatedIdentifier</element>
+        <scope_note>Identifier of a related resource.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>relatedIdentifier</element>
+        <qualifier>type</qualifier>
+        <scope_note>Type of related identifier (e.g. DOI, URL).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>relatedIdentifier</element>
+        <qualifier>relationType</qualifier>
+        <scope_note>Relationship type (e.g. IsDescribedBy, HasComponent).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>relatedIdentifier</element>
+        <qualifier>name</qualifier>
+        <scope_note>Name of the related resource.</scope_note>
+    </dc-type>
+
+    <!-- Alternate Identifier -->
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>alternateIdentifier</element>
+        <scope_note>Alternative identifier (e.g. serial number).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>alternateIdentifier</element>
+        <qualifier>type</qualifier>
+        <scope_note>Type of alternate identifier (SerialNumber, InventoryNumber, Other).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>alternateIdentifier</element>
+        <qualifier>name</qualifier>
+        <scope_note>Supplementary name for the identifier type.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>impact</element>
+        <qualifier></qualifier>
+        <scope_note>Impact on the samples when using the given instrument.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>instrument</schema>
+        <element>openAccess</element>
+        <qualifier></qualifier>
+        <scope_note>Whether the instrument is accessible to the public.</scope_note>
+    </dc-type>
+
+</dspace-dc-types>

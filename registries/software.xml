@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<dspace-dc-types>
+
+    <dspace-header>
+        <title>Software Metadata Schema (Schema.org + CodeMeta)</title>
+    </dspace-header>
+
+    <dc-schema>
+        <name>software</name>
+        <namespace>https://codemeta.github.io/terms/</namespace>
+    </dc-schema>
+
+    <!-- Software Source Code -->
+
+    <dc-type>
+        <schema>software</schema>
+        <element>codeRepository</element>
+        <scope_note>URL to repository hosting the human-readable source code (e.g. GitHub, GitLab, SVN).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>programmingLanguage</element>
+        <scope_note>Programming language used (ComputerLanguage or Text).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>review</element>
+        <scope_note>Review of the source code (Review).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>runtimePlatform</element>
+        <scope_note>Runtime platform or interpreter dependencies (e.g. Java, Python, .NET).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>targetProduct</element>
+        <scope_note>Target software product or operating system (SoftwareApplication).</scope_note>
+    </dc-type>
+
+    <!-- Software Application -->
+
+    <dc-type>
+        <schema>software</schema>
+        <element>applicationCategory</element>
+        <scope_note>Type/category of the software application (Text or URL).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>applicationSubCategory</element>
+        <scope_note>Subcategory of the software application (Text or URL).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>downloadUrl</element>
+        <scope_note>URL where the software binary can be downloaded.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>fileSize</element>
+        <scope_note>Size of the software package (Text, e.g. MB, KB).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>installUrl</element>
+        <scope_note>URL where the software can be installed.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>memoryRequirements</element>
+        <scope_note>Minimum memory requirements (Text or URL).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>operatingSystem</element>
+        <scope_note>Supported operating systems (Text).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>permissions</element>
+        <scope_note>Permissions required to run the application.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>processorRequirements</element>
+        <scope_note>Required processor architecture.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>releaseNotes</element>
+        <scope_note>Description of changes in this version.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>softwareHelp</element>
+        <scope_note>Help or documentation for the software (CreativeWork).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>softwareRequirements</element>
+        <scope_note>Required software dependencies (SoftwareSourceCode).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>softwareVersion</element>
+        <scope_note>Version of the software.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>storageRequirements</element>
+        <scope_note>Storage space required.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>supportingData</element>
+        <scope_note>Supporting data for the application (DataFeed).</scope_note>
+    </dc-type>
+
+    <!-- Creative Work -->
+
+    <dc-type>
+        <schema>software</schema>
+        <element>author</element>
+        <scope_note>Author of the content (Person or Organization).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>citation</element>
+        <scope_note>Reference to another work (CreativeWork or URL).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>contributor</element>
+        <scope_note>Secondary contributor (Person or Organization).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>copyrightHolder</element>
+        <scope_note>Legal copyright holder.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>copyrightYear</element>
+        <scope_note>Year copyright was asserted.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>dateCreated</element>
+        <scope_note>Creation date.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>dateModified</element>
+        <scope_note>Last modification date.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>datePublished</element>
+        <scope_note>Publication date.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>editor</element>
+        <scope_note>Editor of the content.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>encoding</element>
+        <scope_note>Media object encoding the content.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>fileFormat</element>
+        <scope_note>Media/MIME format of the content.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>funder</element>
+        <scope_note>Funding organization or person.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>keywords</element>
+        <scope_note>Keywords describing the content.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>license</element>
+        <scope_note>License document or URL.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>publisher</element>
+        <scope_note>Publisher of the work.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>version</element>
+        <scope_note>Version of the creative work.</scope_note>
+    </dc-type>
+
+    <!-- Generic Thing -->
+
+    <dc-type>
+        <schema>software</schema>
+        <element>name</element>
+        <scope_note>Name of the item.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>description</element>
+        <scope_note>Description of the item.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>identifier</element>
+        <scope_note>Unique identifier (URL or PropertyValue).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>url</element>
+        <scope_note>URL of the item.</scope_note>
+    </dc-type>
+
+    <!-- Person -->
+
+    <dc-type>
+        <schema>software</schema>
+        <element>givenName</element>
+        <scope_note>First name of a person.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>familyName</element>
+        <scope_note>Last name of a person.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>email</element>
+        <scope_note>Email address.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>affiliation</element>
+        <scope_note>Affiliated organization.</scope_note>
+    </dc-type>
+
+    <!-- CodeMeta extensions -->
+
+    <dc-type>
+        <schema>software</schema>
+        <element>maintainer</element>
+        <scope_note>Person responsible for maintaining the software.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>continuousIntegration</element>
+        <scope_note>URL to CI service.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>developmentStatus</element>
+        <scope_note>Status of development (e.g. active, inactive).</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>issueTracker</element>
+        <scope_note>URL to issue tracking system.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>software</schema>
+        <element>readme</element>
+        <scope_note>URL to README documentation.</scope_note>
+    </dc-type>
+
+</dspace-dc-types>

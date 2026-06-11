@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dspace-dc-types>
+
+    <schema>
+        <name>dataset</name>
+        <namespace>http://example.org/schema/dataset</namespace>
+    </schema>
+
+    <!-- IDENTIFIER -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>identifier</element>
+        <scope_note>Persistent identifier (DOI or URI)</scope_note>
+    </dc-type>
+
+    <!-- TITLE -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>title</element>
+        <scope_note>Title of the dataset</scope_note>
+    </dc-type>
+
+    <!-- DESCRIPTION -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>description</element>
+        <scope_note>Short description or abstract of the dataset</scope_note>
+    </dc-type>
+
+    <!-- CREATOR -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>creator</element>
+        <scope_note>Name of the dataset creator</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dataset</schema>
+        <element>creator</element>
+        <qualifier>orcid</qualifier>
+        <scope_note>ORCID identifier of the creator</scope_note>
+    </dc-type>
+
+    <!-- PUBLISHER -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>publisher</element>
+        <scope_note>Entity responsible for making the dataset available</scope_note>
+    </dc-type>
+
+    <!-- DATE -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>date</element>
+        <scope_note>Publication or release date of the dataset</scope_note>
+    </dc-type>
+
+    <!-- TYPE -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>type</element>
+        <scope_note>Type of resource (e.g., dataset)</scope_note>
+    </dc-type>
+
+    <!-- FORMAT -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>format</element>
+        <scope_note>File format of the dataset (e.g., CSV, TXT, XML)</scope_note>
+    </dc-type>
+
+    <!-- LICENSE -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>license</element>
+        <scope_note>Usage license (e.g., CC-BY)</scope_note>
+    </dc-type>
+
+    <!-- RELATED IDENTIFIER -->
+    <dc-type>
+        <schema>dataset</schema>
+        <element>relation</element>
+        <scope_note>Related resource (publication, protocol, project)</scope_note>
+    </dc-type>
+
+</dspace-dc-types>
