@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<node id="COUNTRY" label="Country List">
+  <isComposedBy>
+    <node id="COUNTRY1" label="Afghanistan">
+      <hasNote>Afghanistan</hasNote>
+    </node>
+    <node id="COUNTRY2" label="Albania">
+      <hasNote>Albania</hasNote>
+    </node>
+    <node id="COUNTRY3" label="Algeria">
+      <hasNote>Algeria</hasNote>
+    </node>
+    <node id="COUNTRY4" label="Andorra">
+      <hasNote>Andorra</hasNote>
+    </node>
+    <node id="COUNTRY5" label="Angola">
+      <hasNote>Angola</hasNote>
+    </node>
+    <node id="COUNTRY6" label="Antigua and Barbuda">
+      <hasNote>Antigua and Barbuda</hasNote>
+    </node>
+    <node id="COUNTRY7" label="Argentina">
+      <hasNote>Argentina</hasNote>
+    </node>
+    <node id="COUNTRY8" label="Armenia">
+      <hasNote>Armenia</hasNote>
+    </node>
+    <node id="COUNTRY9" label="Australia">
+      <hasNote>Australia</hasNote>
+    </node>
+    <node id="COUNTRY10" label="Austria">
+      <hasNote>Austria</hasNote>
+    </node>
+    <node id="COUNTRY11" label="Azerbaijan">
+      <hasNote>Azerbaijan</hasNote>
+    </node>
+    <node id="COUNTRY12" label="Bahamas">
+      <hasNote>Bahamas</hasNote>
+    </node>
+    <node id="COUNTRY13" label="Bahrain">
+      <hasNote>Bahrain</hasNote>
+    </node>
+    <node id="COUNTRY14" label="Bangladesh">
+      <hasNote>Bangladesh</hasNote>
+    </node>
+    <node id="COUNTRY15" label="Barbados">
+      <hasNote>Barbados</hasNote>
+    </node>
+    <node id="COUNTRY16" label="Belarus">
+      <hasNote>Belarus</hasNote>
+    </node>
+    <node id="COUNTRY17" label="Belgium">
+      <hasNote>Belgium</hasNote>
+    </node>
+    <node id="COUNTRY18" label="Belize">
+      <hasNote>Belize</hasNote>
+    </node>
+    <node id="COUNTRY19" label="Benin">
+      <hasNote>Benin</hasNote>
+    </node>
+    <node id="COUNTRY20" label="Bhutan">
+      <hasNote>Bhutan</hasNote>
+    </node>
+    <node id="COUNTRY21" label="Bolivia">
+      <hasNote>Bolivia</hasNote>
+    </node>
+    <node id="COUNTRY22" label="Bosnia and Herzegovina">
+      <hasNote>Bosnia and Herzegovina</hasNote>
+    </node>
+    <node id="COUNTRY23" label="Botswana">
+      <hasNote>Botswana</hasNote>
+    </node>
+    <node id="COUNTRY24" label="Brazil">
+      <hasNote>Brazil</hasNote>
+    </node>
+    <node id="COUNTRY25" label="Brunei">
+      <hasNote>Brunei</hasNote>
+    </node>
+    <node id="COUNTRY26" label="Bulgaria">
+      <hasNote>Bulgaria</hasNote>
+    </node>
+    <node id="COUNTRY27" label="Burkina Faso">
+      <hasNote>Burkina Faso</hasNote>
+    </node>
+    <node id="COUNTRY28" label="Burundi">
+      <hasNote>Burundi</hasNote>
+    </node>
+    <node id="COUNTRY29" label="Cabo Verde">
+      <hasNote>Cabo Verde</hasNote>
+    </node>
+    <node id="COUNTRY30" label="Cambodia">
+      <hasNote>Cambodia</hasNote>
+    </node>
+    <node id="COUNTRY31" label="Cameroon">
+      <hasNote>Cameroon</hasNote>
+    </node>
+    <node id="COUNTRY32" label="Canada">
+      <hasNote>Canada</hasNote>
+    </node>
+    <node id="COUNTRY33" label="Central African Republic">
+      <hasNote>Central African Republic</hasNote>
+    </node>
+    <node id="COUNTRY34" label="Chad">
+      <hasNote>Chad</hasNote>
+    </node>
+    <node id="COUNTRY35" label="Chile">
+      <hasNote>Chile</hasNote>
+    </node>
+    <node id="COUNTRY36" label="China">
+      <hasNote>China</hasNote>
+    </node>
+    <node id="COUNTRY37" label="Colombia">
+      <hasNote>Colombia</hasNote>
+    </node>
+    <node id="COUNTRY38" label="Comoros">
+      <hasNote>Comoros</hasNote>
+    </node>
+    <node id="COUNTRY39" label="Congo (Brazzaville)">
+      <hasNote>Congo (Brazzaville)</hasNote>
+    </node>
+    <node id="COUNTRY40" label="Congo (Kinshasa)">
+      <hasNote>Congo (Kinshasa)</hasNote>
+    </node>
+    <node id="COUNTRY41" label="Costa Rica">
+      <hasNote>Costa Rica</hasNote>
+    </node>
+    <node id="COUNTRY42" label="Croatia">
+      <hasNote>Croatia</hasNote>
+    </node>
+    <node id="COUNTRY43" label="Cuba">
+      <hasNote>Cuba</hasNote>
+    </node>
+    <node id="COUNTRY44" label="Cyprus">
+      <hasNote>Cyprus</hasNote>
+    </node>
+    <node id="COUNTRY45" label="Czechia">
+      <hasNote>Czechia</hasNote>
+    </node>
+    <node id="COUNTRY46" label="Denmark">
+      <hasNote>Denmark</hasNote>
+    </node>
+    <node id="COUNTRY47" label="Djibouti">
+      <hasNote>Djibouti</hasNote>
+    </node>
+    <node id="COUNTRY48" label="Dominica">
+      <hasNote>Dominica</hasNote>
+    </node>
+    <node id="COUNTRY49" label="Dominican Republic">
+      <hasNote>Dominican Republic</hasNote>
+    </node>
+    <node id="COUNTRY50" label="Ecuador">
+      <hasNote>Ecuador</hasNote>
+    </node>
+    <node id="COUNTRY51" label="Egypt">
+      <hasNote>Egypt</hasNote>
+    </node>
+    <node id="COUNTRY52" label="El Salvador">
+      <hasNote>El Salvador</hasNote>
+    </node>
+    <node id="COUNTRY53" label="Equatorial Guinea">
+      <hasNote>Equatorial Guinea</hasNote>
+    </node>
+    <node id="COUNTRY54" label="Eritrea">
+      <hasNote>Eritrea</hasNote>
+    </node>
+    <node id="COUNTRY55" label="Estonia">
+      <hasNote>Estonia</hasNote>
+    </node>
+    <node id="COUNTRY56" label="Eswatini">
+      <hasNote>Eswatini</hasNote>
+    </node>
+    <node id="COUNTRY57" label="Ethiopia">
+      <hasNote>Ethiopia</hasNote>
+    </node>
+    <node id="COUNTRY58" label="Fiji">
+      <hasNote>Fiji</hasNote>
+    </node>
+    <node id="COUNTRY59" label="Finland">
+      <hasNote>Finland</hasNote>
+    </node>
+    <node id="COUNTRY60" label="France">
+      <hasNote>France</hasNote>
+    </node>
+    <node id="COUNTRY61" label="Gabon">
+      <hasNote>Gabon</hasNote>
+    </node>
+    <node id="COUNTRY62" label="Gambia">
+      <hasNote>Gambia</hasNote>
+    </node>
+    <node id="COUNTRY63" label="Georgia">
+      <hasNote>Georgia</hasNote>
+    </node>
+    <node id="COUNTRY64" label="Germany">
+      <hasNote>Germany</hasNote>
+    </node>
+    <node id="COUNTRY65" label="Ghana">
+      <hasNote>Ghana</hasNote>
+    </node>
+    <node id="COUNTRY66" label="Greece">
+      <hasNote>Greece</hasNote>
+    </node>
+    <node id="COUNTRY67" label="Grenada">
+      <hasNote>Grenada</hasNote>
+    </node>
+    <node id="COUNTRY68" label="Guatemala">
+      <hasNote>Guatemala</hasNote>
+    </node>
+    <node id="COUNTRY69" label="Guinea">
+      <hasNote>Guinea</hasNote>
+    </node>
+    <node id="COUNTRY70" label="Guinea-Bissau">
+      <hasNote>Guinea-Bissau</hasNote>
+    </node>
+    <node id="COUNTRY71" label="Guyana">
+      <hasNote>Guyana</hasNote>
+    </node>
+    <node id="COUNTRY72" label="Haiti">
+      <hasNote>Haiti</hasNote>
+    </node>
+    <node id="COUNTRY73" label="Honduras">
+      <hasNote>Honduras</hasNote>
+    </node>
+    <node id="COUNTRY74" label="Hungary">
+      <hasNote>Hungary</hasNote>
+    </node>
+    <node id="COUNTRY75" label="Iceland">
+      <hasNote>Iceland</hasNote>
+    </node>
+    <node id="COUNTRY76" label="India">
+      <hasNote>India</hasNote>
+    </node>
+    <node id="COUNTRY77" label="Indonesia">
+      <hasNote>Indonesia</hasNote>
+    </node>
+    <node id="COUNTRY78" label="Iran">
+      <hasNote>Iran</hasNote>
+    </node>
+    <node id="COUNTRY79" label="Iraq">
+      <hasNote>Iraq</hasNote>
+    </node>
+    <node id="COUNTRY80" label="Ireland">
+      <hasNote>Ireland</hasNote>
+    </node>
+    <node id="COUNTRY81" label="Israel">
+      <hasNote>Israel</hasNote>
+    </node>
+    <node id="COUNTRY82" label="Italy">
+      <hasNote>Italy</hasNote>
+    </node>
+    <node id="COUNTRY83" label="Jamaica">
+      <hasNote>Jamaica</hasNote>
+    </node>
+    <node id="COUNTRY84" label="Japan">
+      <hasNote>Japan</hasNote>
+    </node>
+    <node id="COUNTRY85" label="Jordan">
+      <hasNote>Jordan</hasNote>
+    </node>
+    <node id="COUNTRY86" label="Kazakhstan">
+      <hasNote>Kazakhstan</hasNote>
+    </node>
+    <node id="COUNTRY87" label="Kenya">
+      <hasNote>Kenya</hasNote>
+    </node>
+    <node id="COUNTRY88" label="Kiribati">
+      <hasNote>Kiribati</hasNote>
+    </node>
+    <node id="COUNTRY89" label="Korea, North">
+      <hasNote>Korea, North</hasNote>
+    </node>
+    <node id="COUNTRY90" label="Korea, South">
+      <hasNote>Korea, South</hasNote>
+    </node>
+    <node id="COUNTRY91" label="Kosovo">
+      <hasNote>Kosovo</hasNote>
+    </node>
+    <node id="COUNTRY92" label="Kuwait">
+      <hasNote>Kuwait</hasNote>
+    </node>
+    <node id="COUNTRY93" label="Kyrgyzstan">
+      <hasNote>Kyrgyzstan</hasNote>
+    </node>
+    <node id="COUNTRY94" label="Laos">
+      <hasNote>Laos</hasNote>
+    </node>
+    <node id="COUNTRY95" label="Latvia">
+      <hasNote>Latvia</hasNote>
+    </node>
+    <node id="COUNTRY96" label="Lebanon">
+      <hasNote>Lebanon</hasNote>
+    </node>
+    <node id="COUNTRY97" label="Lesotho">
+      <hasNote>Lesotho</hasNote>
+    </node>
+    <node id="COUNTRY98" label="Liberia">
+      <hasNote>Liberia</hasNote>
+    </node>
+    <node id="COUNTRY99" label="Libya">
+      <hasNote>Libya</hasNote>
+    </node>
+    <node id="COUNTRY100" label="Liechtenstein">
+      <hasNote>Liechtenstein</hasNote>
+    </node>
+    <node id="COUNTRY101" label="Lithuania">
+      <hasNote>Lithuania</hasNote>
+    </node>
+    <node id="COUNTRY102" label="Luxembourg">
+      <hasNote>Luxembourg</hasNote>
+    </node>
+    <node id="COUNTRY103" label="Madagascar">
+      <hasNote>Madagascar</hasNote>
+    </node>
+    <node id="COUNTRY104" label="Malawi">
+      <hasNote>Malawi</hasNote>
+    </node>
+    <node id="COUNTRY105" label="Malaysia">
+      <hasNote>Malaysia</hasNote>
+    </node>
+    <node id="COUNTRY106" label="Maldives">
+      <hasNote>Maldives</hasNote>
+    </node>
+    <node id="COUNTRY107" label="Mali">
+      <hasNote>Mali</hasNote>
+    </node>
+    <node id="COUNTRY108" label="Malta">
+      <hasNote>Malta</hasNote>
+    </node>
+    <node id="COUNTRY109" label="Marshall Islands">
+      <hasNote>Marshall Islands</hasNote>
+    </node>
+    <node id="COUNTRY110" label="Mauritania">
+      <hasNote>Mauritania</hasNote>
+    </node>
+    <node id="COUNTRY111" label="Mauritius">
+      <hasNote>Mauritius</hasNote>
+    </node>
+    <node id="COUNTRY112" label="Mexico">
+      <hasNote>Mexico</hasNote>
+    </node>
+    <node id="COUNTRY113" label="Micronesia">
+      <hasNote>Micronesia</hasNote>
+    </node>
+    <node id="COUNTRY114" label="Moldova">
+      <hasNote>Moldova</hasNote>
+    </node>
+    <node id="COUNTRY115" label="Monaco">
+      <hasNote>Monaco</hasNote>
+    </node>
+    <node id="COUNTRY116" label="Mongolia">
+      <hasNote>Mongolia</hasNote>
+    </node>
+    <node id="COUNTRY117" label="Montenegro">
+      <hasNote>Montenegro</hasNote>
+    </node>
+    <node id="COUNTRY118" label="Morocco">
+      <hasNote>Morocco</hasNote>
+    </node>
+    <node id="COUNTRY119" label="Mozambique">
+      <hasNote>Mozambique</hasNote>
+    </node>
+    <node id="COUNTRY120" label="Myanmar">
+      <hasNote>Myanmar</hasNote>
+    </node>
+    <node id="COUNTRY121" label="Namibia">
+      <hasNote>Namibia</hasNote>
+    </node>
+    <node id="COUNTRY122" label="Nauru">
+      <hasNote>Nauru</hasNote>
+    </node>
+    <node id="COUNTRY123" label="Nepal">
+      <hasNote>Nepal</hasNote>
+    </node>
+    <node id="COUNTRY124" label="Netherlands">
+      <hasNote>Netherlands</hasNote>
+    </node>
+    <node id="COUNTRY125" label="New Zealand">
+      <hasNote>New Zealand</hasNote>
+    </node>
+    <node id="COUNTRY126" label="Nicaragua">
+      <hasNote>Nicaragua</hasNote>
+    </node>
+    <node id="COUNTRY127" label="Niger">
+      <hasNote>Niger</hasNote>
+    </node>
+    <node id="COUNTRY128" label="Nigeria">
+      <hasNote>Nigeria</hasNote>
+    </node>
+    <node id="COUNTRY129" label="North Macedonia">
+      <hasNote>North Macedonia</hasNote>
+    </node>
+    <node id="COUNTRY130" label="Norway">
+      <hasNote>Norway</hasNote>
+    </node>
+    <node id="COUNTRY131" label="Oman">
+      <hasNote>Oman</hasNote>
+    </node>
+    <node id="COUNTRY132" label="Pakistan">
+      <hasNote>Pakistan</hasNote>
+    </node>
+    <node id="COUNTRY133" label="Palau">
+      <hasNote>Palau</hasNote>
+    </node>
+    <node id="COUNTRY134" label="Palestine">
+      <hasNote>Palestine</hasNote>
+    </node>
+    <node id="COUNTRY135" label="Panama">
+      <hasNote>Panama</hasNote>
+    </node>
+    <node id="COUNTRY136" label="Papua New Guinea">
+      <hasNote>Papua New Guinea</hasNote>
+    </node>
+    <node id="COUNTRY137" label="Paraguay">
+      <hasNote>Paraguay</hasNote>
+    </node>
+    <node id="COUNTRY138" label="Peru">
+      <hasNote>Peru</hasNote>
+    </node>
+    <node id="COUNTRY139" label="Philippines">
+      <hasNote>Philippines</hasNote>
+    </node>
+    <node id="COUNTRY140" label="Poland">
+      <hasNote>Poland</hasNote>
+    </node>
+    <node id="COUNTRY141" label="Portugal">
+      <hasNote>Portugal</hasNote>
+    </node>
+    <node id="COUNTRY142" label="Qatar">
+      <hasNote>Qatar</hasNote>
+    </node>
+    <node id="COUNTRY143" label="Romania">
+      <hasNote>Romania</hasNote>
+    </node>
+    <node id="COUNTRY144" label="Russia">
+      <hasNote>Russia</hasNote>
+    </node>
+    <node id="COUNTRY145" label="Rwanda">
+      <hasNote>Rwanda</hasNote>
+    </node>
+    <node id="COUNTRY146" label="Saint Kitts and Nevis">
+      <hasNote>Saint Kitts and Nevis</hasNote>
+    </node>
+    <node id="COUNTRY147" label="Saint Lucia">
+      <hasNote>Saint Lucia</hasNote>
+    </node>
+    <node id="COUNTRY148" label="Saint Vincent and the Grenadines">
+      <hasNote>Saint Vincent and the Grenadines</hasNote>
+    </node>
+    <node id="COUNTRY149" label="Samoa">
+      <hasNote>Samoa</hasNote>
+    </node>
+    <node id="COUNTRY150" label="San Marino">
+      <hasNote>San Marino</hasNote>
+    </node>
+    <node id="COUNTRY151" label="Sao Tome and Principe">
+      <hasNote>Sao Tome and Principe</hasNote>
+    </node>
+    <node id="COUNTRY152" label="Saudi Arabia">
+      <hasNote>Saudi Arabia</hasNote>
+    </node>
+    <node id="COUNTRY153" label="Senegal">
+      <hasNote>Senegal</hasNote>
+    </node>
+    <node id="COUNTRY154" label="Serbia">
+      <hasNote>Serbia</hasNote>
+    </node>
+    <node id="COUNTRY155" label="Seychelles">
+      <hasNote>Seychelles</hasNote>
+    </node>
+    <node id="COUNTRY156" label="Sierra Leone">
+      <hasNote>Sierra Leone</hasNote>
+    </node>
+    <node id="COUNTRY157" label="Singapore">
+      <hasNote>Singapore</hasNote>
+    </node>
+    <node id="COUNTRY158" label="Slovakia">
+      <hasNote>Slovakia</hasNote>
+    </node>
+    <node id="COUNTRY159" label="Slovenia">
+      <hasNote>Slovenia</hasNote>
+    </node>
+    <node id="COUNTRY160" label="Solomon Islands">
+      <hasNote>Solomon Islands</hasNote>
+    </node>
+    <node id="COUNTRY161" label="Somalia">
+      <hasNote>Somalia</hasNote>
+    </node>
+    <node id="COUNTRY162" label="South Africa">
+      <hasNote>South Africa</hasNote>
+    </node>
+    <node id="COUNTRY163" label="South Sudan">
+      <hasNote>South Sudan</hasNote>
+    </node>
+    <node id="COUNTRY164" label="Spain">
+      <hasNote>Spain</hasNote>
+    </node>
+    <node id="COUNTRY165" label="Sri Lanka">
+      <hasNote>Sri Lanka</hasNote>
+    </node>
+    <node id="COUNTRY166" label="Sudan">
+      <hasNote>Sudan</hasNote>
+    </node>
+    <node id="COUNTRY167" label="Suriname">
+      <hasNote>Suriname</hasNote>
+    </node>
+    <node id="COUNTRY168" label="Sweden">
+      <hasNote>Sweden</hasNote>
+    </node>
+    <node id="COUNTRY169" label="Switzerland">
+      <hasNote>Switzerland</hasNote>
+    </node>
+    <node id="COUNTRY170" label="Syria">
+      <hasNote>Syria</hasNote>
+    </node>
+    <node id="COUNTRY171" label="Taiwan">
+      <hasNote>Taiwan</hasNote>
+    </node>
+    <node id="COUNTRY172" label="Tajikistan">
+      <hasNote>Tajikistan</hasNote>
+    </node>
+    <node id="COUNTRY173" label="Tanzania">
+      <hasNote>Tanzania</hasNote>
+    </node>
+    <node id="COUNTRY174" label="Thailand">
+      <hasNote>Thailand</hasNote>
+    </node>
+    <node id="COUNTRY175" label="Timor-Leste">
+      <hasNote>Timor-Leste</hasNote>
+    </node>
+    <node id="COUNTRY176" label="Togo">
+      <hasNote>Togo</hasNote>
+    </node>
+    <node id="COUNTRY177" label="Tonga">
+      <hasNote>Tonga</hasNote>
+    </node>
+    <node id="COUNTRY178" label="Trinidad and Tobago">
+      <hasNote>Trinidad and Tobago</hasNote>
+    </node>
+    <node id="COUNTRY179" label="Tunisia">
+      <hasNote>Tunisia</hasNote>
+    </node>
+    <node id="COUNTRY180" label="Turkey">
+      <hasNote>Turkey</hasNote>
+    </node>
+    <node id="COUNTRY181" label="Turkmenistan">
+      <hasNote>Turkmenistan</hasNote>
+    </node>
+    <node id="COUNTRY182" label="Tuvalu">
+      <hasNote>Tuvalu</hasNote>
+    </node>
+    <node id="COUNTRY183" label="Uganda">
+      <hasNote>Uganda</hasNote>
+    </node>
+    <node id="COUNTRY184" label="Ukraine">
+      <hasNote>Ukraine</hasNote>
+    </node>
+    <node id="COUNTRY185" label="United Arab Emirates">
+      <hasNote>United Arab Emirates</hasNote>
+    </node>
+    <node id="COUNTRY186" label="United Kingdom">
+      <hasNote>United Kingdom</hasNote>
+    </node>
+    <node id="COUNTRY187" label="United States">
+      <hasNote>United States</hasNote>
+    </node>
+    <node id="COUNTRY188" label="Uruguay">
+      <hasNote>Uruguay</hasNote>
+    </node>
+    <node id="COUNTRY189" label="Uzbekistan">
+      <hasNote>Uzbekistan</hasNote>
+    </node>
+    <node id="COUNTRY190" label="Vanuatu">
+      <hasNote>Vanuatu</hasNote>
+    </node>
+    <node id="COUNTRY191" label="Vatican City">
+      <hasNote>Vatican City</hasNote>
+    </node>
+    <node id="COUNTRY192" label="Venezuela">
+      <hasNote>Venezuela</hasNote>
+    </node>
+    <node id="COUNTRY193" label="Vietnam">
+      <hasNote>Vietnam</hasNote>
+    </node>
+    <node id="COUNTRY194" label="Yemen">
+      <hasNote>Yemen</hasNote>
+    </node>
+    <node id="COUNTRY195" label="Zambia">
+      <hasNote>Zambia</hasNote>
+    </node>
+    <node id="COUNTRY196" label="Zimbabwe">
+      <hasNote>Zimbabwe</hasNote>
+    </node>
+  </isComposedBy>
+  <hasNote>Country List</hasNote>
+</node>

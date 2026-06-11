@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+       default-autowire-candidates="*Service,*DAO,javax.sql.DataSource">
+
+    <context:annotation-config />
+
+    <!--
+      SHERPA-related beans disabled for DSpace 10 upgrade.
+      The corresponding classes (SHERPASubmitConfigurationService, SHERPAService, SherpaCacheEvictService)
+      no longer exist in the DSpace 10 codebase, and leaving these beans enabled causes
+      ClassNotFoundException during kernel initialization.
+    <bean class="org.dspace.app.sherpa.submit.SHERPASubmitConfigurationService"
+          id="org.dspace.app.sherpa.submit.SHERPASubmitConfigurationService">
+        <property name="issnItemExtractors">
+            <list>
+                <bean class="org.dspace.app.sherpa.submit.MetadataValueISSNExtractor">
+                    <property name="metadataList">
+                        <list>
+                            <value>creativeworkseries.issn</value>
+                        </list>
+                    </property>
+                </bean>
+                <bean class="org.dspace.app.sherpa.submit.MetadataAuthorityISSNExtractor">
+                    <property name="metadataList">
+                        <list>
+                            <value>dc.title.alternative</value>
+                        </list>
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="org.dspace.app.sherpa.SHERPAService"
+          id="org.dspace.app.sherpa.SHERPAService">
+        <property name="maxNumberOfTries" value="3"/>
+        <property name="sleepBetweenTimeouts" value="2000"/>
+        <property name="timeout" value="5000"/>
+    </bean>
+
+    <bean class="org.dspace.app.sherpa.cache.SherpaCacheEvictService">
+        <property name="sherpaSubmitService"
+                  ref="org.dspace.app.sherpa.submit.SHERPASubmitService"/>
+    </bean>
+    -->
+
+</beans>

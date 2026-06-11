@@ -1,0 +1,1758 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<node id="DISP" label="E-RIHS Academic Discipline List">
+  <isComposedBy>
+    <node id="DISP1" label="Acoustics">
+      <hasNote>Acoustics</hasNote>
+    </node>
+    <node id="DISP2" label="Adult Education">
+      <hasNote>Adult Education</hasNote>
+    </node>
+    <node id="DISP3" label="Advertising">
+      <hasNote>Advertising</hasNote>
+    </node>
+    <node id="DISP4" label="Advertising Functions">
+      <hasNote>Advertising Functions</hasNote>
+    </node>
+    <node id="DISP5" label="Aerobiology">
+      <hasNote>Aerobiology</hasNote>
+    </node>
+    <node id="DISP6" label="Aerodynamics">
+      <hasNote>Aerodynamics</hasNote>
+    </node>
+    <node id="DISP7" label="Aeronautical Engineering">
+      <hasNote>Aeronautical Engineering</hasNote>
+    </node>
+    <node id="DISP8" label="Aeronautics">
+      <hasNote>Aeronautics</hasNote>
+    </node>
+    <node id="DISP9" label="Aerospace Engineering">
+      <hasNote>Aerospace Engineering</hasNote>
+    </node>
+    <node id="DISP10" label="Aesthetics">
+      <hasNote>Aesthetics</hasNote>
+    </node>
+    <node id="DISP11" label="African Studies">
+      <hasNote>African Studies</hasNote>
+    </node>
+    <node id="DISP12" label="Agriculture (Discipline)">
+      <hasNote>Agriculture (Discipline)</hasNote>
+    </node>
+    <node id="DISP13" label="Agronomy">
+      <hasNote>Agronomy</hasNote>
+    </node>
+    <node id="DISP14" label="Alchemy">
+      <hasNote>Alchemy</hasNote>
+    </node>
+    <node id="DISP15" label="Algebra">
+      <hasNote>Algebra</hasNote>
+    </node>
+    <node id="DISP16" label="Analytical Bibliography">
+      <hasNote>Analytical Bibliography</hasNote>
+    </node>
+    <node id="DISP17" label="Anatomy">
+      <hasNote>Anatomy</hasNote>
+    </node>
+    <node id="DISP18" label="Animal Husbandry (Discipline)">
+      <hasNote>Animal Husbandry (Discipline)</hasNote>
+    </node>
+    <node id="DISP19" label="Anthracology">
+      <hasNote>Anthracology</hasNote>
+    </node>
+    <node id="DISP20" label="Anthropological Linguistics">
+      <hasNote>Anthropological Linguistics</hasNote>
+    </node>
+    <node id="DISP21" label="Anthropology">
+      <hasNote>Anthropology</hasNote>
+    </node>
+    <node id="DISP22" label="Anthropology Of Religion">
+      <hasNote>Anthropology Of Religion</hasNote>
+    </node>
+    <node id="DISP23" label="Anthropometry">
+      <hasNote>Anthropometry</hasNote>
+    </node>
+    <node id="DISP24" label="Anthroposophy">
+      <hasNote>Anthroposophy</hasNote>
+    </node>
+    <node id="DISP25" label="Applied Linguistics">
+      <hasNote>Applied Linguistics</hasNote>
+    </node>
+    <node id="DISP26" label="Applied Mathematics">
+      <hasNote>Applied Mathematics</hasNote>
+    </node>
+    <node id="DISP27" label="Applied Physics">
+      <hasNote>Applied Physics</hasNote>
+    </node>
+    <node id="DISP28" label="Arboriculture">
+      <hasNote>Arboriculture</hasNote>
+    </node>
+    <node id="DISP29" label="Archaeobotany">
+      <hasNote>Archaeobotany</hasNote>
+    </node>
+    <node id="DISP30" label="Archaeological Conservation">
+      <hasNote>Archaeological Conservation</hasNote>
+    </node>
+    <node id="DISP31" label="Archaeology">
+      <hasNote>Archaeology</hasNote>
+    </node>
+    <node id="DISP32" label="Archaeometallurgy">
+      <hasNote>Archaeometallurgy</hasNote>
+    </node>
+    <node id="DISP33" label="Archaeometry">
+      <hasNote>Archaeometry</hasNote>
+    </node>
+    <node id="DISP34" label="Archaeozoology">
+      <hasNote>Archaeozoology</hasNote>
+    </node>
+    <node id="DISP35" label="Architectonics">
+      <hasNote>Architectonics</hasNote>
+    </node>
+    <node id="DISP36" label="Architectural Conservation">
+      <hasNote>Architectural Conservation</hasNote>
+    </node>
+    <node id="DISP37" label="Architectural Criticism">
+      <hasNote>Architectural Criticism</hasNote>
+    </node>
+    <node id="DISP38" label="Architectural Education">
+      <hasNote>Architectural Education</hasNote>
+    </node>
+    <node id="DISP39" label="Architectural History">
+      <hasNote>Architectural History</hasNote>
+    </node>
+    <node id="DISP40" label="Architectural Photography">
+      <hasNote>Architectural Photography</hasNote>
+    </node>
+    <node id="DISP41" label="Architecture (Discipline)">
+      <hasNote>Architecture (Discipline)</hasNote>
+    </node>
+    <node id="DISP42" label="Arithmetic">
+      <hasNote>Arithmetic</hasNote>
+    </node>
+    <node id="DISP43" label="Art (Discipline)">
+      <hasNote>Art (Discipline)</hasNote>
+    </node>
+    <node id="DISP44" label="Art Appreciation">
+      <hasNote>Art Appreciation</hasNote>
+    </node>
+    <node id="DISP45" label="Art Criticism">
+      <hasNote>Art Criticism</hasNote>
+    </node>
+    <node id="DISP46" label="Art Education">
+      <hasNote>Art Education</hasNote>
+    </node>
+    <node id="DISP47" label="Art History">
+      <hasNote>Art History</hasNote>
+    </node>
+    <node id="DISP48" label="Art Therapy">
+      <hasNote>Art Therapy</hasNote>
+    </node>
+    <node id="DISP49" label="Artificial Intelligence">
+      <hasNote>Artificial Intelligence</hasNote>
+    </node>
+    <node id="DISP50" label="Artificial Intelligence">
+      <hasNote>Artificial Intelligence</hasNote>
+    </node>
+    <node id="DISP51" label="Arts (Broad Discipline)">
+      <hasNote>Arts (Broad Discipline)</hasNote>
+    </node>
+    <node id="DISP52" label="Arts-Related Disciplines">
+      <hasNote>Arts-Related Disciplines</hasNote>
+    </node>
+    <node id="DISP53" label="Assyriology">
+      <hasNote>Assyriology</hasNote>
+    </node>
+    <node id="DISP54" label="Astrology">
+      <hasNote>Astrology</hasNote>
+    </node>
+    <node id="DISP55" label="Astronomy">
+      <hasNote>Astronomy</hasNote>
+    </node>
+    <node id="DISP56" label="Astrophysics">
+      <hasNote>Astrophysics</hasNote>
+    </node>
+    <node id="DISP57" label="Autoethnography">
+      <hasNote>Autoethnography</hasNote>
+    </node>
+    <node id="DISP58" label="Automotive Design">
+      <hasNote>Automotive Design</hasNote>
+    </node>
+    <node id="DISP59" label="Aviation">
+      <hasNote>Aviation</hasNote>
+    </node>
+    <node id="DISP60" label="Axiology">
+      <hasNote>Axiology</hasNote>
+    </node>
+    <node id="DISP61" label="Ayurveda">
+      <hasNote>Ayurveda</hasNote>
+    </node>
+    <node id="DISP62" label="Ballet (Discipline)">
+      <hasNote>Ballet (Discipline)</hasNote>
+    </node>
+    <node id="DISP63" label="Ballistics">
+      <hasNote>Ballistics</hasNote>
+    </node>
+    <node id="DISP64" label="Beautification">
+      <hasNote>Beautification</hasNote>
+    </node>
+    <node id="DISP65" label="Behavioral Sciences">
+      <hasNote>Behavioral Sciences</hasNote>
+    </node>
+    <node id="DISP66" label="Biblical Studies">
+      <hasNote>Biblical Studies</hasNote>
+    </node>
+    <node id="DISP67" label="Bibliotherapy">
+      <hasNote>Bibliotherapy</hasNote>
+    </node>
+    <node id="DISP68" label="Big Data Analytics">
+      <hasNote>Big Data Analytics</hasNote>
+    </node>
+    <node id="DISP69" label="Biochemistry">
+      <hasNote>Biochemistry</hasNote>
+    </node>
+    <node id="DISP70" label="Bioengineering">
+      <hasNote>Bioengineering</hasNote>
+    </node>
+    <node id="DISP71" label="Biological Sciences">
+      <hasNote>Biological Sciences</hasNote>
+    </node>
+    <node id="DISP72" label="Biology">
+      <hasNote>Biology</hasNote>
+    </node>
+    <node id="DISP73" label="Biomedical Engineering">
+      <hasNote>Biomedical Engineering</hasNote>
+    </node>
+    <node id="DISP74" label="Biometrics">
+      <hasNote>Biometrics</hasNote>
+    </node>
+    <node id="DISP75" label="Biomimetics">
+      <hasNote>Biomimetics</hasNote>
+    </node>
+    <node id="DISP76" label="Body Arts (Discipline)">
+      <hasNote>Body Arts (Discipline)</hasNote>
+    </node>
+    <node id="DISP77" label="Book History">
+      <hasNote>Book History</hasNote>
+    </node>
+    <node id="DISP78" label="Botany">
+      <hasNote>Botany</hasNote>
+    </node>
+    <node id="DISP79" label="Broadcast Advertising">
+      <hasNote>Broadcast Advertising</hasNote>
+    </node>
+    <node id="DISP80" label="Broadcasting">
+      <hasNote>Broadcasting</hasNote>
+    </node>
+    <node id="DISP81" label="Buildings Archaeology">
+      <hasNote>Buildings Archaeology</hasNote>
+    </node>
+    <node id="DISP82" label="Calculus">
+      <hasNote>Calculus</hasNote>
+    </node>
+    <node id="DISP83" label="Capacity Building">
+      <hasNote>Capacity Building</hasNote>
+    </node>
+    <node id="DISP84" label="Cartography (Discipline)">
+      <hasNote>Cartography (Discipline)</hasNote>
+    </node>
+    <node id="DISP85" label="Ceramic Engineering">
+      <hasNote>Ceramic Engineering</hasNote>
+    </node>
+    <node id="DISP86" label="Chemical Engineering">
+      <hasNote>Chemical Engineering</hasNote>
+    </node>
+    <node id="DISP87" label="Chemistry">
+      <hasNote>Chemistry</hasNote>
+    </node>
+    <node id="DISP88" label="Chemometrics">
+      <hasNote>Chemometrics</hasNote>
+    </node>
+    <node id="DISP89" label="Chiropractic">
+      <hasNote>Chiropractic</hasNote>
+    </node>
+    <node id="DISP90" label="Choreography">
+      <hasNote>Choreography</hasNote>
+    </node>
+    <node id="DISP91" label="Chronology (Discipline)">
+      <hasNote>Chronology (Discipline)</hasNote>
+    </node>
+    <node id="DISP92" label="Church History">
+      <hasNote>Church History</hasNote>
+    </node>
+    <node id="DISP93" label="Civic Improvement">
+      <hasNote>Civic Improvement</hasNote>
+    </node>
+    <node id="DISP94" label="Civil Engineering">
+      <hasNote>Civil Engineering</hasNote>
+    </node>
+    <node id="DISP95" label="Classical Archaeology">
+      <hasNote>Classical Archaeology</hasNote>
+    </node>
+    <node id="DISP96" label="Classics (Discipline)">
+      <hasNote>Classics (Discipline)</hasNote>
+    </node>
+    <node id="DISP97" label="Climatology">
+      <hasNote>Climatology</hasNote>
+    </node>
+    <node id="DISP98" label="Cluster Analysis">
+      <hasNote>Cluster Analysis</hasNote>
+    </node>
+    <node id="DISP99" label="Codicology">
+      <hasNote>Codicology</hasNote>
+    </node>
+    <node id="DISP100" label="Commercial Strips">
+      <hasNote>Commercial Strips</hasNote>
+    </node>
+    <node id="DISP101" label="Communications (Discipline)">
+      <hasNote>Communications (Discipline)</hasNote>
+    </node>
+    <node id="DISP102" label="Community Development">
+      <hasNote>Community Development</hasNote>
+    </node>
+    <node id="DISP103" label="Comparative Literature">
+      <hasNote>Comparative Literature</hasNote>
+    </node>
+    <node id="DISP104" label="Comparative Politics">
+      <hasNote>Comparative Politics</hasNote>
+    </node>
+    <node id="DISP105" label="Comparative Religion">
+      <hasNote>Comparative Religion</hasNote>
+    </node>
+    <node id="DISP106" label="Compliance Archeology">
+      <hasNote>Compliance Archeology</hasNote>
+    </node>
+    <node id="DISP107" label="Computational Chemistry">
+      <hasNote>Computational Chemistry</hasNote>
+    </node>
+    <node id="DISP108" label="Computational Fluid Dynamics">
+      <hasNote>Computational Fluid Dynamics</hasNote>
+    </node>
+    <node id="DISP109" label="Computational Linguistics">
+      <hasNote>Computational Linguistics</hasNote>
+    </node>
+    <node id="DISP110" label="Computer Science">
+      <hasNote>Computer Science</hasNote>
+    </node>
+    <node id="DISP111" label="Computer Vision">
+      <hasNote>Computer Vision</hasNote>
+    </node>
+    <node id="DISP112" label="Computer-Aided Engineering">
+      <hasNote>Computer-Aided Engineering</hasNote>
+    </node>
+    <node id="DISP113" label="Conflict Archaeology">
+      <hasNote>Conflict Archaeology</hasNote>
+    </node>
+    <node id="DISP114" label="Conservation (Discipline)">
+      <hasNote>Conservation (Discipline)</hasNote>
+    </node>
+    <node id="DISP115" label="Conservation Science (Cultural Heritage Discipline)">
+      <hasNote>Conservation Science (Cultural Heritage Discipline)</hasNote>
+    </node>
+    <node id="DISP116" label="Construction (Discipline)">
+      <hasNote>Construction (Discipline)</hasNote>
+    </node>
+    <node id="DISP117" label="Continuing Education">
+      <hasNote>Continuing Education</hasNote>
+    </node>
+    <node id="DISP118" label="Cooking">
+      <hasNote>Cooking</hasNote>
+    </node>
+    <node id="DISP119" label="Cosmography">
+      <hasNote>Cosmography</hasNote>
+    </node>
+    <node id="DISP120" label="Cosmology">
+      <hasNote>Cosmology</hasNote>
+    </node>
+    <node id="DISP121" label="Costume Design">
+      <hasNote>Costume Design</hasNote>
+    </node>
+    <node id="DISP122" label="Criminal Law">
+      <hasNote>Criminal Law</hasNote>
+    </node>
+    <node id="DISP123" label="Criminology">
+      <hasNote>Criminology</hasNote>
+    </node>
+    <node id="DISP124" label="Cross- And Interdisciplinary Fields">
+      <hasNote>Cross- And Interdisciplinary Fields</hasNote>
+    </node>
+    <node id="DISP125" label="Cryptography">
+      <hasNote>Cryptography</hasNote>
+    </node>
+    <node id="DISP126" label="Cryptology">
+      <hasNote>Cryptology</hasNote>
+    </node>
+    <node id="DISP127" label="Crystallography">
+      <hasNote>Crystallography</hasNote>
+    </node>
+    <node id="DISP128" label="Culinary Art">
+      <hasNote>Culinary Art</hasNote>
+    </node>
+    <node id="DISP129" label="Cultural Disciplines">
+      <hasNote>Cultural Disciplines</hasNote>
+    </node>
+    <node id="DISP130" label="Cybernetics">
+      <hasNote>Cybernetics</hasNote>
+    </node>
+    <node id="DISP131" label="Dactylography">
+      <hasNote>Dactylography</hasNote>
+    </node>
+    <node id="DISP132" label="Dance (Discipline)">
+      <hasNote>Dance (Discipline)</hasNote>
+    </node>
+    <node id="DISP133" label="Data Analysis">
+      <hasNote>Data Analysis</hasNote>
+    </node>
+    <node id="DISP134" label="Data Cleaning">
+      <hasNote>Data Cleaning</hasNote>
+    </node>
+    <node id="DISP135" label="Data Integration">
+      <hasNote>Data Integration</hasNote>
+    </node>
+    <node id="DISP136" label="Data Mining">
+      <hasNote>Data Mining</hasNote>
+    </node>
+    <node id="DISP137" label="Data Presentation">
+      <hasNote>Data Presentation</hasNote>
+    </node>
+    <node id="DISP138" label="Data Processing">
+      <hasNote>Data Processing</hasNote>
+    </node>
+    <node id="DISP139" label="Data Reduction">
+      <hasNote>Data Reduction</hasNote>
+    </node>
+    <node id="DISP140" label="Data Transformation">
+      <hasNote>Data Transformation</hasNote>
+    </node>
+    <node id="DISP141" label="Data Visualization">
+      <hasNote>Data Visualization</hasNote>
+    </node>
+    <node id="DISP142" label="Decorative Arts (Discipline)">
+      <hasNote>Decorative Arts (Discipline)</hasNote>
+    </node>
+    <node id="DISP143" label="Demography">
+      <hasNote>Demography</hasNote>
+    </node>
+    <node id="DISP144" label="Dentistry">
+      <hasNote>Dentistry</hasNote>
+    </node>
+    <node id="DISP145" label="Design (Discipline)">
+      <hasNote>Design (Discipline)</hasNote>
+    </node>
+    <node id="DISP146" label="Design Review">
+      <hasNote>Design Review</hasNote>
+    </node>
+    <node id="DISP147" label="Developer-Funded Archaeology">
+      <hasNote>Developer-Funded Archaeology</hasNote>
+    </node>
+    <node id="DISP148" label="Development (Function)">
+      <hasNote>Development (Function)</hasNote>
+    </node>
+    <node id="DISP149" label="Digital Mapping">
+      <hasNote>Digital Mapping</hasNote>
+    </node>
+    <node id="DISP150" label="Disability Studies">
+      <hasNote>Disability Studies</hasNote>
+    </node>
+    <node id="DISP151" label="Discipline-Based Art Education">
+      <hasNote>Discipline-Based Art Education</hasNote>
+    </node>
+    <node id="DISP152" label="Discriminant Analysis">
+      <hasNote>Discriminant Analysis</hasNote>
+    </node>
+    <node id="DISP153" label="Divination">
+      <hasNote>Divination</hasNote>
+    </node>
+    <node id="DISP154" label="Dowsing">
+      <hasNote>Dowsing</hasNote>
+    </node>
+    <node id="DISP155" label="Drama (Discipline)">
+      <hasNote>Drama (Discipline)</hasNote>
+    </node>
+    <node id="DISP156" label="Dramaturgy">
+      <hasNote>Dramaturgy</hasNote>
+    </node>
+    <node id="DISP157" label="Drapers">
+      <hasNote>Drapers</hasNote>
+    </node>
+    <node id="DISP158" label="Dynamics (Discipline)">
+      <hasNote>Dynamics (Discipline)</hasNote>
+    </node>
+    <node id="DISP159" label="Early Childhood Education">
+      <hasNote>Early Childhood Education</hasNote>
+    </node>
+    <node id="DISP160" label="Earth Sciences">
+      <hasNote>Earth Sciences</hasNote>
+    </node>
+    <node id="DISP161" label="Ecclesiology">
+      <hasNote>Ecclesiology</hasNote>
+    </node>
+    <node id="DISP162" label="Ecology">
+      <hasNote>Ecology</hasNote>
+    </node>
+    <node id="DISP163" label="Economic Development">
+      <hasNote>Economic Development</hasNote>
+    </node>
+    <node id="DISP164" label="Economics">
+      <hasNote>Economics</hasNote>
+    </node>
+    <node id="DISP165" label="Education">
+      <hasNote>Education</hasNote>
+    </node>
+    <node id="DISP166" label="Egyptology">
+      <hasNote>Egyptology</hasNote>
+    </node>
+    <node id="DISP167" label="Ekistics">
+      <hasNote>Ekistics</hasNote>
+    </node>
+    <node id="DISP168" label="Electrical Engineering">
+      <hasNote>Electrical Engineering</hasNote>
+    </node>
+    <node id="DISP169" label="Electrochemistry">
+      <hasNote>Electrochemistry</hasNote>
+    </node>
+    <node id="DISP170" label="Electronic Engineering">
+      <hasNote>Electronic Engineering</hasNote>
+    </node>
+    <node id="DISP171" label="Electronics (Physics)">
+      <hasNote>Electronics (Physics)</hasNote>
+    </node>
+    <node id="DISP172" label="Elementary Education">
+      <hasNote>Elementary Education</hasNote>
+    </node>
+    <node id="DISP173" label="Engineering">
+      <hasNote>Engineering</hasNote>
+    </node>
+    <node id="DISP174" label="Entomology">
+      <hasNote>Entomology</hasNote>
+    </node>
+    <node id="DISP175" label="Environmental Archaeology">
+      <hasNote>Environmental Archaeology</hasNote>
+    </node>
+    <node id="DISP176" label="Environmental Design">
+      <hasNote>Environmental Design</hasNote>
+    </node>
+    <node id="DISP177" label="Environmental Engineering">
+      <hasNote>Environmental Engineering</hasNote>
+    </node>
+    <node id="DISP178" label="Environmental Law">
+      <hasNote>Environmental Law</hasNote>
+    </node>
+    <node id="DISP179" label="Environmental Psychology">
+      <hasNote>Environmental Psychology</hasNote>
+    </node>
+    <node id="DISP180" label="Environmental Sciences">
+      <hasNote>Environmental Sciences</hasNote>
+    </node>
+    <node id="DISP181" label="Epidemiology">
+      <hasNote>Epidemiology</hasNote>
+    </node>
+    <node id="DISP182" label="Epigraphy">
+      <hasNote>Epigraphy</hasNote>
+    </node>
+    <node id="DISP183" label="Epistemology">
+      <hasNote>Epistemology</hasNote>
+    </node>
+    <node id="DISP184" label="Ergonomics">
+      <hasNote>Ergonomics</hasNote>
+    </node>
+    <node id="DISP185" label="Eschatology">
+      <hasNote>Eschatology</hasNote>
+    </node>
+    <node id="DISP186" label="Ethics (Philosophy)">
+      <hasNote>Ethics (Philosophy)</hasNote>
+    </node>
+    <node id="DISP187" label="Ethnic Studies">
+      <hasNote>Ethnic Studies</hasNote>
+    </node>
+    <node id="DISP188" label="Ethnoarchaeology">
+      <hasNote>Ethnoarchaeology</hasNote>
+    </node>
+    <node id="DISP189" label="Ethnobotany">
+      <hasNote>Ethnobotany</hasNote>
+    </node>
+    <node id="DISP190" label="Ethnographic Conservation">
+      <hasNote>Ethnographic Conservation</hasNote>
+    </node>
+    <node id="DISP191" label="Ethnography">
+      <hasNote>Ethnography</hasNote>
+    </node>
+    <node id="DISP192" label="Ethnohistory">
+      <hasNote>Ethnohistory</hasNote>
+    </node>
+    <node id="DISP193" label="Ethnology">
+      <hasNote>Ethnology</hasNote>
+    </node>
+    <node id="DISP194" label="Ethnomusicology">
+      <hasNote>Ethnomusicology</hasNote>
+    </node>
+    <node id="DISP195" label="Ethnopsychology">
+      <hasNote>Ethnopsychology</hasNote>
+    </node>
+    <node id="DISP196" label="Etymology">
+      <hasNote>Etymology</hasNote>
+    </node>
+    <node id="DISP197" label="Experimental Archaeology">
+      <hasNote>Experimental Archaeology</hasNote>
+    </node>
+    <node id="DISP198" label="Experimental Geography">
+      <hasNote>Experimental Geography</hasNote>
+    </node>
+    <node id="DISP199" label="Factor Analysis">
+      <hasNote>Factor Analysis</hasNote>
+    </node>
+    <node id="DISP200" label="Faculties (Branches Of Knowledge)">
+      <hasNote>Faculties (Branches Of Knowledge)</hasNote>
+    </node>
+    <node id="DISP201" label="Fashion Design">
+      <hasNote>Fashion Design</hasNote>
+    </node>
+    <node id="DISP202" label="Fiber Optics">
+      <hasNote>Fiber Optics</hasNote>
+    </node>
+    <node id="DISP203" label="Field Archaeology">
+      <hasNote>Field Archaeology</hasNote>
+    </node>
+    <node id="DISP204" label="Film (Discipline)">
+      <hasNote>Film (Discipline)</hasNote>
+    </node>
+    <node id="DISP205" label="Finance">
+      <hasNote>Finance</hasNote>
+    </node>
+    <node id="DISP206" label="Fine Arts (Discipline)">
+      <hasNote>Fine Arts (Discipline)</hasNote>
+    </node>
+    <node id="DISP207" label="Firefighting (Discipline)">
+      <hasNote>Firefighting (Discipline)</hasNote>
+    </node>
+    <node id="DISP208" label="Floriculture">
+      <hasNote>Floriculture</hasNote>
+    </node>
+    <node id="DISP209" label="Fluid Mechanics">
+      <hasNote>Fluid Mechanics</hasNote>
+    </node>
+    <node id="DISP210" label="Folklore (Discipline)">
+      <hasNote>Folklore (Discipline)</hasNote>
+    </node>
+    <node id="DISP211" label="Forbidden Arts">
+      <hasNote>Forbidden Arts</hasNote>
+    </node>
+    <node id="DISP212" label="Forensic Medicine">
+      <hasNote>Forensic Medicine</hasNote>
+    </node>
+    <node id="DISP213" label="Forensic Science">
+      <hasNote>Forensic Science</hasNote>
+    </node>
+    <node id="DISP214" label="Forest Management">
+      <hasNote>Forest Management</hasNote>
+    </node>
+    <node id="DISP215" label="Forestry">
+      <hasNote>Forestry</hasNote>
+    </node>
+    <node id="DISP216" label="Fracture Mechanics">
+      <hasNote>Fracture Mechanics</hasNote>
+    </node>
+    <node id="DISP217" label="Furniture Design">
+      <hasNote>Furniture Design</hasNote>
+    </node>
+    <node id="DISP218" label="Fuzzy Logic">
+      <hasNote>Fuzzy Logic</hasNote>
+    </node>
+    <node id="DISP219" label="Garden Archaeology">
+      <hasNote>Garden Archaeology</hasNote>
+    </node>
+    <node id="DISP220" label="Garden Design">
+      <hasNote>Garden Design</hasNote>
+    </node>
+    <node id="DISP221" label="Gardening">
+      <hasNote>Gardening</hasNote>
+    </node>
+    <node id="DISP222" label="Gemology">
+      <hasNote>Gemology</hasNote>
+    </node>
+    <node id="DISP223" label="Genealogy (Discipline)">
+      <hasNote>Genealogy (Discipline)</hasNote>
+    </node>
+    <node id="DISP224" label="Genetics">
+      <hasNote>Genetics</hasNote>
+    </node>
+    <node id="DISP225" label="Gentrification">
+      <hasNote>Gentrification</hasNote>
+    </node>
+    <node id="DISP226" label="Geoarchaeology">
+      <hasNote>Geoarchaeology</hasNote>
+    </node>
+    <node id="DISP227" label="Geobiology">
+      <hasNote>Geobiology</hasNote>
+    </node>
+    <node id="DISP228" label="Geochemistry">
+      <hasNote>Geochemistry</hasNote>
+    </node>
+    <node id="DISP229" label="Geodesy">
+      <hasNote>Geodesy</hasNote>
+    </node>
+    <node id="DISP230" label="Geography">
+      <hasNote>Geography</hasNote>
+    </node>
+    <node id="DISP231" label="Geological Dynamics">
+      <hasNote>Geological Dynamics</hasNote>
+    </node>
+    <node id="DISP232" label="Geology">
+      <hasNote>Geology</hasNote>
+    </node>
+    <node id="DISP233" label="Geomancy">
+      <hasNote>Geomancy</hasNote>
+    </node>
+    <node id="DISP234" label="Geometry">
+      <hasNote>Geometry</hasNote>
+    </node>
+    <node id="DISP235" label="Geomorphology">
+      <hasNote>Geomorphology</hasNote>
+    </node>
+    <node id="DISP236" label="Geophysics">
+      <hasNote>Geophysics</hasNote>
+    </node>
+    <node id="DISP237" label="Geopolitics">
+      <hasNote>Geopolitics</hasNote>
+    </node>
+    <node id="DISP238" label="Geospatial Data Analysis">
+      <hasNote>Geospatial Data Analysis</hasNote>
+    </node>
+    <node id="DISP239" label="Geotechnical Engineering">
+      <hasNote>Geotechnical Engineering</hasNote>
+    </node>
+    <node id="DISP240" label="Gerontology">
+      <hasNote>Gerontology</hasNote>
+    </node>
+    <node id="DISP241" label="Golf Course Architecture">
+      <hasNote>Golf Course Architecture</hasNote>
+    </node>
+    <node id="DISP242" label="Grammar (Discipline)">
+      <hasNote>Grammar (Discipline)</hasNote>
+    </node>
+    <node id="DISP243" label="Graphemics">
+      <hasNote>Graphemics</hasNote>
+    </node>
+    <node id="DISP244" label="Graphic Design">
+      <hasNote>Graphic Design</hasNote>
+    </node>
+    <node id="DISP245" label="Greenhouse Gardening">
+      <hasNote>Greenhouse Gardening</hasNote>
+    </node>
+    <node id="DISP246" label="Health Sciences">
+      <hasNote>Health Sciences</hasNote>
+    </node>
+    <node id="DISP247" label="Health Sciences-Related Disciplines">
+      <hasNote>Health Sciences-Related Disciplines</hasNote>
+    </node>
+    <node id="DISP248" label="Heliotherapy">
+      <hasNote>Heliotherapy</hasNote>
+    </node>
+    <node id="DISP249" label="Heraldry">
+      <hasNote>Heraldry</hasNote>
+    </node>
+    <node id="DISP250" label="Heritage Science (Cultural Heritage Discipline)">
+      <hasNote>Heritage Science (Cultural Heritage Discipline)</hasNote>
+    </node>
+    <node id="DISP251" label="Herpetology">
+      <hasNote>Herpetology</hasNote>
+    </node>
+    <node id="DISP252" label="Higher Education">
+      <hasNote>Higher Education</hasNote>
+    </node>
+    <node id="DISP253" label="Histology">
+      <hasNote>Histology</hasNote>
+    </node>
+    <node id="DISP254" label="Historical Archaeology">
+      <hasNote>Historical Archaeology</hasNote>
+    </node>
+    <node id="DISP255" label="Historical Linguistics">
+      <hasNote>Historical Linguistics</hasNote>
+    </node>
+    <node id="DISP256" label="Historical Sociology">
+      <hasNote>Historical Sociology</hasNote>
+    </node>
+    <node id="DISP257" label="Historiography">
+      <hasNote>Historiography</hasNote>
+    </node>
+    <node id="DISP258" label="History (Discipline)">
+      <hasNote>History (Discipline)</hasNote>
+    </node>
+    <node id="DISP259" label="History Of Conservation">
+      <hasNote>History Of Conservation</hasNote>
+    </node>
+    <node id="DISP260" label="History Of Medicine">
+      <hasNote>History Of Medicine</hasNote>
+    </node>
+    <node id="DISP261" label="History Of Science">
+      <hasNote>History Of Science</hasNote>
+    </node>
+    <node id="DISP262" label="History Of Technology">
+      <hasNote>History Of Technology</hasNote>
+    </node>
+    <node id="DISP263" label="History-Related Disciplines">
+      <hasNote>History-Related Disciplines</hasNote>
+    </node>
+    <node id="DISP264" label="Home Economics">
+      <hasNote>Home Economics</hasNote>
+    </node>
+    <node id="DISP265" label="Horticultural Therapy">
+      <hasNote>Horticultural Therapy</hasNote>
+    </node>
+    <node id="DISP266" label="Horticulture">
+      <hasNote>Horticulture</hasNote>
+    </node>
+    <node id="DISP267" label="Human Ecology">
+      <hasNote>Human Ecology</hasNote>
+    </node>
+    <node id="DISP268" label="Human Engineering">
+      <hasNote>Human Engineering</hasNote>
+    </node>
+    <node id="DISP269" label="Human Geography">
+      <hasNote>Human Geography</hasNote>
+    </node>
+    <node id="DISP270" label="Humanities">
+      <hasNote>Humanities</hasNote>
+    </node>
+    <node id="DISP271" label="Hydraulic Engineering">
+      <hasNote>Hydraulic Engineering</hasNote>
+    </node>
+    <node id="DISP272" label="Hydraulics">
+      <hasNote>Hydraulics</hasNote>
+    </node>
+    <node id="DISP273" label="Hydrogeology">
+      <hasNote>Hydrogeology</hasNote>
+    </node>
+    <node id="DISP274" label="Hydrography">
+      <hasNote>Hydrography</hasNote>
+    </node>
+    <node id="DISP275" label="Hydrology">
+      <hasNote>Hydrology</hasNote>
+    </node>
+    <node id="DISP276" label="Hypsography">
+      <hasNote>Hypsography</hasNote>
+    </node>
+    <node id="DISP277" label="Ichnology">
+      <hasNote>Ichnology</hasNote>
+    </node>
+    <node id="DISP278" label="Ichthyology">
+      <hasNote>Ichthyology</hasNote>
+    </node>
+    <node id="DISP279" label="Indoor Gardening">
+      <hasNote>Indoor Gardening</hasNote>
+    </node>
+    <node id="DISP280" label="Industrial Archaeology">
+      <hasNote>Industrial Archaeology</hasNote>
+    </node>
+    <node id="DISP281" label="Industrial Arts (Field Of Study)">
+      <hasNote>Industrial Arts (Field Of Study)</hasNote>
+    </node>
+    <node id="DISP282" label="Industrial Design">
+      <hasNote>Industrial Design</hasNote>
+    </node>
+    <node id="DISP283" label="Industrial Engineering">
+      <hasNote>Industrial Engineering</hasNote>
+    </node>
+    <node id="DISP284" label="Industrial History">
+      <hasNote>Industrial History</hasNote>
+    </node>
+    <node id="DISP285" label="Industrial Relations">
+      <hasNote>Industrial Relations</hasNote>
+    </node>
+    <node id="DISP286" label="Industrialization">
+      <hasNote>Industrialization</hasNote>
+    </node>
+    <node id="DISP287" label="Infill (Housing)">
+      <hasNote>Infill (Housing)</hasNote>
+    </node>
+    <node id="DISP288" label="Information Science">
+      <hasNote>Information Science</hasNote>
+    </node>
+    <node id="DISP289" label="Inorganic Chemistry">
+      <hasNote>Inorganic Chemistry</hasNote>
+    </node>
+    <node id="DISP290" label="Intellectual History">
+      <hasNote>Intellectual History</hasNote>
+    </node>
+    <node id="DISP291" label="Interior Architecture (Discipline)">
+      <hasNote>Interior Architecture (Discipline)</hasNote>
+    </node>
+    <node id="DISP292" label="Interior Decoration">
+      <hasNote>Interior Decoration</hasNote>
+    </node>
+    <node id="DISP293" label="Interior Decorators">
+      <hasNote>Interior Decorators</hasNote>
+    </node>
+    <node id="DISP294" label="Interior Design">
+      <hasNote>Interior Design</hasNote>
+    </node>
+    <node id="DISP295" label="Interior Designers">
+      <hasNote>Interior Designers</hasNote>
+    </node>
+    <node id="DISP296" label="International Law">
+      <hasNote>International Law</hasNote>
+    </node>
+    <node id="DISP297" label="International Relations">
+      <hasNote>International Relations</hasNote>
+    </node>
+    <node id="DISP298" label="Interpretive Divination">
+      <hasNote>Interpretive Divination</hasNote>
+    </node>
+    <node id="DISP299" label="Invertebrate Paleontology">
+      <hasNote>Invertebrate Paleontology</hasNote>
+    </node>
+    <node id="DISP300" label="Jewelry Design">
+      <hasNote>Jewelry Design</hasNote>
+    </node>
+    <node id="DISP301" label="Journalism">
+      <hasNote>Journalism</hasNote>
+    </node>
+    <node id="DISP302" label="Kinematics">
+      <hasNote>Kinematics</hasNote>
+    </node>
+    <node id="DISP303" label="Land Management">
+      <hasNote>Land Management</hasNote>
+    </node>
+    <node id="DISP304" label="Land Settlement">
+      <hasNote>Land Settlement</hasNote>
+    </node>
+    <node id="DISP305" label="Land Subdivision">
+      <hasNote>Land Subdivision</hasNote>
+    </node>
+    <node id="DISP306" label="Land Use">
+      <hasNote>Land Use</hasNote>
+    </node>
+    <node id="DISP307" label="Landscape Archaeology">
+      <hasNote>Landscape Archaeology</hasNote>
+    </node>
+    <node id="DISP308" label="Landscape Architecture (Discipline)">
+      <hasNote>Landscape Architecture (Discipline)</hasNote>
+    </node>
+    <node id="DISP309" label="Landscape Gardening">
+      <hasNote>Landscape Gardening</hasNote>
+    </node>
+    <node id="DISP310" label="Languages (Study Discipline)">
+      <hasNote>Languages (Study Discipline)</hasNote>
+    </node>
+    <node id="DISP311" label="Law (Discipline)">
+      <hasNote>Law (Discipline)</hasNote>
+    </node>
+    <node id="DISP312" label="Liberal Arts (Cross-Disciplinary Studies)">
+      <hasNote>Liberal Arts (Cross-Disciplinary Studies)</hasNote>
+    </node>
+    <node id="DISP313" label="Liberal Arts (Medieval Studies)">
+      <hasNote>Liberal Arts (Medieval Studies)</hasNote>
+    </node>
+    <node id="DISP314" label="Library Science">
+      <hasNote>Library Science</hasNote>
+    </node>
+    <node id="DISP315" label="Linguistics">
+      <hasNote>Linguistics</hasNote>
+    </node>
+    <node id="DISP316" label="Linguistics-Related Disciplines">
+      <hasNote>Linguistics-Related Disciplines</hasNote>
+    </node>
+    <node id="DISP317" label="Linkage">
+      <hasNote>Linkage</hasNote>
+    </node>
+    <node id="DISP318" label="Literary Criticism">
+      <hasNote>Literary Criticism</hasNote>
+    </node>
+    <node id="DISP319" label="Literary History">
+      <hasNote>Literary History</hasNote>
+    </node>
+    <node id="DISP320" label="Literary Studies">
+      <hasNote>Literary Studies</hasNote>
+    </node>
+    <node id="DISP321" label="Lithology">
+      <hasNote>Lithology</hasNote>
+    </node>
+    <node id="DISP322" label="Local History (Discipline)">
+      <hasNote>Local History (Discipline)</hasNote>
+    </node>
+    <node id="DISP323" label="Logic">
+      <hasNote>Logic</hasNote>
+    </node>
+    <node id="DISP324" label="Machine Learning">
+      <hasNote>Machine Learning</hasNote>
+    </node>
+    <node id="DISP325" label="Magic (Occult Science)">
+      <hasNote>Magic (Occult Science)</hasNote>
+    </node>
+    <node id="DISP326" label="Marine Biology">
+      <hasNote>Marine Biology</hasNote>
+    </node>
+    <node id="DISP327" label="Marine Engineering">
+      <hasNote>Marine Engineering</hasNote>
+    </node>
+    <node id="DISP328" label="Maritime History">
+      <hasNote>Maritime History</hasNote>
+    </node>
+    <node id="DISP329" label="Material Culture (Discipline)">
+      <hasNote>Material Culture (Discipline)</hasNote>
+    </node>
+    <node id="DISP330" label="Materials Science">
+      <hasNote>Materials Science</hasNote>
+    </node>
+    <node id="DISP331" label="Mathematical Physics">
+      <hasNote>Mathematical Physics</hasNote>
+    </node>
+    <node id="DISP332" label="Mathematics">
+      <hasNote>Mathematics</hasNote>
+    </node>
+    <node id="DISP333" label="Mechanical Arts (Medieval Discipline)">
+      <hasNote>Mechanical Arts (Medieval Discipline)</hasNote>
+    </node>
+    <node id="DISP334" label="Mechanical Engineering">
+      <hasNote>Mechanical Engineering</hasNote>
+    </node>
+    <node id="DISP335" label="Mechanics (Physics)">
+      <hasNote>Mechanics (Physics)</hasNote>
+    </node>
+    <node id="DISP336" label="Medicine (Discipline)">
+      <hasNote>Medicine (Discipline)</hasNote>
+    </node>
+    <node id="DISP337" label="Medieval Disciplines">
+      <hasNote>Medieval Disciplines</hasNote>
+    </node>
+    <node id="DISP338" label="Medieval Studies">
+      <hasNote>Medieval Studies</hasNote>
+    </node>
+    <node id="DISP339" label="Megaric (School Of Philosophy)">
+      <hasNote>Megaric (School Of Philosophy)</hasNote>
+    </node>
+    <node id="DISP340" label="Metalinguistics">
+      <hasNote>Metalinguistics</hasNote>
+    </node>
+    <node id="DISP341" label="Metallography">
+      <hasNote>Metallography</hasNote>
+    </node>
+    <node id="DISP342" label="Metallurgy">
+      <hasNote>Metallurgy</hasNote>
+    </node>
+    <node id="DISP343" label="Metaphysics">
+      <hasNote>Metaphysics</hasNote>
+    </node>
+    <node id="DISP344" label="Meteorology">
+      <hasNote>Meteorology</hasNote>
+    </node>
+    <node id="DISP345" label="Metrology">
+      <hasNote>Metrology</hasNote>
+    </node>
+    <node id="DISP346" label="Microbiology">
+      <hasNote>Microbiology</hasNote>
+    </node>
+    <node id="DISP347" label="Microchemistry">
+      <hasNote>Microchemistry</hasNote>
+    </node>
+    <node id="DISP348" label="Microelectronics">
+      <hasNote>Microelectronics</hasNote>
+    </node>
+    <node id="DISP349" label="Microfinance">
+      <hasNote>Microfinance</hasNote>
+    </node>
+    <node id="DISP350" label="Micropaleontology">
+      <hasNote>Micropaleontology</hasNote>
+    </node>
+    <node id="DISP351" label="Military Engineering">
+      <hasNote>Military Engineering</hasNote>
+    </node>
+    <node id="DISP352" label="Military History">
+      <hasNote>Military History</hasNote>
+    </node>
+    <node id="DISP353" label="Mineralogy">
+      <hasNote>Mineralogy</hasNote>
+    </node>
+    <node id="DISP354" label="Molecular Biology">
+      <hasNote>Molecular Biology</hasNote>
+    </node>
+    <node id="DISP355" label="Morphology (Linguistics)">
+      <hasNote>Morphology (Linguistics)</hasNote>
+    </node>
+    <node id="DISP356" label="Multidimensional Scaling">
+      <hasNote>Multidimensional Scaling</hasNote>
+    </node>
+    <node id="DISP357" label="Multivariate Analysis">
+      <hasNote>Multivariate Analysis</hasNote>
+    </node>
+    <node id="DISP358" label="Municipal Finance">
+      <hasNote>Municipal Finance</hasNote>
+    </node>
+    <node id="DISP359" label="Museography">
+      <hasNote>Museography</hasNote>
+    </node>
+    <node id="DISP360" label="Museology">
+      <hasNote>Museology</hasNote>
+    </node>
+    <node id="DISP361" label="Museum Administration">
+      <hasNote>Museum Administration</hasNote>
+    </node>
+    <node id="DISP362" label="Music (Discipline)">
+      <hasNote>Music (Discipline)</hasNote>
+    </node>
+    <node id="DISP363" label="Music Theory">
+      <hasNote>Music Theory</hasNote>
+    </node>
+    <node id="DISP364" label="Musicology">
+      <hasNote>Musicology</hasNote>
+    </node>
+    <node id="DISP365" label="Nanotechnology">
+      <hasNote>Nanotechnology</hasNote>
+    </node>
+    <node id="DISP366" label="Natural History">
+      <hasNote>Natural History</hasNote>
+    </node>
+    <node id="DISP367" label="Natural Language Processing">
+      <hasNote>Natural Language Processing</hasNote>
+    </node>
+    <node id="DISP368" label="Natural Sciences">
+      <hasNote>Natural Sciences</hasNote>
+    </node>
+    <node id="DISP369" label="Naval Architecture">
+      <hasNote>Naval Architecture</hasNote>
+    </node>
+    <node id="DISP370" label="Navigation">
+      <hasNote>Navigation</hasNote>
+    </node>
+    <node id="DISP371" label="Nuclear Physics">
+      <hasNote>Nuclear Physics</hasNote>
+    </node>
+    <node id="DISP372" label="Numismatics">
+      <hasNote>Numismatics</hasNote>
+    </node>
+    <node id="DISP373" label="Nursing (Health Science)">
+      <hasNote>Nursing (Health Science)</hasNote>
+    </node>
+    <node id="DISP374" label="Occult Sciences">
+      <hasNote>Occult Sciences</hasNote>
+    </node>
+    <node id="DISP375" label="Occultism">
+      <hasNote>Occultism</hasNote>
+    </node>
+    <node id="DISP376" label="Occupational Therapy">
+      <hasNote>Occupational Therapy</hasNote>
+    </node>
+    <node id="DISP377" label="Oceanography">
+      <hasNote>Oceanography</hasNote>
+    </node>
+    <node id="DISP378" label="Oenology">
+      <hasNote>Oenology</hasNote>
+    </node>
+    <node id="DISP379" label="Ontology (Metaphysics)">
+      <hasNote>Ontology (Metaphysics)</hasNote>
+    </node>
+    <node id="DISP380" label="Optics">
+      <hasNote>Optics</hasNote>
+    </node>
+    <node id="DISP381" label="Oral History (Discipline)">
+      <hasNote>Oral History (Discipline)</hasNote>
+    </node>
+    <node id="DISP382" label="Organic Chemistry">
+      <hasNote>Organic Chemistry</hasNote>
+    </node>
+    <node id="DISP383" label="Organic Gardening">
+      <hasNote>Organic Gardening</hasNote>
+    </node>
+    <node id="DISP384" label="Organology">
+      <hasNote>Organology</hasNote>
+    </node>
+    <node id="DISP385" label="Ornamental Horticulture">
+      <hasNote>Ornamental Horticulture</hasNote>
+    </node>
+    <node id="DISP386" label="Ornithology">
+      <hasNote>Ornithology</hasNote>
+    </node>
+    <node id="DISP387" label="Osteology">
+      <hasNote>Osteology</hasNote>
+    </node>
+    <node id="DISP388" label="Outdoor Advertising">
+      <hasNote>Outdoor Advertising</hasNote>
+    </node>
+    <node id="DISP389" label="Paleoanthropology">
+      <hasNote>Paleoanthropology</hasNote>
+    </node>
+    <node id="DISP390" label="Paleobotany">
+      <hasNote>Paleobotany</hasNote>
+    </node>
+    <node id="DISP391" label="Paleoecology">
+      <hasNote>Paleoecology</hasNote>
+    </node>
+    <node id="DISP392" label="Paleogeography">
+      <hasNote>Paleogeography</hasNote>
+    </node>
+    <node id="DISP393" label="Paleography">
+      <hasNote>Paleography</hasNote>
+    </node>
+    <node id="DISP394" label="Paleontology">
+      <hasNote>Paleontology</hasNote>
+    </node>
+    <node id="DISP395" label="Paleopathology">
+      <hasNote>Paleopathology</hasNote>
+    </node>
+    <node id="DISP396" label="Palynology">
+      <hasNote>Palynology</hasNote>
+    </node>
+    <node id="DISP397" label="Paper Engineering">
+      <hasNote>Paper Engineering</hasNote>
+    </node>
+    <node id="DISP398" label="Paper History">
+      <hasNote>Paper History</hasNote>
+    </node>
+    <node id="DISP399" label="Papyrology">
+      <hasNote>Papyrology</hasNote>
+    </node>
+    <node id="DISP400" label="Participatory Design">
+      <hasNote>Participatory Design</hasNote>
+    </node>
+    <node id="DISP401" label="Particle Physics">
+      <hasNote>Particle Physics</hasNote>
+    </node>
+    <node id="DISP402" label="Pathology">
+      <hasNote>Pathology</hasNote>
+    </node>
+    <node id="DISP403" label="Performing Arts (Discipline)">
+      <hasNote>Performing Arts (Discipline)</hasNote>
+    </node>
+    <node id="DISP404" label="Periodization">
+      <hasNote>Periodization</hasNote>
+    </node>
+    <node id="DISP405" label="Permaculture">
+      <hasNote>Permaculture</hasNote>
+    </node>
+    <node id="DISP406" label="Petrography">
+      <hasNote>Petrography</hasNote>
+    </node>
+    <node id="DISP407" label="Petrology">
+      <hasNote>Petrology</hasNote>
+    </node>
+    <node id="DISP408" label="Pharmacology">
+      <hasNote>Pharmacology</hasNote>
+    </node>
+    <node id="DISP409" label="Pharmacy (Discipline)">
+      <hasNote>Pharmacy (Discipline)</hasNote>
+    </node>
+    <node id="DISP410" label="Phenomenology">
+      <hasNote>Phenomenology</hasNote>
+    </node>
+    <node id="DISP411" label="Philately">
+      <hasNote>Philately</hasNote>
+    </node>
+    <node id="DISP412" label="Philology">
+      <hasNote>Philology</hasNote>
+    </node>
+    <node id="DISP413" label="Philosophical Anthropology">
+      <hasNote>Philosophical Anthropology</hasNote>
+    </node>
+    <node id="DISP414" label="Philosophy">
+      <hasNote>Philosophy</hasNote>
+    </node>
+    <node id="DISP415" label="Philosophy Of Art">
+      <hasNote>Philosophy Of Art</hasNote>
+    </node>
+    <node id="DISP416" label="Philosophy Of Religion">
+      <hasNote>Philosophy Of Religion</hasNote>
+    </node>
+    <node id="DISP417" label="Phonetics">
+      <hasNote>Phonetics</hasNote>
+    </node>
+    <node id="DISP418" label="Phonology">
+      <hasNote>Phonology</hasNote>
+    </node>
+    <node id="DISP419" label="Photochemistry (Discipline)">
+      <hasNote>Photochemistry (Discipline)</hasNote>
+    </node>
+    <node id="DISP420" label="Photography (Discipline)">
+      <hasNote>Photography (Discipline)</hasNote>
+    </node>
+    <node id="DISP421" label="Photojournalism (Discipline)">
+      <hasNote>Photojournalism (Discipline)</hasNote>
+    </node>
+    <node id="DISP422" label="Photonics">
+      <hasNote>Photonics</hasNote>
+    </node>
+    <node id="DISP423" label="Phrenology">
+      <hasNote>Phrenology</hasNote>
+    </node>
+    <node id="DISP424" label="Physical Anthropology">
+      <hasNote>Physical Anthropology</hasNote>
+    </node>
+    <node id="DISP425" label="Physical Chemistry">
+      <hasNote>Physical Chemistry</hasNote>
+    </node>
+    <node id="DISP426" label="Physical Geography">
+      <hasNote>Physical Geography</hasNote>
+    </node>
+    <node id="DISP427" label="Physical Sciences">
+      <hasNote>Physical Sciences</hasNote>
+    </node>
+    <node id="DISP428" label="Physics">
+      <hasNote>Physics</hasNote>
+    </node>
+    <node id="DISP429" label="Physiognomy">
+      <hasNote>Physiognomy</hasNote>
+    </node>
+    <node id="DISP430" label="Physiology">
+      <hasNote>Physiology</hasNote>
+    </node>
+    <node id="DISP431" label="Pictorial Journalism (Discipline)">
+      <hasNote>Pictorial Journalism (Discipline)</hasNote>
+    </node>
+    <node id="DISP432" label="Planning">
+      <hasNote>Planning</hasNote>
+    </node>
+    <node id="DISP433" label="Planning Disciplines">
+      <hasNote>Planning Disciplines</hasNote>
+    </node>
+    <node id="DISP434" label="Plant Engineering">
+      <hasNote>Plant Engineering</hasNote>
+    </node>
+    <node id="DISP435" label="Plastic Arts">
+      <hasNote>Plastic Arts</hasNote>
+    </node>
+    <node id="DISP436" label="Poetics">
+      <hasNote>Poetics</hasNote>
+    </node>
+    <node id="DISP437" label="Political Science">
+      <hasNote>Political Science</hasNote>
+    </node>
+    <node id="DISP438" label="Polycapillary Optics">
+      <hasNote>Polycapillary Optics</hasNote>
+    </node>
+    <node id="DISP439" label="Polymer Science">
+      <hasNote>Polymer Science</hasNote>
+    </node>
+    <node id="DISP440" label="Population Geography">
+      <hasNote>Population Geography</hasNote>
+    </node>
+    <node id="DISP441" label="Postsecondary Education">
+      <hasNote>Postsecondary Education</hasNote>
+    </node>
+    <node id="DISP442" label="Practical Disciplines">
+      <hasNote>Practical Disciplines</hasNote>
+    </node>
+    <node id="DISP443" label="Pragmatics">
+      <hasNote>Pragmatics</hasNote>
+    </node>
+    <node id="DISP444" label="Prehistory (Discipline)">
+      <hasNote>Prehistory (Discipline)</hasNote>
+    </node>
+    <node id="DISP445" label="Preschool Education">
+      <hasNote>Preschool Education</hasNote>
+    </node>
+    <node id="DISP446" label="Preservation Engineering">
+      <hasNote>Preservation Engineering</hasNote>
+    </node>
+    <node id="DISP447" label="Preventive Conservation">
+      <hasNote>Preventive Conservation</hasNote>
+    </node>
+    <node id="DISP448" label="Primary Education">
+      <hasNote>Primary Education</hasNote>
+    </node>
+    <node id="DISP449" label="Principal Component Analysis">
+      <hasNote>Principal Component Analysis</hasNote>
+    </node>
+    <node id="DISP450" label="Print Advertising">
+      <hasNote>Print Advertising</hasNote>
+    </node>
+    <node id="DISP451" label="Process Philosophy">
+      <hasNote>Process Philosophy</hasNote>
+    </node>
+    <node id="DISP452" label="Proteomics">
+      <hasNote>Proteomics</hasNote>
+    </node>
+    <node id="DISP453" label="Psychiatry">
+      <hasNote>Psychiatry</hasNote>
+    </node>
+    <node id="DISP454" label="Psychoanalysis">
+      <hasNote>Psychoanalysis</hasNote>
+    </node>
+    <node id="DISP455" label="Psychohistory">
+      <hasNote>Psychohistory</hasNote>
+    </node>
+    <node id="DISP456" label="Psycholinguistics">
+      <hasNote>Psycholinguistics</hasNote>
+    </node>
+    <node id="DISP457" label="Psychology">
+      <hasNote>Psychology</hasNote>
+    </node>
+    <node id="DISP458" label="Psychology Of Religion">
+      <hasNote>Psychology Of Religion</hasNote>
+    </node>
+    <node id="DISP459" label="Psychology-Related Disciplines">
+      <hasNote>Psychology-Related Disciplines</hasNote>
+    </node>
+    <node id="DISP460" label="Public Administration">
+      <hasNote>Public Administration</hasNote>
+    </node>
+    <node id="DISP461" label="Public Archaeology">
+      <hasNote>Public Archaeology</hasNote>
+    </node>
+    <node id="DISP462" label="Public Finance">
+      <hasNote>Public Finance</hasNote>
+    </node>
+    <node id="DISP463" label="Public Law">
+      <hasNote>Public Law</hasNote>
+    </node>
+    <node id="DISP464" label="Public Relations">
+      <hasNote>Public Relations</hasNote>
+    </node>
+    <node id="DISP465" label="Pyrometallurgy">
+      <hasNote>Pyrometallurgy</hasNote>
+    </node>
+    <node id="DISP466" label="Quadrivium">
+      <hasNote>Quadrivium</hasNote>
+    </node>
+    <node id="DISP467" label="Radiology">
+      <hasNote>Radiology</hasNote>
+    </node>
+    <node id="DISP468" label="Real Estate Development">
+      <hasNote>Real Estate Development</hasNote>
+    </node>
+    <node id="DISP469" label="Regional Planning">
+      <hasNote>Regional Planning</hasNote>
+    </node>
+    <node id="DISP470" label="Religion (Discipline)">
+      <hasNote>Religion (Discipline)</hasNote>
+    </node>
+    <node id="DISP471" label="Religion-Related Disciplines">
+      <hasNote>Religion-Related Disciplines</hasNote>
+    </node>
+    <node id="DISP472" label="Religious Ethics">
+      <hasNote>Religious Ethics</hasNote>
+    </node>
+    <node id="DISP473" label="Religious History">
+      <hasNote>Religious History</hasNote>
+    </node>
+    <node id="DISP474" label="Renaissance Studies">
+      <hasNote>Renaissance Studies</hasNote>
+    </node>
+    <node id="DISP475" label="Reproductive Biology">
+      <hasNote>Reproductive Biology</hasNote>
+    </node>
+    <node id="DISP476" label="Rescue Archaeology">
+      <hasNote>Rescue Archaeology</hasNote>
+    </node>
+    <node id="DISP477" label="Reverse Engineering">
+      <hasNote>Reverse Engineering</hasNote>
+    </node>
+    <node id="DISP478" label="Rheology">
+      <hasNote>Rheology</hasNote>
+    </node>
+    <node id="DISP479" label="Rhetoric (Discipline)">
+      <hasNote>Rhetoric (Discipline)</hasNote>
+    </node>
+    <node id="DISP480" label="Ribbon Development">
+      <hasNote>Ribbon Development</hasNote>
+    </node>
+    <node id="DISP481" label="Roadside Improvement">
+      <hasNote>Roadside Improvement</hasNote>
+    </node>
+    <node id="DISP482" label="Robotics">
+      <hasNote>Robotics</hasNote>
+    </node>
+    <node id="DISP483" label="Runology">
+      <hasNote>Runology</hasNote>
+    </node>
+    <node id="DISP484" label="Rural Development">
+      <hasNote>Rural Development</hasNote>
+    </node>
+    <node id="DISP485" label="Rural Land Use">
+      <hasNote>Rural Land Use</hasNote>
+    </node>
+    <node id="DISP486" label="Rural Planning">
+      <hasNote>Rural Planning</hasNote>
+    </node>
+    <node id="DISP487" label="Rural Sociology">
+      <hasNote>Rural Sociology</hasNote>
+    </node>
+    <node id="DISP488" label="Sanitary Engineering">
+      <hasNote>Sanitary Engineering</hasNote>
+    </node>
+    <node id="DISP489" label="Scenography (Discipline)">
+      <hasNote>Scenography (Discipline)</hasNote>
+    </node>
+    <node id="DISP490" label="Science (Modern Discipline)">
+      <hasNote>Science (Modern Discipline)</hasNote>
+    </node>
+    <node id="DISP491" label="Science-Related Disciplines">
+      <hasNote>Science-Related Disciplines</hasNote>
+    </node>
+    <node id="DISP492" label="Sciences (Philosophy)">
+      <hasNote>Sciences (Philosophy)</hasNote>
+    </node>
+    <node id="DISP493" label="Secondary Education">
+      <hasNote>Secondary Education</hasNote>
+    </node>
+    <node id="DISP494" label="Sedimentology">
+      <hasNote>Sedimentology</hasNote>
+    </node>
+    <node id="DISP495" label="Seismology">
+      <hasNote>Seismology</hasNote>
+    </node>
+    <node id="DISP496" label="Semantics">
+      <hasNote>Semantics</hasNote>
+    </node>
+    <node id="DISP497" label="Semiotics">
+      <hasNote>Semiotics</hasNote>
+    </node>
+    <node id="DISP498" label="Serology">
+      <hasNote>Serology</hasNote>
+    </node>
+    <node id="DISP499" label="Set Design">
+      <hasNote>Set Design</hasNote>
+    </node>
+    <node id="DISP500" label="Silviculture">
+      <hasNote>Silviculture</hasNote>
+    </node>
+    <node id="DISP501" label="Sites And Services">
+      <hasNote>Sites And Services</hasNote>
+    </node>
+    <node id="DISP502" label="Slum Clearance">
+      <hasNote>Slum Clearance</hasNote>
+    </node>
+    <node id="DISP503" label="Smart Growth">
+      <hasNote>Smart Growth</hasNote>
+    </node>
+    <node id="DISP504" label="Social Anthropology">
+      <hasNote>Social Anthropology</hasNote>
+    </node>
+    <node id="DISP505" label="Social History">
+      <hasNote>Social History</hasNote>
+    </node>
+    <node id="DISP506" label="Social Psychology">
+      <hasNote>Social Psychology</hasNote>
+    </node>
+    <node id="DISP507" label="Social Sciences">
+      <hasNote>Social Sciences</hasNote>
+    </node>
+    <node id="DISP508" label="Sociolinguistics">
+      <hasNote>Sociolinguistics</hasNote>
+    </node>
+    <node id="DISP509" label="Sociology">
+      <hasNote>Sociology</hasNote>
+    </node>
+    <node id="DISP510" label="Sociology Of Knowledge">
+      <hasNote>Sociology Of Knowledge</hasNote>
+    </node>
+    <node id="DISP511" label="Sociology Of Religion">
+      <hasNote>Sociology Of Religion</hasNote>
+    </node>
+    <node id="DISP512" label="Soil Science">
+      <hasNote>Soil Science</hasNote>
+    </node>
+    <node id="DISP513" label="Space Planning">
+      <hasNote>Space Planning</hasNote>
+    </node>
+    <node id="DISP514" label="Special Education">
+      <hasNote>Special Education</hasNote>
+    </node>
+    <node id="DISP515" label="Statistical Analysis">
+      <hasNote>Statistical Analysis</hasNote>
+    </node>
+    <node id="DISP516" label="Statistics">
+      <hasNote>Statistics</hasNote>
+    </node>
+    <node id="DISP517" label="Stereology">
+      <hasNote>Stereology</hasNote>
+    </node>
+    <node id="DISP518" label="Stratigraphy">
+      <hasNote>Stratigraphy</hasNote>
+    </node>
+    <node id="DISP519" label="Structural Anthropology">
+      <hasNote>Structural Anthropology</hasNote>
+    </node>
+    <node id="DISP520" label="Structural Dynamics">
+      <hasNote>Structural Dynamics</hasNote>
+    </node>
+    <node id="DISP521" label="Structural Engineering">
+      <hasNote>Structural Engineering</hasNote>
+    </node>
+    <node id="DISP522" label="Structural Geology">
+      <hasNote>Structural Geology</hasNote>
+    </node>
+    <node id="DISP523" label="Suburban Growth">
+      <hasNote>Suburban Growth</hasNote>
+    </node>
+    <node id="DISP524" label="Sustainable Agriculture (Discipline)">
+      <hasNote>Sustainable Agriculture (Discipline)</hasNote>
+    </node>
+    <node id="DISP525" label="Sustainable Conservation">
+      <hasNote>Sustainable Conservation</hasNote>
+    </node>
+    <node id="DISP526" label="Sustainable Development">
+      <hasNote>Sustainable Development</hasNote>
+    </node>
+    <node id="DISP527" label="Syntax">
+      <hasNote>Syntax</hasNote>
+    </node>
+    <node id="DISP528" label="Synthesis">
+      <hasNote>Synthesis</hasNote>
+    </node>
+    <node id="DISP529" label="Systems Engineering">
+      <hasNote>Systems Engineering</hasNote>
+    </node>
+    <node id="DISP530" label="Taphonomy">
+      <hasNote>Taphonomy</hasNote>
+    </node>
+    <node id="DISP531" label="Taxonomy (Discipline)">
+      <hasNote>Taxonomy (Discipline)</hasNote>
+    </node>
+    <node id="DISP532" label="Technical Art History">
+      <hasNote>Technical Art History</hasNote>
+    </node>
+    <node id="DISP533" label="Tectonics (Geology)">
+      <hasNote>Tectonics (Geology)</hasNote>
+    </node>
+    <node id="DISP534" label="Telecommunications">
+      <hasNote>Telecommunications</hasNote>
+    </node>
+    <node id="DISP535" label="Telematics">
+      <hasNote>Telematics</hasNote>
+    </node>
+    <node id="DISP536" label="Teleology">
+      <hasNote>Teleology</hasNote>
+    </node>
+    <node id="DISP537" label="Tephrochronology">
+      <hasNote>Tephrochronology</hasNote>
+    </node>
+    <node id="DISP538" label="Tetzahuitl">
+      <hasNote>Tetzahuitl</hasNote>
+    </node>
+    <node id="DISP539" label="Text Analysis">
+      <hasNote>Text Analysis</hasNote>
+    </node>
+    <node id="DISP540" label="Textile Design">
+      <hasNote>Textile Design</hasNote>
+    </node>
+    <node id="DISP541" label="Theater (Discipline)">
+      <hasNote>Theater (Discipline)</hasNote>
+    </node>
+    <node id="DISP542" label="Theater Arts">
+      <hasNote>Theater Arts</hasNote>
+    </node>
+    <node id="DISP543" label="Theology">
+      <hasNote>Theology</hasNote>
+    </node>
+    <node id="DISP544" label="Theoretical Linguistics">
+      <hasNote>Theoretical Linguistics</hasNote>
+    </node>
+    <node id="DISP545" label="Thermochemistry">
+      <hasNote>Thermochemistry</hasNote>
+    </node>
+    <node id="DISP546" label="Time Series Analysis">
+      <hasNote>Time Series Analysis</hasNote>
+    </node>
+    <node id="DISP547" label="Toponymy">
+      <hasNote>Toponymy</hasNote>
+    </node>
+    <node id="DISP548" label="Toxicology">
+      <hasNote>Toxicology</hasNote>
+    </node>
+    <node id="DISP549" label="Traditional Medicine">
+      <hasNote>Traditional Medicine</hasNote>
+    </node>
+    <node id="DISP550" label="Traffic Calming">
+      <hasNote>Traffic Calming</hasNote>
+    </node>
+    <node id="DISP551" label="Traffic Engineering">
+      <hasNote>Traffic Engineering</hasNote>
+    </node>
+    <node id="DISP552" label="Transit Advertising">
+      <hasNote>Transit Advertising</hasNote>
+    </node>
+    <node id="DISP553" label="Transportation Engineering (Civil Engineering)">
+      <hasNote>Transportation Engineering (Civil Engineering)</hasNote>
+    </node>
+    <node id="DISP554" label="Tribology">
+      <hasNote>Tribology</hasNote>
+    </node>
+    <node id="DISP555" label="Trigonometry">
+      <hasNote>Trigonometry</hasNote>
+    </node>
+    <node id="DISP556" label="Trivium">
+      <hasNote>Trivium</hasNote>
+    </node>
+    <node id="DISP557" label="Underwater Archaeology">
+      <hasNote>Underwater Archaeology</hasNote>
+    </node>
+    <node id="DISP558" label="Urban Archaeology">
+      <hasNote>Urban Archaeology</hasNote>
+    </node>
+    <node id="DISP559" label="Urban Beautification">
+      <hasNote>Urban Beautification</hasNote>
+    </node>
+    <node id="DISP560" label="Urban Design">
+      <hasNote>Urban Design</hasNote>
+    </node>
+    <node id="DISP561" label="Urban Development">
+      <hasNote>Urban Development</hasNote>
+    </node>
+    <node id="DISP562" label="Urban Forestry">
+      <hasNote>Urban Forestry</hasNote>
+    </node>
+    <node id="DISP563" label="Urban History">
+      <hasNote>Urban History</hasNote>
+    </node>
+    <node id="DISP564" label="Urban Homesteading">
+      <hasNote>Urban Homesteading</hasNote>
+    </node>
+    <node id="DISP565" label="Urban Land Use">
+      <hasNote>Urban Land Use</hasNote>
+    </node>
+    <node id="DISP566" label="Urban Management">
+      <hasNote>Urban Management</hasNote>
+    </node>
+    <node id="DISP567" label="Urban Planning">
+      <hasNote>Urban Planning</hasNote>
+    </node>
+    <node id="DISP568" label="Urban Renewal">
+      <hasNote>Urban Renewal</hasNote>
+    </node>
+    <node id="DISP569" label="Urban Sociology">
+      <hasNote>Urban Sociology</hasNote>
+    </node>
+    <node id="DISP570" label="Urban Studies">
+      <hasNote>Urban Studies</hasNote>
+    </node>
+    <node id="DISP571" label="Urbanization">
+      <hasNote>Urbanization</hasNote>
+    </node>
+    <node id="DISP572" label="Vertebrate Paleontology">
+      <hasNote>Vertebrate Paleontology</hasNote>
+    </node>
+    <node id="DISP573" label="Vertical Gardening">
+      <hasNote>Vertical Gardening</hasNote>
+    </node>
+    <node id="DISP574" label="Veterinary Medicine">
+      <hasNote>Veterinary Medicine</hasNote>
+    </node>
+    <node id="DISP575" label="Video (Discipline)">
+      <hasNote>Video (Discipline)</hasNote>
+    </node>
+    <node id="DISP576" label="Visual Arts (Discipline)">
+      <hasNote>Visual Arts (Discipline)</hasNote>
+    </node>
+    <node id="DISP577" label="Viticulture (Discipline)">
+      <hasNote>Viticulture (Discipline)</hasNote>
+    </node>
+    <node id="DISP578" label="Vocal Arts">
+      <hasNote>Vocal Arts</hasNote>
+    </node>
+    <node id="DISP579" label="Vāstuvidyā">
+      <hasNote>Vāstuvidyā</hasNote>
+    </node>
+    <node id="DISP580" label="Web Design">
+      <hasNote>Web Design</hasNote>
+    </node>
+    <node id="DISP581" label="Witchcraft">
+      <hasNote>Witchcraft</hasNote>
+    </node>
+    <node id="DISP582" label="Women's Studies">
+      <hasNote>Women's Studies</hasNote>
+    </node>
+    <node id="DISP583" label="X-Ray Optics">
+      <hasNote>X-Ray Optics</hasNote>
+    </node>
+    <node id="DISP584" label="Zoology">
+      <hasNote>Zoology</hasNote>
+    </node>
+  </isComposedBy>
+  <hasNote>E-RIHS Academic Discipline List</hasNote>
+</node>

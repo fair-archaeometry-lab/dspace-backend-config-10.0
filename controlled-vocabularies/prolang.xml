@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<node id="PROLANG" label="GitHub Programming Languages List">
+  <isComposedBy>
+    <node id="PROLANG1" label="1C Enterprise">
+      <hasNote>1C Enterprise</hasNote>
+    </node>
+    <node id="PROLANG2" label="ABAP">
+      <hasNote>ABAP</hasNote>
+    </node>
+    <node id="PROLANG3" label="ActionScript">
+      <hasNote>ActionScript</hasNote>
+    </node>
+    <node id="PROLANG4" label="Ada">
+      <hasNote>Ada</hasNote>
+    </node>
+    <node id="PROLANG5" label="Agda">
+      <hasNote>Agda</hasNote>
+    </node>
+    <node id="PROLANG6" label="AL">
+      <hasNote>AL</hasNote>
+    </node>
+    <node id="PROLANG7" label="AngelScript">
+      <hasNote>AngelScript</hasNote>
+    </node>
+    <node id="PROLANG8" label="Apex">
+      <hasNote>Apex</hasNote>
+    </node>
+    <node id="PROLANG9" label="APL">
+      <hasNote>APL</hasNote>
+    </node>
+    <node id="PROLANG10" label="AppleScript">
+      <hasNote>AppleScript</hasNote>
+    </node>
+    <node id="PROLANG11" label="Arc">
+      <hasNote>Arc</hasNote>
+    </node>
+    <node id="PROLANG12" label="ASP.NET">
+      <hasNote>ASP.NET</hasNote>
+    </node>
+    <node id="PROLANG13" label="Assembly">
+      <hasNote>Assembly</hasNote>
+    </node>
+    <node id="PROLANG14" label="AutoHotkey">
+      <hasNote>AutoHotkey</hasNote>
+    </node>
+    <node id="PROLANG15" label="AutoIt">
+      <hasNote>AutoIt</hasNote>
+    </node>
+    <node id="PROLANG16" label="Awk">
+      <hasNote>Awk</hasNote>
+    </node>
+    <node id="PROLANG17" label="Ballerina">
+      <hasNote>Ballerina</hasNote>
+    </node>
+    <node id="PROLANG18" label="Batchfile">
+      <hasNote>Batchfile</hasNote>
+    </node>
+    <node id="PROLANG19" label="Bicep">
+      <hasNote>Bicep</hasNote>
+    </node>
+    <node id="PROLANG20" label="BlitzMax">
+      <hasNote>BlitzMax</hasNote>
+    </node>
+    <node id="PROLANG21" label="Boo">
+      <hasNote>Boo</hasNote>
+    </node>
+    <node id="PROLANG22" label="Brainfuck">
+      <hasNote>Brainfuck</hasNote>
+    </node>
+    <node id="PROLANG23" label="Brightscript">
+      <hasNote>Brightscript</hasNote>
+    </node>
+    <node id="PROLANG24" label="C">
+      <hasNote>C</hasNote>
+    </node>
+    <node id="PROLANG25" label="C#">
+      <hasNote>C#</hasNote>
+    </node>
+    <node id="PROLANG26" label="C++">
+      <hasNote>C++</hasNote>
+    </node>
+    <node id="PROLANG27" label="Ceylon">
+      <hasNote>Ceylon</hasNote>
+    </node>
+    <node id="PROLANG28" label="Chapel">
+      <hasNote>Chapel</hasNote>
+    </node>
+    <node id="PROLANG29" label="Cirru">
+      <hasNote>Cirru</hasNote>
+    </node>
+    <node id="PROLANG30" label="Clarion">
+      <hasNote>Clarion</hasNote>
+    </node>
+    <node id="PROLANG31" label="Clean">
+      <hasNote>Clean</hasNote>
+    </node>
+    <node id="PROLANG32" label="Clojure">
+      <hasNote>Clojure</hasNote>
+    </node>
+    <node id="PROLANG33" label="CMake">
+      <hasNote>CMake</hasNote>
+    </node>
+    <node id="PROLANG34" label="COBOL">
+      <hasNote>COBOL</hasNote>
+    </node>
+    <node id="PROLANG35" label="CoffeeScript">
+      <hasNote>CoffeeScript</hasNote>
+    </node>
+    <node id="PROLANG36" label="Common Lisp">
+      <hasNote>Common Lisp</hasNote>
+    </node>
+    <node id="PROLANG37" label="Cool">
+      <hasNote>Cool</hasNote>
+    </node>
+    <node id="PROLANG38" label="Crystal">
+      <hasNote>Crystal</hasNote>
+    </node>
+    <node id="PROLANG39" label="D">
+      <hasNote>D</hasNote>
+    </node>
+    <node id="PROLANG40" label="Dart">
+      <hasNote>Dart</hasNote>
+    </node>
+    <node id="PROLANG41" label="Dhall">
+      <hasNote>Dhall</hasNote>
+    </node>
+    <node id="PROLANG42" label="DM">
+      <hasNote>DM</hasNote>
+    </node>
+    <node id="PROLANG43" label="Dylan">
+      <hasNote>Dylan</hasNote>
+    </node>
+    <node id="PROLANG44" label="Eiffel">
+      <hasNote>Eiffel</hasNote>
+    </node>
+    <node id="PROLANG45" label="Elixir">
+      <hasNote>Elixir</hasNote>
+    </node>
+    <node id="PROLANG46" label="Elm">
+      <hasNote>Elm</hasNote>
+    </node>
+    <node id="PROLANG47" label="Emacs Lisp">
+      <hasNote>Emacs Lisp</hasNote>
+    </node>
+    <node id="PROLANG48" label="Erlang">
+      <hasNote>Erlang</hasNote>
+    </node>
+    <node id="PROLANG49" label="F#">
+      <hasNote>F#</hasNote>
+    </node>
+    <node id="PROLANG50" label="Factor">
+      <hasNote>Factor</hasNote>
+    </node>
+    <node id="PROLANG51" label="Forth">
+      <hasNote>Forth</hasNote>
+    </node>
+    <node id="PROLANG52" label="Fortran">
+      <hasNote>Fortran</hasNote>
+    </node>
+    <node id="PROLANG53" label="FreeMarker">
+      <hasNote>FreeMarker</hasNote>
+    </node>
+    <node id="PROLANG54" label="F*">
+      <hasNote>F*</hasNote>
+    </node>
+    <node id="PROLANG55" label="GDScript">
+      <hasNote>GDScript</hasNote>
+    </node>
+    <node id="PROLANG56" label="Gleam">
+      <hasNote>Gleam</hasNote>
+    </node>
+    <node id="PROLANG57" label="Go">
+      <hasNote>Go</hasNote>
+    </node>
+    <node id="PROLANG58" label="Gosu">
+      <hasNote>Gosu</hasNote>
+    </node>
+    <node id="PROLANG59" label="Grammatical Framework">
+      <hasNote>Grammatical Framework</hasNote>
+    </node>
+    <node id="PROLANG60" label="Groovy">
+      <hasNote>Groovy</hasNote>
+    </node>
+    <node id="PROLANG61" label="Hack">
+      <hasNote>Hack</hasNote>
+    </node>
+    <node id="PROLANG62" label="Haskell">
+      <hasNote>Haskell</hasNote>
+    </node>
+    <node id="PROLANG63" label="Haxe">
+      <hasNote>Haxe</hasNote>
+    </node>
+    <node id="PROLANG64" label="Idris">
+      <hasNote>Idris</hasNote>
+    </node>
+    <node id="PROLANG65" label="Io">
+      <hasNote>Io</hasNote>
+    </node>
+    <node id="PROLANG66" label="J">
+      <hasNote>J</hasNote>
+    </node>
+    <node id="PROLANG67" label="Java">
+      <hasNote>Java</hasNote>
+    </node>
+    <node id="PROLANG68" label="JavaScript">
+      <hasNote>JavaScript</hasNote>
+    </node>
+    <node id="PROLANG69" label="Jinja">
+      <hasNote>Jinja</hasNote>
+    </node>
+    <node id="PROLANG70" label="Julia">
+      <hasNote>Julia</hasNote>
+    </node>
+    <node id="PROLANG71" label="Kotlin">
+      <hasNote>Kotlin</hasNote>
+    </node>
+    <node id="PROLANG72" label="Lasso">
+      <hasNote>Lasso</hasNote>
+    </node>
+    <node id="PROLANG73" label="LiveScript">
+      <hasNote>LiveScript</hasNote>
+    </node>
+    <node id="PROLANG74" label="Lua">
+      <hasNote>Lua</hasNote>
+    </node>
+    <node id="PROLANG75" label="MATLAB">
+      <hasNote>MATLAB</hasNote>
+    </node>
+    <node id="PROLANG76" label="MoonScript">
+      <hasNote>MoonScript</hasNote>
+    </node>
+    <node id="PROLANG77" label="Nim">
+      <hasNote>Nim</hasNote>
+    </node>
+    <node id="PROLANG78" label="OCaml">
+      <hasNote>OCaml</hasNote>
+    </node>
+    <node id="PROLANG79" label="Perl">
+      <hasNote>Perl</hasNote>
+    </node>
+    <node id="PROLANG80" label="PHP">
+      <hasNote>PHP</hasNote>
+    </node>
+    <node id="PROLANG81" label="Prolog">
+      <hasNote>Prolog</hasNote>
+    </node>
+    <node id="PROLANG82" label="PureScript">
+      <hasNote>PureScript</hasNote>
+    </node>
+    <node id="PROLANG83" label="Python">
+      <hasNote>Python</hasNote>
+    </node>
+    <node id="PROLANG84" label="R">
+      <hasNote>R</hasNote>
+    </node>
+    <node id="PROLANG85" label="Racket">
+      <hasNote>Racket</hasNote>
+    </node>
+    <node id="PROLANG86" label="Raku">
+      <hasNote>Raku</hasNote>
+    </node>
+    <node id="PROLANG87" label="Ruby">
+      <hasNote>Ruby</hasNote>
+    </node>
+    <node id="PROLANG88" label="Rust">
+      <hasNote>Rust</hasNote>
+    </node>
+    <node id="PROLANG89" label="Scala">
+      <hasNote>Scala</hasNote>
+    </node>
+    <node id="PROLANG90" label="Scheme">
+      <hasNote>Scheme</hasNote>
+    </node>
+    <node id="PROLANG91" label="Shell">
+      <hasNote>Shell</hasNote>
+    </node>
+    <node id="PROLANG92" label="Solidity">
+      <hasNote>Solidity</hasNote>
+    </node>
+    <node id="PROLANG93" label="Swift">
+      <hasNote>Swift</hasNote>
+    </node>
+    <node id="PROLANG94" label="TypeScript">
+      <hasNote>TypeScript</hasNote>
+    </node>
+    <node id="PROLANG95" label="V">
+      <hasNote>V</hasNote>
+    </node>
+    <node id="PROLANG96" label="Vala">
+      <hasNote>Vala</hasNote>
+    </node>
+    <node id="PROLANG97" label="Verilog">
+      <hasNote>Verilog</hasNote>
+    </node>
+    <node id="PROLANG98" label="VHDL">
+      <hasNote>VHDL</hasNote>
+    </node>
+    <node id="PROLANG99" label="Zig">
+      <hasNote>Zig</hasNote>
+    </node>
+  </isComposedBy>
+  <hasNote>GitHub Programming Languages List</hasNote>
+</node>

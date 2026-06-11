@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="AMGC" label="Analytical Techniques">
+    <isComposedBy>
+        <node id="AMGC1" label="Accelerator mass spectrometry">
+            <hasNote>Accelerator mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC2" label="Mass spectrometry">
+            <hasNote>Mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC3" label="Acid reaction carbonate analysis">
+            <hasNote>Acid reaction carbonate analysis</hasNote>
+        </node>
+        <node id="AMGC4" label="Wet chemistry">
+            <hasNote>Wet chemistry</hasNote>
+        </node>
+        <node id="AMGC5" label="Adsorption analysis">
+            <hasNote>Adsorption analysis</hasNote>
+        </node>
+        <node id="AMGC6" label="Physical property measurement">
+            <hasNote>Physical property measurement</hasNote>
+        </node>
+        <node id="AMGC7" label="AFM topography imaging">
+            <hasNote>AFM topography imaging</hasNote>
+        </node>
+        <node id="AMGC8" label="Atomic force microscopy">
+            <hasNote>Atomic force microscopy</hasNote>
+        </node>
+        <node id="AMGC9" label="Imaging techniques">
+            <hasNote>Imaging techniques</hasNote>
+        </node>
+        <node id="AMGC10" label="Surface analysis">
+            <hasNote>Surface analysis</hasNote>
+        </node>
+        <node id="AMGC11" label="Alpha particle counting">
+            <hasNote>Alpha particle counting</hasNote>
+        </node>
+        <node id="AMGC12" label="Particle counting">
+            <hasNote>Particle counting</hasNote>
+        </node>
+        <node id="AMGC13" label="Alpha particle spectrometry">
+            <hasNote>Alpha particle spectrometry</hasNote>
+        </node>
+        <node id="AMGC14" label="Particle spectrometry">
+            <hasNote>Particle spectrometry</hasNote>
+        </node>
+        <node id="AMGC15" label="Alpha recoil track counting">
+            <hasNote>Alpha recoil track counting</hasNote>
+        </node>
+        <node id="AMGC16" label="Geochronology techiques">
+            <hasNote>Geochronology techiques</hasNote>
+        </node>
+        <node id="AMGC17" label="Track counting">
+            <hasNote>Track counting</hasNote>
+        </node>
+        <node id="AMGC18" label="Amperometry">
+            <hasNote>Amperometry</hasNote>
+        </node>
+        <node id="AMGC19" label="Electrochemical techniques">
+            <hasNote>Electrochemical techniques</hasNote>
+        </node>
+        <node id="AMGC20" label="Analytical method">
+            <hasNote>Analytical method</hasNote>
+        </node>
+        <node id="AMGC21" label="Angle of repose measurement">
+            <hasNote>Angle of repose measurement</hasNote>
+        </node>
+        <node id="AMGC22" label="Anion chromatography analysis">
+            <hasNote>Anion chromatography analysis</hasNote>
+        </node>
+        <node id="AMGC23" label="Ion chromatography analysis">
+            <hasNote>Ion chromatography analysis</hasNote>
+        </node>
+        <node id="AMGC24" label="Atomic absorption spectrometry">
+            <hasNote>Atomic absorption spectrometry</hasNote>
+        </node>
+        <node id="AMGC25" label="Optical spectrometry">
+            <hasNote>Optical spectrometry</hasNote>
+        </node>
+        <node id="AMGC26" label="Atom probe tomography">
+            <hasNote>Atom probe tomography</hasNote>
+        </node>
+        <node id="AMGC27" label="Auger electron spectroscopy">
+            <hasNote>Auger electron spectroscopy</hasNote>
+        </node>
+        <node id="AMGC28" label="Electron spectrometry">
+            <hasNote>Electron spectrometry</hasNote>
+        </node>
+        <node id="AMGC29" label="Backscattered electron grain boundary imaging">
+            <hasNote>Backscattered electron grain boundary imaging</hasNote>
+        </node>
+        <node id="AMGC30" label="Electron microscopy imaging">
+            <hasNote>Electron microscopy imaging</hasNote>
+        </node>
+        <node id="AMGC31" label="Backscattered electron imaging">
+            <hasNote>Backscattered electron imaging</hasNote>
+        </node>
+        <node id="AMGC32" label="Bench chemistry">
+            <hasNote>Bench chemistry</hasNote>
+        </node>
+        <node id="AMGC33" label="Beta counting">
+            <hasNote>Beta counting</hasNote>
+        </node>
+        <node id="AMGC34" label="Bioanalytical method">
+            <hasNote>Bioanalytical method</hasNote>
+        </node>
+        <node id="AMGC35" label="Broad beam X-ray spectrometry">
+            <hasNote>Broad beam X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC36" label="X-ray spectrometry">
+            <hasNote>X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC37" label="Capacitance dilatometry">
+            <hasNote>Capacitance dilatometry</hasNote>
+        </node>
+        <node id="AMGC38" label="Carbonate bomb analysis">
+            <hasNote>Carbonate bomb analysis</hasNote>
+        </node>
+        <node id="AMGC39" label="Catalytic combustion analysis">
+            <hasNote>Catalytic combustion analysis</hasNote>
+        </node>
+        <node id="AMGC40" label="Combustion infrared spectrometry">
+            <hasNote>Combustion infrared spectrometry</hasNote>
+        </node>
+        <node id="AMGC41" label="Cathodoluminescence imaging">
+            <hasNote>Cathodoluminescence imaging</hasNote>
+        </node>
+        <node id="AMGC42" label="Cation chromatography analysis">
+            <hasNote>Cation chromatography analysis</hasNote>
+        </node>
+        <node id="AMGC43" label="Cavity enhanced absorption spectrometry">
+            <hasNote>Cavity enhanced absorption spectrometry</hasNote>
+        </node>
+        <node id="AMGC44" label="Laser absorption spectrometry">
+            <hasNote>Laser absorption spectrometry</hasNote>
+        </node>
+        <node id="AMGC45" label="Cavity ring-down spectrometry">
+            <hasNote>Cavity ring-down spectrometry</hasNote>
+        </node>
+        <node id="AMGC46" label="Charmograph analysis">
+            <hasNote>Charmograph analysis</hasNote>
+        </node>
+        <node id="AMGC47" label="Chromatography analysis">
+            <hasNote>Chromatography analysis</hasNote>
+        </node>
+        <node id="AMGC48" label="Colormetric analysis">
+            <hasNote>Colormetric analysis</hasNote>
+        </node>
+        <node id="AMGC49" label="Spectrophotometry">
+            <hasNote>Spectrophotometry</hasNote>
+        </node>
+        <node id="AMGC50" label="Combustion analysis">
+            <hasNote>Combustion analysis</hasNote>
+        </node>
+        <node id="AMGC51" label="Combustion gas chromatography">
+            <hasNote>Combustion gas chromatography</hasNote>
+        </node>
+        <node id="AMGC52" label="Gas chromatography analysis">
+            <hasNote>Gas chromatography analysis</hasNote>
+        </node>
+        <node id="AMGC53" label="Combustion gas chromatography isotopic ratio mass spectrometry">
+            <hasNote>Combustion gas chromatography isotopic ratio mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC54" label="Gas chromatography mass spectrometry">
+            <hasNote>Gas chromatography mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC55" label="Isotope ratio mass spectrometry">
+            <hasNote>Isotope ratio mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC56" label="Infrared spectrometry">
+            <hasNote>Infrared spectrometry</hasNote>
+        </node>
+        <node id="AMGC57" label="Combustion Ion Chromatography">
+            <hasNote>Combustion Ion Chromatography</hasNote>
+        </node>
+        <node id="AMGC58" label="Compression test">
+            <hasNote>Compression test</hasNote>
+        </node>
+        <node id="AMGC59" label="Confocal X-ray fluorescence spectrometry">
+            <hasNote>Confocal X-ray fluorescence spectrometry</hasNote>
+        </node>
+        <node id="AMGC60" label="X-ray fluorescence spectrometry">
+            <hasNote>X-ray fluorescence spectrometry</hasNote>
+        </node>
+        <node id="AMGC61" label="Continuous flow isotope ratio mass spectrometry">
+            <hasNote>Continuous flow isotope ratio mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC62" label="Elemental analysis mass spectrometry">
+            <hasNote>Elemental analysis mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC63" label="Coulometrical analysis">
+            <hasNote>Coulometrical analysis</hasNote>
+        </node>
+        <node id="AMGC64" label="Desorption electrospray ionization orbitrap mass spectrometry">
+            <hasNote>Desorption electrospray ionization orbitrap mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC65" label="Orbitrap mass spectrometry">
+            <hasNote>Orbitrap mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC66" label="Deuteron activation analysis">
+            <hasNote>Deuteron activation analysis</hasNote>
+        </node>
+        <node id="AMGC67" label="Activation analysis">
+            <hasNote>Activation analysis</hasNote>
+        </node>
+        <node id="AMGC68" label="Dietrich-Fruhling calcimetry">
+            <hasNote>Dietrich-Fruhling calcimetry</hasNote>
+        </node>
+        <node id="AMGC69" label="Differential scanning calorimetry">
+            <hasNote>Differential scanning calorimetry</hasNote>
+        </node>
+        <node id="AMGC70" label="Thermal analysis">
+            <hasNote>Thermal analysis</hasNote>
+        </node>
+        <node id="AMGC71" label="Differential thermal analysis">
+            <hasNote>Differential thermal analysis</hasNote>
+        </node>
+        <node id="AMGC72" label="Direct current plasma emission spectrometry">
+            <hasNote>Direct current plasma emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC73" label="Plasma emission spectrometry">
+            <hasNote>Plasma emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC74" label="Direct current plasma spectrometry">
+            <hasNote>Direct current plasma spectrometry</hasNote>
+        </node>
+        <node id="AMGC75" label="Plasma optical spectrometry">
+            <hasNote>Plasma optical spectrometry</hasNote>
+        </node>
+        <node id="AMGC76" label="Direct shear strength measurement">
+            <hasNote>Direct shear strength measurement</hasNote>
+        </node>
+        <node id="AMGC77" label="DNA sequencing">
+            <hasNote>DNA sequencing</hasNote>
+        </node>
+        <node id="AMGC78" label="Dual inlet isotope ratio mass spectrometry">
+            <hasNote>Dual inlet isotope ratio mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC79" label="Electrical conductivity measurement">
+            <hasNote>Electrical conductivity measurement</hasNote>
+        </node>
+        <node id="AMGC80" label="Electrochemical impedance spectroscopy">
+            <hasNote>Electrochemical impedance spectroscopy</hasNote>
+        </node>
+        <node id="AMGC81" label="Electron backscatter diffraction">
+            <hasNote>Electron backscatter diffraction</hasNote>
+        </node>
+        <node id="AMGC82" label="Electron diffraction">
+            <hasNote>Electron diffraction</hasNote>
+        </node>
+        <node id="AMGC83" label="Electron energy loss spectrometry">
+            <hasNote>Electron energy loss spectrometry</hasNote>
+        </node>
+        <node id="AMGC84" label="Particle beam excitation">
+            <hasNote>Particle beam excitation</hasNote>
+        </node>
+        <node id="AMGC85" label="Electron induced X-ray spectrometry">
+            <hasNote>Electron induced X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC86" label="Electron spin resonance age analysis">
+            <hasNote>Electron spin resonance age analysis</hasNote>
+        </node>
+        <node id="AMGC87" label="Electrothermal absorption spectrometry">
+            <hasNote>Electrothermal absorption spectrometry</hasNote>
+        </node>
+        <node id="AMGC88" label="Elemental analysis">
+            <hasNote>Elemental analysis</hasNote>
+        </node>
+        <node id="AMGC89" label="Elemental analysis infrared spectrometry">
+            <hasNote>Elemental analysis infrared spectrometry</hasNote>
+        </node>
+        <node id="AMGC90" label="Elemental analysis isotope ratio mass spectrometry">
+            <hasNote>Elemental analysis isotope ratio mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC91" label="Emission spectrometry">
+            <hasNote>Emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC92" label="Energy dispersive electron induced X-ray spectrometry">
+            <hasNote>Energy dispersive electron induced X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC93" label="Energy dispersive X-ray spectrometry">
+            <hasNote>Energy dispersive X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC94" label="Energy dispersive X-ray fluorescence spectrometry">
+            <hasNote>Energy dispersive X-ray fluorescence spectrometry</hasNote>
+        </node>
+        <node id="AMGC95" label="Energy dispersive X-ray spectral data 2D raster">
+            <hasNote>Energy dispersive X-ray spectral data 2D raster</hasNote>
+        </node>
+        <node id="AMGC96" label="X-ray composition map">
+            <hasNote>X-ray composition map</hasNote>
+        </node>
+        <node id="AMGC97" label="Energy-filtered transmission electron imaging">
+            <hasNote>Energy-filtered transmission electron imaging</hasNote>
+        </node>
+        <node id="AMGC98" label="Transmission electron imaging">
+            <hasNote>Transmission electron imaging</hasNote>
+        </node>
+        <node id="AMGC99" label="Epithermal neutron activation analysis">
+            <hasNote>Epithermal neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC100" label="Neutron activation analysis">
+            <hasNote>Neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC101" label="Extended X-ray absorption fine structure">
+            <hasNote>Extended X-ray absorption fine structure</hasNote>
+        </node>
+        <node id="AMGC102" label="X-ray absorption spectrometry">
+            <hasNote>X-ray absorption spectrometry</hasNote>
+        </node>
+        <node id="AMGC103" label="Fast neutron activation analysis">
+            <hasNote>Fast neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC104" label="Fire assay emission spectrometry">
+            <hasNote>Fire assay emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC105" label="Fission track counting">
+            <hasNote>Fission track counting</hasNote>
+        </node>
+        <node id="AMGC106" label="Flame emission spectrometry">
+            <hasNote>Flame emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC107" label="Flow cytometry">
+            <hasNote>Flow cytometry</hasNote>
+        </node>
+        <node id="AMGC108" label="Fluorescence microscopy">
+            <hasNote>Fluorescence microscopy</hasNote>
+        </node>
+        <node id="AMGC109" label="Microscopy">
+            <hasNote>Microscopy</hasNote>
+        </node>
+        <node id="AMGC110" label="Fluorescence spectrometry">
+            <hasNote>Fluorescence spectrometry</hasNote>
+        </node>
+        <node id="AMGC111" label="Photon spectrometry">
+            <hasNote>Photon spectrometry</hasNote>
+        </node>
+        <node id="AMGC112" label="Fluorescent in situ hybridization">
+            <hasNote>Fluorescent in situ hybridization</hasNote>
+        </node>
+        <node id="AMGC113" label="Focused ion beam scanning microscopy">
+            <hasNote>Focused ion beam scanning microscopy</hasNote>
+        </node>
+        <node id="AMGC114" label="Fourier transform infrared spectrometry">
+            <hasNote>Fourier transform infrared spectrometry</hasNote>
+        </node>
+        <node id="AMGC115" label="Fourier transform ion cyclotron resonance mass spectrometry">
+            <hasNote>Fourier transform ion cyclotron resonance mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC116" label="Gamma counting">
+            <hasNote>Gamma counting</hasNote>
+        </node>
+        <node id="AMGC117" label="Gamma ray spectrometry">
+            <hasNote>Gamma ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC118" label="Gas chromatography flame ionization detection">
+            <hasNote>Gas chromatography flame ionization detection</hasNote>
+        </node>
+        <node id="AMGC119" label="Gas chromatography thermal conductivity detection">
+            <hasNote>Gas chromatography thermal conductivity detection</hasNote>
+        </node>
+        <node id="AMGC120" label="Gas pycnometry">
+            <hasNote>Gas pycnometry</hasNote>
+        </node>
+        <node id="AMGC121" label="40Ar-39Ar geochronology">
+            <hasNote>40Ar-39Ar geochronology</hasNote>
+        </node>
+        <node id="AMGC122" label="Glow discharge mass spectrometry">
+            <hasNote>Glow discharge mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC123" label="Gradient ion chromatography analysis">
+            <hasNote>Gradient ion chromatography analysis</hasNote>
+        </node>
+        <node id="AMGC124" label="Gravimetric analysis">
+            <hasNote>Gravimetric analysis</hasNote>
+        </node>
+        <node id="AMGC125" label="Gutzeit test">
+            <hasNote>Gutzeit test</hasNote>
+        </node>
+        <node id="AMGC126" label="High resolution inductively coupled plasma mass spectrometry (deprecated)">
+            <hasNote>High resolution inductively coupled plasma mass spectrometry (deprecated)</hasNote>
+        </node>
+        <node id="AMGC127" label="Inductively coupled plasma mass spectrometry">
+            <hasNote>Inductively coupled plasma mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC128" label="Hybridization assay">
+            <hasNote>Hybridization assay</hasNote>
+        </node>
+        <node id="AMGC129" label="Induction heating analysis">
+            <hasNote>Induction heating analysis</hasNote>
+        </node>
+        <node id="AMGC130" label="Inductively coupled plasma emission spectrometry">
+            <hasNote>Inductively coupled plasma emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC131" label="Plasma source mass spectrometry">
+            <hasNote>Plasma source mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC132" label="Inductively coupled plasma optical emission spectrometry">
+            <hasNote>Inductively coupled plasma optical emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC133" label="Infrared absorption spectrometry">
+            <hasNote>Infrared absorption spectrometry</hasNote>
+        </node>
+        <node id="AMGC134" label="Infrared optical spectrometry">
+            <hasNote>Infrared optical spectrometry</hasNote>
+        </node>
+        <node id="AMGC135" label="Infrared photometry">
+            <hasNote>Infrared photometry</hasNote>
+        </node>
+        <node id="AMGC136" label="Photometry">
+            <hasNote>Photometry</hasNote>
+        </node>
+        <node id="AMGC137" label="Infrared reflectance">
+            <hasNote>Infrared reflectance</hasNote>
+        </node>
+        <node id="AMGC138" label="Infrared transmission spectrometry">
+            <hasNote>Infrared transmission spectrometry</hasNote>
+        </node>
+        <node id="AMGC139" label="Transmission spectrometry">
+            <hasNote>Transmission spectrometry</hasNote>
+        </node>
+        <node id="AMGC140" label="Instrumental neutron activation analysis">
+            <hasNote>Instrumental neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC141" label="Liquid chromatography analysis">
+            <hasNote>Liquid chromatography analysis</hasNote>
+        </node>
+        <node id="AMGC142" label="Ion sensitive electrode analysis">
+            <hasNote>Ion sensitive electrode analysis</hasNote>
+        </node>
+        <node id="AMGC143" label="Potentiometry">
+            <hasNote>Potentiometry</hasNote>
+        </node>
+        <node id="AMGC144" label="Laser ablation inductively coupled plasma mass spectrometry">
+            <hasNote>Laser ablation inductively coupled plasma mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC145" label="Laser ablation mass spectrometry">
+            <hasNote>Laser ablation mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC146" label="Laser ablation resonance ionization mass spectrometry">
+            <hasNote>Laser ablation resonance ionization mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC147" label="Resonance ionization mass spectrometry">
+            <hasNote>Resonance ionization mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC148" label="Laser fluorination mass spectrometry">
+            <hasNote>Laser fluorination mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC149" label="Laser Induced Breakdown Spectrometry">
+            <hasNote>Laser Induced Breakdown Spectrometry</hasNote>
+        </node>
+        <node id="AMGC150" label="Laser ionization mass spectrometry">
+            <hasNote>Laser ionization mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC151" label="Laser ablation split stream mass spectrometry">
+            <hasNote>Laser ablation split stream mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC152" label="LECO furnace analysis">
+            <hasNote>LECO furnace analysis</hasNote>
+        </node>
+        <node id="AMGC153" label="Liquid chromatography mass spectrometry">
+            <hasNote>Liquid chromatography mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC154" label="Liquid chromatography organic carbon detection">
+            <hasNote>Liquid chromatography organic carbon detection</hasNote>
+        </node>
+        <node id="AMGC155" label="Liquid inlet inductively coupled plasma mass spectrometry">
+            <hasNote>Liquid inlet inductively coupled plasma mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC156" label="Lock in thermography">
+            <hasNote>Lock in thermography</hasNote>
+        </node>
+        <node id="AMGC157" label="Loss on ignition analysis">
+            <hasNote>Loss on ignition analysis</hasNote>
+        </node>
+        <node id="AMGC158" label="Magnetic field measurement">
+            <hasNote>Magnetic field measurement</hasNote>
+        </node>
+        <node id="AMGC159" label="Manometry">
+            <hasNote>Manometry</hasNote>
+        </node>
+        <node id="AMGC160" label="Micromass multiprep mass spectrometry">
+            <hasNote>Micromass multiprep mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC161" label="Microprobe two step laser mass spectrometry">
+            <hasNote>Microprobe two step laser mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC162" label="Microscopic X-ray imaging">
+            <hasNote>Microscopic X-ray imaging</hasNote>
+        </node>
+        <node id="AMGC163" label="X-ray imaging">
+            <hasNote>X-ray imaging</hasNote>
+        </node>
+        <node id="AMGC164" label="Micro X-ray fluorescence spectrometry">
+            <hasNote>Micro X-ray fluorescence spectrometry</hasNote>
+        </node>
+        <node id="AMGC165" label="Synchroton X-ray fluorescence spectrometry">
+            <hasNote>Synchroton X-ray fluorescence spectrometry</hasNote>
+        </node>
+        <node id="AMGC166" label="Mini cryogen free measurement system for thermal conductivity">
+            <hasNote>Mini cryogen free measurement system for thermal conductivity</hasNote>
+        </node>
+        <node id="AMGC167" label="Moisture analysis">
+            <hasNote>Moisture analysis</hasNote>
+        </node>
+        <node id="AMGC168" label="Other">
+            <hasNote>Other</hasNote>
+        </node>
+        <node id="AMGC169" label="Mossbauer spectrometry">
+            <hasNote>Mossbauer spectrometry</hasNote>
+        </node>
+        <node id="AMGC170" label="Multi collector inductively coupled plasma mass spectrometry">
+            <hasNote>Multi collector inductively coupled plasma mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC171" label="Nanoindentation and microindentation">
+            <hasNote>Nanoindentation and microindentation</hasNote>
+        </node>
+        <node id="AMGC172" label="Nanoscale infrared spectrometry">
+            <hasNote>Nanoscale infrared spectrometry</hasNote>
+        </node>
+        <node id="AMGC173" label="Negative ion thermal ionization mass spectrometry">
+            <hasNote>Negative ion thermal ionization mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC174" label="Thermal ionization mass spectrometry">
+            <hasNote>Thermal ionization mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC175" label="Neutron counting">
+            <hasNote>Neutron counting</hasNote>
+        </node>
+        <node id="AMGC176" label="Neutron irradiation noble gas mass spectrometry">
+            <hasNote>Neutron irradiation noble gas mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC177" label="Noble gas mass spectrometry">
+            <hasNote>Noble gas mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC178" label="Next generation sequencing">
+            <hasNote>Next generation sequencing</hasNote>
+        </node>
+        <node id="AMGC179" label="Nuclear magnetic resonance spectrometry">
+            <hasNote>Nuclear magnetic resonance spectrometry</hasNote>
+        </node>
+        <node id="AMGC180" label="Spectrometry">
+            <hasNote>Spectrometry</hasNote>
+        </node>
+        <node id="AMGC181" label="Nuclear microprobe analysis">
+            <hasNote>Nuclear microprobe analysis</hasNote>
+        </node>
+        <node id="AMGC182" label="Nuclear particle track counting">
+            <hasNote>Nuclear particle track counting</hasNote>
+        </node>
+        <node id="AMGC183" label="Nuclear reaction spectrometry">
+            <hasNote>Nuclear reaction spectrometry</hasNote>
+        </node>
+        <node id="AMGC184" label="Optical emission spectrometry">
+            <hasNote>Optical emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC185" label="Particle cohesion determination">
+            <hasNote>Particle cohesion determination</hasNote>
+        </node>
+        <node id="AMGC186" label="Particle induced X-ray spectrometry">
+            <hasNote>Particle induced X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC187" label="Particle size distribution analysis">
+            <hasNote>Particle size distribution analysis</hasNote>
+        </node>
+        <node id="AMGC188" label="Penfield method analysis">
+            <hasNote>Penfield method analysis</hasNote>
+        </node>
+        <node id="AMGC189" label="pH measurement">
+            <hasNote>pH measurement</hasNote>
+        </node>
+        <node id="AMGC190" label="Photon activation analysis">
+            <hasNote>Photon activation analysis</hasNote>
+        </node>
+        <node id="AMGC191" label="Pre irradiation group concentration neutron activation analysis">
+            <hasNote>Pre irradiation group concentration neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC192" label="Plasma optical emission spectrometry">
+            <hasNote>Plasma optical emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC193" label="Point counting">
+            <hasNote>Point counting</hasNote>
+        </node>
+        <node id="AMGC194" label="Visible light microscopy">
+            <hasNote>Visible light microscopy</hasNote>
+        </node>
+        <node id="AMGC195" label="Polarography">
+            <hasNote>Polarography</hasNote>
+        </node>
+        <node id="AMGC196" label="Voltammetry">
+            <hasNote>Voltammetry</hasNote>
+        </node>
+        <node id="AMGC197" label="Porosimetry">
+            <hasNote>Porosimetry</hasNote>
+        </node>
+        <node id="AMGC198" label="Positive ion thermal ionization mass spectrometry">
+            <hasNote>Positive ion thermal ionization mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC199" label="Prompt gamma neutron activation analysis">
+            <hasNote>Prompt gamma neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC200" label="Pyrolysis gas chromatography">
+            <hasNote>Pyrolysis gas chromatography</hasNote>
+        </node>
+        <node id="AMGC201" label="Pyrolysis gas chromatography flame ionization detection">
+            <hasNote>Pyrolysis gas chromatography flame ionization detection</hasNote>
+        </node>
+        <node id="AMGC202" label="Pyrolysis gas chromatography mass spectrometry">
+            <hasNote>Pyrolysis gas chromatography mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC203" label="Quadrupole inductively coupled plasma mass spectrometry">
+            <hasNote>Quadrupole inductively coupled plasma mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC204" label="Quantitative analysis electron induced X-ray spectrometry">
+            <hasNote>Quantitative analysis electron induced X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC205" label="Quantitative analysis particle induced X-ray spectrometry">
+            <hasNote>Quantitative analysis particle induced X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC206" label="Quantitative polymerase chain reaction">
+            <hasNote>Quantitative polymerase chain reaction</hasNote>
+        </node>
+        <node id="AMGC207" label="Quantitative reflectance imaging">
+            <hasNote>Quantitative reflectance imaging</hasNote>
+        </node>
+        <node id="AMGC208" label="Radiochemical neutron activation analysis">
+            <hasNote>Radiochemical neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC209" label="Raman spectrometry">
+            <hasNote>Raman spectrometry</hasNote>
+        </node>
+        <node id="AMGC210" label="Redox potential measurement">
+            <hasNote>Redox potential measurement</hasNote>
+        </node>
+        <node id="AMGC211" label="Resonance ionization time of flight noble gas mass spectrometry">
+            <hasNote>Resonance ionization time of flight noble gas mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC212" label="Sanger sequencing">
+            <hasNote>Sanger sequencing</hasNote>
+        </node>
+        <node id="AMGC213" label="Sample preparation (mineralogy)">
+            <hasNote>Sample preparation (mineralogy)</hasNote>
+        </node>
+        <node id="AMGC214" label="Scanning transmission electron imaging">
+            <hasNote>Scanning transmission electron imaging</hasNote>
+        </node>
+        <node id="AMGC215" label="Secondary electron imaging">
+            <hasNote>Secondary electron imaging</hasNote>
+        </node>
+        <node id="AMGC216" label="Secondary ionization mass spectrometry">
+            <hasNote>Secondary ionization mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC217" label="Secondary neutral mass spectrometry">
+            <hasNote>Secondary neutral mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC218" label="Sector field inductively coupled plasma mass spectrometry">
+            <hasNote>Sector field inductively coupled plasma mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC219" label="Seismic velocity and ultrasonic elastic constant measurement">
+            <hasNote>Seismic velocity and ultrasonic elastic constant measurement</hasNote>
+        </node>
+        <node id="AMGC220" label="Shotgun method">
+            <hasNote>Shotgun method</hasNote>
+        </node>
+        <node id="AMGC221" label="Sensitive high-mass-resolution ion microprobe">
+            <hasNote>Sensitive high-mass-resolution ion microprobe</hasNote>
+        </node>
+        <node id="AMGC222" label="Single crystal X-ray diffraction">
+            <hasNote>Single crystal X-ray diffraction</hasNote>
+        </node>
+        <node id="AMGC223" label="X-ray diffraction">
+            <hasNote>X-ray diffraction</hasNote>
+        </node>
+        <node id="AMGC224" label="Solid source mass spectrometry">
+            <hasNote>Solid source mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC225" label="Solid state nuclear magnetic resonance spectroscopy">
+            <hasNote>Solid state nuclear magnetic resonance spectroscopy</hasNote>
+        </node>
+        <node id="AMGC226" label="Spark source mass spectrometry">
+            <hasNote>Spark source mass spectrometry</hasNote>
+        </node>
+        <node id="AMGC227" label="Spherical cell bulk thermal conductivity analysis">
+            <hasNote>Spherical cell bulk thermal conductivity analysis</hasNote>
+        </node>
+        <node id="AMGC228" label="Stepped heating carbon and nitrogen isotopic analysis">
+            <hasNote>Stepped heating carbon and nitrogen isotopic analysis</hasNote>
+        </node>
+        <node id="AMGC229" label="Structured light scanning">
+            <hasNote>Structured light scanning</hasNote>
+        </node>
+        <node id="AMGC230" label="Synchrotron X-ray fluorescence tomography">
+            <hasNote>Synchrotron X-ray fluorescence tomography</hasNote>
+        </node>
+        <node id="AMGC231" label="X-ray computed tomography">
+            <hasNote>X-ray computed tomography</hasNote>
+        </node>
+        <node id="AMGC232" label="Temperature programmed desorption electron probe analysis">
+            <hasNote>Temperature programmed desorption electron probe analysis</hasNote>
+        </node>
+        <node id="AMGC233" label="Tensiometry">
+            <hasNote>Tensiometry</hasNote>
+        </node>
+        <node id="AMGC234" label="Thermal neutron activation analysis">
+            <hasNote>Thermal neutron activation analysis</hasNote>
+        </node>
+        <node id="AMGC235" label="Thermogravimetry analysis">
+            <hasNote>Thermogravimetry analysis</hasNote>
+        </node>
+        <node id="AMGC236" label="Thermoluminescence analysis">
+            <hasNote>Thermoluminescence analysis</hasNote>
+        </node>
+        <node id="AMGC237" label="Thermoluminescence dating">
+            <hasNote>Thermoluminescence dating</hasNote>
+        </node>
+        <node id="AMGC238" label="Titration">
+            <hasNote>Titration</hasNote>
+        </node>
+        <node id="AMGC239" label="Total reflection X-ray fluorescence spectrometry">
+            <hasNote>Total reflection X-ray fluorescence spectrometry</hasNote>
+        </node>
+        <node id="AMGC240" label="Transmitted electron diffraction">
+            <hasNote>Transmitted electron diffraction</hasNote>
+        </node>
+        <node id="AMGC241" label="Ultraviolet emission spectrometry">
+            <hasNote>Ultraviolet emission spectrometry</hasNote>
+        </node>
+        <node id="AMGC242" label="Visible, near-infrared, and mid-infrared imaging">
+            <hasNote>Visible, near-infrared, and mid-infrared imaging</hasNote>
+        </node>
+        <node id="AMGC243" label="Wavelength dispersive electron induced X-ray spectrometry">
+            <hasNote>Wavelength dispersive electron induced X-ray spectrometry</hasNote>
+        </node>
+        <node id="AMGC244" label="Wavelength-modulation spectrometry">
+            <hasNote>Wavelength-modulation spectrometry</hasNote>
+        </node>
+        <node id="AMGC245" label="X-ray absorption near edge structure spectrometry">
+            <hasNote>X-ray absorption near edge structure spectrometry</hasNote>
+        </node>
+        <node id="AMGC246" label="X-ray photoelectron spectrometery">
+            <hasNote>X-ray photoelectron spectrometery</hasNote>
+        </node>
+        <node id="AMGC247" label="X-ray photoelectron spectrometry composition mapping">
+            <hasNote>X-ray photoelectron spectrometry composition mapping</hasNote>
+        </node>
+        <node id="AMGC248" label="X-ray powder diffraction">
+            <hasNote>X-ray powder diffraction</hasNote>
+        </node>
+        <node id="AMGC249" label="Scanning electron microscopy">
+            <hasNote>Scanning electron microscopy</hasNote>
+        </node>
+        <node id="AMGC250" label="Electron probe microanalysis">
+            <hasNote>Electron probe microanalysis</hasNote>
+        </node>
+        <node id="AMGC251" label="Optical microscopy">
+            <hasNote>Optical Microscopy</hasNote>
+        </node>
+    </isComposedBy>
+    <hasNote>Analytical Techniques</hasNote>
+</node>

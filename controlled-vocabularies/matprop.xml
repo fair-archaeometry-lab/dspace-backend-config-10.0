@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<node id="MATPROP" label="Material Properties List">
+  <isComposedBy>
+    <node id="MATPROP1" label="acidity">
+      <hasNote>acidity</hasNote>
+    </node>
+    <node id="MATPROP2" label="age">
+      <hasNote>age</hasNote>
+    </node>
+    <node id="MATPROP3" label="alkalinity">
+      <hasNote>alkalinity</hasNote>
+    </node>
+    <node id="MATPROP4" label="brittleness">
+      <hasNote>brittleness</hasNote>
+    </node>
+    <node id="MATPROP5" label="chemical composition">
+      <hasNote>chemical composition</hasNote>
+    </node>
+    <node id="MATPROP6" label="chemical properties">
+      <hasNote>chemical properties</hasNote>
+    </node>
+    <node id="MATPROP7" label="colour">
+      <hasNote>colour</hasNote>
+    </node>
+    <node id="MATPROP8" label="colour change">
+      <hasNote>colour change</hasNote>
+    </node>
+    <node id="MATPROP9" label="condtion state">
+      <hasNote>condtion state</hasNote>
+    </node>
+    <node id="MATPROP10" label="constituent materials">
+      <hasNote>constituent materials</hasNote>
+    </node>
+    <node id="MATPROP11" label="corrosion">
+      <hasNote>corrosion</hasNote>
+    </node>
+    <node id="MATPROP12" label="cracking/crack pattern">
+      <hasNote>cracking/crack pattern</hasNote>
+    </node>
+    <node id="MATPROP13" label="crystal structure">
+      <hasNote>crystal structure</hasNote>
+    </node>
+    <node id="MATPROP14" label="degradation">
+      <hasNote>degradation</hasNote>
+    </node>
+    <node id="MATPROP15" label="delamination">
+      <hasNote>delamination</hasNote>
+    </node>
+    <node id="MATPROP16" label="density">
+      <hasNote>density</hasNote>
+    </node>
+    <node id="MATPROP17" label="discolouration">
+      <hasNote>discolouration</hasNote>
+    </node>
+    <node id="MATPROP18" label="distance">
+      <hasNote>distance</hasNote>
+    </node>
+    <node id="MATPROP19" label="drying">
+      <hasNote>drying</hasNote>
+    </node>
+    <node id="MATPROP20" label="elasticity">
+      <hasNote>elasticity</hasNote>
+    </node>
+    <node id="MATPROP21" label="elemental composition">
+      <hasNote>elemental composition</hasNote>
+    </node>
+    <node id="MATPROP22" label="environmental parameters">
+      <hasNote>environmental parameters</hasNote>
+    </node>
+    <node id="MATPROP23" label="fading">
+      <hasNote>fading</hasNote>
+    </node>
+    <node id="MATPROP24" label="geometric characteristics">
+      <hasNote>geometric characteristics</hasNote>
+    </node>
+    <node id="MATPROP25" label="gloss">
+      <hasNote>gloss</hasNote>
+    </node>
+    <node id="MATPROP26" label="grain size">
+      <hasNote>grain size</hasNote>
+    </node>
+    <node id="MATPROP27" label="hardness">
+      <hasNote>hardness</hasNote>
+    </node>
+    <node id="MATPROP28" label="hygroscopicity">
+      <hasNote>hygroscopicity</hasNote>
+    </node>
+    <node id="MATPROP29" label="layer stratigraphy">
+      <hasNote>layer stratigraphy</hasNote>
+    </node>
+    <node id="MATPROP30" label="layer thickness">
+      <hasNote>layer thickness</hasNote>
+    </node>
+    <node id="MATPROP31" label="light">
+      <hasNote>light</hasNote>
+    </node>
+    <node id="MATPROP32" label="light intensity">
+      <hasNote>light intensity</hasNote>
+    </node>
+    <node id="MATPROP33" label="mass">
+      <hasNote>mass</hasNote>
+    </node>
+    <node id="MATPROP34" label="material configuration">
+      <hasNote>material configuration</hasNote>
+    </node>
+    <node id="MATPROP35" label="mechanical behaviour">
+      <hasNote>mechanical behaviour</hasNote>
+    </node>
+    <node id="MATPROP36" label="mechanical properties">
+      <hasNote>mechanical properties</hasNote>
+    </node>
+    <node id="MATPROP37" label="mineral composition">
+      <hasNote>mineral composition</hasNote>
+    </node>
+    <node id="MATPROP38" label="molecular composition">
+      <hasNote>molecular composition</hasNote>
+    </node>
+    <node id="MATPROP39" label="oxidation">
+      <hasNote>oxidation</hasNote>
+    </node>
+    <node id="MATPROP40" label="permeability">
+      <hasNote>permeability</hasNote>
+    </node>
+    <node id="MATPROP41" label="physical dimension">
+      <hasNote>physical dimension</hasNote>
+    </node>
+    <node id="MATPROP42" label="physical properties">
+      <hasNote>physical properties</hasNote>
+    </node>
+    <node id="MATPROP43" label="pollution/contaminant levels">
+      <hasNote>pollution/contaminant levels</hasNote>
+    </node>
+    <node id="MATPROP44" label="porosity">
+      <hasNote>porosity</hasNote>
+    </node>
+    <node id="MATPROP45" label="rh">
+      <hasNote>rh</hasNote>
+    </node>
+    <node id="MATPROP46" label="roughness">
+      <hasNote>roughness</hasNote>
+    </node>
+    <node id="MATPROP47" label="soiling">
+      <hasNote>soiling</hasNote>
+    </node>
+    <node id="MATPROP48" label="strength">
+      <hasNote>strength</hasNote>
+    </node>
+    <node id="MATPROP49" label="structural properties">
+      <hasNote>structural properties</hasNote>
+    </node>
+    <node id="MATPROP50" label="temperature">
+      <hasNote>temperature</hasNote>
+    </node>
+    <node id="MATPROP51" label="texture">
+      <hasNote>texture</hasNote>
+    </node>
+    <node id="MATPROP52" label="toughness">
+      <hasNote>toughness</hasNote>
+    </node>
+    <node id="MATPROP53" label="transparency">
+      <hasNote>transparency</hasNote>
+    </node>
+    <node id="MATPROP54" label="weight">
+      <hasNote>weight</hasNote>
+    </node>
+  </isComposedBy>
+  <hasNote>Material Properties List</hasNote>
+</node>
