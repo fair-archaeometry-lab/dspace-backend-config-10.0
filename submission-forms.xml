@@ -39,47 +39,10 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Description</label>
                     <input-type>textarea</input-type>
                     <hint>Enter a description for the file</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>type</dc-element>
-                    <repeatable>false</repeatable>
-                    <label>Audio or Video media type</label>
-                    <input-type value-pairs-name="audio_video_media_type">dropdown</input-type>
-                    <hint>Select Audio or Video media type</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dspace</dc-schema>
-                    <dc-element>bitstream</dc-element>
-                    <dc-qualifier>transcript</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Audio Transcription</label>
-                    <input-type>textarea</input-type>
-                    <hint>Enter a transcription for the file</hint>
-                    <type-bind>audio,audio+video</type-bind>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dspace</dc-schema>
-                    <dc-element>bitstream</dc-element>
-                    <dc-qualifier>textalternative</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Text alternative</label>
-                    <input-type>textarea</input-type>
-                    <hint>Enter a text alternative or video description for the file</hint>
-                    <type-bind>video,audio+video</type-bind>
                     <required></required>
                 </field>
             </row>
@@ -131,7 +94,7 @@
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Date of Issue</label>
-                    <style>col-md-4</style>
+                    <style>col-sm-4</style>
                     <input-type>date</input-type>
                     <hint>Please give the date of previous publication or public distribution.
                         You can leave out the day and/or month if they aren't applicable.
@@ -145,7 +108,7 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Publisher</label>
-                    <style>col-md-8</style>
+                    <style>col-sm-8</style>
                     <input-type>onebox</input-type>
                     <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
                     <required></required>
@@ -302,29 +265,6 @@
                     <!--<regex>\w+(,)+\w+</regex>-->
                 </relation-field>
             </row>
-            <!--
-                Uncomment the following definition to enable entry of
-                editors on the publication submission form
-            -->
-            <!--
-            <row>
-                <relation-field>
-                    <relationship-type>isEditorOfPublication</relationship-type>
-                    <search-configuration>person</search-configuration>
-                    <repeatable>true</repeatable>
-                    <label>Editor</label>
-                    <hint>Enter the editor's name (Family name, Given names).</hint>
-                    <linked-metadata-field>
-                        <dc-schema>dc</dc-schema>
-                        <dc-element>contributor</dc-element>
-                        <dc-qualifier>editor</dc-qualifier>
-                        <input-type>onebox</input-type>
-                    </linked-metadata-field>
-                    <externalsources>orcid</externalsources>
-                    <required></required>
-                </relation-field>
-              </row>
-              -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -356,7 +296,7 @@
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Date of Issue</label>
-                    <style>col-md-4</style>
+                    <style>col-sm-4</style>
                     <input-type>date</input-type>
                     <hint>Please give the date of previous publication or public distribution.
                         You can leave out the day and/or month if they aren't applicable.
@@ -370,7 +310,7 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Publisher</label>
-                    <style>col-md-8</style>
+                    <style>col-sm-8</style>
                     <input-type>onebox</input-type>
                     <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
                     <required></required>
@@ -399,21 +339,6 @@
                     <hint>Enter the series and number assigned to this item by your community.</hint>
                     <required></required>
                 </field>
-            </row>
-            <row>
-                <relation-field>
-                    <relationship-type>isDatasetOfPublication</relationship-type>
-                    <search-configuration>dataset</search-configuration>
-                    <repeatable>true</repeatable>
-                    <label>Research Data</label>
-                    <hint>Enter the datasets this publication is based on.</hint>
-                    <linked-metadata-field>
-                        <dc-schema>dc</dc-schema>
-                        <dc-element>relation</dc-element>
-                        <dc-qualifier>isBasedOn</dc-qualifier>
-                        <input-type>onebox</input-type>
-                    </linked-metadata-field>
-                </relation-field>
             </row>
             <row>
                 <field>
@@ -794,7 +719,7 @@
                     <!--<filter>creativework.publisher:somepublishername</filter>-->
                     <label>Journal</label>
                     <hint>Select the journal related to this volume.</hint>
-                    <externalsources>opfJournal</externalsources>
+                    <externalsources>sherpaJournal</externalsources>
                 </relation-field>
             </row>
             <row>
@@ -894,117 +819,6 @@
 
         </form>
 
-        <!-- Form which defines the *first* metadata page/section for depositing Dataset Entities.-->
-        <form name="datasetStep">
-            <row>
-                <relation-field>
-                    <relationship-type>isAuthorOfDataset</relationship-type>
-                    <search-configuration>person</search-configuration>
-                    <repeatable>true</repeatable>
-                    <label>Author</label>
-                    <hint>Enter the author's name (Family name, Given names).</hint>
-                    <linked-metadata-field>
-                        <dc-schema>dc</dc-schema>
-                        <dc-element>contributor</dc-element>
-                        <dc-qualifier>author</dc-qualifier>
-                        <input-type>onebox</input-type>
-                    </linked-metadata-field>
-                    <externalsources>orcid</externalsources>
-                </relation-field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>title</dc-element>
-                    <repeatable>false</repeatable>
-                    <label>Title</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the main title of the item.</hint>
-                    <required>You must enter a main title for this item.</required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>title</dc-element>
-                    <dc-qualifier>alternative</dc-qualifier>
-                    <language value-pairs-name="common_iso_languages">true</language>
-                    <repeatable>true</repeatable>
-                    <label>Other Titles</label>
-                    <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>date</dc-element>
-                    <dc-qualifier>issued</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
-                    <style>col-sm-4</style>
-                    <input-type>date</input-type>
-                    <hint>Please give the date of previous publication or public distribution.
-                        You can leave out the day and/or month if they aren't applicable.
-                    </hint>
-                    <required>You must enter at least the year.</required>
-                </field>
-
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>publisher</dc-element>
-                    <repeatable>false</repeatable>
-                    <label>Publisher</label>
-                    <style>col-sm-8</style>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
-                </field>
-            </row>
-            <row>
-                <relation-field>
-                    <relationship-type>isPublicationOfDataset</relationship-type>
-                    <search-configuration>publication</search-configuration>
-                    <repeatable>true</repeatable>
-                    <label>Publications</label>
-                    <hint>Enter the publications referencing this dataset.</hint>
-                    <linked-metadata-field>
-                        <dc-schema>dc</dc-schema>
-                        <dc-element>relation</dc-element>
-                        <dc-qualifier>isreferencedby</dc-qualifier>
-                        <input-type>onebox</input-type>
-                    </linked-metadata-field>
-                    <externalsources>pubmed</externalsources>
-                </relation-field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>type</dc-element>
-                    <repeatable>true</repeatable>
-                    <label>Type</label>
-                    <input-type value-pairs-name="common_types">dropdown</input-type>
-                    <hint>Select the type(s) of content of the item. To select more than one value in the list, you may
-                        have to hold down the "CTRL" or "Shift" key.
-                    </hint>
-                    <required>You must choose at least one type.</required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>language</dc-element>
-                    <dc-qualifier>iso</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Language</label>
-                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-                    <hint>Select the language of the main content of the dataset. If the language does not appear in the
-                        list, please select 'Other'. If the content does not really have a language (for example, if it
-                        is a dataset or an image) please select 'N/A'.
-                    </hint>
-                </field>
-            </row>
-        </form>
-
         <!-- Openaire specific forms -->
 
         <form name="openairePublicationPageoneForm">
@@ -1060,7 +874,7 @@
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Date of Issue</label>
-                    <style>col-md-4</style>
+                    <style>col-sm-4</style>
                     <input-type>date</input-type>
                     <hint>Please give the date of previous publication or public distribution.
                         You can leave out the day
@@ -1076,7 +890,7 @@
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Publisher</label>
-                    <style>col-md-8</style>
+                    <style>col-sm-8</style>
                     <input-type>onebox</input-type>
                     <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
                     <required></required>
@@ -1322,6 +1136,29 @@
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <repeatable>false</repeatable>
+                    <label>Access Type</label>
+                    <input-type value-pairs-name="openaire_rights">dropdown</input-type>
+                    <hint>Select the access type of the resource.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>oaire</dc-schema>
+                    <dc-element>license</dc-element>
+                    <dc-qualifier>condition</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>License</label>
+                    <input-type value-pairs-name="openaire_license_types">dropdown</input-type>
+                    <hint>Select the license of the resource.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>coverage</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
@@ -1510,17 +1347,760 @@
                 </field>
             </row>
         </form>
-        <form name="owner">
+        <!-- add new form serviceCore   -->
+        <form name="serviceCore"> 
             <row>
                 <field>
-                    <dc-schema>dspace</dc-schema>
-                    <dc-element>object</dc-element>
-                    <dc-qualifier>owner</dc-qualifier>
-                    <label>Owner</label>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Name</label>
                     <input-type>onebox</input-type>
+                    <hint>Enter access service name or technique name</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>id</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Internal handle or identifier of the service record</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <label>Service Summary</label>
+                    <input-type>textarea</input-type>
+                    <hint>A brief description of a specific technical or access service offered, such as the use of X to investigate Y</hint>
+                    <required>This is a required field</required>
+                 </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Description</label>
+                    <input-type>textarea</input-type>
+                    <hint>Longer description or documentation of the service</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>creationDate</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Creation Date</label>
+                    <input-type>date</input-type>
+                    <hint>The creation date is the date from which this particular Service was offered in a formal capacity by the defined Access provider.</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>version</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Version</label>
+                    <input-type>onebox</input-type>
+                    <hint>Service develop over time with changes of equipment, software, personnel, etc. Version numbers should be changed to indicate these changes - please note very large scale changes may warrant the creation of a new Service record to clarify differences in the data or results created.</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>versionDate</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Version Start Date</label>
+                    <input-type>date</input-type>
+                    <hint>The version date is the date from which this particular version of this Service was offered in a formal capacity by the defined Access provider.</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>active</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Active</label>
+                    <input-type value-pairs-name="yes_no">list</input-type>
                     <repeatable>false</repeatable>
-                    <required />
-                    <hint />
+                    <hint>Whether the service is currently open for access</hint>
+                    <required>This is a required field</required>
+                </field>
+            </row>
+        </form>
+            <!-- add new form serviceScope   -->
+        <form name="serviceScope">
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>researchDiscipline</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Research Discipline</label>
+                    <input-type>tag</input-type>
+                    <hint>Which domains or disciplines has a given service worked within, has experience within. This field is connected to an extensive controlled list.</hint>
+                    <required>This is a required field</required>
+                    <repeatable>true</repeatable>
+                    <vocabulary>discipline</vocabulary>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>researchDiscipline</dc-element>
+                    <dc-qualifier>narrower</dc-qualifier>
+                    <label>Specific Research Discipline</label>
+                    <input-type>onebox</input-type>
+                    <hint>More precise description of the domains or disciplines a given service has worked within or has experience within (free text).</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>question</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Research Question</label>
+                    <input-type>onebox</input-type>
+                    <hint>Typical research questions that a service designed to answer. This field is free text, but will likely be replaced with a controlled list.</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>function</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Function</label>
+                    <input-type>tag</input-type>
+                    <hint>Short and descriptive service practical level activities, what has a service been used for, what is it intended for. E.g. 'Materials Analysis', 'Dye Analysis', 'De-convolution XRF Spectra', 'Calculating Light Exposure Allowance'. At the moment, these are free text but will likely be replaced with a controlled list.</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>technique</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Technique</label>
+                    <input-type>tag</input-type>
+                    <hint>A list of analytical techniques carried out within this service</hint>
+                    <required>This is a required field</required>
+                    <vocabulary>amgc</vocabulary>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>technique</dc-element>
+                    <dc-qualifier>other</dc-qualifier>
+                    <label>Other Technique</label>
+                    <input-type>onebox</input-type>
+                    <hint>Other (unlisted) individual relevant heritage science examination and analytical techniques carried out within this Service (free text).</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>method</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Method</label>
+                    <input-type>onebox</input-type>
+                    <hint>Service related method statements should be defined in the system and represent the procedures for using individual pieces of equipment or software systems used within the service - detail of setup, methodology, procedures, etc. should all be described within this document and is also directly attached to relevant the Tool (equipment or software) records.</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>measurableProperty</dc-element>
+                    <dc-qualifier>class</dc-qualifier>
+                    <label>Measurable Property Class</label>
+                    <input-type>onebox</input-type>
+                    <hint>Class of measurable property that can be studied by this service</hint>
+                    <repeatable>true</repeatable>
+                    <vocabulary>matprop</vocabulary>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>measurableProperty</dc-element>
+                    <dc-qualifier>material</dc-qualifier>
+                    <label>Material</label>
+                    <input-type>tag</input-type>
+                    <hint>Materials for which the measurable property can be studied</hint>
+                    <repeatable>true</repeatable>
+                    <vocabulary>gettym</vocabulary>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>measurableProperty</dc-element>
+                    <dc-qualifier>materialOther</dc-qualifier>
+                    <label>Other Material</label>
+                    <input-type>onebox</input-type>
+                    <hint>Other free-text materials for the measurable property</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+        </form>
+
+                <!-- add new form serviceAccess   -->
+
+        <form name="serviceAccess">
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Name of Service Provider</label>
+                    <input-type>onebox</input-type>
+                    <hint>An actor (organisation or person) offering this service. It can be free text or selected from the system.</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>id</dc-qualifier>
+                    <label>Service Provider Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Persistent identifiers for the service provider</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>role</dc-qualifier>
+                    <label>Provider Role</label>
+                    <input-type value-pairs-name="provider_role">dropdown</input-type>
+                    <hint>Role of the provider with respect to the service</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>contact</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Contact Type</label>
+                    <input-type value-pairs-name="contact_type">qualdrop_value</input-type>
+                    <hint>Type of contact, such as E-mail or Phone</hint>
+                    <repeatable>true</repeatable>
+                    <required>This is a required field</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>operatingLanguage</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Operating Language</label>
+                    <input-type value-pairs-name="op_language">dropdown</input-type>
+                    <hint>Language in which the team operates or in which tools are presented</hint>
+                    <required>This is a required field</required>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>readinessLevel</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Readiness Level</label>
+                    <input-type value-pairs-name="readiness">dropdown</input-type>
+                    <hint>Readiness level of the service, based on a controlled list</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>limitation</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Limitation</label>
+                    <input-type>textarea</input-type>
+                    <hint>Description of limitations in access provision by the service</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>accessUnit</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Access Unit</label>
+                    <input-type value-pairs-name="period_unit">dropdown</input-type>
+                    <hint>Service access period unit</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>hoursPerUnit</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Hours Per Unit</label>
+                    <input-type>onebox</input-type>
+                    <hint>Access hours per unit, relating time units to activity time</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>accessUnitCost</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Access Unit Cost (€)</label>
+                    <input-type>onebox</input-type>
+                    <hint>Service access unit cost in Euro</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Team Member</label>
+                    <input-type>onebox</input-type>
+                    <hint>Person in the team working on this service. It can be linked to researcher entity. Alternaitvle, please enter the first name, last name, and email address, separated by commas. For example: John Doe, jane.doe@example.com</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+        </form>
+    <!-- add new form serviceResources   -->
+        <form name="serviceResources">
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>link</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Service Link</label>
+                    <input-type value-pairs-name="link_type">qualdrop_value</input-type>
+                    <hint>Digital resources related to the service. Provide type of link and its url</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>keyword</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Keywords</label>
+                    <input-type>tag</input-type>
+                    <hint>Additional service keywords not covered by other fields</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>comment</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Comments</label>
+                    <input-type>textarea</input-type>
+                    <hint>Other comments about this access or service</hint>
+                </field>
+            </row>
+        </form>
+
+        <!-- add new form instIdentity -->
+        <form name="instIdentity">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Instrument Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the Instrument</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Instruemnt Identifier</label>
+                    <repeatable>true</repeatable>
+                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
+                    <hint>Please select type of the identifier (Handle, DOI, etc.) and enter its value</hint>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>landingPage</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Landing Page of Instrument</label>
+                    <input-type>onebox</input-type>
+                    <hint>Resolvable URL of the instrument landing page.</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>schemaVersion</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Schema Version</label>
+                    <input-type>onebox</input-type>
+                    <hint>Version of the PIDINST schema used. The current version is 1.0</hint>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Description</label>
+                    <input-type>textarea</input-type>
+                    <hint>Technical description of the instrument</hint>
+                    <required>This is a required field</required>
+                </field>
+            </row>
+        </form>
+        <!-- add form instAccess -->
+        <form name="instAccess">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>owner</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Owner Institution Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the institution responsible for the instrument</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Owner Identifier</label>
+                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
+                    <hint>Identifier of the owner institution (ROR, GRID, etc.)</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>owner</dc-element>
+                    <dc-qualifier>contact</dc-qualifier>
+                    <label>Owner Contact Email</label>
+                    <input-type>onebox</input-type>
+                    <hint>Contact email of the owner institution</hint>
+                    <required>This is a required field</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>openAccess</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Open Access Date</label>
+                    <input-type value-pairs-name="yes_no">list</input-type>
+                    <repeatable>false</repeatable>
+                    <hint>Specify whether the instrument is offered in terms of open access</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>commissioned</dc-qualifier>
+                    <label>Commissioned Date</label>
+                    <input-type>date</input-type>
+                    <hint>Commissioned date</hint>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>decommissioned</dc-qualifier>
+                    <label>DeCommissioned Date</label>
+                    <input-type>date</input-type>
+                    <hint>Commissioned date</hint>
+                </field>
+            </row>
+        </form>
+        <form name="instTechnical">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>manufacturer</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Manufacturer Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the manufacturer or developer. A control list will be provided in the future.</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Manufacturer Identifier</label>
+                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
+                    <hint>Please select an identifier type from the list and enter its value accordingly</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>model</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Model Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Model of Instruement. A control list will be provided in the future.</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Model Identifier</label>
+                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
+                    <hint>Please select an identifier type (usually serial number) from the list and enter its value accordingly. </hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>  
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>instrumentType</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Instrument Type</label>
+                    <input-type>onebox</input-type>
+                    <hint>Type of instrument. A control list will be provided in the future.</hint>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Identifier of Instrument Type</label>
+                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
+                    <hint>Please select an identifier type from the list and enter its value accordingly. </hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>measuredVariable</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Measureable Variables</label>
+                    <input-type>tag</input-type>
+                    <hint>A list of variables measured or observed by the instrument.</hint>
+                </field> 
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>impact</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Impact</label>
+                    <input-type value-pairs-name="impact">dropdown</input-type>
+                    <hint>Impact on the samples when using the given instrument.</hint>
+                    <repeatable>true</repeatable>
+                    <required>This is a required field</required>
+                </field>          
+            </row>     
+        </form>
+        <form name="instResources">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>alternateIdentifier</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Name of Alternate Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Supplementary name for the identifier type.</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>alternateIdentifier</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
+                    <label>Type of Alternate Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Alternative identifier (e.g. serial number).</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>alternateIdentifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Alternate Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Value of Alternative identifier (e.g. serial number).</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>   
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>relatedIdentifier</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Name of Related Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the related digital resource.</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>relatedIdentifier</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
+                    <label>Type of Related Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Related identifier (e.g. DOI, URL).</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>relatedIdentifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Related Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Value of Related identifier (e.g. DOI, URL).</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>relatedIdentifier</dc-element>
+                    <dc-qualifier>relationType</dc-qualifier>
+                    <label>Relation Type</label>
+                    <input-type value-pairs-name="related_id">dropdown</input-type>
+                    <hint>Relationship type (e.g. IsDescribedBy, HasComponent).</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row> 
+        </form>
+        <form name="georemBasic">
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>sample</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Reference Material Name</label>
+                    <hint>Name of the reference material or sample (e.g., BHVO-2, NIST SRM 610)</hint>
+                    <input-type>onebox</input-type>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>sample</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Material Type</label>
+                    <hint>Type of material (rock, glass, mineral, water, isotopic standard)</hint>
+                    <input-type>onebox</input-type>
+                    <required>This is a required field</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>sample</dc-element>
+                    <dc-qualifier>origin</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Origin</label>
+                    <hint>Institution or program providing the reference material (e.g., USGS, NIST, MPI-DING)</hint>
+                    <input-type>onebox</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>sample</dc-element>
+                    <dc-qualifier>description</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Description</label>
+                    <hint>Free-text description of the sample or material</hint>
+                    <input-type>textarea</input-type>
+                </field>
+            </row>
+        </form>
+        <form name="georemMeasurements">
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>analyte</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Analyte</label>
+                    <hint>Chemical element or isotope measured (e.g., SiO2, Pb206/Pb204)</hint>
+                    <input-type>onebox</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>value</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Value</label>
+                    <hint>Measured concentration or isotope ratio value</hint>
+                    <input-type>onebox</input-type>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>unit</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Unit</label>
+                    <hint>Measurement unit (e.g., wt%, ppm, ppb, ratio)</hint>
+                    <input-type>onebox</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>qualityFlag</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Quality Flag</label>
+                    <hint>Indicator of data quality or validation status</hint>
+                    <input-type>onebox</input-type>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>method</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Analytical Method</label>
+                    <hint>Analytical technique used (e.g., ICP-MS, XRF, TIMS, LA-ICP-MS)</hint>
+                    <input-type>tag</input-type>
+                    <vocabulary>amgc</vocabulary>
+                    <repeatable>true</repeatable>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>uncertainty</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Uncertainty</label>
+                    <hint>Reported analytical uncertainty associated with the value</hint>
+                    <input-type>onebox</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>uncertaintyType</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Uncertainty Type</label>
+                    <hint>Type of uncertainty (e.g., standard deviation, standard error, confidence interval)</hint>
+                    <input-type>onebox</input-type>
+                </field>
+            </row>
+        </form>
+       <form name="georemResources">
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>laboratory</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Laboratory Name</label>
+                    <hint>Name of the laboratory where the analysis was performed</hint>
+                    <input-type>onebox</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>laboratory</dc-element>
+                    <dc-qualifier>location</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Laboratory Location</label>
+                    <hint>Geographic location of the laboratory</hint>
+                    <input-type>onebox</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>datasetId</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Dataset ID</label>
+                    <hint>Identifier linking a set of analytical results</hint>
+                    <input-type>onebox</input-type>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>reference</dc-element>
+                    <dc-qualifier>citation</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Citation</label>
+                    <hint>Full bibliographic citation of the publication</hint>
+                    <input-type>onebox</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>reference</dc-element>
+                    <dc-qualifier>doi</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>URL Links</label>
+                    <hint>Digital Object Identifier of the publication or other digital resources</hint>
+                    <input-type>onebox</input-type>
                 </field>
             </row>
         </form>
@@ -1541,6 +2121,526 @@
     <!-- stores the associated stored-values in the database.                  -->
 
     <form-value-pairs>
+    <!-- add drop down list for related identifiers  for instrument submssion form  -->
+        <value-pairs value-pairs-name="related_id" dc-term="instrument.relatedIdentifier">
+            <pair>
+                <displayed-value>isDescribedBy</displayed-value>
+                <stored-value>isDescribedBy</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>isNewVersionOf</displayed-value>
+                <stored-value>isNewVersionOf</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>isPreviousVersionOf</displayed-value>
+                <stored-value>isPreviousVersionOf</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>HasComponent</displayed-value>
+                <stored-value>HasComponent</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>IsComponentOf</displayed-value>
+                <stored-value>IsComponentOf</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>References</displayed-value>
+                <stored-value>References</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>HasMetadata</displayed-value>
+                <stored-value>HasMetadata</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>WasUsedIn</displayed-value>
+                <stored-value>WasUsedIn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>IsIdenticalTo</displayed-value>
+                <stored-value>IsIdenticalTo</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>IsAttachedTo</displayed-value>
+                <stored-value>IsAttachedTo</stored-value>
+            </pair>
+        </value-pairs>     
+    <!-- add drop down list for impact for instrument submssion form  -->
+        <value-pairs value-pairs-name="impact" dc-term="instrument.impact">
+            <pair>
+                <displayed-value>destructive (complete destruction or irreversible alteration)</displayed-value>
+                <stored-value>destructive</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>micro-destructive (removal or permanent alteration of very small, inconspicuous portions)</displayed-value>
+                <stored-value>micro-destructive</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>micro-invasive (very minor, controlled, and reversible physical interaction)</displayed-value>
+                <stored-value>micro-invasive</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>non-contact (no physical contact)</displayed-value>
+                <stored-value>non-contact</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>non-destructive (no permanent damage or alteration)</displayed-value>
+                <stored-value>non-destructive</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>non-invasive (no physical alteration)</displayed-value>
+                <stored-value>non-invasive</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for the device PID in device submission form  -->
+        <value-pairs value-pairs-name="all_identifier" dc-term="instrument.identifier">
+            <pair>
+                <displayed-value>ARK</displayed-value>
+                <stored-value>ark</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ARXIV</displayed-value>
+                <stored-value>arxiv</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>BIBCODE</displayed-value>
+                <stored-value>bibcode</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CROSSREF FUNDER ID</displayed-value>
+                <stored-value>crossref</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>DOI</displayed-value>
+                <stored-value>doi</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>EAN13</displayed-value>
+                <stored-value>ean13</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>EISSN</displayed-value>
+                <stored-value>eissn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GRID</displayed-value>
+                <stored-value>grid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>HANDLE</displayed-value>
+                <stored-value>handle</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>IGSN</displayed-value>
+                <stored-value>igsn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISBN</displayed-value>
+                <stored-value>isbn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISNI</displayed-value>
+                <stored-value>isni</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISSN</displayed-value>
+                <stored-value>issn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISTC</displayed-value>
+                <stored-value>istc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>LISSN</displayed-value>
+                <stored-value>lissn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>LSID</displayed-value>
+                <stored-value>lsid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ORCID</displayed-value>
+                <stored-value>orcid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>OTHER ID</displayed-value>
+                <stored-value>other_id</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PMID</displayed-value>
+                <stored-value>pmid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PURL</displayed-value>
+                <stored-value>purl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>RAID</displayed-value>
+                <stored-value>raid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ROR</displayed-value>
+                <stored-value>ror</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>RRID</displayed-value>
+                <stored-value>rrid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>UPC</displayed-value>
+                <stored-value>upc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>URN</displayed-value>
+                <stored-value>urn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>URL</displayed-value>
+                <stored-value>url</stored-value>
+            </pair>           
+            <pair>
+                <displayed-value>UUID</displayed-value>
+                <stored-value>uuid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GUID</displayed-value>
+                <stored-value>guid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>VIAF</displayed-value>
+                <stored-value>viaf</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>W3ID</displayed-value>
+                <stored-value>w3id</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>WIKIDATA</displayed-value>
+                <stored-value>wikidata</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>SERIAL NUMBER</displayed-value>
+                <stored-value>serial_no</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GEOREM</displayed-value>
+                <stored-value>georem</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PRODUCT NUMBER</displayed-value>
+                <stored-value>product_no</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Institute-Given ID</displayed-value>
+                <stored-value>in_house_id</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for the qualifier of provider property in Service submission form  -->
+        <value-pairs value-pairs-name="provider_info" dc-term="service.provider">
+            <pair>
+                <displayed-value>PID</displayed-value>
+                <stored-value>id</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Institute Name</displayed-value>
+                <stored-value>name</stored-value>
+            </pair>
+        </value-pairs>
+
+    <!-- add drop down list for link_type in submission form  -->
+
+        <value-pairs value-pairs-name="link_type" dc-term="service.link">
+            <pair>
+                <displayed-value>Website</displayed-value>
+                <stored-value>website</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tutorial</displayed-value>
+                <stored-value>tutorial</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Support</displayed-value>
+                <stored-value>support</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Download</displayed-value>
+                <stored-value>download</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Social Media</displayed-value>
+                <stored-value>social_media</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Presentation</displayed-value>
+                <stored-value>presentation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Documentation</displayed-value>
+                <stored-value>documentation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Publication</displayed-value>
+                <stored-value>publication</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Data Repository</displayed-value>
+                <stored-value>data_repository</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Code Repository</displayed-value>
+                <stored-value>code_repository</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+        </value-pairs>
+
+    <!-- add drop down list for period_unit in submission form  -->
+
+        <value-pairs value-pairs-name="period_unit" dc-term="service.accessUnit">
+            <pair>
+                <displayed-value>Hour</displayed-value>
+                <stored-value>hour</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Day</displayed-value>
+                <stored-value>day</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Week</displayed-value>
+                <stored-value>week</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Month</displayed-value>
+                <stored-value>month</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Year</displayed-value>
+                <stored-value>year</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for contact_type in submission form  -->
+        <value-pairs value-pairs-name="contact_type" dc-term="service.contact">
+            <pair>
+                <displayed-value>Email</displayed-value>
+                <stored-value>email</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Phone</displayed-value>
+                <stored-value>phone</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for provider_role in submission form  -->
+        <value-pairs value-pairs-name="provider_role" dc-term="service.provider">
+            <pair>
+                <displayed-value>Access</displayed-value>
+                <stored-value>access</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Data Acquisition</displayed-value>
+                <stored-value>data_acquisition</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Data Integration</displayed-value>
+                <stored-value>data_integration</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Data Processing</displayed-value>
+                <stored-value>data_processing</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Logistics</displayed-value>
+                <stored-value>logistics</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>All Inclusive</displayed-value>
+                <stored-value>all_inclusive</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for yes_no property in submission form  -->
+        <value-pairs value-pairs-name="yes_no" dc-term="service.active">
+            <pair>
+                <displayed-value>Yes</displayed-value>
+                <stored-value>true</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>No</displayed-value>
+                <stored-value>false</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for the qualifier of provider property in Service submission form  -->
+        <value-pairs value-pairs-name="provider_info" dc-term="service.provider">
+            <pair>
+                <displayed-value>Identifier</displayed-value>
+                <stored-value>id</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Institute Name</displayed-value>
+                <stored-value>name</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for the readiness level in Service submission form  -->
+        <value-pairs value-pairs-name="readiness" dc-term="service.readinessLevel">
+            <pair>
+                <displayed-value>Service proven in operational environment (production)</displayed-value>
+                <stored-value>Production</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Service complete and qualified (release candidate)</displayed-value>
+                <stored-value>Release Candidate</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Operational service prototype demonstrated (beta)</displayed-value>
+                <stored-value>Beta</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Service demonstrated in HS environment</displayed-value>
+                <stored-value>HS Environment</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Service validated in HS environment (alpha)</displayed-value>
+                <stored-value>Alpha</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Concept validated in controlled environment</displayed-value>
+                <stored-value>Controlled Environment</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Experimental proof of concept</displayed-value>
+                <stored-value>Proof of Concept</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Concept formulated (planning)</displayed-value>
+                <stored-value>Planning</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Basic principles observed</displayed-value>
+                <stored-value>Basic Principle</stored-value>
+            </pair>
+        </value-pairs>
+    <!-- add drop down list for the operating languages in Service submission form  -->
+        <value-pairs value-pairs-name="op_language" dc-term="service.operatingLanguage">
+            <pair>
+                <displayed-value>English</displayed-value>
+                <stored-value>English</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Bulgarian</displayed-value>
+                <stored-value>Bulgarian</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Czech</displayed-value>
+                <stored-value>Czech</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Danish</displayed-value>
+                <stored-value>Danish</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>German</displayed-value>
+                <stored-value>German</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>French</displayed-value>
+                <stored-value>French</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Italian</displayed-value>
+                <stored-value>Italian</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Japanese</displayed-value>
+                <stored-value>Japanese</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Chinese</displayed-value>
+                <stored-value>Chinese</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Portuguese</displayed-value>
+                <stored-value>Portuguese</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Turkish</displayed-value>
+                <stored-value>Turkish</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Estonian</displayed-value>
+                <stored-value>Estonian</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Greek</displayed-value>
+                <stored-value>Greek</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Spanish</displayed-value>
+                <stored-value>Spanish</stored-value>
+            </pair>   
+            <pair>
+                <displayed-value>Finnish</displayed-value>
+                <stored-value>Finnish</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Irish</displayed-value>
+                <stored-value>Irish</stored-value>
+            </pair>    
+            <pair>
+                <displayed-value>Croatian</displayed-value>
+                <stored-value>Croatian</stored-value>
+            </pair>  
+            <pair>
+                <displayed-value>Hungarian</displayed-value>
+                <stored-value>Hungarian</stored-value>
+            </pair>  
+            <pair>
+                <displayed-value>Lithuanian</displayed-value>
+                <stored-value>Lithuanian</stored-value>
+            </pair>   
+            <pair>
+                <displayed-value>Latvian</displayed-value>
+                <stored-value>Latvian</stored-value>
+            </pair>  
+            <pair>
+                <displayed-value>Maltese</displayed-value>
+                <stored-value>Maltese</stored-value>
+            </pair>  
+            <pair>
+                <displayed-value>Dutch</displayed-value>
+                <stored-value>Dutch</stored-value>
+            </pair>  
+            <pair>
+                <displayed-value>Norwegian</displayed-value>
+                <stored-value>Norwegian</stored-value>
+            </pair>  
+            <pair>
+                <displayed-value>Polish</displayed-value>
+                <stored-value>Polish</stored-value>
+            </pair>  
+            <pair>
+                <displayed-value>Romanian</displayed-value>
+                <stored-value>Romanian</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Slovak</displayed-value>
+                <stored-value>Slovak</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Slovenian</displayed-value>
+                <stored-value>Slovenian</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Swedish</displayed-value>
+                <stored-value>Swedish</stored-value>
+            </pair> 
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>Other</stored-value>
+            </pair>
+        </value-pairs>        
         <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
             <pair>
                 <displayed-value>ISSN</displayed-value>
@@ -2159,25 +3259,6 @@
             <pair>
                 <displayed-value>Is a Funding Organization</displayed-value>
                 <stored-value>FundingOrganization</stored-value>
-            </pair>
-        </value-pairs>
-
-        <value-pairs value-pairs-name="audio_video_media_type" dc-term="type">
-            <pair>
-                <displayed-value>Audio</displayed-value>
-                <stored-value>audio</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Video</displayed-value>
-                <stored-value>video</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Audio and Video</displayed-value>
-                <stored-value>audio+video</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Neither</displayed-value>
-                <stored-value>neither</stored-value>
             </pair>
         </value-pairs>
 
