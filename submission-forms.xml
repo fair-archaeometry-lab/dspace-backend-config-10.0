@@ -1543,7 +1543,7 @@
                     <dc-qualifier>name</dc-qualifier>
                     <label>Name of Service Provider</label>
                     <input-type>onebox</input-type>
-                    <hint>An actor (organisation or person) offering this service. It can be free text or selected from the system.</hint>
+                    <hint>An actor (organisation or person) offering this service. It can be free text or one can selecte from the system.</hint>
                     <required>This is a required field</required>
                 </field>
                 <field>
