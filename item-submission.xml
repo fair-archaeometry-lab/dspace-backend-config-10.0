@@ -160,11 +160,18 @@
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
             <type>submission-form</type>
         </step-definition>
-	<step-definition id="publicationStepGroup" mandatory="true">
-    	   <heading>submit.progressbar.describe.stepone</heading>
-    	   <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
-           <type>submission-form</type>
-	</step-definition>
+        <!-- Example of nested Metadata  -->
+        <step-definition id="publicationStepGroup" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
+        <step-definition id="serviceStepGroup" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
         <!-- start: add steps for service collection  -->
        <step-definition id="serviceCore" mandatory="true"> <!-- add new step for service entity  -->
             <heading>submit.progressbar.describe.service.core</heading>
@@ -471,6 +478,7 @@
             <step id="serviceAccess"/>
             <step id="serviceResources"/>
             <step id="publicationStepGroup"/>
+            <step id="serviceStepGroup"/>
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
