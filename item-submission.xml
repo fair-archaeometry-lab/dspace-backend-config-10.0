@@ -477,8 +477,8 @@
             <step id="serviceScope"/>
             <step id="serviceAccess"/>
             <step id="serviceResources"/>
-            <step id="publicationStepGroup"/>
-            <step id="serviceStepGroup"/>
+       <!-- <step id="publicationStepGroup"/> examples of nested metadata feature
+            <step id="serviceStepGroup"/> -->    
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
