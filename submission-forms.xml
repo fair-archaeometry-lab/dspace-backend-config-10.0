@@ -1434,7 +1434,7 @@
                     <dc-element>researchDiscipline</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Research Discipline</label>
-                    <input-type>tag</input-type>
+                    <input-type>onebox</input-type>
                     <hint>Which domains or disciplines has a given service worked within, has experience within. This field is connected to an extensive controlled list.</hint>
                     <required>This is a required field</required>
                     <repeatable>true</repeatable>
@@ -1465,7 +1465,7 @@
                     <dc-element>function</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Service Function</label>
-                    <input-type>tag</input-type>
+                    <input-type>onebox</input-type>
                     <hint>Short and descriptive service practical level activities, what has a service been used for, what is it intended for. E.g. 'Materials Analysis', 'Dye Analysis', 'De-convolution XRF Spectra', 'Calculating Light Exposure Allowance'. At the moment, these are free text but will likely be replaced with a controlled list.</hint>
                     <repeatable>true</repeatable>
                 </field>
@@ -1476,7 +1476,7 @@
                     <dc-element>technique</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Service Technique</label>
-                    <input-type>tag</input-type>
+                    <input-type>onebox</input-type>
                     <hint>A list of analytical techniques carried out within this service</hint>
                     <required>This is a required field</required>
                     <vocabulary>amgc</vocabulary>
@@ -1516,7 +1516,7 @@
                     <dc-element>measurableProperty</dc-element>
                     <dc-qualifier>material</dc-qualifier>
                     <label>Material</label>
-                    <input-type>tag</input-type>
+                    <input-type>onebox</input-type>
                     <hint>Materials for which the measurable property can be studied</hint>
                     <repeatable>true</repeatable>
                     <vocabulary>gettym</vocabulary>
@@ -1545,7 +1545,7 @@
                     <label>Service Providers</label>
                     <input-type>inline-group</input-type>
                     <hint></hint>
-                    <required></required>
+                    <required>This is a required field</required>
                 </field>
             </row>        
             <row>
@@ -1652,7 +1652,7 @@
                     <label>Service Contact</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
-                    <required></required>
+                    <required>This is a required field</required>
                     <hint>How can this service be reached? It can an email address or a phone number.</hint>
                 </field>
             </row>
@@ -1691,7 +1691,7 @@
                 </field>
             </row>
         </form>
-        
+
 <!-- Examples of using nested metdata features  	
         <form name="publicationStepGroup">
             <row>
