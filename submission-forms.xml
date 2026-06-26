@@ -1590,29 +1590,13 @@
             <row>
                 <field>
                     <dc-schema>service</dc-schema>
-                    <dc-element>accessUnit</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Access Unit</label>
-                    <input-type value-pairs-name="period_unit">dropdown</input-type>
-                    <hint>Service access period unit</hint>
+                    <dc-element>cost</dc-element>
+                    <dc-qualifier>accessUnit</dc-qualifier>
+                    <label>Service Costs</label>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
+                    <repeatable>true</repeatable>
                 </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>hoursPerUnit</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Hours Per Unit</label>
-                    <input-type>onebox</input-type>
-                    <hint>Access hours per unit, relating time units to activity time</hint>
-                </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>accessUnitCost</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Access Unit Cost (€)</label>
-                    <input-type>onebox</input-type>
-                    <hint>Service access unit cost in Euro</hint>
-                </field>
-
             </row>
         </form>
 
@@ -1732,6 +1716,37 @@
             </row>
         </form>  
 
+        <form name="serviceAccess-service-cost-accessUnit">
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>cost</dc-element>
+                    <dc-qualifier>accessUnit</dc-qualifier>
+                    <label>Access Unit</label>
+                    <input-type value-pairs-name="period_unit">dropdown</input-type>
+                    <repeatable>false</repeatable>
+                    <hint>please select your service costs in terms of time units or sample numbers</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>cost</dc-element>
+                    <dc-qualifier>accessUnitCost</dc-qualifier>
+                    <label>Access Unit Cost (€)</label>
+                    <input-type>onebox</input-type>
+                    <repeatable>false</repeatable>
+                    <hint>Service access unit cost</hint>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>cost</dc-element>
+                    <dc-qualifier>currency</dc-qualifier>
+                    <label>Currency</label>
+                    <input-type value-pairs-name="currency_unit">dropdown</input-type>
+                    <repeatable>false</repeatable>
+                    <hint>currency used to calculate costs</hint>
+                </field>
+            </row>
+        </form>  
 
     <!-- add new form serviceResources   -->
         <form name="serviceResources">
@@ -2641,9 +2656,94 @@
             </pair>
         </value-pairs>
 
+        <!-- add drop down list for currency_unit in submission form  -->
+        <value-pairs value-pairs-name="currency_unit" dc-term="service.cost">
+            <pair>
+                <displayed-value>US Dollar</displayed-value>
+                <stored-value>USD</stored-value>
+            </pair>
+            <pair>
+                    <displayed-value>Euro</displayed-value>
+                    <stored-value>EUR</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Japanese Yen</displayed-value>
+                <stored-value>JPY</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>British Pound Sterling</displayed-value>
+                <stored-value>GBP</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Chinese Renminbi (Yuan)</displayed-value>
+                <stored-value>CNY</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Swiss Franc</displayed-value>
+                <stored-value>CHF</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Australian Dollar</displayed-value>
+                <stored-value>AUD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Canadian Dollar</displayed-value>
+                <stored-value>CAD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hong Kong Dollar</displayed-value>
+                <stored-value>HKD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Singapore Dollar</displayed-value>
+                <stored-value>SGD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Indian Rupee</displayed-value>
+                <stored-value>INR</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>South Korean Won</displayed-value>
+                <stored-value>KRW</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Swedish Krona</displayed-value>
+                <stored-value>SEK</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mexican Peso</displayed-value>
+                <stored-value>MXN</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>New Zealand Dollar</displayed-value>
+                <stored-value>NZD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Norwegian Krone</displayed-value>
+                <stored-value>NOK</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>New Taiwan Dollar</displayed-value>
+                <stored-value>TWD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Brazilian Real</displayed-value>
+                <stored-value>BRL</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>South African Rand</displayed-value>
+                <stored-value>ZAR</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Polish Złoty</displayed-value>
+                <stored-value>PLN</stored-value>
+            </pair>
+        </value-pairs>
+        
+
     <!-- add drop down list for period_unit in submission form  -->
 
-        <value-pairs value-pairs-name="period_unit" dc-term="service.accessUnit">
+        <value-pairs value-pairs-name="period_unit" dc-term="service.cost">
             <pair>
                 <displayed-value>Hour</displayed-value>
                 <stored-value>hour</stored-value>
@@ -2663,6 +2763,10 @@
             <pair>
                 <displayed-value>Year</displayed-value>
                 <stored-value>year</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Sample</displayed-value>
+                <stored-value>sample</stored-value>
             </pair>
         </value-pairs>
     <!-- add drop down list for contact_type in submission form  -->
