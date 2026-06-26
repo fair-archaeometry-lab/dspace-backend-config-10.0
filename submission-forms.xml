@@ -1579,6 +1579,17 @@
             <row>
                 <field>
                     <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier>id</dc-qualifier>
+                    <label>Team Member</label>
+                    <input-type>inline-group</input-type>
+                    <hint>Person in the team working on this service. It can be linked to researcher entity. Alternaitvle, please enter the first name, last name, and email address, separated by commas. For example: John Doe, jane.doe@example.com</hint>
+                    <repeatable>true</repeatable>
+                </field>          
+            </row>
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
                     <dc-element>accessUnit</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Access Unit</label>
@@ -1601,15 +1612,7 @@
                     <input-type>onebox</input-type>
                     <hint>Service access unit cost in Euro</hint>
                 </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Team Member</label>
-                    <input-type>onebox</input-type>
-                    <hint>Person in the team working on this service. It can be linked to researcher entity. Alternaitvle, please enter the first name, last name, and email address, separated by commas. For example: John Doe, jane.doe@example.com</hint>
-                    <repeatable>true</repeatable>
-                </field>
+
             </row>
         </form>
 
@@ -1657,6 +1660,78 @@
                 </field>
             </row>
         </form>    
+
+        <form name="serviceAccess-service-teamMember-id">
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier>id</dc-qualifier>
+                    <label>Team Member Id or Name</label>
+                    <input-type>onebox</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>Identifier of the person (as defined in the system). Otherwise, provide the name.</hint>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier>role</dc-qualifier>
+                    <label>Team Member Role 1</label>
+                    <input-type value-pairs-name="member_role">dropdown</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>The main role that the person has in the team.</hint>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier>role1</dc-qualifier>
+                    <label>Team Member Role 2</label>
+                    <input-type value-pairs-name="member_role">dropdown</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>The main role that the person has in the team.</hint>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier>role2</dc-qualifier>
+                    <label>Team Member Role 3</label>
+                    <input-type value-pairs-name="member_role">dropdown</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>The main role that the person has in the team.</hint>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier>startDate</dc-qualifier>
+                    <label>Start Date</label>
+                    <input-type>date</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>Date when the person joined the service team.</hint>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>teamMember</dc-element>
+                    <dc-qualifier>endDate</dc-qualifier>
+                    <label>End Date</label>
+                    <input-type>date</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>Date when the person left the service team.</hint>
+                    <style>col-6</style>
+                </field>
+            </row>
+        </form>  
+
 
     <!-- add new form serviceResources   -->
         <form name="serviceResources">
@@ -2605,6 +2680,71 @@
                 <stored-value>other</stored-value>
             </pair>
         </value-pairs>
+
+    <!-- add drop down list for member_role in submission form  -->
+        <value-pairs value-pairs-name="member_role" dc-term="service.teamMember">
+            <pair>
+                <displayed-value>Adminstrative Support</displayed-value>
+                <stored-value>administrative_support</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Archive Manager</displayed-value>
+                <stored-value>archive_manager</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conservationist</displayed-value>
+                <stored-value>conservationist</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Data Analyst</displayed-value>
+                <stored-value>data_analyst</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Data Manager</displayed-value>
+                <stored-value>data_manager</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Equipment Operator</displayed-value>
+                <stored-value>equipment_operator</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>General Contact</displayed-value>
+                <stored-value>general_contact</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Non Traveling Participant</displayed-value>
+                <stored-value>non_traveling_participant</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Project Coordinator</displayed-value>
+                <stored-value>project_coordinator</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Project Deputy</displayed-value>
+                <stored-value>project_deputy</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Research Scientist</displayed-value>
+                <stored-value>research_scientist</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Researcher(other)</displayed-value>
+                <stored-value>researcher_other</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Software Developer</displayed-value>
+                <stored-value>software_developer</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Traveling Participant</displayed-value>
+                <stored-value>traveling_participant</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>User Liasion</displayed-value>
+                <stored-value>user_liasion</stored-value>
+            </pair>
+        </value-pairs>
+
     <!-- add drop down list for provider_role in submission form  -->
         <value-pairs value-pairs-name="provider_role" dc-term="service.provider">
             <pair>
