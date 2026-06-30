@@ -2077,25 +2077,17 @@
                 </field>
             </row>
         </form>
-        
+
         <form name="instTechnical">
             <row>
                 <field>
                     <dc-schema>instrument</dc-schema>
                     <dc-element>manufacturer</dc-element>
                     <dc-qualifier>name</dc-qualifier>
-                    <label>Manufacturer Name</label>
-                    <input-type>onebox</input-type>
-                    <hint>Name of the manufacturer or developer. A control list will be provided in the future.</hint>
+                    <label>Manufacturer</label>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
                     <required>This is a required field</required>
-                </field>
-                <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Manufacturer Identifier</label>
-                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
-                    <hint>Please select an identifier type from the list and enter its value accordingly</hint>
                     <repeatable>true</repeatable>
                 </field>
             </row>
@@ -2104,18 +2096,10 @@
                     <dc-schema>instrument</dc-schema>
                     <dc-element>model</dc-element>
                     <dc-qualifier>name</dc-qualifier>
-                    <label>Model Name</label>
-                    <input-type>onebox</input-type>
-                    <hint>Model of Instruement. A control list will be provided in the future.</hint>
+                    <label>Model</label>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
                     <required>This is a required field</required>
-                </field>
-                <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Model Identifier</label>
-                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
-                    <hint>Please select an identifier type (usually serial number) from the list and enter its value accordingly. </hint>
                     <repeatable>true</repeatable>
                 </field>
             </row>  
@@ -2125,16 +2109,9 @@
                     <dc-element>instrumentType</dc-element>
                     <dc-qualifier>name</dc-qualifier>
                     <label>Instrument Type</label>
-                    <input-type>onebox</input-type>
-                    <hint>Type of instrument. A control list will be provided in the future.</hint>
-                </field>
-                <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Identifier of Instrument Type</label>
-                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
-                    <hint>Please select an identifier type from the list and enter its value accordingly. </hint>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
+                    <required>This is a required field</required>
                     <repeatable>true</repeatable>
                 </field>
             </row>
@@ -2159,6 +2136,115 @@
                 </field>          
             </row>     
         </form>
+
+        <form name="instTechnical-instrument-manufacturer-name">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>manufacturer</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Manufacturer Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the manufacturer or developer</hint>
+                    <required>This is a required field</required>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>manufacturer</dc-element>
+                    <dc-qualifier>identifierType</dc-qualifier>
+                    <label>Manufacturer Identifier Type</label>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <hint>Identifier Type of the manufacturer</hint>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>manufacturer</dc-element>
+                    <dc-qualifier>identifier</dc-qualifier>
+                    <label>Manufacturer Identifier Value</label>
+                    <input-type>onebox</input-type>
+                    <hint>Identifier value of the manufacturer</hint>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+            </row>
+        </form>
+
+        <form name="instTechnical-instrument-model-name">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>model</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Model Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the instrument model</hint>
+                    <required>This is a required field</required>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>model</dc-element>
+                    <dc-qualifier>identifierType</dc-qualifier>
+                    <label>Model Identifier Type</label>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <hint>Identifier Type of the model</hint>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>model</dc-element>
+                    <dc-qualifier>identifier</dc-qualifier>
+                    <label>Model Identifier Value</label>
+                    <input-type>onebox</input-type>
+                    <hint>Identifier value of the model</hint>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+            </row>
+        </form>
+
+        <form name="instTechnical-instrument-instrumentType-name">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>instrumentType</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Instrument Type</label>
+                    <input-type>onebox</input-type>
+                    <hint>Type of instrument. A control list will be provided in the future.</hint>
+                    <required>This is a required field</required>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>instrumentType</dc-element>
+                    <dc-qualifier>identifierType</dc-qualifier>
+                    <label>Instrument Type Identifier Type</label>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <hint>Identifier Type of the instrument type</hint>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>instrumentType</dc-element>
+                    <dc-qualifier>identifier</dc-qualifier>
+                    <label>Instrument Type Identifier Value</label>
+                    <input-type>onebox</input-type>
+                    <hint>Identifier value of the instrument type</hint>
+                    <repeatable></repeatable>
+                    <style>col-4</style>
+                </field>
+            </row>
+        </form>
+
         <form name="instResources">
             <row>
                 <field>
