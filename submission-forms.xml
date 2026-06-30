@@ -1994,28 +1994,11 @@
                     <dc-schema>instrument</dc-schema>
                     <dc-element>owner</dc-element>
                     <dc-qualifier>name</dc-qualifier>
-                    <label>Owner Institution Name</label>
-                    <input-type>onebox</input-type>
-                    <hint>Name of the institution responsible for the instrument</hint>
+                    <label>Owner Information</label>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
                     <required>This is a required field</required>
-                </field>
-                <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Owner Identifier</label>
-                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
-                    <hint>Identifier of the owner institution (ROR, GRID, etc.)</hint>
                     <repeatable>true</repeatable>
-                </field>
-                <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>owner</dc-element>
-                    <dc-qualifier>contact</dc-qualifier>
-                    <label>Owner Contact Email</label>
-                    <input-type>onebox</input-type>
-                    <hint>Contact email of the owner institution</hint>
-                    <required>This is a required field</required>
                 </field>
             </row>
             <row>
@@ -2047,6 +2030,54 @@
                 </field>
             </row>
         </form>
+
+        <form name="instAccess-instrument-owner-name">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>owner</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Owner Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the institution or individual responsible for the instrument</hint>
+                    <required>This is a required field</required>
+                    <repeatable></repeatable>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>owner</dc-element>
+                    <dc-qualifier>contact</dc-qualifier>
+                    <label>Owner Contact Email</label>
+                    <input-type>onebox</input-type>
+                    <hint>Contact email of the owner</hint>
+                    <required>This is a required field</required>
+                    <repeatable></repeatable>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>owner</dc-element>
+                    <dc-qualifier>identifierType</dc-qualifier>
+                    <label>Owner Identifier Type</label>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <hint>Identifier Type of the owner</hint>
+                    <repeatable></repeatable>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>owner</dc-element>
+                    <dc-qualifier>identifier</dc-qualifier>
+                    <label>Owner Identifier Value</label>
+                    <input-type>onebox</input-type>
+                    <hint>Identifier value of the owner</hint>
+                    <repeatable></repeatable>
+                    <style>col-6</style>
+                </field>
+            </row>
+        </form>
+        
         <form name="instTechnical">
             <row>
                 <field>
@@ -2453,6 +2484,7 @@
             </pair>
         </value-pairs>
     <!-- add drop down list for the device PID in device submission form  -->
+
         <value-pairs value-pairs-name="all_identifier" dc-term="instrument.identifier">
             <pair>
                 <displayed-value>ARK</displayed-value>
