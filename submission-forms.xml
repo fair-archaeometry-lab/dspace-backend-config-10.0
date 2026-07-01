@@ -2251,27 +2251,9 @@
                     <dc-schema>instrument</dc-schema>
                     <dc-element>alternateIdentifier</dc-element>
                     <dc-qualifier>name</dc-qualifier>
-                    <label>Name of Alternate Identifier</label>
-                    <input-type>onebox</input-type>
-                    <hint>Supplementary name for the identifier type.</hint>
-                    <repeatable>true</repeatable>
-                </field>
-                <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>alternateIdentifier</dc-element>
-                    <dc-qualifier>type</dc-qualifier>
-                    <label>Type of Alternate Identifier</label>
-                    <input-type>onebox</input-type>
-                    <hint>Alternative identifier (e.g. serial number).</hint>
-                    <repeatable>true</repeatable>
-                </field>
-                <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>alternateIdentifier</dc-element>
-                    <dc-qualifier></dc-qualifier>
                     <label>Alternate Identifier</label>
-                    <input-type>onebox</input-type>
-                    <hint>Value of Alternative identifier (e.g. serial number).</hint>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
                     <repeatable>true</repeatable>
                 </field>
             </row>   
@@ -2280,28 +2262,74 @@
                     <dc-schema>instrument</dc-schema>
                     <dc-element>relatedIdentifier</dc-element>
                     <dc-qualifier>name</dc-qualifier>
-                    <label>Name of Related Identifier</label>
+                    <label>Related Identifier</label>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row> 
+        </form>
+
+        <form name="instResources-instrument-alternateIdentifier-name">
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>alternateIdentifier</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Supplementary name for the instrument with alternate identifier.</hint>
+                    <repeatable></repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>alternateIdentifier</dc-element>
+                    <dc-qualifier>type</dc-qualifier>
+                    <label>Type of Alternate Identifier</label>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <hint>Alternative identifier (e.g. serial number) that the instrument has.</hint>
+                    <repeatable></repeatable>
+                </field>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>alternateIdentifier</dc-element>
+                    <dc-qualifier>pid</dc-qualifier>
+                    <label>Value of Alternate Identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>Value of alternative identifier (e.g. serial number).</hint>
+                    <repeatable></repeatable>
+                </field>
+            </row>  
+        </form>
+
+        <form name="instResources-instrument-relatedIdentifier-name"> 
+            <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>relatedIdentifier</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <label>Name</label>
                     <input-type>onebox</input-type>
                     <hint>Name of the related digital resource.</hint>
-                    <repeatable>true</repeatable>
+                    <repeatable></repeatable>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
                     <dc-element>relatedIdentifier</dc-element>
                     <dc-qualifier>type</dc-qualifier>
                     <label>Type of Related Identifier</label>
-                    <input-type>onebox</input-type>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
                     <hint>Related identifier (e.g. DOI, URL).</hint>
-                    <repeatable>true</repeatable>
+                    <repeatable></repeatable>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
                     <dc-element>relatedIdentifier</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier>pid</dc-qualifier>
                     <label>Related Identifier</label>
                     <input-type>onebox</input-type>
-                    <hint>Value of Related identifier (e.g. DOI, URL).</hint>
-                    <repeatable>true</repeatable>
+                    <hint>Value of related identifier (e.g. DOI, URL).</hint>
+                    <repeatable></repeatable>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
@@ -2309,11 +2337,13 @@
                     <dc-qualifier>relationType</dc-qualifier>
                     <label>Relation Type</label>
                     <input-type value-pairs-name="related_id">dropdown</input-type>
-                    <hint>Relationship type (e.g. IsDescribedBy, HasComponent).</hint>
-                    <repeatable>true</repeatable>
+                    <hint>Relationship type (e.g. IsDescribedBy, HasComponent) that describes the relationship between the instrument and the related digital resource.</hint>
+                    <repeatable></repeatable>
                 </field>
             </row> 
         </form>
+
+
         <form name="georemBasic">
             <row>
                 <field>
@@ -2329,32 +2359,33 @@
                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>sample</dc-element>
-                    <dc-qualifier>type</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Material Type</label>
-                    <hint>Type of material (rock, glass, mineral, water, isotopic standard)</hint>
-                    <input-type>onebox</input-type>
-                    <required>This is a required field</required>
+                    <dc-qualifier>description</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Description</label>
+                    <hint>Free-text description or comment of the reference material</hint>
+                    <input-type>textarea</input-type>
                 </field>
             </row>
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>sample</dc-element>
-                    <dc-qualifier>origin</dc-qualifier>
+                    <dc-qualifier>category</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Origin</label>
-                    <hint>Institution or program providing the reference material (e.g., USGS, NIST, MPI-DING)</hint>
-                    <input-type>onebox</input-type>
+                    <label>Category</label>
+                    <hint>A higher-level sample category to which the reference material belongs.</hint>
+                    <input-type value-pairs-name="sample_category">dropdown</input-type>
+                    <required>This is a required field</required>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>sample</dc-element>
-                    <dc-qualifier>description</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Description</label>
-                    <hint>Free-text description of the sample or material</hint>
-                    <input-type>textarea</input-type>
+                    <dc-qualifier>materialType</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Material Type</label>
+                    <hint>Type of material (rock, glass, mineral, water, isotopic standard). Select from a controlled list provided by Georem database.</hint>
+                    <input-type value-pairs-name="sample_material">dropdown</input-type>
+                    <required>This is a required field</required>
                 </field>
             </row>
         </form>
@@ -2499,6 +2530,152 @@
     <!-- stores the associated stored-values in the database.                  -->
 
     <form-value-pairs>
+
+    <!-- add drop down list for sample category of reference materials (from Georem)  -->
+        <value-pairs value-pairs-name="sample_category" dc-term="georem.sample.category">
+            <pair>
+                <displayed-value>Biological</displayed-value>
+                <stored-value>biological</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Geological</displayed-value>
+                <stored-value>geological</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Environmental</displayed-value>
+                <stored-value>environmental</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Microanalytical</displayed-value>
+                <stored-value>microanalytical</stored-value>
+            </pair>
+        </value-pairs>
+
+
+    <!-- add drop down list for sample material type of reference materials (from Georem)  -->
+        <value-pairs value-pairs-name="sample_material" dc-term="georem.sample.materialType">
+            <pair>
+                <displayed-value>Aerosol</displayed-value>
+                <stored-value>aerosol</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Compost</displayed-value>
+                <stored-value>compost</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Crystal</displayed-value>
+                <stored-value>crystal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Extract</displayed-value>
+                <stored-value>extract</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Filter</displayed-value>
+                <stored-value>filter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Freeze-dried</displayed-value>
+                <stored-value>freeze_dried</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Gas</displayed-value>
+                <stored-value>gas</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Gasoil</displayed-value>
+                <stored-value>gasoil</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Gasoline</displayed-value>
+                <stored-value>gasoline</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Glass</displayed-value>
+                <stored-value>glass</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Grains</displayed-value>
+                <stored-value>grains</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Granulate</displayed-value>
+                <stored-value>granulate</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Liquid</displayed-value>
+                <stored-value>liquid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Megacryst</displayed-value>
+                <stored-value>megacryst</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Metal</displayed-value>
+                <stored-value>metal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mineral</displayed-value>
+                <stored-value>mineral</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nano crystal</displayed-value>
+                <stored-value>nano crystal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nano particles</displayed-value>
+                <stored-value>nano_particles</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Nano tubes</displayed-value>
+                <stored-value>nano_tubes</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Particulate matter</displayed-value>
+                <stored-value>particulate_matter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Pellet</displayed-value>
+                <stored-value>pellet</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Powder</displayed-value>
+                <stored-value>powder</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Powder tablet</displayed-value>
+                <stored-value>powder_tablet</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Pressed powder pellet</displayed-value>
+                <stored-value>pressed_powder_pellet</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Solid</displayed-value>
+                <stored-value>solid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Solution</displayed-value>
+                <stored-value>solution</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Synthetic mixture</displayed-value>
+                <stored-value>synthetic_mixture</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tablets</displayed-value>
+                <stored-value>tablets</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tissue</displayed-value>
+                <stored-value>tissue</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Wafer</displayed-value>
+                <stored-value>wafer</stored-value>
+            </pair>
+        </value-pairs>
+
     <!-- add drop down list for related identifiers  for instrument submssion form  -->
         <value-pairs value-pairs-name="related_id" dc-term="instrument.relatedIdentifier">
             <pair>
