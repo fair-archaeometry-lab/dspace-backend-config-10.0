@@ -2412,6 +2412,28 @@
                     <required></required>
                 </field>
             </row>
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>curator</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Curator</label>
+                    <hint>The person responsible for managing the reference materials.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>curatingInstitution</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Curating Institution</label>
+                    <hint>The institution responsible for managing the reference materials.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
         </form>
 
         <form name="georemBasic-georem-identifier-identifierType"> 
@@ -2450,6 +2472,7 @@
                     <hint>The commerical manufacturer that produces reference material.</hint>
                     <input-type>onebox</input-type>
                     <required></required>
+                    <style>col-6</style>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
@@ -2460,6 +2483,7 @@
                     <hint>Non-commercial manufacturers who produce reference materials, such as research laboratories.</hint>
                     <input-type>onebox</input-type>
                     <required></required>
+                    <style>col-6</style>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
@@ -2470,6 +2494,7 @@
                     <hint>Type of identifier under which the manufacturer is registered.</hint>
                     <input-type value-pairs-name="all_identifier">dropdown</input-type>
                     <required></required>
+                    <style>col-6</style>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
@@ -2480,6 +2505,7 @@
                     <hint>The identification number under which the manufacturer is registered.</hint>
                     <input-type>onebox</input-type>
                     <required></required>
+                    <style>col-6</style>
                 </field>
             </row>
         </form>
@@ -2489,21 +2515,138 @@
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
+                    <dc-element>reference</dc-element>
+                    <dc-qualifier>year</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Publication</label>
+                    <hint></hint>
+                    <input-type>inline-group</input-type>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
                     <dc-element>analysis</dc-element>
                     <dc-qualifier>analyte</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Analyte</label>
-                    <hint>Chemical element or isotope measured (e.g., SiO2, Pb206/Pb204)</hint>
+                    <label>Information about measurement</label>
+                    <hint></hint>
+                    <input-type>inline-group</input-type>
+                    <required></required>
+                </field>
+            </row>
+        </form>
+
+        <form name="georemMeasurements-georem-reference-year">
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>reference</dc-element>
+                    <dc-qualifier>year</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Year of publication</label>
+                    <hint>In which year were the analytical results published?</hint>
                     <input-type>onebox</input-type>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>reference</dc-element>
+                    <dc-qualifier>link</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Publication Link</label>
+                    <hint>Link to the publication where the analytical results are described.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>reference</dc-element>
+                    <dc-qualifier>citation</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Citation</label>
+                    <hint>Bibliographic citation of the publication reporting the data.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                    <style>col-12</style>
+                </field>   
+            </row>
+        </form>
+
+        <form name="georemMeasurements-georem-analysis-analyte">
+            <row>                  
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>analyte</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Measured Parameter</label>
+                    <hint>Select from a controlled vocabulary from GeoChem</hint>
+                    <input-type>onebox</input-type>
+                    <vocabulary>amgc</vocabulary>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>method</dc-qualifier>
+                    <label>Analytical Method</label>
+                    <hint>The analytical method used to determine the data values</hint>
+                    <input-type>onebox</input-type>
+                    <vocabulary>amgc</vocabulary>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <style>col-6</style>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>analysis</dc-element>
                     <dc-qualifier>value</dc-qualifier>
-                    <repeatable>true</repeatable>
+                    <repeatable>false</repeatable>
                     <label>Value</label>
-                    <hint>Measured concentration or isotope ratio value</hint>
+                    <hint>Measured value if applicable.</hint>
                     <input-type>onebox</input-type>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>unit</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Measurement Unit</label>
+                    <hint>Select from a controlled vocabulary from GeoChem</hint>
+                    <input-type>onebox</input-type>
+                    <vocabulary>amgc</vocabulary>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>uncertainty</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Uncertainty</label>
+                    <hint>Reported analytical uncertainty associated with the value</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>analysis</dc-element>
+                    <dc-qualifier>uncertaintyType</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Uncertainty Type</label>
+                    <hint>Type of uncertainty (e.g., standard deviation, standard error, confidence interval)</hint>
+                    <input-type>onebox</input-type>
+                    <vocabulary>amgc</vocabulary>
+                    <required></required>
+                    <style>col-6</style>
                 </field>
             </row>
             <row>
@@ -2558,6 +2701,7 @@
                 </field>
             </row>
         </form>
+
        <form name="georemResources">
             <row>
                 <field>
