@@ -2399,14 +2399,16 @@
                     <input-type>inline-group</input-type>
                     <required></required>
                 </field>
+            </row>
+            <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>identifierValue</dc-qualifier>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Reference Material Identifier Value</label>
-                    <hint>The identification number under which the reference material is registered.</hint>
-                    <input-type>onebox</input-type>
+                    <label>Provider</label>
+                    <hint></hint>
+                    <input-type>inline-group</input-type>
                     <required></required>
                 </field>
             </row>
@@ -2436,6 +2438,52 @@
                 </field>
             </row>
         </form>
+
+        <form name="georemBasic-georem-provider-name"> 
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Name of Manufacturer</label>
+                    <hint>The commerical manufacturer that produces reference material.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>other</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Name of Other Manufacturer</label>
+                    <hint>Non-commercial manufacturers who produce reference materials, such as research laboratories.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>identifierType</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Type of Identifierr</label>
+                    <hint>Type of identifier under which the manufacturer is registered.</hint>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>identifierValue</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Identifier Value</label>
+                    <hint>The identification number under which the manufacturer is registered.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
+        </form>
+
 
         <form name="georemMeasurements">
             <row>
