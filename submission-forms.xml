@@ -2388,7 +2388,55 @@
                     <required>This is a required field</required>
                 </field>
             </row>
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>identifierType</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Reference Material Identifier</label>
+                    <hint>Type of identifier under which the reference material is registered.</hint>
+                    <input-type>inline-group</input-type>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>identifierValue</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Reference Material Identifier Value</label>
+                    <hint>The identification number under which the reference material is registered.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
         </form>
+
+        <form name="georemBasic-georem-identifier-identifierType"> 
+            <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>identifierType</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Reference Material Identifier</label>
+                    <hint>Type of identifier under which the reference material is registered.</hint>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>identifierValue</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Reference Material Identifier Value</label>
+                    <hint>The identification number under which the reference material is registered.</hint>
+                    <input-type>onebox</input-type>
+                    <required></required>
+                </field>
+            </row>
+        </form>
+
         <form name="georemMeasurements">
             <row>
                 <field>
@@ -2880,6 +2928,10 @@
             <pair>
                 <displayed-value>GEOREM</displayed-value>
                 <stored-value>georem</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GEOROC</displayed-value>
+                <stored-value>georoc</stored-value>
             </pair>
             <pair>
                 <displayed-value>PRODUCT NUMBER</displayed-value>
