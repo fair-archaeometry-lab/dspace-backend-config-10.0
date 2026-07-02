@@ -1357,7 +1357,7 @@
                     <label>Service Name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter access service name or technique name</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1376,7 +1376,7 @@
                     <label>Service Summary</label>
                     <input-type>textarea</input-type>
                     <hint>A brief description of a specific technical or access service offered, such as the use of X to investigate Y</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                  </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1422,7 +1422,7 @@
                     <input-type value-pairs-name="yes_no">list</input-type>
                     <repeatable>false</repeatable>
                     <hint>Whether the service is currently open for access</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
             </row>
         </form>
@@ -1436,7 +1436,7 @@
                     <label>Research Discipline</label>
                     <input-type>onebox</input-type>
                     <hint>Which domains or disciplines has a given service worked within, has experience within. This field is connected to an extensive controlled list.</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable>true</repeatable>
                     <vocabulary>discipline</vocabulary>
                 </field>
@@ -1478,7 +1478,7 @@
                     <label>Service Technique</label>
                     <input-type>onebox</input-type>
                     <hint>A list of analytical techniques carried out within this service</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <vocabulary>amgc</vocabulary>
                     <repeatable>true</repeatable>
                 </field>
@@ -1545,7 +1545,7 @@
                     <label>Service Providers</label>
                     <input-type>inline-group</input-type>
                     <hint></hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
             </row>        
             <row>
@@ -1556,7 +1556,7 @@
                     <label>Operating Language</label>
                     <input-type value-pairs-name="op_language">dropdown</input-type>
                     <hint>Language in which the team operates or in which tools are presented</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable>true</repeatable>
                 </field>
                 <field>
@@ -1609,7 +1609,7 @@
                     <label>Name of Service Provider</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <hint>An actor (organisation or person) offering this service.</hint>
                 </field>
                 <field>
@@ -1639,7 +1639,7 @@
                     <label>Service Contact</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <hint>How can this service be reached? It can an email address or a phone number.</hint>
                 </field>
             </row>
@@ -1899,7 +1899,7 @@
                     <label>Name of Service Provider</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <hint>An actor (organisation or person) offering this service. It can be free text or selected from the system.</hint>
                 </field>
                 <field>
@@ -1909,7 +1909,7 @@
                     <label>Name of Service Provider</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <hint>An actor (organisation or person) offering this service. It can be free text or selected from the system.</hint>
                 </field>
                 <field>
@@ -1946,7 +1946,7 @@
                     <label>Instrument Name</label>
                     <input-type>onebox</input-type>
                     <hint>Name of the Instrument</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
@@ -1983,7 +1983,7 @@
                     <label>Description</label>
                     <input-type>textarea</input-type>
                     <hint>Technical description of the instrument</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
             </row>
         </form>
@@ -1997,7 +1997,7 @@
                     <label>Owner Information</label>
                     <input-type>inline-group</input-type>
                     <hint></hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable>true</repeatable>
                 </field>
             </row>
@@ -2010,7 +2010,7 @@
                     <input-type value-pairs-name="yes_no">list</input-type>
                     <repeatable>false</repeatable>
                     <hint>Specify whether the instrument is offered in terms of open access</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
@@ -2040,7 +2040,7 @@
                     <label>Owner Name</label>
                     <input-type>onebox</input-type>
                     <hint>Name of the institution or individual responsible for the instrument</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable></repeatable>
                     <style>col-6</style>
                 </field>
@@ -2051,7 +2051,7 @@
                     <label>Owner Contact Email</label>
                     <input-type>onebox</input-type>
                     <hint>Contact email of the owner</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable></repeatable>
                     <style>col-6</style>
                 </field>
@@ -2087,7 +2087,7 @@
                     <label>Manufacturer</label>
                     <input-type>inline-group</input-type>
                     <hint></hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable>true</repeatable>
                 </field>
             </row>
@@ -2099,7 +2099,7 @@
                     <label>Model</label>
                     <input-type>inline-group</input-type>
                     <hint></hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable>true</repeatable>
                 </field>
             </row>  
@@ -2111,7 +2111,7 @@
                     <label>Instrument Type</label>
                     <input-type>inline-group</input-type>
                     <hint></hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable>true</repeatable>
                 </field>
             </row>
@@ -2132,7 +2132,7 @@
                     <input-type value-pairs-name="impact">dropdown</input-type>
                     <hint>Impact on the samples when using the given instrument.</hint>
                     <repeatable>true</repeatable>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>          
             </row>     
         </form>
@@ -2146,7 +2146,7 @@
                     <label>Manufacturer Name</label>
                     <input-type>onebox</input-type>
                     <hint>Name of the manufacturer or developer</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable></repeatable>
                     <style>col-4</style>
                 </field>
@@ -2182,7 +2182,7 @@
                     <label>Model Name</label>
                     <input-type>onebox</input-type>
                     <hint>Name of the instrument model</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable></repeatable>
                     <style>col-4</style>
                 </field>
@@ -2218,7 +2218,7 @@
                     <label>Instrument Type</label>
                     <input-type>onebox</input-type>
                     <hint>Type of instrument. A control list will be provided in the future.</hint>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                     <repeatable></repeatable>
                     <style>col-4</style>
                 </field>
@@ -2344,58 +2344,67 @@
         </form>
 
 
-        <form name="georemBasic">
+        <form name="georemMaterial">
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>sample</dc-element>
+                    <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>name</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Reference Material Name</label>
-                    <hint>Name of the reference material or sample (e.g., BHVO-2, NIST SRM 610)</hint>
+                    <label>Name of Reference Material</label>
+                    <hint>Official name or designation of the reference material (e.g., BHVO-2, NIST SRM 610).</hint>
                     <input-type>onebox</input-type>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>sample</dc-element>
+                    <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>description</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Description</label>
-                    <hint>Free-text description or comment of the reference material</hint>
+                    <hint>Description of the reference material including comments or locality.</hint>
                     <input-type>textarea</input-type>
+                </field>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>referenceMaterial</dc-element>
+                    <dc-qualifier>publicationYear</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Publication Year</label>
+                    <hint>Year of publication for the reference material.</hint>
+                    <input-type>onebox</input-type>
                 </field>
             </row>
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>sample</dc-element>
+                    <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>category</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Category</label>
                     <hint>A higher-level sample category to which the reference material belongs.</hint>
                     <input-type value-pairs-name="sample_category">dropdown</input-type>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>sample</dc-element>
+                    <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>materialType</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Material Type</label>
                     <hint>Type of material (rock, glass, mineral, water, isotopic standard). Select from a controlled list provided by Georem database.</hint>
                     <input-type value-pairs-name="sample_material">dropdown</input-type>
-                    <required>This is a required field</required>
+                    <required>This is a mandatory field</required>
                 </field>
             </row>
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>identifier</dc-element>
+                    <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>identifierType</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Reference Material Identifier</label>
-                    <hint>Type of identifier under which the reference material is registered.</hint>
+                    <hint></hint>
                     <input-type>inline-group</input-type>
                     <required></required>
                 </field>
@@ -2415,43 +2424,43 @@
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>curator</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Curator</label>
-                    <hint>The person responsible for managing the reference materials.</hint>
+                    <dc-element>referenceMaterial</dc-element>
+                    <dc-qualifier>institution</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Curating Institution</label>
+                    <hint>The institution responsible for managing the reference materials.</hint>
                     <input-type>onebox</input-type>
                     <required></required>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>curatingInstitution</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Curating Institution</label>
-                    <hint>The institution responsible for managing the reference materials.</hint>
+                    <dc-element>referenceMaterial</dc-element>
+                    <dc-qualifier>institutionAddress</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Institution Address</label>
+                    <hint>Postal address of the institution.</hint>
                     <input-type>onebox</input-type>
                     <required></required>
                 </field>
             </row>
         </form>
 
-        <form name="georemBasic-georem-identifier-identifierType"> 
+        <form name="georemMaterial-georem-referenceMaterial-identifierType"> 
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>identifier</dc-element>
+                    <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>identifierType</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Reference Material Identifier</label>
+                    <label>Type of Reference Material Identifier</label>
                     <hint>Type of identifier under which the reference material is registered.</hint>
                     <input-type value-pairs-name="all_identifier">dropdown</input-type>
                     <required></required>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>identifierValue</dc-qualifier>
+                    <dc-element>referenceMaterial</dc-element>
+                    <dc-qualifier>identifier</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Reference Material Identifier Value</label>
                     <hint>The identification number under which the reference material is registered.</hint>
@@ -2461,7 +2470,7 @@
             </row>
         </form>
 
-        <form name="georemBasic-georem-provider-name"> 
+        <form name="georemMaterial-georem-provider-name"> 
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
@@ -2511,23 +2520,11 @@
         </form>
 
 
-        <form name="georemMeasurements">
+        <form name="georemChemistry">
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>reference</dc-element>
-                    <dc-qualifier>year</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Publication</label>
-                    <hint></hint>
-                    <input-type>inline-group</input-type>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
+                    <dc-element>chemistry</dc-element>
                     <dc-qualifier>analyte</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Information about measurement</label>
@@ -2538,49 +2535,11 @@
             </row>
         </form>
 
-        <form name="georemMeasurements-georem-reference-year">
-            <row>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>reference</dc-element>
-                    <dc-qualifier>year</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Year of publication</label>
-                    <hint>In which year were the analytical results published?</hint>
-                    <input-type>onebox</input-type>
-                    <required></required>
-                    <style>col-6</style>
-                </field>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>reference</dc-element>
-                    <dc-qualifier>link</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Publication Link</label>
-                    <hint>Link to the publication where the analytical results are described.</hint>
-                    <input-type>onebox</input-type>
-                    <required></required>
-                    <style>col-6</style>
-                </field>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>reference</dc-element>
-                    <dc-qualifier>citation</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Citation</label>
-                    <hint>Bibliographic citation of the publication reporting the data.</hint>
-                    <input-type>onebox</input-type>
-                    <required></required>
-                    <style>col-12</style>
-                </field>   
-            </row>
-        </form>
-
-        <form name="georemMeasurements-georem-analysis-analyte">
+        <form name="georemChemistry-georem-chemistry-analyte">
             <row>                  
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
+                    <dc-element>chemistry</dc-element>
                     <dc-qualifier>analyte</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Measured Parameter</label>
@@ -2592,7 +2551,7 @@
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
+                    <dc-element>chemistry</dc-element>
                     <dc-qualifier>method</dc-qualifier>
                     <label>Analytical Method</label>
                     <hint>The analytical method used to determine the data values</hint>
@@ -2604,7 +2563,7 @@
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
+                    <dc-element>chemistry</dc-element>
                     <dc-qualifier>value</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Value</label>
@@ -2615,7 +2574,7 @@
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
+                    <dc-element>chemistry</dc-element>
                     <dc-qualifier>unit</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Measurement Unit</label>
@@ -2626,7 +2585,7 @@
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
+                    <dc-element>chemistry</dc-element>
                     <dc-qualifier>uncertainty</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Uncertainty</label>
@@ -2637,7 +2596,7 @@
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
+                    <dc-element>chemistry</dc-element>
                     <dc-qualifier>uncertaintyType</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Uncertainty Type</label>
@@ -2646,108 +2605,37 @@
                     <vocabulary>amgc</vocabulary>
                     <required></required>
                     <style>col-6</style>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
-                    <dc-qualifier>unit</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Unit</label>
-                    <hint>Measurement unit (e.g., wt%, ppm, ppb, ratio)</hint>
-                    <input-type>onebox</input-type>
-                </field>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
-                    <dc-qualifier>qualityFlag</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Quality Flag</label>
-                    <hint>Indicator of data quality or validation status</hint>
-                    <input-type>onebox</input-type>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>method</dc-element>
-                    <dc-qualifier>name</dc-qualifier>
-                    <label>Analytical Method</label>
-                    <hint>Analytical technique used (e.g., ICP-MS, XRF, TIMS, LA-ICP-MS)</hint>
-                    <input-type>tag</input-type>
-                    <vocabulary>amgc</vocabulary>
-                    <repeatable>true</repeatable>
-                    <required>This is a required field</required>
-                </field>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
-                    <dc-qualifier>uncertainty</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Uncertainty</label>
-                    <hint>Reported analytical uncertainty associated with the value</hint>
-                    <input-type>onebox</input-type>
-                </field>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
-                    <dc-qualifier>uncertaintyType</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Uncertainty Type</label>
-                    <hint>Type of uncertainty (e.g., standard deviation, standard error, confidence interval)</hint>
-                    <input-type>onebox</input-type>
                 </field>
             </row>
         </form>
 
-       <form name="georemResources">
+       <form name="georemCitation">
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>laboratory</dc-element>
-                    <dc-qualifier>name</dc-qualifier>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>title</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Laboratory Name</label>
-                    <hint>Name of the laboratory where the analysis was performed</hint>
+                    <label>Citation Title</label>
+                    <hint>Title of the citation that reports the reference material.</hint>
                     <input-type>onebox</input-type>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>laboratory</dc-element>
-                    <dc-qualifier>location</dc-qualifier>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>url</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Laboratory Location</label>
-                    <hint>Geographic location of the laboratory</hint>
+                    <label>Citation URL</label>
+                    <hint>URL of the citation that reports the reference material.</hint>
                     <input-type>onebox</input-type>
                 </field>
                 <field>
                     <dc-schema>georem</dc-schema>
-                    <dc-element>analysis</dc-element>
-                    <dc-qualifier>datasetId</dc-qualifier>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Dataset ID</label>
-                    <hint>Identifier linking a set of analytical results</hint>
-                    <input-type>onebox</input-type>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>reference</dc-element>
-                    <dc-qualifier>citation</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Citation</label>
-                    <hint>Full bibliographic citation of the publication</hint>
-                    <input-type>onebox</input-type>
-                </field>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>reference</dc-element>
-                    <dc-qualifier>doi</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>URL Links</label>
-                    <hint>Digital Object Identifier of the publication or other digital resources</hint>
+                    <label>Citation Author</label>
+                    <hint>Author of the citation that reports the reference material.</hint>
                     <input-type>onebox</input-type>
                 </field>
             </row>
