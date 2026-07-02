@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node id="PARAMETERS" label="Parameters">
+  <isComposedBy>
+    <node id="Al27Mg24" label="Al27/Mg24">
+      <hasNote>ratio of aluminum isotope Al-27 to magnesium isotope Mg-24</hasNote>
+    </node>
+    <node id="Acetate" label="Acetate">
+      <hasNote>acetate</hasNote>
+    </node>
+    <node id="Ag" label="Ag">
+      <hasNote>silver</hasNote>
+    </node>
+    <node id="Age" label="Age">
+      <hasNote>sample age</hasNote>
+    </node>
+    <node id="Al" label="Al">
+      <hasNote>aluminum</hasNote>
+    </node>
+    <node id="Al26" label="Al26">
+      <hasNote>aluminum isotope Al-26</hasNote>
+    </node>
+    <node id="Al2O2" label="Al2O2">
+      <hasNote>Dialuminum dioxide</hasNote>
+    </node>
+    <node id="Al2O3" label="Al2O3">
+      <hasNote>aluminium oxide</hasNote>
+    </node>
+    <node id="Alk" label="Alk">
+      <hasNote>alkalinity</hasNote>
+    </node>
+    <node id="Ar" label="Ar">
+      <hasNote>argon</hasNote>
+    </node>
+    <node id="Ar36" label="Ar36">
+      <hasNote>argon isotope Ar-36</hasNote>
+    </node>
+    <node id="Ar36Ar38" label="Ar36/Ar38">
+      <hasNote>ratio of argon isotopes Ar-36 to Ar-38</hasNote>
+    </node>
+    <node id="Ar36Ar39" label="Ar36/Ar39">
+      <hasNote>ratio of argon isotopes Ar-36 to Ar-39</hasNote>
+    </node>
+    <node id="Ar36Ar40" label="Ar36/Ar40">
+      <hasNote>ratio of argon isotopes Ar-36 to Ar-40</hasNote>
+    </node>
+    <node id="Ar36Xe132" label="Ar36/Xe132">
+      <hasNote>ratio of argon isotope Ar-36 to xenon isotope Xe-132</hasNote>
+    </node>
+    <node id="Ar37" label="Ar37">
+      <hasNote>argon isotope Ar-37</hasNote>
+    </node>
+    <node id="Ar37Ar40" label="Ar37/Ar40">
+      <hasNote>ratio of Ar-37 to Ar-40</hasNote>
+    </node>
+    <node id="Ar38" label="Ar38">
+      <hasNote>argon isotope Ar-38</hasNote>
+    </node>
+    <node id="Ar38Ar36" label="Ar38/Ar36">
+      <hasNote>ratio of argon isotopes Ar-38 to Ar-36</hasNote>
+    </node>
+    <node id="Ar38Ar40" label="Ar38/Ar40">
+      <hasNote>ratio of argon isotopes Ar-38 to Ar-40</hasNote>
+    </node>
+    <node id="Ar39" label="Ar39">
+      <hasNote>argon isotope Ar-39</hasNote>
+    </node>
+    <node id="Ar39Ar40" label="Ar39/Ar40">
+      <hasNote>ratio of argon isotopes Ar-39 to Ar-40</hasNote>
+    </node>
+    <node id="Ar40" label="Ar40">
+      <hasNote>argon isotope Ar-40</hasNote>
+    </node>
+    <node id="Ar40Ar36" label="Ar40/Ar36">
+      <hasNote>ratio of argon isotopes Ar-40 to Ar-36</hasNote>
+    </node>
+    <node id="Ar40Ar36Initial" label="Ar40/Ar36\_Initial">
+      <hasNote>initial ratio of argon isotopes Ar-40 to Ar-37</hasNote>
+    </node>
+    <node id="Ar40Ar39" label="Ar40/Ar39">
+      <hasNote>ratio of argon isotopes Ar-40 to Ar-39</hasNote>
+    </node>
+    <node id="Ar40ATM" label="Ar40/ATM">
+      <hasNote>atmospheric argon isotope ar40</hasNote>
+    </node>
+    <node id="Ar40He4" label="Ar40/He4">
+      <hasNote>ratio of argon isotopes Ar-40 to helium isotope He-4</hasNote>
+    </node>
+    <node id="Ar402" label="Ar40\*">
+      <hasNote>radiogenic ar40</hasNote>
+    </node>
+    <node id="Ar40Ar39K" label="Ar40\*/Ar39\_K">
+      <hasNote>ratio of argon isotopes, radiogenic Ar-40 to Ar-39 produced from K</hasNote>
+    </node>
+    <node id="As" label="As">
+      <hasNote>arsenic</hasNote>
+    </node>
+    <node id="Au" label="Au">
+      <hasNote>gold</hasNote>
+    </node>
+    <node id="B" label="B">
+      <hasNote>boron</hasNote>
+    </node>
+    <node id="BCa" label="B/Ca">
+      <hasNote>ratio of boron to calcium</hasNote>
+    </node>
+    <node id="B11B10" label="B11/B10">
+      <hasNote>ratio of boron isotopes B-11 to B-10</hasNote>
+    </node>
+    <node id="Ba" label="Ba">
+      <hasNote>barium</hasNote>
+    </node>
+    <node id="BaCa" label="Ba/Ca">
+      <hasNote>ratio of barium to calcium</hasNote>
+    </node>
+    <node id="BaO" label="BaO">
+      <hasNote>barium oxide</hasNote>
+    </node>
+    <node id="BaSO4" label="BaSO4">
+      <hasNote>barite</hasNote>
+    </node>
+    <node id="Be" label="Be">
+      <hasNote>beryllium</hasNote>
+    </node>
+    <node id="Be10" label="Be10">
+      <hasNote>beryllium isotope Be-10</hasNote>
+    </node>
+    <node id="Be10Be9" label="Be10/Be9">
+      <hasNote>ratio of beryllium isotopes Be-10 to Be-9</hasNote>
+    </node>
+    <node id="Be10Be9T" label="Be10/Be9(T)">
+      <hasNote>ratio of isotopes Be-10 to Be-9, time corrected</hasNote>
+    </node>
+    <node id="Be9" label="Be9">
+      <hasNote>beryllium isotope Be-9</hasNote>
+    </node>
+    <node id="Bi" label="Bi">
+      <hasNote>bismuth</hasNote>
+    </node>
+    <node id="Br" label="Br">
+      <hasNote>bromium</hasNote>
+    </node>
+    <node id="Br2" label="Br-">
+      <hasNote>bromide</hasNote>
+    </node>
+    <node id="C" label="C">
+      <hasNote>carbon</hasNote>
+    </node>
+    <node id="Cinorg" label="C(inorg)">
+      <hasNote>inorganic carbon</hasNote>
+    </node>
+    <node id="Corg" label="C(org)">
+      <hasNote>organic carbon</hasNote>
+    </node>
+    <node id="Ctot" label="C(tot)">
+      <hasNote>total carbon</hasNote>
+    </node>
+    <node id="Cnoncarb" label="C(non-carb)">
+      <hasNote>non-carbonate carbon</hasNote>
+    </node>
+    <node id="CN" label="C/N">
+      <hasNote>ratio of organic carbon to total nitrogen</hasNote>
+    </node>
+    <node id="C14" label="C14">
+      <hasNote>carbon isotope C-14</hasNote>
+    </node>
+    <node id="C14Age" label="C14\_Age">
+      <hasNote>C-14\_Age</hasNote>
+    </node>
+    <node id="Ca" label="Ca">
+      <hasNote>calcium</hasNote>
+    </node>
+    <node id="CaK" label="Ca/K">
+      <hasNote>ratio of calcium to potassium</hasNote>
+    </node>
+    <node id="Ca41" label="Ca41">
+      <hasNote>calcium isotope Ca-41</hasNote>
+    </node>
+    <node id="CaCO3" label="CaCO3">
+      <hasNote>calcium carbonate</hasNote>
+    </node>
+    <node id="C14AgeCalibrated" label="C14\_Age\_Calibrated">
+      <hasNote>calibrated C-14\_Age</hasNote>
+    </node>
+    <node id="CaO" label="CaO">
+      <hasNote>calcium oxide</hasNote>
+    </node>
+    <node id="CapDeltaO17" label="Cap\_Delta\_O17">
+      <hasNote>deviation from the Earth-Moon line of O17/O16 and O18/O16 ratios as the vertical displacement of any point from it, calculated as Cap\_Delta\_O17=1000\*ln(1+(delta\_O17/1000))-0.52\*1000\*ln(1+(delta\_O18/1000))</hasNote>
+    </node>
+    <node id="CapDeltaS33" label="Cap\_Delta\_S33">
+      <hasNote>deviation of Delta\_S33 from the terrestrial fractionation array, calculated as Cap\_Delta\_S33=Delta\_S33-(Delta\_S34/1000+1)^0.515-1)\*1000</hasNote>
+    </node>
+    <node id="CapDeltaS36" label="Cap\_Delta\_S36">
+      <hasNote>deviation of Delta\_S36 from the terrestrial fractionation array, calculated as"Cap\_Delta\_S36=Delta\_S36-((Delta\_S34/1000+1)^1.9-1)\*1000</hasNote>
+    </node>
+    <node id="CaSO4" label="CaSO4">
+      <hasNote>calcium sulfate</hasNote>
+    </node>
+    <node id="Cd" label="Cd">
+      <hasNote>cadmium</hasNote>
+    </node>
+    <node id="CdCa" label="Cd/Ca">
+      <hasNote>ratio of cadmium to calcium</hasNote>
+    </node>
+    <node id="Ce" label="Ce">
+      <hasNote>cerium</hasNote>
+    </node>
+    <node id="Ce136Ce142" label="Ce136/Ce142">
+      <hasNote>ratio of cerium isotopes Ce-136 to Ce-142</hasNote>
+    </node>
+    <node id="Ce138Ce142" label="Ce138/Ce142">
+      <hasNote>ratio of cerium isotopes Ce-138 to Ce-142</hasNote>
+    </node>
+    <node id="Ce140Nd146" label="Ce140/Nd146">
+      <hasNote>ratio of cerium to neodymium isotopes Ce-140 to Nd-146</hasNote>
+    </node>
+    <node id="Ce2O3" label="Ce2O3">
+      <hasNote>cerium oxide</hasNote>
+    </node>
+    <node id="CeO2" label="CeO2">
+      <hasNote>cerium dioxide</hasNote>
+    </node>
+    <node id="CH4" label="CH4">
+      <hasNote>methane</hasNote>
+    </node>
+    <node id="Cl" label="Cl">
+      <hasNote>chlorine</hasNote>
+    </node>
+    <node id="ChrgBal" label="Chrg\_Bal">
+      <hasNote>electrical charge balance, calculated as the sum of cations vs. anions</hasNote>
+    </node>
+    <node id="Cl2" label="Cl">
+      <hasNote>chlorine</hasNote>
+    </node>
+    <node id="Cl36" label="Cl36">
+      <hasNote>radiogenic Cl isotope Cl-36</hasNote>
+    </node>
+    <node id="Cl38" label="Cl38">
+      <hasNote>radiogenic Cl isotope Cl-38</hasNote>
+    </node>
+    <node id="Co" label="Co">
+      <hasNote>cobalt</hasNote>
+    </node>
+    <node id="CO" label="CO">
+      <hasNote>carbon monoxide</hasNote>
+    </node>
+    <node id="CO2" label="CO2">
+      <hasNote>carbon dioxide</hasNote>
+    </node>
+    <node id="Co56" label="Co56">
+      <hasNote>cobalt isotope Co-56</hasNote>
+    </node>
+    <node id="CoO" label="CoO">
+      <hasNote>cobalt oxide</hasNote>
+    </node>
+    <node id="Cr" label="Cr">
+      <hasNote>chromium</hasNote>
+    </node>
+    <node id="Cr2O3" label="Cr2O3">
+      <hasNote>chromium oxide</hasNote>
+    </node>
+    <node id="Cs" label="Cs">
+      <hasNote>cesium</hasNote>
+    </node>
+    <node id="Cs137Activity" label="Cs137\_Activity">
+      <hasNote>cesium isotope Cs-137 reported as activity</hasNote>
+    </node>
+    <node id="Cu" label="Cu">
+      <hasNote>copper</hasNote>
+    </node>
+    <node id="Cu2O" label="Cu2O">
+      <hasNote>copper(i) oxide (cuprous oxide)</hasNote>
+    </node>
+    <node id="CuO" label="CuO">
+      <hasNote>copper oxide</hasNote>
+    </node>
+    <node id="DeltaB11" label="Delta\_B11">
+      <hasNote>calculated as (B11/B10\_sample / B11/B10\_ NIST SRM951 -1)\*1000</hasNote>
+    </node>
+    <node id="DeltaC13" label="Delta\_C13">
+      <hasNote>calculated as (C13/C12\_sample / C13/C12\_PDB -1)\*1000</hasNote>
+    </node>
+    <node id="DeltaCa44" label="Delta\_Ca44">
+      <hasNote>calculated as (Ca44/Ca40\_sample / Ca44/Ca40\_std -1)\*1000</hasNote>
+    </node>
+    <node id="DeltaCl37" label="Delta\_Cl37">
+      <hasNote>calculated as (Cl37/Cl35\_sample / Cl37/Cl35\_SMOC -1)\*1000</hasNote>
+    </node>
+    <node id="DELTACu65" label="DELTA\_Cu65">
+      <hasNote>calculated as (Cu65/Cu63\_sample / Cu65/Cu63\_NIST-976 - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAD" label="DELTA\_D">
+      <hasNote>calculated as (H2/H1\_sample / H2/H1\_std -1)\*1000</hasNote>
+    </node>
+    <node id="DELTAFe56" label="DELTA\_Fe56">
+      <hasNote>calculated as (Fe56/Fe54\_ sample / Fe56/Fe54\_IRMM-014 -1)\*1000</hasNote>
+    </node>
+    <node id="DELTAFe57" label="DELTA\_Fe57">
+      <hasNote>calculated as (Fe57/Fe54\_sample / Fe57/Fe54\_IRMM-014 -1)\*1000</hasNote>
+    </node>
+    <node id="DELTAH2" label="DELTA\_H2">
+      <hasNote>calculated as (H2/H1\_sample / H2/H1\_std -1)\*1000</hasNote>
+    </node>
+    <node id="DELTALi6" label="DELTA\_Li6">
+      <hasNote>calculated as (Li6/Li7\_sample / Li6/Li7\_std -1)\*1000</hasNote>
+    </node>
+    <node id="DELTALi7" label="DELTA\_Li7">
+      <hasNote>calculated as (Li7/Li6\_sample / Li7/Li6\_std -1)\*1000</hasNote>
+    </node>
+    <node id="DELTAMg25" label="DELTA\_Mg25">
+      <hasNote>calculated as (Mg25/Mg24\_sample / Mg25/Mg24\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAMg26" label="DELTA\_Mg26">
+      <hasNote>calculated as (Mg26/Mg24\_sample / Mg26/Mg24\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAMo98" label="DELTA\_Mo98">
+      <hasNote>calculated as (Mo98/Mo95\_sample / Mo98/Mo95\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAN15" label="DELTA\_N15">
+      <hasNote>calculated as (N15/N14\_sample / N15/N14\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTANi60" label="DELTA\_Ni60">
+      <hasNote>calculated as (Ni60/Ni58\_sample / Ni60/Ni58\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAO17" label="DELTA\_O17">
+      <hasNote>calculated as (O17/O16\_sample / O17/O16\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAO18" label="DELTA\_O18">
+      <hasNote>calculated as (O18/O16\_sample / O18/O16\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAS33" label="DELTA\_S33">
+      <hasNote>calculated as (S33/S32\_sample / S33/S32\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAS34" label="DELTA\_S34">
+      <hasNote>calculated as (S34/S32\_sample / S34/S32\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAS34SO4" label="DELTA\_S34SO4">
+      <hasNote>sulfur isotope of the sulfate; calculated as (S33/S32\_sample / S33/S32\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAS36" label="DELTA\_S36">
+      <hasNote>calculated as (S36/S32\_sample / S36/S32\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTASi29" label="DELTA\_Si29">
+      <hasNote>calculated as (Si29/Si28\_sample / Si29/Si28\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTASi30" label="DELTA\_Si30">
+      <hasNote>calculated as (Si30/Si28\_sample / Si30/Si28\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTATi49" label="DELTA\_Ti49">
+      <hasNote>calculated as (Ti49/Ti47\_sample / Ti49/Ti47\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAU234" label="DELTA\_U234">
+      <hasNote>calculated as (U234/U238\_sample / U234/U238\_secular\_equilibrium - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAU238" label="DELTA\_U238">
+      <hasNote>calculated as (U238/U235\_sample / U238/U235\_secular\_equilibrium - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAV51" label="DELTA\_V51">
+      <hasNote>calculated as (V51/V50\_sample / V51/V50\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAZn66" label="DELTA\_Zn66">
+      <hasNote>calculated as (Zn66/Zn64\_sample / Zn66/Zn64\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DELTAZn68" label="DELTA\_Zn68">
+      <hasNote>calculated as (Zn68/Zn64\_sample / Zn68/Zn64\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="DIC" label="DIC">
+      <hasNote>dissolved inorganic carbon</hasNote>
+    </node>
+    <node id="Dy" label="Dy">
+      <hasNote>dysprosium</hasNote>
+    </node>
+    <node id="Dy2O3" label="Dy2O3">
+      <hasNote>dysprosium oxide</hasNote>
+    </node>
+    <node id="ECd" label="E\_Cd">
+      <hasNote>calculated as (Cd114/Cd110\_sample/ Cd114/Cd110\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="ECe" label="E\_Ce">
+      <hasNote>calculated as (Ce138/Ce142\_sample/ Ce138/Ce142\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="EHf" label="E\_Hf">
+      <hasNote>calculated as (176Hf/177Hf\_sample/ 176Hf/177Hf\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="EHfT" label="E\_Hf(T)">
+      <hasNote>calculated as (176Hf/177Hf\_sample/ 176Hf/177Hf\_std - 1)\*1000, time corrected</hasNote>
+    </node>
+    <node id="EMg25" label="E\_Mg25">
+      <hasNote>calculated as (Mg25/Mg24\_sample/ Mg25/Mg24\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="EMg26" label="E\_Mg26">
+      <hasNote>calculated as (Mg26/Mg24\_sample/ Mg26/Mg24\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="ENd" label="E\_Nd">
+      <hasNote>calculated as (Nd143/Nd144\_sample/ Nd143/Nd144\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="ENdT" label="E\_Nd(T)">
+      <hasNote>calculated as (Nd143/Nd144\_sample/ Nd143/Nd144\_std - 1)\*1000, time corrected</hasNote>
+    </node>
+    <node id="ESr" label="E\_Sr">
+      <hasNote>calculated as (Sr87/Sr86\_sample/ Sr87/Sr86\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="ESrT" label="E\_Sr(T)">
+      <hasNote>calculated as (Sr87/Sr86\_sample/ Sr87/Sr86\_std - 1)\*1000, time corrected</hasNote>
+    </node>
+    <node id="ETl" label="E\_Tl">
+      <hasNote>calculated as (Tl205/Tl203\_sample/ Tl205/Tl203\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="EW182" label="E\_W182">
+      <hasNote>calculated as (W182/W184\_sample/ W182/W184\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="EW183" label="E\_W183">
+      <hasNote>calculated as (W183/W184\_sample/ W183/W184\_std - 1)\*1000</hasNote>
+    </node>
+    <node id="Er" label="Er">
+      <hasNote>erbium</hasNote>
+    </node>
+    <node id="Er2O3" label="Er2O3">
+      <hasNote>erbium oxide</hasNote>
+    </node>
+    <node id="Eu" label="Eu">
+      <hasNote>europium</hasNote>
+    </node>
+    <node id="Eu2O3" label="Eu2O3">
+      <hasNote>europium oxide</hasNote>
+    </node>
+    <node id="F" label="F">
+      <hasNote>fluorine</hasNote>
+    </node>
+    <node id="Fe" label="Fe">
+      <hasNote>iron</hasNote>
+    </node>
+    <node id="Fe2O3" label="Fe2O3">
+      <hasNote>ferric iron oxide (tri-valent iron)</hasNote>
+    </node>
+    <node id="Fe2O3T" label="Fe2O3T">
+      <hasNote>total iron oxide content reported as ferric (tri-valent) iron</hasNote>
+    </node>
+    <node id="Fe3O4" label="Fe3O4">
+      <hasNote>ferrosoferric oxide (Iron (II,III) oxide)</hasNote>
+    </node>
+    <node id="Fe3FeT" label="Fe3/FeT">
+      <hasNote>ratio of feric iron to total iron</hasNote>
+    </node>
+    <node id="FeCO3" label="FeCO3">
+      <hasNote>siderite</hasNote>
+    </node>
+    <node id="FeFe" label="Fe-Fe">
+      <hasNote>iron ferrite (FeFe2O4)</hasNote>
+    </node>
+    <node id="FeO" label="FeO">
+      <hasNote>ferrous iron oxide (di-valent)</hasNote>
+    </node>
+    <node id="FeOT" label="FeOT">
+      <hasNote>total iron oxide content reported as ferrous (di-valent) iron</hasNote>
+    </node>
+    <node id="FeS" label="FeS">
+      <hasNote>ferrous sulfide (di-valent)</hasNote>
+    </node>
+    <node id="FeS2" label="FeS2">
+      <hasNote>iron sulfide</hasNote>
+    </node>
+    <node id="Fr" label="Fr">
+      <hasNote>francium</hasNote>
+    </node>
+    <node id="FRM" label="FRM">
+      <hasNote>fallout radionuclide measurement</hasNote>
+    </node>
+    <node id="GOs" label="G\_Os">
+      <hasNote>gamma osmium</hasNote>
+    </node>
+    <node id="GOsT" label="G\_Os(T)">
+      <hasNote>gamma osmium, time corrected</hasNote>
+    </node>
+    <node id="Ga" label="Ga">
+      <hasNote>gallium</hasNote>
+    </node>
+    <node id="Gd" label="Gd">
+      <hasNote>gadolinium</hasNote>
+    </node>
+    <node id="Gd155Sm152" label="Gd155/Sm152">
+      <hasNote>ratio of gadolinium isotope Gd155 to samarium isotope Sm152</hasNote>
+    </node>
+    <node id="Gd2O3" label="Gd2O3">
+      <hasNote>gadolinium oxide</hasNote>
+    </node>
+    <node id="Ge" label="Ge">
+      <hasNote>germanium</hasNote>
+    </node>
+    <node id="H" label="H">
+      <hasNote>hydrogen</hasNote>
+    </node>
+    <node id="HTOT" label="H(TOT)">
+      <hasNote>total hydrogen</hasNote>
+    </node>
+    <node id="H2" label="H2">
+      <hasNote>hydrogen</hasNote>
+    </node>
+    <node id="H2O" label="H2O">
+      <hasNote>water</hasNote>
+    </node>
+    <node id="H2OM" label="H2OM">
+      <hasNote>crystal water (H2O-)</hasNote>
+    </node>
+    <node id="H2OP" label="H2OP">
+      <hasNote>crystal water (H2O+)</hasNote>
+    </node>
+    <node id="H2S" label="H2S">
+      <hasNote>hydrogen sulfide</hasNote>
+    </node>
+    <node id="H2STOT" label="H2S(TOT)">
+      <hasNote>total hydrogen sulfide</hasNote>
+    </node>
+    <node id="H4SiO4" label="H4SiO4">
+      <hasNote>silicic acid</hasNote>
+    </node>
+    <node id="HCO3" label="HCO3">
+      <hasNote>bicarbonate</hasNote>
+    </node>
+    <node id="He" label="He">
+      <hasNote>helium</hasNote>
+    </node>
+    <node id="He3" label="He3">
+      <hasNote>helium isotope He3</hasNote>
+    </node>
+    <node id="He3He4" label="He3/He4">
+      <hasNote>ratio of helium isotopes He3 to He4</hasNote>
+    </node>
+    <node id="He3He4RRa" label="He3/He4(R/Ra)">
+      <hasNote>ratio of helium isotopes He3 to He4 expressed relative to the helium isotope ratio of the atmosphere</hasNote>
+    </node>
+    <node id="He4" label="He4">
+      <hasNote>helium isotope He4</hasNote>
+    </node>
+    <node id="He4NCC" label="He4(NCC)">
+      <hasNote>helium isotope He4 measured by neutron coincidence counting</hasNote>
+    </node>
+    <node id="He4Ar40" label="He4/Ar40">
+      <hasNote>ratio of helium isotope He4 to argon isotope Ar40</hasNote>
+    </node>
+    <node id="He4He3" label="He4/He3">
+      <hasNote>ratio of helium isotopes He4 to He3</hasNote>
+    </node>
+    <node id="He4Ne20" label="He4/Ne20">
+      <hasNote>ratio of helium isotope He4 to neon isotope Ne20</hasNote>
+    </node>
+    <node id="He4Ne21" label="He4/Ne21">
+      <hasNote>ratio of helium isotope He4 to neon isotope Ne21</hasNote>
+    </node>
+    <node id="Hf" label="Hf">
+      <hasNote>hafnium</hasNote>
+    </node>
+    <node id="Hf174Hf177" label="Hf174/Hf177">
+      <hasNote>ratio of hafnium isotopes Hf174 to Hf177</hasNote>
+    </node>
+    <node id="Hf176Hf177" label="Hf176/Hf177">
+      <hasNote>ratio of hafnium isotopes Hf176 to Hf177</hasNote>
+    </node>
+    <node id="Hf176Hf177I" label="Hf176/Hf177(I)">
+      <hasNote>ratio of hafnium isotopes Hf176 to Hf177 at initial time</hasNote>
+    </node>
+    <node id="Hf176Hf177T" label="Hf176/Hf177(T)">
+      <hasNote>ratio of hafnium isotopes Hf176 to Hf177, time corrected</hasNote>
+    </node>
+    <node id="Hf177Hf178" label="Hf177/Hf178">
+      <hasNote>ratio of hafnium isotopes Hf177 to Hf178</hasNote>
+    </node>
+    <node id="Hf178Hf177" label="Hf178/Hf177">
+      <hasNote>ratio of hafnium isotopes Hf178 to Hf177</hasNote>
+    </node>
+    <node id="Hf179Hf177" label="Hf179/Hf177">
+      <hasNote>ratio of hafnium isotopes Hf179 to Hf177</hasNote>
+    </node>
+    <node id="Hf180Hf177" label="Hf180/Hf177">
+      <hasNote>ratio of hafnium isotopes Hf180 to Hf177</hasNote>
+    </node>
+    <node id="Hf180W184" label="Hf180/W184">
+      <hasNote>ratio of hafnium isotope Hf180 to wolfram isotope W184</hasNote>
+    </node>
+    <node id="HfO" label="HfO">
+      <hasNote>hafnium dioxide</hasNote>
+    </node>
+    <node id="HfO2" label="HfO2">
+      <hasNote>hafnium oxide</hasNote>
+    </node>
+    <node id="Hg" label="Hg">
+      <hasNote>mercury</hasNote>
+    </node>
+    <node id="Ho" label="Ho">
+      <hasNote>holmium</hasNote>
+    </node>
+    <node id="Ho2O3" label="Ho2O3">
+      <hasNote>holmium oxide</hasNote>
+    </node>
+    <node id="I" label="I">
+      <hasNote>iodine</hasNote>
+    </node>
+    <node id="In" label="In">
+      <hasNote>indium</hasNote>
+    </node>
+    <node id="Ir" label="Ir">
+      <hasNote>iridium</hasNote>
+    </node>
+    <node id="K" label="K">
+      <hasNote>potassium</hasNote>
+    </node>
+    <node id="K2O" label="K2O">
+      <hasNote>potassium oxide</hasNote>
+    </node>
+    <node id="Kr" label="Kr">
+      <hasNote>krypton</hasNote>
+    </node>
+    <node id="Kr78" label="Kr78">
+      <hasNote>krypton isotope Kr78</hasNote>
+    </node>
+    <node id="Kr78Kr83" label="Kr78/Kr83">
+      <hasNote>ratio of krypton isotopes Kr78 to Kr83</hasNote>
+    </node>
+    <node id="Kr78Kr84" label="Kr78/Kr84">
+      <hasNote>ratio of krypton isotopes Kr78 to Kr84</hasNote>
+    </node>
+    <node id="Kr78Kr86" label="Kr78/Kr86">
+      <hasNote>ratio of krypton isotopes Kr78 to Kr86</hasNote>
+    </node>
+    <node id="Kr80" label="Kr80">
+      <hasNote>krypton isotope Kr80</hasNote>
+    </node>
+    <node id="Kr80Kr83" label="Kr80/Kr83">
+      <hasNote>ratio of krypton isotopes Kr80 to Kr83</hasNote>
+    </node>
+    <node id="Kr80Kr84" label="Kr80/Kr84">
+      <hasNote>ratio of krypton isotopes Kr80 to Kr84</hasNote>
+    </node>
+    <node id="Kr80Kr86" label="Kr80/Kr86">
+      <hasNote>ratio of krypton isotopes Kr80 to Kr86</hasNote>
+    </node>
+    <node id="Kr81" label="Kr81">
+      <hasNote>krypton isotope Kr81</hasNote>
+    </node>
+    <node id="Kr81Kr86" label="Kr81/Kr86">
+      <hasNote>ratio of krypton isotopes Kr81 to Kr86</hasNote>
+    </node>
+    <node id="Kr82" label="Kr82">
+      <hasNote>krypton isotope Kr82</hasNote>
+    </node>
+    <node id="Kr82Kr83" label="Kr82/Kr83">
+      <hasNote>ratio of krypton isotopes Kr82 to Kr83</hasNote>
+    </node>
+    <node id="Kr82Kr84" label="Kr82/Kr84">
+      <hasNote>ratio of krypton isotopes Kr82 to Kr84</hasNote>
+    </node>
+    <node id="Kr82Kr86" label="Kr82/Kr86">
+      <hasNote>ratio of krypton isotopes Kr82 to Kr86</hasNote>
+    </node>
+    <node id="Kr83" label="Kr83">
+      <hasNote>krypton isotope Kr83</hasNote>
+    </node>
+    <node id="Kr83Kr84" label="Kr83/Kr84">
+      <hasNote>ratio of krypton isotopes Kr83 to Kr84</hasNote>
+    </node>
+    <node id="Kr83Kr86" label="Kr83/Kr86">
+      <hasNote>ratio of krypton isotopes Kr83 to Kr86</hasNote>
+    </node>
+    <node id="Kr84" label="Kr84">
+      <hasNote>krypton isotope kr84</hasNote>
+    </node>
+    <node id="Kr84Kr83" label="Kr84/Kr83">
+      <hasNote>ratio of krypton isotopes Kr84 to Kr83</hasNote>
+    </node>
+    <node id="Kr84Kr86" label="Kr84/Kr86">
+      <hasNote>ratio of krypton isotopes Kr84 to Kr86</hasNote>
+    </node>
+    <node id="Kr84Xe132" label="Kr84/Xe132">
+      <hasNote>ratio of krypton isotopes Kr84 to xenon isotopes Xe132</hasNote>
+    </node>
+    <node id="Kr86" label="Kr86">
+      <hasNote>krypton isotope Kr86</hasNote>
+    </node>
+    <node id="Kr86Kr84" label="Kr86/Kr84">
+      <hasNote>ratio of krypton isotopes Kr86 to Kr84</hasNote>
+    </node>
+    <node id="Kr90" label="Kr90">
+      <hasNote>krypton isotope Kr90</hasNote>
+    </node>
+    <node id="La" label="La">
+      <hasNote>lanthanum</hasNote>
+    </node>
+    <node id="La2O3" label="La2O3">
+      <hasNote>lanthanum oxide</hasNote>
+    </node>
+    <node id="Li" label="Li">
+      <hasNote>lithium</hasNote>
+    </node>
+    <node id="Li7Li6" label="Li7/Li6">
+      <hasNote>ratio of lithium isotopes Li7 to Li6</hasNote>
+    </node>
+    <node id="LOI" label="LOI">
+      <hasNote>loss on ignition</hasNote>
+    </node>
+    <node id="Lu" label="Lu">
+      <hasNote>lutetium</hasNote>
+    </node>
+    <node id="Lu176Hf177" label="Lu176/Hf177">
+      <hasNote>ratio of lutetium isotope Lu176 to hafnium isotope Hf177</hasNote>
+    </node>
+    <node id="Lu176Hf177T" label="Lu176/Hf177(T)">
+      <hasNote>ratio of lutetium isotope Lu176 to hafnium isotope Hf177, time corrected</hasNote>
+    </node>
+    <node id="Lu176Lu177" label="Lu176/Lu177">
+      <hasNote>ratio of lutetium isotopes Lu176 to Lu177</hasNote>
+    </node>
+    <node id="Lu2O3" label="Lu2O3">
+      <hasNote>lutetium oxide</hasNote>
+    </node>
+    <node id="Mg" label="Mg">
+      <hasNote>magnesium</hasNote>
+    </node>
+    <node id="MgCa" label="Mg/Ca">
+      <hasNote>ratio of magnesium to calcium</hasNote>
+    </node>
+    <node id="MgO" label="MgO">
+      <hasNote>magnesium oxide</hasNote>
+    </node>
+    <node id="MinEM" label="Min\[EM\]">
+      <hasNote>End member (replace Min with mineral abbreviation)</hasNote>
+    </node>
+    <node id="Mn" label="Mn">
+      <hasNote>manganese</hasNote>
+    </node>
+    <node id="MnCa" label="Mn\_Ca">
+      <hasNote>ratio of manganese to calcium</hasNote>
+    </node>
+    <node id="Mn3O4" label="Mn3O4">
+      <hasNote>manganese tetroxide</hasNote>
+    </node>
+    <node id="Mn54" label="Mn54">
+      <hasNote>manganese isotope Mn54</hasNote>
+    </node>
+    <node id="MnCO3" label="MnCO3">
+      <hasNote>manganese carbonate</hasNote>
+    </node>
+    <node id="MnO" label="MnO">
+      <hasNote>manganese oxide</hasNote>
+    </node>
+    <node id="N" label="N">
+      <hasNote>nitrogen</hasNote>
+    </node>
+    <node id="NA" label="N(A)">
+      <hasNote>percent nitrogen in the a defect site of diamonds</hasNote>
+    </node>
+    <node id="NB" label="N(B)">
+      <hasNote>percent nitrogen in the b defect site of diamonds</hasNote>
+    </node>
+    <node id="NORG" label="N(ORG)">
+      <hasNote>organic nitrogen</hasNote>
+    </node>
+    <node id="NTOT" label="N(TOT)">
+      <hasNote>total nitrogen</hasNote>
+    </node>
+    <node id="N2" label="N2">
+      <hasNote>nitrogen</hasNote>
+    </node>
+    <node id="N2nmol" label="N2\[nmol\]">
+      <hasNote>nitrogen measured in nanomols</hasNote>
+    </node>
+    <node id="N2Ar36" label="N2/Ar36">
+      <hasNote>ratio of nitrogen isotope N2 to argon isotope Ar36</hasNote>
+    </node>
+    <node id="N2He3" label="N2/He3">
+      <hasNote>ratio of nitrogen isotope N2 to helium isotope He3</hasNote>
+    </node>
+    <node id="Na" label="Na">
+      <hasNote>sodium</hasNote>
+    </node>
+    <node id="Na22" label="Na22">
+      <hasNote>sodium isotope Na22</hasNote>
+    </node>
+    <node id="Na2O" label="Na2O">
+      <hasNote>sodium oxide</hasNote>
+    </node>
+    <node id="Nb" label="Nb">
+      <hasNote>niobium</hasNote>
+    </node>
+    <node id="Nb2O3" label="Nb2O3">
+      <hasNote>niobium oxide</hasNote>
+    </node>
+    <node id="Nb2O5" label="Nb2O5">
+      <hasNote>niobium pentoxide</hasNote>
+    </node>
+    <node id="NCU" label="NCU">
+      <hasNote>native copper</hasNote>
+    </node>
+    <node id="Nd" label="Nd">
+      <hasNote>neodymium</hasNote>
+    </node>
+    <node id="NdCa" label="Nd/Ca">
+      <hasNote>ratio of neodymium to calcium</hasNote>
+    </node>
+    <node id="Nd142Nd144" label="Nd142/Nd144">
+      <hasNote>ratio of neodymium isotopes Nd142 to Nd144</hasNote>
+    </node>
+    <node id="Nd143Nd144" label="Nd143/Nd144">
+      <hasNote>ratio of neodymium isotopes Nd143 to Nd144</hasNote>
+    </node>
+    <node id="Nd143Nd144I" label="Nd143/Nd144(I)">
+      <hasNote>ratio of neodymium isotopes Nd143 to Nd144 at initial age</hasNote>
+    </node>
+    <node id="Nd143Nd144T" label="Nd143/Nd144(T)">
+      <hasNote>ratio of neodymium isotopes Nd143 to Nd144, time corrected</hasNote>
+    </node>
+    <node id="Nd144" label="Nd144">
+      <hasNote>neodymium isotope Nd144</hasNote>
+    </node>
+    <node id="Nd144Nd146" label="Nd144/Nd146">
+      <hasNote>ratio of neodymium isotopes Nd144 to Nd146</hasNote>
+    </node>
+    <node id="Nd145Nd144" label="Nd145/Nd144">
+      <hasNote>ratio of neodymium isotopes Nd145 to Nd144</hasNote>
+    </node>
+    <node id="Nd146Nd142" label="Nd146/Nd142">
+      <hasNote>ratio of neodymium isotopes Nd146 to Nd142</hasNote>
+    </node>
+    <node id="Nd146Nd144" label="Nd146/Nd144">
+      <hasNote>ratio of neodymium isotopes Nd146 to Nd144</hasNote>
+    </node>
+    <node id="Nd146Nd145" label="Nd146/Nd145">
+      <hasNote>ratio of neodymium isotopes Nd146 to Nd145</hasNote>
+    </node>
+    <node id="Nd146Sm152" label="Nd146/Sm152">
+      <hasNote>ratio of neodymium isotope Nd146 to samarium isotope Sm152</hasNote>
+    </node>
+    <node id="Nd148Nd144" label="Nd148/Nd144">
+      <hasNote>ratio of neodymium isotopes Nd148 to Nd144</hasNote>
+    </node>
+    <node id="Nd148ONd144O" label="Nd148O/Nd144O">
+      <hasNote>ratio of neodymium Nd148 oxide to neodymium Nd144 oxide</hasNote>
+    </node>
+    <node id="Nd150Nd144" label="Nd150/Nd144">
+      <hasNote>ratio of neodymium isotopes Nd150 to Nd144</hasNote>
+    </node>
+    <node id="Nd2O3" label="Nd2O3">
+      <hasNote>neodymium oxide</hasNote>
+    </node>
+    <node id="Ne" label="Ne">
+      <hasNote>neon</hasNote>
+    </node>
+    <node id="Ne20" label="Ne20">
+      <hasNote>neon isotope ne20</hasNote>
+    </node>
+    <node id="Ne20Ne21" label="Ne20/Ne21">
+      <hasNote>ratio of neon isotope Ne20 to Ne21</hasNote>
+    </node>
+    <node id="Ne20Ne22" label="Ne20/Ne22">
+      <hasNote>ratio of neon isotope Ne20 to Ne22</hasNote>
+    </node>
+    <node id="Ne21" label="Ne21">
+      <hasNote>neon isotope Ne21</hasNote>
+    </node>
+    <node id="Ne21He4" label="Ne21/He4">
+      <hasNote>ratio of neon isotope Ne21 to helium isotope He4</hasNote>
+    </node>
+    <node id="Ne21Ne20" label="Ne21/Ne20">
+      <hasNote>ratio of neon isotope Ne21 to Ne20</hasNote>
+    </node>
+    <node id="Ne21Ne22" label="Ne21/Ne22">
+      <hasNote>ratio of neon isotope Ne21 to Ne22</hasNote>
+    </node>
+    <node id="Ne22" label="Ne22">
+      <hasNote>neon isotope Ne22</hasNote>
+    </node>
+    <node id="Ne22Ne20" label="Ne22/Ne20">
+      <hasNote>ratio of neon isotope Ne22 to Ne20</hasNote>
+    </node>
+    <node id="Ne22Ne21" label="Ne22/Ne21">
+      <hasNote>ratio of neon isotope Ne22 to Ne21</hasNote>
+    </node>
+    <node id="Ne23" label="Ne23">
+      <hasNote>neon isotope Ne23</hasNote>
+    </node>
+    <node id="NH3" label="NH3">
+      <hasNote>ammonia</hasNote>
+    </node>
+    <node id="NH4" label="NH4">
+      <hasNote>ammonium</hasNote>
+    </node>
+    <node id="Ni" label="Ni">
+      <hasNote>nickel</hasNote>
+    </node>
+    <node id="NiO" label="NiO">
+      <hasNote>nickel oxide</hasNote>
+    </node>
+    <node id="NO2" label="NO2">
+      <hasNote>nitrogen dioxide</hasNote>
+    </node>
+    <node id="NO3" label="NO3">
+      <hasNote>nitrate</hasNote>
+    </node>
+    <node id="O" label="O">
+      <hasNote>oxygen</hasNote>
+    </node>
+    <node id="O17O16" label="O17/O16">
+      <hasNote>ratio of oxygen isotopes O17 to O16</hasNote>
+    </node>
+    <node id="O18O16" label="O18/O16">
+      <hasNote>ratio of oxygen isotopes O18 to O16</hasNote>
+    </node>
+    <node id="O2" label="O2">
+      <hasNote>dioxygen</hasNote>
+    </node>
+    <node id="OH" label="OH">
+      <hasNote>hydroxide</hasNote>
+    </node>
+    <node id="Os" label="Os">
+      <hasNote>osmium</hasNote>
+    </node>
+    <node id="OsI" label="Os(I)">
+      <hasNote>common osmium at initial age</hasNote>
+    </node>
+    <node id="Os184Os188" label="Os184/Os188">
+      <hasNote>ratio of osmium isotopes Os184 to Os188</hasNote>
+    </node>
+    <node id="Os186Os188" label="Os186/Os188">
+      <hasNote>ratio of osmium isotopes Os186 to Os188</hasNote>
+    </node>
+    <node id="Os187Os186" label="Os187/Os186">
+      <hasNote>ratio of osmium isotopes Os187 to Os186</hasNote>
+    </node>
+    <node id="Os187Os188" label="Os187/Os188">
+      <hasNote>ratio of osmium isotopes Os187 to Os188</hasNote>
+    </node>
+    <node id="Os187Os188I" label="Os187/Os188(I)">
+      <hasNote>ratio of osmium isotopes Os187 to Os188 at initial age</hasNote>
+    </node>
+    <node id="Os187Os188T" label="Os187/Os188(T)">
+      <hasNote>ratio of osmium isotopes Os187 to Os188, time corrected</hasNote>
+    </node>
+    <node id="Os188" label="Os188">
+      <hasNote>osmium isotope Os188</hasNote>
+    </node>
+    <node id="Os188Os192" label="Os188/Os192">
+      <hasNote>ratio of osmium isotopes Os188 to Os192</hasNote>
+    </node>
+    <node id="Os189Os188" label="Os189/Os188">
+      <hasNote>ratio of osmium isotopes Os189 to Os188</hasNote>
+    </node>
+    <node id="Os190Os188" label="Os190/Os188">
+      <hasNote>ratio of osmium isotopes Os190 to Os188</hasNote>
+    </node>
+    <node id="Os192Os188" label="Os192/Os188">
+      <hasNote>ratio of osmium isotopes Os192 to Os188</hasNote>
+    </node>
+    <node id="P" label="P">
+      <hasNote>phosphorus</hasNote>
+    </node>
+    <node id="PORG" label="P(ORG)">
+      <hasNote>phosphorous, organic</hasNote>
+    </node>
+    <node id="P2O3" label="P2O3">
+      <hasNote>phosphorus trioxide</hasNote>
+    </node>
+    <node id="P2O5" label="P2O5">
+      <hasNote>phosphorus oxide</hasNote>
+    </node>
+    <node id="Pa" label="Pa">
+      <hasNote>protactinium</hasNote>
+    </node>
+    <node id="Pa231" label="Pa231">
+      <hasNote>protactinium isotope Pa231</hasNote>
+    </node>
+    <node id="Pa231ACTIVITY" label="Pa231\_ACTIVITY">
+      <hasNote>protactinium isotope Pa231, reported as activity</hasNote>
+    </node>
+    <node id="Pa231Th230" label="Pa231/Th230">
+      <hasNote>ratio of protactinium isotope Pa231 to thorium isotope Th230</hasNote>
+    </node>
+    <node id="Pa231U235ACTIVITY" label="Pa231/U235\_ACTIVITY">
+      <hasNote>ratio of protactinium isotope Pa231 to uranium isotope U235, reported as activity</hasNote>
+    </node>
+    <node id="Pa231XS" label="Pa231\_XS">
+      <hasNote>excess protactinium Pa231</hasNote>
+    </node>
+    <node id="Pb" label="Pb">
+      <hasNote>lead</hasNote>
+    </node>
+    <node id="Pb204" label="Pb204">
+      <hasNote>lead isotope Pb204</hasNote>
+    </node>
+    <node id="Pb204Pb206" label="Pb204\_Pb206">
+      <hasNote>ratio of lead isotopes Pb204 to Pb206</hasNote>
+    </node>
+    <node id="Pb204Pb208" label="Pb204\_Pb208">
+      <hasNote>ratio of lead isotopes Pb204 to Pb208</hasNote>
+    </node>
+    <node id="Pb206" label="Pb206">
+      <hasNote>lead isotope 206</hasNote>
+    </node>
+    <node id="Pb206Pb204" label="Pb206\_Pb204">
+      <hasNote>ratio of lead isotopes Pb206 to Pb204</hasNote>
+    </node>
+    <node id="Pb206Pb204I" label="Pb206/Pb204(I)">
+      <hasNote>ratio of lead isotopes Pb206 to Pb204 at initial age</hasNote>
+    </node>
+    <node id="Pb206Pb204T" label="Pb206/Pb204(T)">
+      <hasNote>ratio of lead isotopes Pb206 to Pb204, time corrected</hasNote>
+    </node>
+    <node id="Pb206Pb207" label="Pb206/Pb207">
+      <hasNote>ratio of lead isotopes Pb206 to Pb207</hasNote>
+    </node>
+    <node id="Pb206Pb208" label="Pb206/Pb208">
+      <hasNote>ratio of lead isotopes Pb206 to Pb208</hasNote>
+    </node>
+    <node id="Pb206U235" label="Pb206/U235">
+      <hasNote>ratio of lead isotope Pb206 to uranium isotope U235</hasNote>
+    </node>
+    <node id="Pb206U238" label="Pb206/U238">
+      <hasNote>ratio of lead isotope Pb206 to uranium isotope U238</hasNote>
+    </node>
+    <node id="Pb206U238T" label="Pb206/U238(T)">
+      <hasNote>ratio of lead isotope Pb206 to uranium isotope U238, time corrected</hasNote>
+    </node>
+    <node id="Pb207" label="Pb207">
+      <hasNote>lead isotope Pb207</hasNote>
+    </node>
+    <node id="Pb207Pb204" label="Pb207/Pb204">
+      <hasNote>ratio of lead isotopes Pb207 to Pb204</hasNote>
+    </node>
+    <node id="Pb207Pb204I" label="Pb207/Pb204(I)">
+      <hasNote>ratio of lead isotopes Pb207 to Pb204 at initial age</hasNote>
+    </node>
+    <node id="Pb207Pb204T" label="Pb207/Pb204(T)">
+      <hasNote>ratio of lead isotopes Pb207 to Pb204, time corrected</hasNote>
+    </node>
+    <node id="Pb207Pb206" label="Pb207/Pb206">
+      <hasNote>ratio of lead isotopes Pb207 to Pb206</hasNote>
+    </node>
+    <node id="Pb207Pb206I" label="Pb207/Pb206(I)">
+      <hasNote>ratio of lead isotopes Pb207 to Pb206 at initial age</hasNote>
+    </node>
+    <node id="Pb207Pb208" label="Pb207/Pb208">
+      <hasNote>ratio of lead isotopes Pb207 to Pb208</hasNote>
+    </node>
+    <node id="Pb207U235" label="Pb207/U235">
+      <hasNote>ratio of lead isotope Pb207 to uranium isotope U235</hasNote>
+    </node>
+    <node id="Pb207U235T" label="Pb207/U235(T)">
+      <hasNote>ratio of lead isotope Pb207 to uranium isotope U235, time corrected</hasNote>
+    </node>
+    <node id="Pb208" label="Pb208">
+      <hasNote>lead isotope Pb208</hasNote>
+    </node>
+    <node id="Pb208Pb204" label="Pb208/Pb204">
+      <hasNote>ratio of lead isotopes Pb208 to Pb204</hasNote>
+    </node>
+    <node id="Pb208Pb204I" label="Pb208/Pb204(I)">
+      <hasNote>ratio of lead isotopes Pb208 to Pb204 at initial age</hasNote>
+    </node>
+    <node id="Pb208Pb204T" label="Pb208/Pb204(T)">
+      <hasNote>ratio of lead isotopes Pb208 to Pb204, time corrected</hasNote>
+    </node>
+    <node id="Pb208Pb206" label="Pb208/Pb206">
+      <hasNote>ratio of lead isotopes Pb208 to Pb206</hasNote>
+    </node>
+    <node id="Pb208Pb206I" label="Pb208/Pb206(I)">
+      <hasNote>ratio of lead isotopes Pb208 to Pb206 at initial age</hasNote>
+    </node>
+    <node id="Pb208Th232" label="Pb208/Th232">
+      <hasNote>ratio of lead isotope Pb208 to thorium isotope Th232</hasNote>
+    </node>
+    <node id="Pb208Th232T" label="Pb208/Th232(T)">
+      <hasNote>ratio of lead isotope Pb208 to thorium isotope Th232, time corrected</hasNote>
+    </node>
+    <node id="Pb210" label="Pb210">
+      <hasNote>lead isotope Pb210</hasNote>
+    </node>
+    <node id="Pb210ACTIVITY" label="Pb210\_ACTIVITY">
+      <hasNote>lead isotope Pb210, reported as activity</hasNote>
+    </node>
+    <node id="Pb210Ra226" label="Pb210/Ra226">
+      <hasNote>ratio of lead isotope Pb210 to radium isotope Ra226</hasNote>
+    </node>
+    <node id="Pb210Ra226ACTIVITY" label="Pb210/Ra226\_ACTIVITY">
+      <hasNote>ratio of lead isotope Pb210 to radium isotope Ra226, reported as activity</hasNote>
+    </node>
+    <node id="Pb210U238" label="Pb210/U238">
+      <hasNote>ratio of lead isotope Pb210 to uranium isotope U238</hasNote>
+    </node>
+    <node id="Pb210XS" label="Pb210\_XS">
+      <hasNote>excess lead Pb210</hasNote>
+    </node>
+    <node id="PbO" label="PbO">
+      <hasNote>lead oxide</hasNote>
+    </node>
+    <node id="Pd" label="Pd">
+      <hasNote>palladium</hasNote>
+    </node>
+    <node id="pH" label="pH">
+      <hasNote>pH</hasNote>
+    </node>
+    <node id="Po210" label="Po210">
+      <hasNote>polonium isotope Po210</hasNote>
+    </node>
+    <node id="Po210ACTIVITY" label="Po210\_ACTIVITY">
+      <hasNote>polonium isotope Po210, reported as activity</hasNote>
+    </node>
+    <node id="Po210Pb210" label="Po210/Pb210">
+      <hasNote>ratio of polonium isotope Po210 to lead isotope Pb210</hasNote>
+    </node>
+    <node id="PO4" label="PO4">
+      <hasNote>phosphate</hasNote>
+    </node>
+    <node id="Pr" label="Pr">
+      <hasNote>praseodymium</hasNote>
+    </node>
+    <node id="Pr2O3" label="Pr2O3">
+      <hasNote>praseodymium oxide</hasNote>
+    </node>
+    <node id="Pr6O11" label="Pr6O11">
+      <hasNote>praseodymium (III, IV) oxide</hasNote>
+    </node>
+    <node id="PRESS" label="PRESS">
+      <hasNote>pressure</hasNote>
+    </node>
+    <node id="Pt" label="Pt">
+      <hasNote>platinum</hasNote>
+    </node>
+    <node id="Pt190Os188" label="Pt190/Os188">
+      <hasNote>ratio of platinum isotope Pt190 to osmium isotope Os188</hasNote>
+    </node>
+    <node id="r2" label="r2">
+      <hasNote>the correlation coefficient used to calculate the best-fit line</hasNote>
+    </node>
+    <node id="Ra" label="Ra">
+      <hasNote>radium</hasNote>
+    </node>
+    <node id="Ra226" label="Ra226">
+      <hasNote>radium isotope Ra226</hasNote>
+    </node>
+    <node id="Ra226ACTIVITY" label="Ra226\_ACTIVITY">
+      <hasNote>radium isotope Ra226, reported as activity</hasNote>
+    </node>
+    <node id="Ra226Th230" label="Ra226/Th230">
+      <hasNote>ratio of radium isotope Ra226 to thorium isotope Th230</hasNote>
+    </node>
+    <node id="Ra226Th230ACTIVITY" label="Ra226/Th230/ACTIVITY">
+      <hasNote>ratio of radium isotope Ra226 to thorium isotope Th230, reported as activity</hasNote>
+    </node>
+    <node id="Rb" label="Rb">
+      <hasNote>rubidium</hasNote>
+    </node>
+    <node id="Rb87" label="Rb87">
+      <hasNote>rubidium isotope Rb87</hasNote>
+    </node>
+    <node id="Rb87Rb86" label="Rb87/Rb86">
+      <hasNote>ratio of rubidium isotopes Rb87 to Rb86</hasNote>
+    </node>
+    <node id="Rb87Sr86" label="Rb87/Sr86">
+      <hasNote>ratio of rubidium isotope Rb87 to strontium isotope Sr86</hasNote>
+    </node>
+    <node id="Re" label="Re">
+      <hasNote>rhenium</hasNote>
+    </node>
+    <node id="Re187Os186" label="Re187/Os186">
+      <hasNote>ratio of rhenium isotope Re187 to osmium isotope Os186</hasNote>
+    </node>
+    <node id="Re187Os188" label="Re187/Os188">
+      <hasNote>ratio of rhenium isotope Re187 to osmium isotope Os188</hasNote>
+    </node>
+    <node id="Re187Os189" label="Re187/Os189">
+      <hasNote>ratio of rhenium isotope Re187 to osmium isotope Os189</hasNote>
+    </node>
+    <node id="Rh" label="Rh">
+      <hasNote>rhodium</hasNote>
+    </node>
+    <node id="Ru" label="Ru">
+      <hasNote>ruthenium</hasNote>
+    </node>
+    <node id="S" label="S">
+      <hasNote>sulfur</hasNote>
+    </node>
+    <node id="STOT" label="S(TOT)">
+      <hasNote>total sulfur</hasNote>
+    </node>
+    <node id="SSLFI" label="S\_(SLFI)">
+      <hasNote>sulfur present as sulfide</hasNote>
+    </node>
+    <node id="SPY" label="S\_PY">
+      <hasNote>sulfur present in pyrite form</hasNote>
+    </node>
+    <node id="SAL" label="SAL">
+      <hasNote>salinity</hasNote>
+    </node>
+    <node id="Sb" label="Sb">
+      <hasNote>antimony</hasNote>
+    </node>
+    <node id="Sc" label="Sc">
+      <hasNote>scandium</hasNote>
+    </node>
+    <node id="Sc2O3" label="Sc2O3">
+      <hasNote>scandium oxide</hasNote>
+    </node>
+    <node id="Sc46" label="Sc46">
+      <hasNote>scandium isotope Sc46</hasNote>
+    </node>
+    <node id="Se" label="Se">
+      <hasNote>selenium</hasNote>
+    </node>
+    <node id="Si" label="Si">
+      <hasNote>silica</hasNote>
+    </node>
+    <node id="SiAMORPH" label="Si(AMORPH)">
+      <hasNote>amorphous silica</hasNote>
+    </node>
+    <node id="SiO2" label="SiO2">
+      <hasNote>silica oxide</hasNote>
+    </node>
+    <node id="SIOH" label="SIOH">
+      <hasNote>SiO2, high pressure</hasNote>
+    </node>
+    <node id="Sm" label="Sm">
+      <hasNote>samarium</hasNote>
+    </node>
+    <node id="Sm144Sm152" label="Sm144/Sm152">
+      <hasNote>ratio of samarium isotopes Sm144 to Sm152</hasNote>
+    </node>
+    <node id="Sm147" label="Sm147">
+      <hasNote>samarium isotope Sm147</hasNote>
+    </node>
+    <node id="Sm147Nd143" label="Sm147/Nd143">
+      <hasNote>ratio of samarium isotope Sm147 to neodymium isotope Nd143</hasNote>
+    </node>
+    <node id="Sm147Nd144" label="Sm147/Nd144">
+      <hasNote>ratio of samarium isotope Sm147 to neodymium isotope Nd144</hasNote>
+    </node>
+    <node id="Sm147Nd146" label="Sm147/Nd146">
+      <hasNote>ratio of samarium to neodymium isotopes Sm147 to Nd146</hasNote>
+    </node>
+    <node id="Sm148Sm152" label="Sm148/Sm152">
+      <hasNote>ratio of samarium isotopes Sm148 to Sm152</hasNote>
+    </node>
+    <node id="Sm149Sm152" label="Sm149/Sm152">
+      <hasNote>ratio of samarium isotopes Sm149 to Sm152</hasNote>
+    </node>
+    <node id="Sm150Sm152" label="Sm150/Sm152">
+      <hasNote>ratio of samarium isotopes Sm150 to Sm152</hasNote>
+    </node>
+    <node id="Sm154Sm152" label="Sm154/Sm152">
+      <hasNote>ratio of samarium isotopes Sm154 to Sm152</hasNote>
+    </node>
+    <node id="Sm2O3" label="Sm2O3">
+      <hasNote>samarium oxide</hasNote>
+    </node>
+    <node id="Sn" label="Sn">
+      <hasNote>tin</hasNote>
+    </node>
+    <node id="SO2" label="SO2">
+      <hasNote>sulfur dioxide</hasNote>
+    </node>
+    <node id="SO3" label="SO3">
+      <hasNote>sulfur trioxide</hasNote>
+    </node>
+    <node id="SO4" label="SO4">
+      <hasNote>sulfate</hasNote>
+    </node>
+    <node id="Sr" label="Sr">
+      <hasNote>strontium</hasNote>
+    </node>
+    <node id="SrCa" label="Sr/Ca">
+      <hasNote>ratio of Sr to Ca</hasNote>
+    </node>
+    <node id="Sr84Sr86" label="Sr84/Sr86">
+      <hasNote>ratio of strontium isotopes Sr84 to Sr86</hasNote>
+    </node>
+    <node id="Sr84Sr88" label="Sr84/Sr88">
+      <hasNote>ratio of strontium isotopes Sr84 to Sr88</hasNote>
+    </node>
+    <node id="Sr86" label="Sr86">
+      <hasNote>strontium isotope 86</hasNote>
+    </node>
+    <node id="Sr86Sr88" label="Sr86/Sr88">
+      <hasNote>ratio of strontium isotopes Sr86 to Sr88</hasNote>
+    </node>
+    <node id="Sr87Sr86" label="Sr87/Sr86">
+      <hasNote>ratio of strontium isotopes Sr87 to Sr86</hasNote>
+    </node>
+    <node id="Sr87Sr86I" label="Sr87/Sr86(I)">
+      <hasNote>ratio of strontium isotopes Sr87 to Sr86 at initial age</hasNote>
+    </node>
+    <node id="Sr87Sr86T" label="Sr87/Sr86(T)">
+      <hasNote>ratio of strontium isotopes Sr87 to Sr86, time corrected</hasNote>
+    </node>
+    <node id="Sr87Sr88" label="Sr87/Sr88">
+      <hasNote>ratio of strontium isotopes Sr87 to Sr88</hasNote>
+    </node>
+    <node id="Sr88Sr86" label="Sr88/Sr86">
+      <hasNote>ratio of strontium isotopes Sr88 to Sr86</hasNote>
+    </node>
+    <node id="SrO" label="SrO">
+      <hasNote>strontium oxide</hasNote>
+    </node>
+    <node id="Ta" label="Ta">
+      <hasNote>tantalum</hasNote>
+    </node>
+    <node id="Ta2O5" label="Ta2O5">
+      <hasNote>tantalum oxide</hasNote>
+    </node>
+    <node id="TALC" label="TALC">
+      <hasNote>talc</hasNote>
+    </node>
+    <node id="Tb" label="Tb">
+      <hasNote>terbium</hasNote>
+    </node>
+    <node id="Tb2O3" label="Tb2O3">
+      <hasNote>terbium oxide</hasNote>
+    </node>
+    <node id="Te" label="Te">
+      <hasNote>tellurium</hasNote>
+    </node>
+    <node id="TEMP" label="TEMP">
+      <hasNote>temperature</hasNote>
+    </node>
+    <node id="Th" label="Th">
+      <hasNote>thorium</hasNote>
+    </node>
+    <node id="Th227ACTIVITY" label="Th227\_ACTIVITY">
+      <hasNote>Th227 reported as activity</hasNote>
+    </node>
+    <node id="Th228Th232" label="Th228/Th232">
+      <hasNote>ratio of thorium isotopes Th228 to Th232</hasNote>
+    </node>
+    <node id="Th230" label="Th230">
+      <hasNote>thorium isotope Th230</hasNote>
+    </node>
+    <node id="Th230ACTIVITY" label="Th230\_ACTIVITY">
+      <hasNote>thorium isotope Th230, reported as activity</hasNote>
+    </node>
+    <node id="Th230Th232" label="Th230/Th232">
+      <hasNote>ratio of thorium isotopes Th230 to Th232</hasNote>
+    </node>
+    <node id="Th230Th232ACTIVITY" label="Th230/Th232\_ACTIVITY">
+      <hasNote>ratio of thorium isotopes Th230 to Th232, reported as activity</hasNote>
+    </node>
+    <node id="Th230U238" label="Th230/U238">
+      <hasNote>ratio of thorium isotope Th230 to uranium isotope U238</hasNote>
+    </node>
+    <node id="Th230U238ACTIVITY" label="Th230\_U238\_ACTIVITY">
+      <hasNote>ratio of thorium isotope Th230 to uranium isotope U238, reported as activity</hasNote>
+    </node>
+    <node id="Th230XS" label="Th230\_XS">
+      <hasNote>excess thorium 230</hasNote>
+    </node>
+    <node id="Th232" label="Th232">
+      <hasNote>thorium 232</hasNote>
+    </node>
+    <node id="Th232ACTIVITY" label="Th232\_ACTIVITY">
+      <hasNote>thorium isotope Th232, reported as activity</hasNote>
+    </node>
+    <node id="Th232Pb204" label="Th232\_Pb204">
+      <hasNote>ratio of thorium isotope Th232 to lead isotope Pb204</hasNote>
+    </node>
+    <node id="Th232Pb208" label="Th232\_Pb208">
+      <hasNote>ratio of thorium isotope Th232 to lead isotope Pb208</hasNote>
+    </node>
+    <node id="Th232Th230" label="Th232\_Th230">
+      <hasNote>ratio of isotopes Th232 to Th230</hasNote>
+    </node>
+    <node id="Th232Th230ACTIVITY" label="Th232/Th230\_ACTIVITY">
+      <hasNote>ratio of isotopes Th232 to Th230 measured as activity</hasNote>
+    </node>
+    <node id="Th232U238" label="Th232/U238">
+      <hasNote>ratio of thorium isotope Th232 to uranium isotope U238</hasNote>
+    </node>
+    <node id="Th234" label="Th234">
+      <hasNote>thorium 234</hasNote>
+    </node>
+    <node id="Th234XS" label="Th234\_XS">
+      <hasNote>thorium 234 excess</hasNote>
+    </node>
+    <node id="Th238Th232ACTIVITY" label="Th238/Th232\_ACTIVITY">
+      <hasNote>ratio of thorium isotopes Th238 to Th232, reported as activity</hasNote>
+    </node>
+    <node id="ThO" label="ThO">
+      <hasNote>thorium monoxide</hasNote>
+    </node>
+    <node id="ThO2" label="ThO2">
+      <hasNote>thorium dioxide</hasNote>
+    </node>
+    <node id="Ti" label="Ti">
+      <hasNote>titanium</hasNote>
+    </node>
+    <node id="Ti2O3" label="Ti2O3">
+      <hasNote>titanium(III) oxide</hasNote>
+    </node>
+    <node id="TIC" label="TIC">
+      <hasNote>total inorganic carbon</hasNote>
+    </node>
+    <node id="TIMT" label="TI-MT">
+      <hasNote>ti-magnetite</hasNote>
+    </node>
+    <node id="TINB" label="TI-NB">
+      <hasNote>titanoniobate</hasNote>
+    </node>
+    <node id="TiO" label="TiO">
+      <hasNote>titanium(II) oxide</hasNote>
+    </node>
+    <node id="TiO2" label="TiO2">
+      <hasNote>titanium oxide</hasNote>
+    </node>
+    <node id="Tl" label="Tl">
+      <hasNote>thallium</hasNote>
+    </node>
+    <node id="Tl203Tl205" label="Tl203/Tl205">
+      <hasNote>ratio of thallium isotopes Tl203 to Tl205</hasNote>
+    </node>
+    <node id="Tl205Tl203" label="Tl205/Tl203">
+      <hasNote>ratio of thallium isotopes Tl205 to Tl203</hasNote>
+    </node>
+    <node id="Tm" label="Tm">
+      <hasNote>thulium</hasNote>
+    </node>
+    <node id="Tm2O3" label="Tm2O3">
+      <hasNote>thulium oxide</hasNote>
+    </node>
+    <node id="TOC" label="TOC">
+      <hasNote>total organic carbon</hasNote>
+    </node>
+    <node id="TOTAL" label="TOTAL">
+      <hasNote>total weight percent of analyzed parameters</hasNote>
+    </node>
+    <node id="U" label="U">
+      <hasNote>uranium</hasNote>
+    </node>
+    <node id="UZr91" label="U/Zr91">
+      <hasNote>ratio of uranium to zirconium isotope Zr91</hasNote>
+    </node>
+    <node id="UZr92" label="U/Zr92">
+      <hasNote>ratio of uranium to zirconium isotope Zr92</hasNote>
+    </node>
+    <node id="U230Th232ACTIVITY" label="U230/Th232\_ACTIVITY">
+      <hasNote>ratio of uranium isotope U230 to thorium isotope Th232, reported as activity</hasNote>
+    </node>
+    <node id="U234" label="U234">
+      <hasNote>uranium isotope U234</hasNote>
+    </node>
+    <node id="U234ACTIVITY" label="U234\_ACTIVITY">
+      <hasNote>uranium isotope U234, reported as activity</hasNote>
+    </node>
+    <node id="U234U238" label="U234/U238">
+      <hasNote>ratio of uranium isotopes U234 to U238</hasNote>
+    </node>
+    <node id="U234U238ACTIVITY" label="U234/U238\_ACTIVITY">
+      <hasNote>ratio of uranium isotopes U234 to U238, measured as activity</hasNote>
+    </node>
+    <node id="U234U238ACTIVITYT" label="U234/U238\_ACTIVITY(T)">
+      <hasNote>ratio of uranium isotopes U234 to U238, measured as activity at time t</hasNote>
+    </node>
+    <node id="U234U238ACTIVITY2" label="U234/U238\_ACTIVITY">
+      <hasNote>ratio of uranium isotopes U234 to U238, reported as activity</hasNote>
+    </node>
+    <node id="U235Pb204" label="U235/Pb204">
+      <hasNote>ratio of uranium isotope U235 to lead isotope Pb204</hasNote>
+    </node>
+    <node id="U235Pb207" label="U235/Pb207">
+      <hasNote>ratio of uranium isotope U235 to lead isotope Pb207</hasNote>
+    </node>
+    <node id="U235U234" label="U235/U234">
+      <hasNote>ratio of isotopes U235 to U234</hasNote>
+    </node>
+    <node id="U236Pb204" label="U236/Pb204">
+      <hasNote>ratio of uranium isotope U236 to lead isotope Pb204</hasNote>
+    </node>
+    <node id="U236U238" label="U236/U238">
+      <hasNote>ratio of isotopes U236 to U238</hasNote>
+    </node>
+    <node id="U238" label="U238">
+      <hasNote>uranium isotope U238</hasNote>
+    </node>
+    <node id="U238ACTIVITY" label="U238\_ACTIVITY">
+      <hasNote>uranium isotope U238, reported as activity</hasNote>
+    </node>
+    <node id="U238Pb204" label="U238/Pb204">
+      <hasNote>ratio of uranium isotope U238 to lead isotope Pb204</hasNote>
+    </node>
+    <node id="U238Pb206" label="U238/Pb206">
+      <hasNote>ratio of uranium isotope U238 to lead isotope Pb206</hasNote>
+    </node>
+    <node id="U238Pb208" label="U238/Pb208">
+      <hasNote>ratio of uranium isotope U238 to lead isotope Pb208</hasNote>
+    </node>
+    <node id="U238Th230" label="U238/Th230">
+      <hasNote>ratio of uranium isotope U238 to thorium isotope Th230</hasNote>
+    </node>
+    <node id="U238Th230ACTIVITY" label="U238/Th230\_ACTIVITY">
+      <hasNote>ratio of uranium isotope U238 to thorium isotope Th230, reported as activity</hasNote>
+    </node>
+    <node id="U238Th232" label="U238/Th232">
+      <hasNote>ratio of uranium isotope U238 to thorium isotope Th232</hasNote>
+    </node>
+    <node id="U238Th232ACTIVITY" label="U238/Th232\_ACTIVITY">
+      <hasNote>ratio of uranium isotope U238 to thorium isotope Th232, reported as activity</hasNote>
+    </node>
+    <node id="UO2" label="UO2">
+      <hasNote>uranium oxide</hasNote>
+    </node>
+    <node id="V" label="V">
+      <hasNote>vanadium</hasNote>
+    </node>
+    <node id="V2O3" label="V2O3">
+      <hasNote>vanadium sesquioxide</hasNote>
+    </node>
+    <node id="V2O5" label="V2O5">
+      <hasNote>vanadium pentoxide</hasNote>
+    </node>
+    <node id="V48" label="V48">
+      <hasNote>vanadium isotope V48</hasNote>
+    </node>
+    <node id="W" label="W">
+      <hasNote>tungsten</hasNote>
+    </node>
+    <node id="W182W184" label="W182/W184">
+      <hasNote>tungsten isotope</hasNote>
+    </node>
+    <node id="WO3" label="WO3">
+      <hasNote>tungsten trioxide</hasNote>
+    </node>
+    <node id="Xe" label="Xe">
+      <hasNote>xenon</hasNote>
+    </node>
+    <node id="Xe124" label="Xe124">
+      <hasNote>xenon isotope Xe124</hasNote>
+    </node>
+    <node id="Xe124Xe126" label="Xe124/Xe126">
+      <hasNote>ratio of xenon isotopes Xe124 to Xe126</hasNote>
+    </node>
+    <node id="Xe124Xe130" label="Xe124/Xe130">
+      <hasNote>ratio of xenon isotopes Xe124 to Xe130</hasNote>
+    </node>
+    <node id="Xe124Xe132" label="Xe124/Xe132">
+      <hasNote>ratio of xenon isotopes Xe124 to Xe132</hasNote>
+    </node>
+    <node id="Xe126" label="Xe126">
+      <hasNote>xenon isotope Xe126</hasNote>
+    </node>
+    <node id="Xe126Xe130" label="Xe126/Xe130">
+      <hasNote>ratio of xenon isotopes Xe126 to Xe130</hasNote>
+    </node>
+    <node id="Xe126Xe132" label="Xe126/Xe132">
+      <hasNote>ratio of xenon isotopes Xe126 to Xe132</hasNote>
+    </node>
+    <node id="Xe128" label="Xe128">
+      <hasNote>xenon isotope Xe128</hasNote>
+    </node>
+    <node id="Xe128Xe130" label="Xe128/Xe130">
+      <hasNote>ratio of xenon isotopes Xe128 to Xe130</hasNote>
+    </node>
+    <node id="Xe128Xe132" label="Xe128/Xe132">
+      <hasNote>ratio of xenon isotopes Xe128 to Xe132</hasNote>
+    </node>
+    <node id="Xe129" label="Xe129">
+      <hasNote>xenon isotope Xe129</hasNote>
+    </node>
+    <node id="Xe129Xe130" label="Xe129/Xe130">
+      <hasNote>ratio of xenon isotopes Xe129 to Xe130</hasNote>
+    </node>
+    <node id="Xe129Xe132" label="Xe129/Xe132">
+      <hasNote>ratio of xenon isotopes Xe129 to Xe132</hasNote>
+    </node>
+    <node id="Xe129Xe136" label="Xe129/Xe136">
+      <hasNote>ratio of xenon isotopes Xe129 to Xe136</hasNote>
+    </node>
+    <node id="Xe130" label="Xe130">
+      <hasNote>xenon isotope Xe130</hasNote>
+    </node>
+    <node id="Xe130Xe132" label="Xe130/Xe132">
+      <hasNote>ratio of xenon isotopes Xe130 to Xe132</hasNote>
+    </node>
+    <node id="Xe131" label="Xe131">
+      <hasNote>xenon isotope Xe131</hasNote>
+    </node>
+    <node id="Xe131Xe126" label="Xe131/Xe126">
+      <hasNote>ratio of xenon isotopes Xe131 to Xe126</hasNote>
+    </node>
+    <node id="Xe131Xe130" label="Xe131/Xe130">
+      <hasNote>ratio of xenon isotopes Xe131 to Xe130</hasNote>
+    </node>
+    <node id="Xe131Xe132" label="Xe131/Xe132">
+      <hasNote>ratio of xenon isotopes Xe131 to Xe132</hasNote>
+    </node>
+    <node id="Xe132" label="Xe132">
+      <hasNote>xenon isotope Xe132</hasNote>
+    </node>
+    <node id="Xe132Xe130" label="Xe132/Xe130">
+      <hasNote>ratio of xenon isotopes Xe132 to Xe130</hasNote>
+    </node>
+    <node id="Xe134" label="Xe134">
+      <hasNote>xenon isotope Xe134</hasNote>
+    </node>
+    <node id="Xe134Xe130" label="Xe134/Xe130">
+      <hasNote>ratio of xenon isotopes Xe134 to Xe130</hasNote>
+    </node>
+    <node id="Xe134Xe132" label="Xe134/Xe132">
+      <hasNote>ratio of xenon isotopes Xe134 to Xe132</hasNote>
+    </node>
+    <node id="Xe134Xe136" label="Xe134/Xe136">
+      <hasNote>ratio of xenon isotopes Xe134 to Xe136</hasNote>
+    </node>
+    <node id="Xe136" label="Xe136">
+      <hasNote>xenon isotope Xe136</hasNote>
+    </node>
+    <node id="Xe136He4" label="Xe136/He4">
+      <hasNote>ratio of xenon isotope Xe136 to helium isotope he4</hasNote>
+    </node>
+    <node id="Xe136Xe130" label="Xe136/Xe130">
+      <hasNote>ratio of xenon isotopes Xe136 to Xe130</hasNote>
+    </node>
+    <node id="Xe136Xe132" label="Xe136/Xe132">
+      <hasNote>ratio of xenon isotopes Xe136 to Xe132</hasNote>
+    </node>
+    <node id="Y" label="Y">
+      <hasNote>yttrium</hasNote>
+    </node>
+    <node id="Y2O3" label="Y2O3">
+      <hasNote>yttrium(III) oxide</hasNote>
+    </node>
+    <node id="YO2" label="YO2">
+      <hasNote>yttrium oxide</hasNote>
+    </node>
+    <node id="Yb" label="Yb">
+      <hasNote>ytterbium</hasNote>
+    </node>
+    <node id="Yb176Hf177" label="Yb176/Hf177">
+      <hasNote>ratio of ytterbium isotope Yb176 to hafnium isotope Hf177</hasNote>
+    </node>
+    <node id="Yb2O3" label="Yb2O3">
+      <hasNote>ytterbium oxide</hasNote>
+    </node>
+    <node id="Zn" label="Zn">
+      <hasNote>zinc</hasNote>
+    </node>
+    <node id="ZnO" label="ZnO">
+      <hasNote>zinc oxide</hasNote>
+    </node>
+    <node id="Zr" label="Zr">
+      <hasNote>zirconium</hasNote>
+    </node>
+    <node id="Zr2O3" label="Zr2O3">
+      <hasNote>zirconium pentoxide</hasNote>
+    </node>
+    <node id="ZrO2" label="ZrO2">
+      <hasNote>zirconium oxide</hasNote>
+    </node>
+  </isComposedBy>
+  <hasNote>Parameters</hasNote>
+</node>

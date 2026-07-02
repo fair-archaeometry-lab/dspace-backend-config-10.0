@@ -2586,7 +2586,7 @@
                     <label>Measured Parameter</label>
                     <hint>Select from a controlled vocabulary from GeoChem</hint>
                     <input-type>onebox</input-type>
-                    <vocabulary>amgc</vocabulary>
+                    <vocabulary>parameter</vocabulary>
                     <required></required>
                     <style>col-6</style>
                 </field>
@@ -2620,8 +2620,7 @@
                     <repeatable>false</repeatable>
                     <label>Measurement Unit</label>
                     <hint>Select from a controlled vocabulary from GeoChem</hint>
-                    <input-type>onebox</input-type>
-                    <vocabulary>amgc</vocabulary>
+                    <input-type value-pairs-name="units">dropdown</input-type>
                     <required></required>
                     <style>col-6</style>
                 </field>
@@ -2770,6 +2769,235 @@
     <!-- stores the associated stored-values in the database.                  -->
 
     <form-value-pairs>
+
+    <!-- add drop down list for measurement unit taken from Geochem -->
+        <value-pairs value-pairs-name="units" dc-term="georem.analysis.unit">
+            <pair>
+                <displayed-value>°</displayed-value>
+                <stored-value>degree</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>%</displayed-value>
+                <stored-value>percent</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>‱</displayed-value>
+                <stored-value>parts_per_ten_thousand_10^(-4)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>age</displayed-value>
+                <stored-value>age</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>at%</displayed-value>
+                <stored-value>atomic_weight_percent</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>atoms/g</displayed-value>
+                <stored-value>atoms_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>bar</displayed-value>
+                <stored-value>bar</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>bq/kg</displayed-value>
+                <stored-value>Becquerel_per_kilogram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cc</displayed-value>
+                <stored-value>cubic_centimeter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cc/g</displayed-value>
+                <stored-value>cubic_centimeters_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ccstp</displayed-value>
+                <stored-value>cubic_centimeter_gas_volume_at_standard_temperature_and_pressure</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ccstp/g</displayed-value>
+                <stored-value>cubic_centimeter_gas_volume_at_standard_temperature_and_pressure_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cm</displayed-value>
+                <stored-value>centimeter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>cps/g</displayed-value>
+                <stored-value>counts_per_second_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>°C</displayed-value>
+                <stored-value>degrees_Celsius</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>dpm</displayed-value>
+                <stored-value>disintegrations_per_minute</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>dpm/g</displayed-value>
+                <stored-value>disintegrations_per_minute_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>°F</displayed-value>
+                <stored-value>Fahrenheit</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>fg/g</displayed-value>
+                <stored-value>femptograms_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>g</displayed-value>
+                <stored-value>gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>g/cm3</displayed-value>
+                <stored-value>gram_per_cubic_cenimeter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ga</displayed-value>
+                <stored-value>billion_years_years_as_giga_annum</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GPa</displayed-value>
+                <stored-value>gigapascal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>K</displayed-value>
+                <stored-value>degrees_Kelvin</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ka</displayed-value>
+                <stored-value>thousand_years_years_as_kilo_annum</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Kbar</displayed-value>
+                <stored-value>kilobar</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>m</displayed-value>
+                <stored-value>meter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ma</displayed-value>
+                <stored-value>million_years</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mg/cm3</displayed-value>
+                <stored-value>milligram_per_cubic_centimeter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mg/g</displayed-value>
+                <stored-value>milligram_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>meq/kg</displayed-value>
+                <stored-value>milliequivalent_per_kilogram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>micromol</displayed-value>
+                <stored-value>micromol</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>μm</displayed-value>
+                <stored-value>micron_micrometer</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>μg/g</displayed-value>
+                <stored-value>microgram_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>millimol</displayed-value>
+                <stored-value>millimol</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mlstp/g</displayed-value>
+                <stored-value>milliliters_per_gram_at_standard_temperature_and_pressure</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mm</displayed-value>
+                <stored-value>millimeter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mmol/kg</displayed-value>
+                <stored-value>millimol_per_kilogram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mmol/L</displayed-value>
+                <stored-value>millimol_per_liter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mol</displayed-value>
+                <stored-value>mol</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mol%</displayed-value>
+                <stored-value>mol_percent</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>mol/g</displayed-value>
+                <stored-value>moles_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>MPa</displayed-value>
+                <stored-value>megapascal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>nanomol</displayed-value>
+                <stored-value>nanomol</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>nccstp/g</displayed-value>
+                <stored-value>nanocubic_centimeters_per_gram_at_standard_temperature_and_pressure</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ng/g</displayed-value>
+                <stored-value>nanograms_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>per mil vs ref_std</displayed-value>
+                <stored-value>parts_per_thousand_replacing_ref_std_with_ATMOS_atmosphere_CDT_Canyon_Diablo_Troilite_NBS951_PDB_Pee_Dee_Belemnite_SLAP_Standard_Light_Antarctic_Precipitation_SMOW_Standard_Mean_Ocean_Water_SMOC_Standard_Mean_Ocean_Chloride_etc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ppb</displayed-value>
+                <stored-value>parts_per_billion</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ppm</displayed-value>
+                <stored-value>parts_per_million</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ppm (atomic)</displayed-value>
+                <stored-value>parts_per_million_on_atomic_scale</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ppt</displayed-value>
+                <stored-value>parts_per_trillion</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>umol</displayed-value>
+                <stored-value>micromol</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>umol/g</displayed-value>
+                <stored-value>micromoles_per_gram</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>vol%</displayed-value>
+                <stored-value>volume_percent</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>wt%</displayed-value>
+                <stored-value>weight_percent</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>yr</displayed-value>
+                <stored-value>years</stored-value>
+            </pair>
+        </value-pairs>   
+
 
     <!-- add drop down list for sample category of reference materials (from Georem)  -->
         <value-pairs value-pairs-name="sample_category" dc-term="georem.sample.category">
