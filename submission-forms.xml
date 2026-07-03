@@ -2640,6 +2640,286 @@
                 </field>
             </row>
         </form>
+
+                <!-- add new form softwareBasicStep  -->
+        <form name="softwareBasicStep"> 
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Software Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>The name of the software</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Software Description</label>
+                    <input-type>textarea</input-type>
+                    <hint>A brief description about what the software is intended for</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>dateCreated</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Creation Date of Software</label>
+                    <input-type>date</input-type>
+                    <hint>The date on which the CreativeWork was created or the item was added to a DataFeed</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>datePublished</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Published Date of Software</label>
+                    <input-type>date</input-type>
+                    <hint>Date of first broadcast/publication</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>license</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>License type</label>
+                    <input-type value-pairs-name="openaire_license_types">dropdown</input-type>
+                    <hint>A simple drowndown list for different license types. In the future, a more detailed list will be provided</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>currentVersion</dc-element>
+                    <dc-qualifier>versionNumber</dc-qualifier>
+                    <label>Verson Number</label>
+                    <input-type>onebox</input-type>
+                    <hint>Version number of the software</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>currentVersion</dc-element>
+                    <dc-qualifier>releaseDate</dc-qualifier>
+                    <label>Release Date</label>
+                    <input-type>date</input-type>
+                    <hint>The date on which the current version is released</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>currentVersion</dc-element>
+                    <dc-qualifier>downloadURL</dc-qualifier>
+                    <label>Downloadable URL</label>
+                    <input-type>onebox</input-type>
+                    <hint>If the file can be downloaded, URL to download the binary</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>currentVersion</dc-element>
+                    <dc-qualifier>releaseNote</dc-qualifier>
+                    <label>Release Note</label>
+                    <input-type>textarea</input-type>
+                    <hint>Description of what changed in this version. It can also be a link</hint>
+                </field>
+            </row> 
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>persons</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Authors</label>
+                    <input-type>onebox</input-type>
+                    <hint>Authors or developlers involved in the development of the software. It can be linked to Person or organsation schema</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row> 
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>discoverability</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Software Identifier</label>
+                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <hint>The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>discoverability</dc-element>
+                    <dc-qualifier>applicationCategory</dc-qualifier>
+                    <label>Application Category</label>
+                    <input-type>onebox</input-type>
+                    <hint>Type of software application, e.g. 'Game, Multimedia'. Will be provided with a controlled list in the future</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>discoverability</dc-element>
+                    <dc-qualifier>funding</dc-qualifier>
+                    <label>Funding Number</label>
+                    <input-type>onebox</input-type>
+                    <hint>Funding source (e.g. specific grant number)</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>discoverability</dc-element>
+                    <dc-qualifier>funder</dc-qualifier>
+                    <label>Funder</label>
+                    <input-type>onebox</input-type>
+                    <hint>A person or organization that supports (sponsors) something through some kind of financial contribution. Link to person or organisation schema</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>discoverability</dc-element>
+                    <dc-qualifier>keywords</dc-qualifier>
+                    <label>Keywords</label>
+                    <input-type>tag</input-type>
+                    <hint>Keywords or tags used to describe this content</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>                                                        
+        </form>
+                <!-- add new form softwareDevStep  -->
+        <form name="softwareDevStep"> 
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>development</dc-element>
+                    <dc-qualifier>codeRepository</dc-qualifier>
+                    <label>Code Repository</label>
+                    <input-type>onebox</input-type>
+                    <hint>Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.)</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>development</dc-element>
+                    <dc-qualifier>integration</dc-qualifier>
+                    <label>Continuous integration</label>
+                    <input-type>onebox</input-type>
+                    <hint>link to continuous integration service (Travis-Cl, Gitlab-Cl.etc.)</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>development</dc-element>
+                    <dc-qualifier>issueTracker</dc-qualifier>
+                    <label>Issue Tracker</label>
+                    <input-type>onebox</input-type>
+                    <hint>link to software bug reporting or issue tracking system</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>development</dc-element>
+                    <dc-qualifier>relatedLink</dc-qualifier>
+                    <label>Related Links</label>
+                    <input-type>onebox</input-type>
+                    <hint>A link related to this object, e.g. related web pages</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>environment</dc-element>
+                    <dc-qualifier>language</dc-qualifier>
+                    <label>Programming Languagues</label>
+                    <input-type>onebox</input-type>
+                    <hint>The computer programming language. The list is drawn from the GitHub language list</hint>
+                    <vocabulary>prolang</vocabulary>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>environment</dc-element>
+                    <dc-qualifier>platform</dc-qualifier>
+                    <label>Run-Time Platform</label>
+                    <input-type value-pairs-name="runtime_platform">dropdown</input-type>
+                    <hint>Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0). Supersedes runtime</hint>
+                </field>
+            </row>   
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>environment</dc-element>
+                    <dc-qualifier>system</dc-qualifier>
+                    <label>Operating Systems</label>
+                    <input-type value-pairs-name="operating_system">dropdown</input-type>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>environment</dc-element>
+                    <dc-qualifier>suggestion</dc-qualifier>
+                    <label>Software Suggestion</label>
+                    <input-type>onebox</input-type>
+                    <hint>Optional dependencies , e.g. for optional features, code development, etc</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>                                                   
+        </form>
+                <!-- add new form softwareAdditionStep  -->
+        <form name="softwareAdditionStep"> 
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>editorial</dc-element>
+                    <dc-qualifier>publication</dc-qualifier>
+                    <label>Related Publication</label>
+                    <input-type>onebox</input-type>
+                    <hint>An academic publication related to the software. Link to publication schema</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>editorial</dc-element>
+                    <dc-qualifier>reviewAspect</dc-qualifier>
+                    <label>Review Aspect</label>
+                    <input-type>textarea</input-type>
+                    <hint>This Review is relevant to this part or facet of the object being review</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>editorial</dc-element>
+                    <dc-qualifier>reviewBody</dc-qualifier>
+                    <label>Review Body</label>
+                    <input-type>onebox</input-type>
+                    <hint>Which community has reviewed the software</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>additional</dc-element>
+                    <dc-qualifier>status</dc-qualifier>
+                    <label>Status</label>
+                    <input-type value-pairs-name="software_status">dropdown</input-type>
+                    <hint>Description of development status, e.g. Active, inactive, suspended. See https://www.repostatus.org/</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>additional</dc-element>
+                    <dc-qualifier>source</dc-qualifier>
+                    <label>Is Source Of</label>
+                    <input-type>onebox</input-type>
+                    <hint>Link that states where software application is built from a given source code. This is the reverse property of 'hasSourceCode</hint>
+                </field>
+                <field>
+                    <dc-schema>software</dc-schema>
+                    <dc-element>additional</dc-element>
+                    <dc-qualifier>partOf</dc-qualifier>
+                    <label>Has Part Of</label>
+                    <input-type>onebox</input-type>
+                    <hint>Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart</hint>
+                </field>
+            </row>                                                     
+        </form>
     </form-definitions>
 
 
@@ -2657,6 +2937,224 @@
     <!-- stores the associated stored-values in the database.                  -->
 
     <form-value-pairs>
+
+    <!-- add drop down list for software status -->
+        <value-pairs value-pairs-name="software_status" dc-term="software.additional.status">
+            <pair>
+                <displayed-value>CONCEPT</displayed-value>
+                <stored-value>Concept</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>WIP</displayed-value>
+                <stored-value>WIP</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>SUSPENDED</displayed-value>
+                <stored-value>Suspended</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ABANDONED</displayed-value>
+                <stored-value>Abandoned</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ACTIVE</displayed-value>
+                <stored-value>Active</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>INACTIVE</displayed-value>
+                <stored-value>Inactive</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>UNSUPPORTED</displayed-value>
+                <stored-value>Unsupported</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>MOVED</displayed-value>
+                <stored-value>Moved</stored-value>
+            </pair>
+        </value-pairs>
+
+
+    <!-- add drop down list for the operating system -->
+        <value-pairs value-pairs-name="operating_system" dc-term="software.environment.system">
+            <pair>
+                <displayed-value>Windows</displayed-value>
+                <stored-value>Windows</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>macOS</displayed-value>
+                <stored-value>MacOS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Linux</displayed-value>
+                <stored-value>Linux</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ubuntu</displayed-value>
+                <stored-value>Ubuntu</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Debian</displayed-value>
+                <stored-value>Debian</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Fedora</displayed-value>
+                <stored-value>Fedora</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Red Hat Enterprise Linux (RHEL)</displayed-value>
+                <stored-value>Red_Hat_Enterprise_Linux</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Android</displayed-value>
+                <stored-value>Android</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>iOS</displayed-value>
+                <stored-value>iOS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>iPadOS</displayed-value>
+                <stored-value>iPadOS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>watchOS</displayed-value>
+                <stored-value>watchOS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>tvOS</displayed-value>
+                <stored-value>tvOS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ChromeOS</displayed-value>
+                <stored-value>ChromeOS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>FreeBSD</displayed-value>
+                <stored-value>FreeBSD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Solaris</displayed-value>
+                <stored-value>Solaris</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Tizen</displayed-value>
+                <stored-value>Tizen</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>HarmonyOS</displayed-value>
+                <stored-value>HarmonyOS</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- Runtime Platform -->
+        <value-pairs value-pairs-name="runtime_platform" dc-term="software.environment.platform">
+            <pair>
+                <displayed-value>WinRT</displayed-value>
+                <stored-value>WinRT</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>POSTIX</displayed-value>
+                <stored-value>POSTIX</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ART</displayed-value>
+                <stored-value>ART</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>iOS/macOS</displayed-value>
+                <stored-value>iOS_MacOS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>JVM</displayed-value>
+                <stored-value>JVM</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CLR/NET</displayed-value>
+                <stored-value>CLR_NET</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>BEAM/Erlang</displayed-value>
+                <stored-value>BEAM_Erlang</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>LuaJIT</displayed-value>
+                <stored-value>LuaJIT</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>HHVM</displayed-value>
+                <stored-value>HHVM</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>V8</displayed-value>
+                <stored-value>V8</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>SpiderMonkey</displayed-value>
+                <stored-value>SpiderMonkey</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Node.js</displayed-value>
+                <stored-value>Node_JS</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Deno</displayed-value>
+                <stored-value>Deno</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>WebAssembly</displayed-value>
+                <stored-value>WebAssembly</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>AWS Lambda</displayed-value>
+                <stored-value>AWS_Lambda</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Azure Functions</displayed-value>
+                <stored-value>Azure_Functions</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Google Cloud Functions</displayed-value>
+                <stored-value>Google_Cloud_Functions</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>React Native</displayed-value>
+                <stored-value>React_Native</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Flutter Engine</displayed-value>
+                <stored-value>Flutter_Engine</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Xamarin</displayed-value>
+                <stored-value>Xamarin</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CPython</displayed-value>
+                <stored-value>CPython</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ruby MRI</displayed-value>
+                <stored-value>Ruby_MRI</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Zend Engine (PHP)</displayed-value>
+                <stored-value>Zend_Engine_PHP</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>EVM</displayed-value>
+                <stored-value>EVM</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>WASM Blockchains</displayed-value>
+                <stored-value>WASM_Blockchains</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Solana Runtime</displayed-value>
+                <stored-value>Solana_Runtime</stored-value>
+            </pair>
+        </value-pairs>
+
 
     <!-- add drop down list for measurement unit taken from Geochem -->
         <value-pairs value-pairs-name="units" dc-term="georem.analysis.unit">
@@ -3891,7 +4389,7 @@
 
             <pair>
                 <displayed-value>Without License</displayed-value>
-                <stored-value></stored-value>
+                <stored-value>without_license</stored-value>
             </pair>
             <pair>
                 <displayed-value>Attribution (CC-BY)</displayed-value>

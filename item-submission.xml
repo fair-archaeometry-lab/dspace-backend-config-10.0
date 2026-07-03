@@ -216,6 +216,7 @@
             <type>submission-form</type>
 	    </step-definition>
         <!-- end: add steps for instrument collection  -->
+
         <!-- start: add steps for reference material collection  -->
         <step-definition id="georemMaterial" mandatory="true"> <!-- add new step for reference material entity  -->
             <heading>submit.progressbar.describe.georem.material</heading>
@@ -233,6 +234,28 @@
             <type>submission-form</type>
 	    </step-definition>
         <!-- end: add steps for reference material collection  -->
+
+        <!-- start: add steps for software collection  -->
+        <step-definition id="softwareBasicStep" mandatory="true"> <!-- add new step software basic information for Software entity  -->
+            <heading>submit.progressbar.describe.software.basic</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition>
+        
+        <step-definition id="softwareDevStep" mandatory="true"> <!-- add new step software development for Software entity  -->
+            <heading>submit.progressbar.describe.software.development</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition>      
+
+        <step-definition id="softwareAdditionStep" mandatory="true"> <!-- add new step software development for Software entity  -->
+            <heading>submit.progressbar.describe.software.addition</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition> 
+
+        <!-- end: add steps for software collection  -->
+
         <step-definition id="upload">
             <heading>submit.progressbar.upload</heading>
             <processing-class>org.dspace.app.rest.submit.step.UploadStep</processing-class>
@@ -243,7 +266,7 @@
             <processing-class>org.dspace.app.rest.submit.step.LicenseStep</processing-class>
             <type>license</type>
             <scope visibilityOutside="read-only">submission</scope>
-        </step-definition>
+        </step-definition>       
 
         <!-- This optional step may allow the user to select a Creative Commons license -->
         <step-definition id="cclicense" mandatory="false">
@@ -500,6 +523,16 @@
             <step id="georemMaterial"/>
             <step id="georemChemistry"/>
             <step id="georemCitation"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!-- add new submission process for Software-->
+        <submission-process name="Software">
+            <step id="collection"/>
+            <step id="softwareBasicStep"/>
+            <step id="softwareDevStep"/>
+            <step id="softwareAdditionStep"/>
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
