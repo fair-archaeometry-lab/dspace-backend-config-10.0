@@ -256,6 +256,16 @@
 
         <!-- end: add steps for software collection  -->
 
+        <!-- start: add steps for laboratory collection  -->
+
+        <step-definition id="laboratoryStep" mandatory="true"> <!-- add new step for Laboratory entity  -->
+            <heading>submit.progressbar.describe.laboratory.step</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition> 
+
+        <!-- end: add steps for laboratory collection  -->
+
         <step-definition id="upload">
             <heading>submit.progressbar.upload</heading>
             <processing-class>org.dspace.app.rest.submit.step.UploadStep</processing-class>
@@ -536,6 +546,15 @@
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
+
+        <!-- add new submission process for Laboratory-->
+        <submission-process name="Laboratory">
+            <step id="collection"/>
+            <step id="laboratoryStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
 
         <!-- Openaire submission processes -->
         <submission-process name="openairePublicationSubmission">

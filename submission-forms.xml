@@ -2920,6 +2920,131 @@
                 </field>
             </row>                                                     
         </form>
+                <!-- add new form for laboratory  -->
+        <form name="laboratoryStep">
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Name of laboratory</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the full name of the laboratory.</hint>
+                    <required>This is a required field.</required>
+                </field>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>alternateName</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Acronym</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the acronym of the laboratory.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>parentOrganization</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>The parent organisation of the laboratory</label>
+                    <input-type>onebox</input-type>
+                    <hint>The larger organization that this organization is a subOrganization of, if any.</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Type of organisation the laboratory belongs to</label>
+                    <input-type value-pairs-name="legal_status">dropdown</input-type>
+                    <hint>Type or legal status of the organisation.</hint>
+                    <required>This is a required field.</required>
+                </field>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>ror</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Persistent identifier</label>
+                    <input-type>onebox</input-type>
+                    <hint>The persistent identifier of the research laboratory or institute, usually a Research Organization Registry (ROR) ID.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dcterms</dc-schema>
+                    <dc-element>spatial</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Geographic location of the laboratory</label>
+                    <input-type>onebox</input-type>
+                    <hint>The longitude and latitude of the laboratory location. For example, New York is Point(-74.0060 40.7128) and Berlin is Point(13.4050 52.5200).</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>laboratory</dc-schema>
+                    <dc-element>country</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Country of operation</label>
+                    <input-type>onebox</input-type>
+                    <hint>The country in which the organisation is legally and professionally based.</hint>
+                    <vocabulary>country</vocabulary>
+                    <required>This is a required field.</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Research focus of laboratory</label>
+                    <input-type>onebox</input-type>
+                    <hint>Which domains or disciplines the laboratory has worked within or has experience within.</hint>
+                    <vocabulary>discipline</vocabulary>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>dcterms</dc-schema>
+                    <dc-element>references</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Research references</label>
+                    <input-type>onebox</input-type>
+                    <hint>The key references published by the research laboratory or institute.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>url</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Url of the Organization</label>
+                    <input-type>onebox</input-type>
+                    <hint>The webpage of the research laboratory or institute.</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>foundingDate</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>The start date of laboratory</label>
+                    <input-type>date</input-type>
+                    <hint>When did this organisation start working in this field?</hint>
+                    <required></required>
+                </field>
+            </row>
+        </form>
     </form-definitions>
 
 
@@ -2937,6 +3062,68 @@
     <!-- stores the associated stored-values in the database.                  -->
 
     <form-value-pairs>
+
+    <!-- add drop down list(legal-status) for laboratory  -->
+        <value-pairs value-pairs-name="legal_status" dc-term="type">
+            <pair>
+                <displayed-value>MUSEUM</displayed-value>
+                <stored-value>Museum</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>RESEARCH ORGANISATION</displayed-value>
+                <stored-value>Research Organisation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>UNIVERSITY</displayed-value>
+                <stored-value>University</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CONSORTIUM</displayed-value>
+                <stored-value>Consortium</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ARCHIVE</displayed-value>
+                <stored-value>Archive</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CHARITABLE Organisation</displayed-value>
+                <stored-value>Charitable organisation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>NON-PROFIT ORGANISATION</displayed-value>
+                <stored-value>Non-profit organisation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>FOR-PROFIT ORGANISATION</displayed-value>
+                <stored-value>For-profit organisation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GALLERY</displayed-value>
+                <stored-value>Gallery</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GOVERNMENTAL ORGANISATION</displayed-value>
+                <stored-value>Governmental organisation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>HERITAGE ORGANISATION</displayed-value>
+                <stored-value>Heritage organisation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>NON-GOVERNMENTAL ORGANISATION</displayed-value>
+                <stored-value>Non-governmental organisation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PRIVATE BODY</displayed-value>
+                <stored-value>Prviate Body</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PUBLIC BODY</displayed-value>
+                <stored-value>Public body</stored-value>
+            </pair>
+        </value-pairs>
+
+
 
     <!-- add drop down list for software status -->
         <value-pairs value-pairs-name="software_status" dc-term="software.additional.status">
