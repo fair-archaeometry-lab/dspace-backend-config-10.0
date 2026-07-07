@@ -3045,6 +3045,109 @@
                 </field>
             </row>
         </form>
+
+        <form name="stdMethodStep"> 
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Title of analytical protocol</label>
+                    <input-type>onebox</input-type>
+                    <hint>This should be a short, descriptive name that describes the employed analytical procedure</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>method</dc-schema>
+                    <dc-element>createDate</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Creation Date</label>
+                    <input-type>date</input-type>
+                    <hint>The date this protocal was created</hint>
+                    <required>This is a required field</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <label>Author of the Protocal</label>
+                    <input-type>onebox</input-type>
+                    <hint>The creators or authors of this method. These can be persons or an organisations. Linked to PIDs</hint>
+                    <required>This is a required field</required>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>technique</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Analytical Technique</label>
+                    <input-type>onebox</input-type>
+                    <hint>The general technique that this protocal is an application of. It is the same controlled list as used by the service form. Type a few words to show the possible options. If none of terms is suitable, select "other"</hint>
+                    <required>This is a required field</required>
+                    <vocabulary>amgc</vocabulary>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>    
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Short Description</label>
+                    <input-type>textarea</input-type>
+                    <hint>A short description text that explains the purpose of the protocol.</hint>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <label>Documentation Links</label>
+                    <input-type>onebox</input-type>
+                    <hint>Uniform resource identifiers (either references, websites, or reports) for a more detailed documentation, such as a link to protocol.io</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row> 
+            <row>
+                <field>
+                    <dc-schema>method</dc-schema>
+                    <dc-element>relatedTool</dc-element>
+                    <dc-qualifier>device</dc-qualifier>
+                    <label>Related Device</label>
+                    <input-type>onebox</input-type>
+                    <hint>The device the method is designed for. It is linked with the item defined in the device submission form</hint>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>method</dc-schema>
+                    <dc-element>relatedTool</dc-element>
+                    <dc-qualifier>software</dc-qualifier>
+                    <label>Related software</label>
+                    <input-type>onebox</input-type>
+                    <hint>The software the method is designed for. It is linked with the item defined in the software submission form</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>method</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Protocol Type</label>
+                    <input-type>onebox</input-type>
+                    <hint>The type of protocol this represents. Examples are 'Analysis Method', 'Research support', 'Workflow'... This is a free text field but will be converted into a controlled vocabulary field</hint>
+                </field>
+                <field>
+                    <dc-schema>method</dc-schema>
+                    <dc-element>version</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Version of the Protocol</label>
+                    <input-type>onebox</input-type>
+                    <hint>The version for this protocol</hint>
+                </field>
+            </row>                                         
+        </form>
     </form-definitions>
 
 

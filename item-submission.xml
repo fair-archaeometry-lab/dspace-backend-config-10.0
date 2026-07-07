@@ -266,6 +266,16 @@
 
         <!-- end: add steps for laboratory collection  -->
 
+        <!-- start: add steps for method collection  -->
+
+        <step-definition id="stdMethodStep" mandatory="true"> <!-- add new step for stdMethod entity  -->
+            <heading>submit.progressbar.describe.method.step</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition>
+
+        <!-- end: add steps for method collection  -->
+
         <step-definition id="upload">
             <heading>submit.progressbar.upload</heading>
             <processing-class>org.dspace.app.rest.submit.step.UploadStep</processing-class>
@@ -555,6 +565,14 @@
             <step id="license"/>
         </submission-process>
 
+
+        <!-- add new submission process for method-->
+        <submission-process name="StdMethod">
+            <step id="collection"/>
+            <step id="stdMethodStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
 
         <!-- Openaire submission processes -->
         <submission-process name="openairePublicationSubmission">
