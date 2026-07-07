@@ -1402,7 +1402,7 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Service Version</label>
                     <input-type>onebox</input-type>
-                    <hint>Service develop over time with changes of equipment, software, personnel, etc. Version numbers should be changed to indicate these changes - please note very large scale changes may warrant the creation of a new Service record to clarify differences in the data or results created.</hint>
+                    <hint>Put the default value 1.0 if it is your first version.Service develop over time with changes of equipment, software, personnel, etc. Version numbers should be changed to indicate these changes - please note very large scale changes may warrant the creation of a new Service record to clarify differences in the data or results created.</hint>
                 </field>
             </row>
             <row>
@@ -1477,18 +1477,9 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Service Technique</label>
                     <input-type>onebox</input-type>
-                    <hint>A list of analytical techniques carried out within this service</hint>
+                    <hint>A list of analytical techniques carried out within this service. You can also add new techniques if yours are not listed.</hint>
                     <required>This is a mandatory field</required>
                     <vocabulary>amgc</vocabulary>
-                    <repeatable>true</repeatable>
-                </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>technique</dc-element>
-                    <dc-qualifier>other</dc-qualifier>
-                    <label>Other Technique</label>
-                    <input-type>onebox</input-type>
-                    <hint>Other (unlisted) individual relevant heritage science examination and analytical techniques carried out within this Service (free text).</hint>
                     <repeatable>true</repeatable>
                 </field>
                 <field>
@@ -1505,11 +1496,26 @@
                     <dc-schema>service</dc-schema>
                     <dc-element>measurableProperty</dc-element>
                     <dc-qualifier>class</dc-qualifier>
+                    <label>Measurable properties</label>
+                    <input-type>inline-group</input-type>
+                    <hint>Measurable properties and materials that can be studied by this service</hint>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+        </form>
+
+        <form name="serviceScope-service-measurableProperty-class">
+            <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>measurableProperty</dc-element>
+                    <dc-qualifier>class</dc-qualifier>
                     <label>Measurable Property Class</label>
                     <input-type>onebox</input-type>
                     <hint>Class of measurable property that can be studied by this service</hint>
-                    <repeatable>true</repeatable>
+                    <repeatable>false</repeatable>
                     <vocabulary>matprop</vocabulary>
+                    <style>col-6</style>
                 </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1518,21 +1524,12 @@
                     <label>Material</label>
                     <input-type>onebox</input-type>
                     <hint>Materials for which the measurable property can be studied</hint>
-                    <repeatable>true</repeatable>
+                    <repeatable>false</repeatable>
                     <vocabulary>gettym</vocabulary>
-                </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>measurableProperty</dc-element>
-                    <dc-qualifier>materialOther</dc-qualifier>
-                    <label>Other Material</label>
-                    <input-type>onebox</input-type>
-                    <hint>Other free-text materials for the measurable property</hint>
-                    <repeatable>true</repeatable>
+                    <style>col-6</style>
                 </field>
             </row>
-        </form>
-
+        </form>  
                 <!-- add new form serviceAccess   -->
 
         <form name="serviceAccess">
