@@ -1496,26 +1496,11 @@
                     <dc-schema>service</dc-schema>
                     <dc-element>measurableProperty</dc-element>
                     <dc-qualifier>class</dc-qualifier>
-                    <label>Measurable properties</label>
-                    <input-type>inline-group</input-type>
-                    <hint>Measurable properties and materials that can be studied by this service</hint>
-                    <repeatable>true</repeatable>
-                </field>
-            </row>
-        </form>
-
-        <form name="serviceScope-service-measurableProperty-class">
-            <row>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>measurableProperty</dc-element>
-                    <dc-qualifier>class</dc-qualifier>
-                    <label>Measurable Property Class</label>
+                    <label>Measurable property Class</label>
                     <input-type>onebox</input-type>
                     <hint>Class of measurable property that can be studied by this service</hint>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <vocabulary>matprop</vocabulary>
-                    <style>col-6</style>
                 </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1523,13 +1508,12 @@
                     <dc-qualifier>material</dc-qualifier>
                     <label>Material</label>
                     <input-type>onebox</input-type>
-                    <hint>Materials for which the measurable property can be studied</hint>
-                    <repeatable>false</repeatable>
+                    <hint>Materials for which the measurable property can be studied. The list is drawn from Getty AAT. New materials can also be added if they are not listed.</hint>
+                    <repeatable>true</repeatable>
                     <vocabulary>gettym</vocabulary>
-                    <style>col-6</style>
                 </field>
             </row>
-        </form>  
+        </form>
                 <!-- add new form serviceAccess   -->
 
         <form name="serviceAccess">

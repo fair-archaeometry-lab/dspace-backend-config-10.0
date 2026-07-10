@@ -163,6 +163,9 @@
     <node id="MATPROP54" label="weight">
       <hasNote>weight</hasNote>
     </node>
+    <node id="MATPROP55" label="isotopic composition">
+      <hasNote>isotopic composition</hasNote>
+    </node>
   </isComposedBy>
   <hasNote>Material Properties List</hasNote>
 </node>
