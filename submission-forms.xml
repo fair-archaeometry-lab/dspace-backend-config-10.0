@@ -1921,8 +1921,8 @@
         <form name="instIdentity">
             <row>
                 <field>
-                    <dc-schema>instrument</dc-schema>
-                    <dc-element>name</dc-element>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Instrument Name</label>
                     <input-type>onebox</input-type>
@@ -1958,9 +1958,9 @@
                     <hint>Version of the PIDINST schema used. The current version is 1.0</hint>
                 </field>
                 <field>
-                    <dc-schema>instrument</dc-schema>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier>abstract</dc-qualifier>
                     <label>Description</label>
                     <input-type>textarea</input-type>
                     <hint>Technical description of the instrument</hint>
@@ -1987,7 +1987,7 @@
                     <dc-schema>instrument</dc-schema>
                     <dc-element>openAccess</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <label>Open Access Date</label>
+                    <label>Open Access</label>
                     <input-type value-pairs-name="yes_no">list</input-type>
                     <repeatable>false</repeatable>
                     <hint>Specify whether the instrument is offered in terms of open access</hint>
@@ -2102,7 +2102,9 @@
                     <dc-element>measuredVariable</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Measureable Variables</label>
-                    <input-type>tag</input-type>
+                    <input-type>onebox</input-type>
+                    <vocabulary>parameter</vocabulary>
+                    <repeatable>true</repeatable>
                     <hint>A list of variables measured or observed by the instrument.</hint>
                 </field> 
                 <field>
