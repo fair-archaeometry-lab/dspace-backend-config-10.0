@@ -526,6 +526,15 @@
             <step id="license"/>
         </submission-process>
 
+        <!-- add edit mode for service entity-->
+        <submission-process name="admin-service-edit">
+            <step id="serviceCore"/>
+            <step id="serviceScope"/>
+            <step id="serviceAccess"/>
+            <step id="serviceResources"/>
+            <step id="upload"/>
+        </submission-process>
+
         <!-- add new submission process for instrument entities-->
         <submission-process name="Instrument">
             <step id="collection"/>
