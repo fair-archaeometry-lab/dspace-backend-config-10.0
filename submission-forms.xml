@@ -1377,15 +1377,16 @@
                     <input-type>textarea</input-type>
                     <hint>A brief description of a specific technical or access service offered, such as the use of X to investigate Y</hint>
                     <required>This is a mandatory field</required>
-                 </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Service Description</label>
-                    <input-type>textarea</input-type>
-                    <hint>Longer description or documentation of the service</hint>
                 </field>
+            </row>
+            <row>
+                <relation-field>
+                    <relationship-type>isInstrumentOfService</relationship-type>
+                    <search-configuration>123456789/3</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Instruments involved in this service</label>
+                    <hint>Select the instrument related to this service.</hint>
+                </relation-field>
             </row>
             <row>
                 <field>
