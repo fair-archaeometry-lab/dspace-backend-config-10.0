@@ -1383,7 +1383,7 @@
                 <relation-field>
                     <relationship-type>isInstrumentOfService</relationship-type>
                     <search-configuration>123456789/3</search-configuration>
-                    <repeatable>true</repeatable>
+                    <repeatable>false</repeatable>
                     <label>Instruments involved in this service</label>
                     <hint>Select the instrument related to this service.</hint>
                 </relation-field>
