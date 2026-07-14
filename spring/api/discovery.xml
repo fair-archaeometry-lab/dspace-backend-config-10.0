@@ -1541,7 +1541,14 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
+                <ref bean="searchFilterResearchDiscipline"/>
                 <ref bean="searchFilterServiceTechnique"/>
+                <ref bean="searchFilterPropertyClass"/>
+                <ref bean="searchFilterPropertyMaterial"/>
+                <ref bean="searchFilterOperatingLanguage"/>
+                <ref bean="searchFilterCreationDate"/>
+                <ref bean="searchFilterActive"/>
+                <ref bean="searchFilterReadinessLevel"/>
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -1549,7 +1556,14 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
+                <ref bean="searchFilterResearchDiscipline"/>
                 <ref bean="searchFilterServiceTechnique"/>
+                <ref bean="searchFilterPropertyClass"/>
+                <ref bean="searchFilterPropertyMaterial"/>
+                <ref bean="searchFilterOperatingLanguage"/>
+                <ref bean="searchFilterCreationDate"/>
+                <ref bean="searchFilterActive"/>
+                <ref bean="searchFilterReadinessLevel"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -1557,7 +1571,12 @@
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
                 <property name="sortFields">
                     <list>
+                        <ref bean="sortResearchDiscipline"/>
                         <ref bean="sortServiceTechnique"/>
+                        <ref bean="sortPropertyClass"/>
+                        <ref bean="sortPropertyMaterial"/>
+                        <ref bean="sortOperatingLanguage"/>
+                        <ref bean="sortCreationDate"/>
                     </list>
                 </property>
             </bean>
@@ -2934,7 +2953,14 @@
         <!-- List of tagclouds to appear, one for every search filter, one after the other -->
         <property name="tagCloudFacets">
             <list>
-                <ref bean="searchFilterServiceTechnique" />
+                <ref bean="searchFilterResearchDiscipline"/>
+                <ref bean="searchFilterServiceTechnique"/>
+                <ref bean="searchFilterPropertyClass"/>
+                <ref bean="searchFilterPropertyMaterial"/>
+                <ref bean="searchFilterOperatingLanguage"/>
+                <ref bean="searchFilterCreationDate"/>
+                <ref bean="searchFilterActive"/>
+                <ref bean="searchFilterReadinessLevel"/>
             </list>
         </property>
     </bean>
@@ -3165,12 +3191,118 @@
     <!--Search filter configuration beans-->
 
 
-    <!--Search filter configuration for service technique-->
+    <!--Individual Search filter configuration for service collection-->
+    <bean id="searchFilterResearchDiscipline" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="researchDiscipline"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.researchDiscipline</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
     <bean id="searchFilterServiceTechnique" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="technique"/>
         <property name="metadataFields">
             <list>
                 <value>service.technique</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterPropertyClass" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="measurablePropertyClass"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.measurableProperty.class</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterPropertyMaterial" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="measurablePropertyMaterial"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.measurableProperty.material</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterOperatingLanguage" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="operatingLanguage"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.operatingLanguage</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterCreationDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="creationDate"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.creationDate</value>
+            </list>
+        </property>
+        <property name="type" value="date"/>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterActive" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="active"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.active</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterReadinessLevel" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="readinessLevel"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.readinessLevel</value>
             </list>
         </property>
         <property name="facetLimit" value="5"/>
@@ -4204,10 +4336,36 @@
 
     <!--Sort properties-->
 
-    <!--Sort properties for service techniques-->
+    <!--Sort properties for service collection-->
+    <bean id="sortResearchDiscipline" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="service.researchDiscipline"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
     <bean id="sortServiceTechnique" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="metadataField" value="service.technique"/>
         <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
+    <bean id="sortPropertyClass" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="service.measurableProperty.class"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
+    <bean id="sortPropertyMaterial" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="service.measurableProperty.material"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
+    <bean id="sortOperatingLanguage" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="service.operatingLanguage"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
+    <bean id="sortCreationDate" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="service.creationDate"/>
+        <property name="type" value="date"/>
+        <property name="defaultSortOrder" value="desc"/>
     </bean>
 
     <!--Sort properties for manufacturer name-->
