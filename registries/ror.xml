@@ -1,222 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dspace-dc-types>
 
+    <!-- ROR schema definition -->
     <schema>
         <name>ror</name>
-        <namespace>http://ror.org/schema/2.0/organization</namespace>
+        <namespace>http://ror.org/schemas/v2.0/organization</namespace>
     </schema>
 
-    <!-- ADMIN -->
+    <!-- =========
+         ADMIN METADATA
+         ========= -->
+
+    <!-- admin.created -->
     <dc-type>
         <schema>ror</schema>
-        <element>admin</element>
-        <qualifier>created_date</qualifier>
-        <scope_note>Date the ROR record was created (ISO 8601 format: YYYY-MM-DD)</scope_note>
+        <element>adminCreatedDate</element>
+        <scope_note>Date when the ROR record was created</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>ror</schema>
-        <element>admin</element>
-        <qualifier>created_schema_version</qualifier>
-        <scope_note>ROR schema version used at record creation (allowed: 1.0, 2.0, 2.1)</scope_note>
+        <element>adminCreatedSchemaVersion</element>
+        <scope_note>Schema version used at record creation (1.0, 2.0, 2.1)</scope_note>
+    </dc-type>
+
+    <!-- admin.last_modified -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>adminLastModifiedDate</element>
+        <scope_note>Date when the ROR record was last modified</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>ror</schema>
-        <element>admin</element>
-        <qualifier>modified_date</qualifier>
-        <scope_note>Date the ROR record was last modified (ISO 8601 format)</scope_note>
+        <element>adminLastModifiedSchemaVersion</element>
+        <scope_note>Schema version used at last modification (1.0, 2.0, 2.1)</scope_note>
     </dc-type>
 
-    <dc-type>
-        <schema>ror</schema>
-        <element>admin</element>
-        <qualifier>modified_schema_version</qualifier>
-        <scope_note>ROR schema version used at last modification (allowed: 1.0, 2.0, 2.1)</scope_note>
-    </dc-type>
+    <!-- =========
+         CORE IDENTIFIER & STATUS
+         ========= -->
 
-    <!-- CORE -->
+    <!-- id -->
     <dc-type>
         <schema>ror</schema>
         <element>id</element>
-        <scope_note>Persistent ROR identifier as a URI (pattern: https://ror.org/0xxxxxxxx)</scope_note>
+        <scope_note>Full ROR organization ID URL (https://ror.org/0xxxxxxxx)</scope_note>
     </dc-type>
 
+    <!-- status -->
     <dc-type>
         <schema>ror</schema>
         <element>status</element>
-        <scope_note>Current lifecycle status of the organization (allowed: active, inactive, withdrawn)</scope_note>
+        <scope_note>Organization status in ROR (active, inactive, withdrawn)</scope_note>
     </dc-type>
 
+    <!-- types (array of organization types) -->
     <dc-type>
         <schema>ror</schema>
         <element>types</element>
-        <scope_note>Organization category (controlled vocabulary: education, funder, healthcare, company, archive, nonprofit, government, facility, other)</scope_note>
+        <scope_note>Organization types (education, funder, healthcare, company, archive, nonprofit, government, facility, other)</scope_note>
     </dc-type>
 
+    <!-- =========
+         ESTABLISHED YEAR
+         ========= -->
+
+    <!-- established -->
     <dc-type>
         <schema>ror</schema>
         <element>established</element>
-        <scope_note>Year the organization was established (numeric year or empty)</scope_note>
+        <scope_note>Year the organization was established; may be null</scope_note>
     </dc-type>
 
-    <!-- NAMES -->
+    <!-- =========
+         DOMAINS
+         ========= -->
+
+    <!-- domains (array of domain names) -->
     <dc-type>
         <schema>ror</schema>
-        <element>name</element>
+        <element>domains</element>
+        <scope_note>Web domains associated with the organization (e.g. example.edu)</scope_note>
+    </dc-type>
+
+    <!-- =========
+         NAMES
+         ========= -->
+
+    <!-- names.value -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>names</element>
         <qualifier>value</qualifier>
-        <scope_note>Textual name of the organization (non-empty string)</scope_note>
+        <scope_note>Text value of an organization name</scope_note>
     </dc-type>
 
+    <!-- names.types -->
     <dc-type>
         <schema>ror</schema>
-        <element>name</element>
-        <qualifier>type</qualifier>
-        <scope_note>Name classification (allowed: acronym, alias, label, ror_display)</scope_note>
+        <element>names</element>
+        <qualifier>types</qualifier>
+        <scope_note>Categories for the name (acronym, alias, label, ror_display)</scope_note>
     </dc-type>
 
+    <!-- names.lang -->
     <dc-type>
         <schema>ror</schema>
-        <element>name</element>
+        <element>names</element>
         <qualifier>lang</qualifier>
-        <scope_note>Language of the name using ISO 639-1 two-letter code (e.g., en, de) or empty</scope_note>
+        <scope_note>Two-letter language code for the name (ISO 639-1), or null</scope_note>
     </dc-type>
 
-    <!-- LOCATIONS -->
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>geonames_id</qualifier>
-        <scope_note>GeoNames identifier for the location (integer)</scope_note>
-    </dc-type>
+    <!-- =========
+         EXTERNAL IDENTIFIERS
+         ========= -->
 
+    <!-- external_ids.type -->
     <dc-type>
         <schema>ror</schema>
-        <element>location</element>
-        <qualifier>name</qualifier>
-        <scope_note>Name of the place as defined by GeoNames</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>lat</qualifier>
-        <scope_note>Latitude coordinate in decimal degrees or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>lng</qualifier>
-        <scope_note>Longitude coordinate in decimal degrees or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>continent_code</qualifier>
-        <scope_note>Continent code (AF, AN, AS, EU, NA, OC, SA) or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>continent_name</qualifier>
-        <scope_note>Continent name (Africa, Antarctica, Asia, Europe, Oceania, South America, North America) or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>country_code</qualifier>
-        <scope_note>ISO 3166-1 alpha-2 country code (two uppercase letters) or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>country_name</qualifier>
-        <scope_note>Full country name corresponding to the country code or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>subdivision_code</qualifier>
-        <scope_note>Country subdivision code (1–3 alphanumeric characters, e.g., state or province code) or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>location</element>
-        <qualifier>subdivision_name</qualifier>
-        <scope_note>Name of the country subdivision (state, region, province) or empty</scope_note>
-    </dc-type>
-
-    <!-- LINKS -->
-    <dc-type>
-        <schema>ror</schema>
-        <element>link</element>
-        <qualifier>value</qualifier>
-        <scope_note>URL associated with the organization (e.g., homepage or Wikipedia page)</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>link</element>
+        <element>externalIds</element>
         <qualifier>type</qualifier>
-        <scope_note>Type of link (allowed: website, wikipedia)</scope_note>
+        <scope_note>External ID type (fundref, grid, isni, wikidata)</scope_note>
     </dc-type>
 
-    <!-- DOMAINS -->
+    <!-- external_ids.all -->
     <dc-type>
         <schema>ror</schema>
-        <element>domain</element>
-        <scope_note>Internet domain name associated with the organization (must follow domain name pattern)</scope_note>
-    </dc-type>
-
-    <!-- EXTERNAL IDS -->
-    <dc-type>
-        <schema>ror</schema>
-        <element>external_id</element>
-        <qualifier>type</qualifier>
-        <scope_note>Identifier system (allowed: fundref, grid, isni, wikidata)</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>external_id</element>
-        <qualifier>preferred</qualifier>
-        <scope_note>Preferred identifier value for the given external ID type or empty</scope_note>
-    </dc-type>
-
-    <dc-type>
-        <schema>ror</schema>
-        <element>external_id</element>
+        <element>externalIds</element>
         <qualifier>all</qualifier>
-        <scope_note>All known identifier values for the given external ID type (repeatable, non-empty strings)</scope_note>
+        <scope_note>All values for a given external identifier type</scope_note>
     </dc-type>
 
-    <!-- RELATIONSHIPS -->
+    <!-- external_ids.preferred -->
     <dc-type>
         <schema>ror</schema>
-        <element>relationship</element>
+        <element>externalIds</element>
+        <qualifier>preferred</qualifier>
+        <scope_note>Preferred external identifier value for the type; may be null</scope_note>
+    </dc-type>
+
+    <!-- =========
+         LINKS
+         ========= -->
+
+    <!-- links.value -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>links</element>
+        <qualifier>value</qualifier>
+        <scope_note>URL for an organizational link</scope_note>
+    </dc-type>
+
+    <!-- links.type -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>links</element>
         <qualifier>type</qualifier>
-        <scope_note>Relationship type to another organization (allowed: related, parent, child, successor, predecessor)</scope_note>
+        <scope_note>Link type (website, wikipedia)</scope_note>
     </dc-type>
 
+    <!-- =========
+         LOCATIONS (v2.1)
+         ========= -->
+
+    <!-- locations.geonames_id -->
     <dc-type>
         <schema>ror</schema>
-        <element>relationship</element>
+        <element>locations</element>
+        <qualifier>geonamesId</qualifier>
+        <scope_note>GeoNames identifier for the primary location</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.name -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>name</qualifier>
+        <scope_note>Location name from GeoNames (city or region)</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.lat -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>lat</qualifier>
+        <scope_note>Latitude of the location; may be null</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.lng -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>lng</qualifier>
+        <scope_note>Longitude of the location; may be null</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.continent_code -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>continentCode</qualifier>
+        <scope_note>Continent code (AF, AN, AS, EU, NA, OC, SA)</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.continent_name -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>continentName</qualifier>
+        <scope_note>Continent name (Africa, Antarctica, Asia, Europe, North America, Oceania, South America)</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.country_code -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>countryCode</qualifier>
+        <scope_note>Two-letter country code (ISO 3166-1), may be null</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.country_name -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>countryName</qualifier>
+        <scope_note>Country name, may be null</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.country_subdivision_code -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>countrySubdivisionCode</qualifier>
+        <scope_note>Code for the highest-level country subdivision, may be null</scope_note>
+    </dc-type>
+
+    <!-- locations.geonames_details.country_subdivision_name -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>locations</element>
+        <qualifier>countrySubdivisionName</qualifier>
+        <scope_note>Name of the highest-level country subdivision, may be null</scope_note>
+    </dc-type>
+
+    <!-- =========
+         RELATIONSHIPS
+         ========= -->
+
+    <!-- relationships.type -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>relationships</element>
+        <qualifier>type</qualifier>
+        <scope_note>Relationship type (related, parent, child, successor, predecessor)</scope_note>
+    </dc-type>
+
+    <!-- relationships.id -->
+    <dc-type>
+        <schema>ror</schema>
+        <element>relationships</element>
         <qualifier>id</qualifier>
-        <scope_note>ROR identifier (URI) of the related organization</scope_note>
+        <scope_note>ROR ID URL of the related organization</scope_note>
     </dc-type>
 
+    <!-- relationships.label -->
     <dc-type>
         <schema>ror</schema>
-        <element>relationship</element>
+        <element>relationships</element>
         <qualifier>label</qualifier>
-        <scope_note>Human-readable name of the related organization</scope_note>
+        <scope_note>Label for the related organization</scope_note>
     </dc-type>
 
 </dspace-dc-types>

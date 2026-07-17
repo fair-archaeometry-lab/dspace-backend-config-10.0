@@ -1,189 +1,273 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dspace-dc-types>
 
-    <!-- Schema -->
+    <!-- ORCID schema definition -->
     <schema>
         <name>orcid</name>
-        <namespace>http://orcid.org/schema/record</namespace>
+        <namespace>http://www.orcid.org/ns/record</namespace>
     </schema>
 
-    <!-- ORCID IDENTIFIER -->
-    <dc-type>
-        <schema>orcid</schema>
-        <element>identifier</element>
-        <qualifier>uri</qualifier>
-        <scope_note>Full ORCID URI (e.g. https://orcid.org/0000-0002-1825-0097)</scope_note>
-    </dc-type>
+    <!-- =========
+         TOP-LEVEL RECORD
+         ========= -->
 
     <dc-type>
         <schema>orcid</schema>
-        <element>identifier</element>
+        <element>record</element>
         <qualifier>path</qualifier>
-        <scope_note>16-digit ORCID identifier</scope_note>
+        <scope_note>API path to the ORCID record</scope_note>
+    </dc-type>
+
+    <!-- ORCID identifier -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>orcidIdentifier</element>
+        <qualifier>uri</qualifier>
+        <scope_note>Full ORCID URI (https://orcid.org/0000-000X-XXXX-XXXX)</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>identifier</element>
-        <qualifier>host</qualifier>
-        <scope_note>Domain hosting the ORCID record (e.g. orcid.org)</scope_note>
+        <element>orcidIdentifier</element>
+        <qualifier>path</qualifier>
+        <scope_note>ORCID iD path (16-digit identifier)</scope_note>
     </dc-type>
 
-    <!-- RECORD METADATA -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>orcidIdentifier</element>
+        <qualifier>host</qualifier>
+        <scope_note>Host domain for the ORCID record</scope_note>
+    </dc-type>
+
+    <!-- =========
+         PREFERENCES
+         ========= -->
+
     <dc-type>
         <schema>orcid</schema>
         <element>preferences</element>
         <qualifier>locale</qualifier>
-        <scope_note>Preferred language of the ORCID record (ISO 639-1 code)</scope_note>
+        <scope_note>Preferred display language/locale for the ORCID record</scope_note>
+    </dc-type>
+
+    <!-- =========
+         HISTORY
+         ========= -->
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>history</element>
+        <qualifier>creationMethod</qualifier>
+        <scope_note>Method used to create the ORCID record (API, Direct, Member-referred)</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>history</element>
-        <qualifier>creation_method</qualifier>
-        <scope_note>Method used to create the record (Direct, Website, Member-referred, API)</scope_note>
+        <qualifier>completionDate</qualifier>
+        <scope_note>Date when the user took control of an API-created record</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>history</element>
-        <qualifier>submission_date</qualifier>
-        <scope_note>Date the ORCID record was created or claimed</scope_note>
+        <qualifier>submissionDate</qualifier>
+        <scope_note>Date when the ORCID record was first created</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>history</element>
-        <qualifier>last_modified_date</qualifier>
-        <scope_note>Last modification timestamp of the record</scope_note>
+        <qualifier>lastModifiedDate</qualifier>
+        <scope_note>Last modification date of the ORCID record</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>history</element>
         <qualifier>claimed</qualifier>
-        <scope_note>Indicates whether the ORCID record is claimed by the researcher (true/false)</scope_note>
+        <scope_note>Whether the ORCID record has been claimed by its owner</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>history</element>
-        <qualifier>verified_email</qualifier>
-        <scope_note>Indicates if any email address is verified</scope_note>
-    </dc-type>
-
-    <!-- PERSON: NAMES -->
-    <dc-type>
-        <schema>orcid</schema>
-        <element>person</element>
-        <qualifier>given_names</qualifier>
-        <scope_note>Researcher's first or given names</scope_note>
+        <qualifier>verifiedEmail</qualifier>
+        <scope_note>True if any email address on the record is verified</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
+        <element>history</element>
+        <qualifier>verifiedPrimaryEmail</qualifier>
+        <scope_note>True if the current primary email is verified</scope_note>
+    </dc-type>
+
+    <!-- =========
+         PERSON / PERSONAL DETAILS
+         ========= -->
+
+    <!-- Person container -->
+    <dc-type>
+        <schema>orcid</schema>
         <element>person</element>
-        <qualifier>family_name</qualifier>
-        <scope_note>Researcher's last or family name</scope_note>
+        <qualifier>path</qualifier>
+        <scope_note>API path for the ORCID person section</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>person</element>
-        <qualifier>credit_name</qualifier>
-        <scope_note>Full display name preferred by the researcher</scope_note>
+        <qualifier>lastModifiedDate</qualifier>
+        <scope_note>Last modification date for the person section</scope_note>
     </dc-type>
 
-    <!-- OTHER NAMES -->
+    <!-- Name -->
     <dc-type>
         <schema>orcid</schema>
-        <element>person</element>
-        <qualifier>other_name</qualifier>
-        <scope_note>Alternative names or aliases of the researcher (repeatable)</scope_note>
+        <element>name</element>
+        <qualifier>givenNames</qualifier>
+        <scope_note>Given names of the researcher</scope_note>
     </dc-type>
 
-    <!-- BIOGRAPHY -->
     <dc-type>
         <schema>orcid</schema>
-        <element>person</element>
-        <qualifier>biography</qualifier>
-        <scope_note>Free-text biography written by the researcher</scope_note>
+        <element>name</element>
+        <qualifier>familyName</qualifier>
+        <scope_note>Family name (surname) of the researcher</scope_note>
     </dc-type>
 
-    <!-- RESEARCHER URLS -->
     <dc-type>
         <schema>orcid</schema>
-        <element>person</element>
+        <element>name</element>
+        <qualifier>creditName</qualifier>
+        <scope_note>Preferred display name for credit/published form</scope_note>
+    </dc-type>
+
+    <!-- Biography -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>biography</element>
+        <qualifier>content</qualifier>
+        <scope_note>Free-text biography describing the researcher’s career</scope_note>
+    </dc-type>
+
+    <!-- Other names -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>otherNames</element>
+        <qualifier>content</qualifier>
+        <scope_note>Alternative names the researcher is or was known by</scope_note>
+    </dc-type>
+
+    <!-- Keywords -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>keywords</element>
+        <qualifier>content</qualifier>
+        <scope_note>Keywords describing the researcher’s activities or interests</scope_note>
+    </dc-type>
+
+    <!-- Researcher URLs -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>researcherUrls</element>
+        <qualifier>urlName</qualifier>
+        <scope_note>Display label for a site related to the researcher</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>researcherUrls</element>
         <qualifier>url</qualifier>
-        <scope_note>External website URL related to the researcher</scope_note>
+        <scope_note>URL of a site related to the researcher</scope_note>
     </dc-type>
 
+    <!-- Emails -->
     <dc-type>
         <schema>orcid</schema>
-        <element>person</element>
-        <qualifier>url_name</qualifier>
-        <scope_note>Label or name of the external URL</scope_note>
-    </dc-type>
-
-    <!-- EMAIL -->
-    <dc-type>
-        <schema>orcid</schema>
-        <element>person</element>
+        <element>emails</element>
         <qualifier>email</qualifier>
-        <scope_note>Email address associated with the ORCID record (may be restricted by visibility)</scope_note>
+        <scope_note>Email address listed on the ORCID record</scope_note>
     </dc-type>
 
-    <!-- ADDRESS -->
+    <!-- Addresses -->
     <dc-type>
         <schema>orcid</schema>
-        <element>address</element>
+        <element>addresses</element>
         <qualifier>country</qualifier>
-        <scope_note>Country where the researcher is active (ISO 3166-1 alpha-2)</scope_note>
+        <scope_note>Country code associated with the person’s address</scope_note>
     </dc-type>
 
-    <!-- KEYWORDS -->
+    <!-- Person external identifiers -->
     <dc-type>
         <schema>orcid</schema>
-        <element>person</element>
-        <qualifier>keyword</qualifier>
-        <scope_note>Keywords describing research interests (repeatable)</scope_note>
-    </dc-type>
-
-    <!-- EXTERNAL IDENTIFIERS -->
-    <dc-type>
-        <schema>orcid</schema>
-        <element>external_identifier</element>
-        <qualifier>type</qualifier>
-        <scope_note>Type of external identifier (e.g. DOI, Scopus ID)</scope_note>
+        <element>externalIdentifiers</element>
+        <qualifier>externalIdType</qualifier>
+        <scope_note>Type of personal identifier (e.g. Scopus Author ID, ResearcherID)</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>external_identifier</element>
-        <qualifier>value</qualifier>
-        <scope_note>Identifier value</scope_note>
+        <element>externalIdentifiers</element>
+        <qualifier>externalIdValue</qualifier>
+        <scope_note>Value of the personal identifier</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>external_identifier</element>
+        <element>externalIdentifiers</element>
+        <qualifier>externalIdUrl</qualifier>
+        <scope_note>Resolvable URL for the personal identifier</scope_note>
+    </dc-type>
+
+    <!-- =========
+         COMMON AFFILIATION FIELDS
+         (used by education, employment, qualification, membership, service, invitedPosition, distinction)
+         ========= -->
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>affiliation</element>
+        <qualifier>departmentName</qualifier>
+        <scope_note>Department or unit name for the affiliation</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>affiliation</element>
+        <qualifier>roleTitle</qualifier>
+        <scope_note>Role title or position held in the affiliation</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>affiliation</element>
+        <qualifier>startDate</qualifier>
+        <scope_note>Start date of the affiliation</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>affiliation</element>
+        <qualifier>endDate</qualifier>
+        <scope_note>End date of the affiliation</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>affiliation</element>
         <qualifier>url</qualifier>
-        <scope_note>Resolvable URL for the identifier</scope_note>
+        <scope_note>URL associated with the affiliation</scope_note>
     </dc-type>
 
-    <dc-type>
-        <schema>orcid</schema>
-        <element>external_identifier</element>
-        <qualifier>relationship</qualifier>
-        <scope_note>Relationship of identifier (self, part-of, version-of)</scope_note>
-    </dc-type>
-
-    <!-- ORGANIZATION (USED IN EDUCATION, EMPLOYMENT, FUNDING) -->
+    <!-- Organization subfields -->
     <dc-type>
         <schema>orcid</schema>
         <element>organization</element>
         <qualifier>name</qualifier>
-        <scope_note>Name of the affiliated organization</scope_note>
+        <scope_note>Name of the organization for the affiliation</scope_note>
     </dc-type>
 
     <dc-type>
@@ -204,108 +288,314 @@
         <schema>orcid</schema>
         <element>organization</element>
         <qualifier>country</qualifier>
-        <scope_note>Country of the organization (ISO code)</scope_note>
+        <scope_note>Country code of the organization</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>organization</element>
-        <qualifier>identifier</qualifier>
-        <scope_note>Disambiguated organization identifier (e.g. ROR, GRID, LEI)</scope_note>
+        <qualifier>disambiguatedOrganizationIdentifier</qualifier>
+        <scope_note>Disambiguated organization identifier (e.g. ROR ID)</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>organization</element>
-        <qualifier>identifier_source</qualifier>
-        <scope_note>Source of organization identifier (ROR, GRID, Crossref)</scope_note>
+        <qualifier>disambiguationSource</qualifier>
+        <scope_note>Source of the organization identifier (ROR, GRID, etc.)</scope_note>
     </dc-type>
 
-    <!-- ACTIVITIES: EMPLOYMENT / EDUCATION -->
+    <!-- =========
+         SPECIFIC AFFILIATION TYPES
+         ========= -->
+
+    <!-- Education -->
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
+        <element>education</element>
+        <qualifier>roleTitle</qualifier>
+        <scope_note>Degree or educational role title</scope_note>
+    </dc-type>
+
+    <!-- Employment -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>employment</element>
+        <qualifier>roleTitle</qualifier>
+        <scope_note>Employment role title</scope_note>
+    </dc-type>
+
+    <!-- Qualification -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>qualification</element>
+        <qualifier>roleTitle</qualifier>
+        <scope_note>Professional or vocational qualification title</scope_note>
+    </dc-type>
+
+    <!-- Membership -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>membership</element>
+        <qualifier>roleTitle</qualifier>
+        <scope_note>Membership type or role</scope_note>
+    </dc-type>
+
+    <!-- Service -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>service</element>
+        <qualifier>roleTitle</qualifier>
+        <scope_note>Service role (e.g. board member, volunteer officer)</scope_note>
+    </dc-type>
+
+    <!-- Invited position -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>invitedPosition</element>
+        <qualifier>roleTitle</qualifier>
+        <scope_note>Title of invited position (honorary or visiting role)</scope_note>
+    </dc-type>
+
+    <!-- Distinction (pattern; exact XSD similar to other affiliations) -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>distinction</element>
+        <qualifier>title</qualifier>
+        <scope_note>Award, prize, or other distinction title</scope_note>
+    </dc-type>
+
+    <!-- =========
+         FUNDING
+         ========= -->
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>funding</element>
         <qualifier>type</qualifier>
-        <scope_note>Type of activity (education, employment, funding, etc.)</scope_note>
+        <scope_note>Funding type (award, grant, contract, salary-award)</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>role_title</qualifier>
-        <scope_note>Position or role held by the researcher</scope_note>
+        <element>funding</element>
+        <qualifier>organizationDefinedType</qualifier>
+        <scope_note>Funders’ own subtype of funding</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>department</qualifier>
-        <scope_note>Department within the organization</scope_note>
-    </dc-type>
-
-    <!-- DATES -->
-    <dc-type>
-        <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>start_year</qualifier>
-        <scope_note>Start year of the activity</scope_note>
+        <element>funding</element>
+        <qualifier>title</qualifier>
+        <scope_note>Main title of the funding award</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>start_month</qualifier>
-        <scope_note>Start month of the activity</scope_note>
+        <element>funding</element>
+        <qualifier>translatedTitle</qualifier>
+        <scope_note>Translated title of the funding award</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>start_day</qualifier>
-        <scope_note>Start day of the activity</scope_note>
+        <element>funding</element>
+        <qualifier>shortDescription</qualifier>
+        <scope_note>Short description or abstract of the funding</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>end_year</qualifier>
-        <scope_note>End year of the activity (or ongoing if empty)</scope_note>
+        <element>funding</element>
+        <qualifier>amountCurrency</qualifier>
+        <scope_note>Currency code for the funding amount</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>end_month</qualifier>
-        <scope_note>End month of the activity</scope_note>
+        <element>funding</element>
+        <qualifier>amountValue</qualifier>
+        <scope_note>Numeric value of the funding amount</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
-        <element>activity</element>
-        <qualifier>end_day</qualifier>
-        <scope_note>End day of the activity</scope_note>
+        <element>funding</element>
+        <qualifier>startDate</qualifier>
+        <scope_note>Start date of the funding period</scope_note>
     </dc-type>
 
-    <!-- WORKS -->
+    <dc-type>
+        <schema>orcid</schema>
+        <element>funding</element>
+        <qualifier>endDate</qualifier>
+        <scope_note>End date of the funding period</scope_note>
+    </dc-type>
+
+    <!-- =========
+         WORKS
+         ========= -->
+
     <dc-type>
         <schema>orcid</schema>
         <element>work</element>
         <qualifier>title</qualifier>
-        <scope_note>Title of a research output</scope_note>
+        <scope_note>Main title of the work</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>subtitle</qualifier>
+        <scope_note>Subtitle of the work, if any</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>translatedTitle</qualifier>
+        <scope_note>Translated title of the work</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>journalTitle</qualifier>
+        <scope_note>Container title (journal, book, conference, etc.)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>shortDescription</qualifier>
+        <scope_note>Short description or abstract of the work</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>citationType</qualifier>
+        <scope_note>Format of the work citation (BibTeX, RIS, APA, etc.)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>citationValue</qualifier>
+        <scope_note>Content of the work citation in the chosen format</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>work</element>
         <qualifier>type</qualifier>
-        <scope_note>Type of work (journal-article, book, dataset, etc.)</scope_note>
+        <scope_note>Type of the work (article, dataset, book, etc.)</scope_note>
     </dc-type>
 
     <dc-type>
         <schema>orcid</schema>
         <element>work</element>
-        <qualifier>doi</qualifier>
-        <scope_note>Digital Object Identifier of the work</scope_note>
+        <qualifier>publicationDate</qualifier>
+        <scope_note>Publication date of the work (fuzzy date)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>url</qualifier>
+        <scope_note>URL pointing to the work</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>work</element>
+        <qualifier>languageCode</qualifier>
+        <scope_note>Language of the work metadata</scope_note>
+    </dc-type>
+
+    <!-- =========
+         PEER REVIEW
+         ========= -->
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>peerReview</element>
+        <qualifier>reviewerRole</qualifier>
+        <scope_note>Role of the person in the peer review (reviewer, editor, chair, etc.)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>peerReview</element>
+        <qualifier>reviewType</qualifier>
+        <scope_note>Type of review (review or evaluation)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>peerReview</element>
+        <qualifier>reviewCompletionDate</qualifier>
+        <scope_note>Date the review was completed</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>peerReview</element>
+        <qualifier>subjectType</qualifier>
+        <scope_note>Type of object that was reviewed (e.g. journal article, grant)</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>peerReview</element>
+        <qualifier>subjectContainerName</qualifier>
+        <scope_note>Journal, conference, or panel name containing the reviewed subject</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>peerReview</element>
+        <qualifier>subjectNameTitle</qualifier>
+        <scope_note>Title of the object that was reviewed</scope_note>
+    </dc-type>
+
+    <!-- =========
+         RESEARCH RESOURCES
+         ========= -->
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>researchResource</element>
+        <qualifier>proposalTitle</qualifier>
+        <scope_note>Title of the proposal that led to resource access</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>researchResource</element>
+        <qualifier>proposalStartDate</qualifier>
+        <scope_note>Start date of the resource access period</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>researchResource</element>
+        <qualifier>proposalEndDate</qualifier>
+        <scope_note>End date of the resource access period</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>researchResource</element>
+        <qualifier>resourceItemName</qualifier>
+        <scope_note>Name of an actual research resource used</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>orcid</schema>
+        <element>researchResource</element>
+        <qualifier>resourceItemType</qualifier>
+        <scope_note>Type of resource (collections, equipment, infrastructures, services)</scope_note>
     </dc-type>
 
 </dspace-dc-types>

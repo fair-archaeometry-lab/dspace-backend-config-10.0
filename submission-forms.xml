@@ -1378,12 +1378,10 @@
                     <hint>A brief description of a specific technical or access service offered, such as the use of X to investigate Y</hint>
                     <required>This is a mandatory field</required>
                 </field>
-            </row>
-            <row>
                 <relation-field>
                     <relationship-type>isInstrumentOfService</relationship-type>
                     <search-configuration>123456789/3</search-configuration>
-                    <repeatable>false</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Instruments involved in this service</label>
                     <hint>Select the instrument related to this service.</hint>
                 </relation-field>
@@ -3132,6 +3130,146 @@
                 </field>
             </row>                                         
         </form>
+
+
+            <!-- add new form personnelCoreStep  -->
+        <form name="personnelCoreStep"> 
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>givenNames</dc-qualifier>
+                    <label>Given Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Researcher's first or given names</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>familyName</dc-qualifier>
+                    <label>Family Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Researcher's last or family name</hint>
+                    <required>This is a required field</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>orcidIdentifier</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <label>ORCID URI</label>
+                    <input-type>onebox</input-type>
+                    <hint>Full ORCID URI (e.g. https://orcid.org/0000-0002-1825-0097)</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>externalIdentifiers</dc-element>
+                    <dc-qualifier>externalIdUrl</dc-qualifier>
+                    <label>External Identifier URL</label>
+                    <input-type>onebox</input-type>
+                    <hint>External resolvable URL to identify the researcher</hint>
+                    <required></required>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>emails</dc-element>
+                    <dc-qualifier>email</dc-qualifier>
+                    <label>Work Email</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>phones</dc-element>
+                    <dc-qualifier>phone</dc-qualifier>
+                    <label>Office Phone Number</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                    <repeatable>true</repeatable>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>researcherUrls</dc-element>
+                    <dc-qualifier>url</dc-qualifier>
+                    <label>Personal Website URL</label>
+                    <input-type>onebox</input-type>
+                    <hint>External website URL related to the researcher</hint>
+                    <required></required>
+                    <repeatable>true</repeatable>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>names</dc-element>
+                    <dc-qualifier>value</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Name of the Affiliated Institution</label>
+                    <input-type>inline-group</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+            </row>         
+        </form>
+
+        <form name="personnelCoreStep-ror-names-value"> 
+            <row>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>names</dc-element>
+                    <dc-qualifier>value</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Name of the Affiliated Institution</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required>This is a mandatory field</required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>id</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>ROR ID</label>
+                    <input-type>onebox</input-type>
+                    <hint>Persistent ROR identifier as a URI (pattern: https://ror.org/0xxxxxxxx)</hint>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>types</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Organisation Type</label>
+                    <input-type value-pairs-name="legal_status">dropdown</input-type>
+                    <hint>Organisation types (education, funder, healthcare, company, archive, nonprofit, government, facility, other)</hint>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>locations</dc-element>
+                    <dc-qualifier>countryName</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Country of the Affiliated Institution</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                    <vocabulary>country</vocabulary>
+                    <style>col-6</style>
+                </field>
+            </row> 
+        </form>
     </form-definitions>
 
 
@@ -3173,16 +3311,16 @@
                 <stored-value>Archive</stored-value>
             </pair>
             <pair>
-                <displayed-value>CHARITABLE Organisation</displayed-value>
-                <stored-value>Charitable organisation</stored-value>
+                <displayed-value>CHARITABLE ORGANISATION</displayed-value>
+                <stored-value>Charitable Organisation</stored-value>
             </pair>
             <pair>
                 <displayed-value>NON-PROFIT ORGANISATION</displayed-value>
-                <stored-value>Non-profit organisation</stored-value>
+                <stored-value>Non-Profit Organisation</stored-value>
             </pair>
             <pair>
                 <displayed-value>FOR-PROFIT ORGANISATION</displayed-value>
-                <stored-value>For-profit organisation</stored-value>
+                <stored-value>For-Profit Organisation</stored-value>
             </pair>
             <pair>
                 <displayed-value>GALLERY</displayed-value>
@@ -3190,23 +3328,23 @@
             </pair>
             <pair>
                 <displayed-value>GOVERNMENTAL ORGANISATION</displayed-value>
-                <stored-value>Governmental organisation</stored-value>
+                <stored-value>Governmental Organisation</stored-value>
             </pair>
             <pair>
                 <displayed-value>HERITAGE ORGANISATION</displayed-value>
-                <stored-value>Heritage organisation</stored-value>
+                <stored-value>Heritage Organisation</stored-value>
             </pair>
             <pair>
                 <displayed-value>NON-GOVERNMENTAL ORGANISATION</displayed-value>
-                <stored-value>Non-governmental organisation</stored-value>
+                <stored-value>Non-governmental Organisation</stored-value>
             </pair>
             <pair>
                 <displayed-value>PRIVATE BODY</displayed-value>
-                <stored-value>Prviate Body</stored-value>
+                <stored-value>Private Body</stored-value>
             </pair>
             <pair>
                 <displayed-value>PUBLIC BODY</displayed-value>
-                <stored-value>Public body</stored-value>
+                <stored-value>Public Body</stored-value>
             </pair>
         </value-pairs>
 
@@ -4307,11 +4445,11 @@
         <value-pairs value-pairs-name="yes_no" dc-term="service.active">
             <pair>
                 <displayed-value>Yes</displayed-value>
-                <stored-value>true</stored-value>
+                <stored-value>Yes</stored-value>
             </pair>
             <pair>
                 <displayed-value>No</displayed-value>
-                <stored-value>false</stored-value>
+                <stored-value>No</stored-value>
             </pair>
         </value-pairs>
     <!-- add drop down list for the qualifier of provider property in Service submission form  -->

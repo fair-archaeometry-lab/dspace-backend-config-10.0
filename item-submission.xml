@@ -71,6 +71,7 @@
         <name-map collection-entity-type="Software" submission-name="Software"/>    <!-- create a new mapping for Software entitiy  -->
         <name-map collection-entity-type="Laboratory" submission-name="Laboratory"/>    <!-- create a new mapping for Laboratory entitiy  -->
         <name-map collection-entity-type="Dataset" submission-name="Dataset"/>    <!-- create a new mapping for Dataset entitiy  -->
+        <name-map collection-entity-type="Researcher" submission-name="Personnel"/>    <!-- create a new mapping for Researcher entitiy  -->
         <!-- Example of configuration using a community handle to map an Item Submission Process.
 
             This configuration maps the submission process to the community's descendant
@@ -275,6 +276,23 @@
 	    </step-definition>
 
         <!-- end: add steps for method collection  -->
+
+        <!-- start: add steps for personnel collection  -->
+
+        <step-definition id="personnelCoreStep" mandatory="true"> <!-- add new step for Personnel entity  -->
+            <heading>submit.progressbar.describe.personnel.core</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition>
+
+        <step-definition id="personnelAdditionalStep" mandatory="true"> <!-- add new step for Personnel entity  -->
+            <heading>submit.progressbar.describe.personnel.additional</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition>
+
+        <!-- end: add steps for personnel collection  -->
+
 
         <step-definition id="upload">
             <heading>submit.progressbar.upload</heading>
@@ -574,6 +592,14 @@
             <step id="license"/>
         </submission-process>
 
+        <!-- add new submission process for personnel-->
+        <submission-process name="Personnel">
+            <step id="collection"/>
+            <step id="personnelCoreStep"/>
+  <!--      <step id="personnelAdditionalStep"/> -->
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
 
         <!-- add new submission process for method-->
         <submission-process name="StdMethod">
