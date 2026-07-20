@@ -1524,10 +1524,19 @@
                     <repeatable>true</repeatable>
                     <label>Service Providers</label>
                     <input-type>inline-group</input-type>
-                    <hint></hint>
+                    <hint>Use this option if the service provider has not been defined in the system.</hint>
                     <required>This is a mandatory field</required>
                 </field>
-            </row>        
+            </row>
+            <row>   
+                <relation-field>
+                    <relationship-type>isProvidedByLab</relationship-type>
+                    <search-configuration>123456789/4</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Service Providers in the system</label>
+                    <hint>Use this option if the servier provider has been defined in the system.</hint>
+                </relation-field> 
+            </row>    
             <row>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -3269,6 +3278,119 @@
                     <style>col-6</style>
                 </field>
             </row> 
+        </form>
+            <!-- add new form laboratoryStep  -->
+        <form name="laboratoryStep"> 
+            <row>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>names</dc-element>
+                    <dc-qualifier>value</dc-qualifier>
+                    <label>Name of Institution</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>id</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>ROR ID</label>
+                    <input-type>onebox</input-type>
+                    <hint>Full ROR organization ID URL (https://ror.org/0xxxxxxxx).</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>externalIds</dc-element>
+                    <dc-qualifier>all</dc-qualifier>
+                    <label>External IDs</label>
+                    <repeatable>true</repeatable>
+                    <input-type>onebox</input-type>
+                    <hint>Other identifiers for the institution</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>types</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Category of Institution</label>
+                    <input-type value-pairs-name="legal_status">dropdown</input-type>
+                    <hint>Organisation types (education, funder, healthcare, company, archive, nonprofit, government, facility, other)</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>role</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Role of Institution</label>
+                    <input-type>onebox</input-type>
+                    <hint>Which role does an institution play in this service?</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>links</dc-element>
+                    <dc-qualifier>value</dc-qualifier>
+                    <label>Landing Page of Institution</label>
+                    <repeatable>true</repeatable>
+                    <input-type>onebox</input-type>
+                    <hint>Landing page URL for the institution</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>established</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Start Date of Institution</label>
+                    <input-type>date</input-type>
+                    <hint>Year the organization was established</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>relationships</dc-element>
+                    <dc-qualifier>label</dc-qualifier>
+                    <label>Parent Organization</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>locations</dc-element>
+                    <dc-qualifier>countryName</dc-qualifier>
+                    <label>Country of Institution</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <vocabulary>country</vocabulary>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>locations</dc-element>
+                    <dc-qualifier>lat</dc-qualifier>
+                    <label>	Latitude of the Institution</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>locations</dc-element>
+                    <dc-qualifier>lng</dc-qualifier>
+                    <label>	Longitude of the Institution</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                </field>
+            </row>
         </form>
     </form-definitions>
 
