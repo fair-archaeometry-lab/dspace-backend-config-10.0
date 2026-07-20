@@ -1518,9 +1518,9 @@
         <form name="serviceAccess">
             <row>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>provider</dc-element>
-                    <dc-qualifier>provider</dc-qualifier>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>names</dc-element>
+                    <dc-qualifier>value</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Service Providers</label>
                     <input-type>inline-group</input-type>
@@ -1589,12 +1589,12 @@
             </row>
         </form>
 
-        <form name="serviceAccess-service-provider-provider">
+        <form name="serviceAccess-ror-names-value">
             <row>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>provider</dc-element>
-                    <dc-qualifier>provider</dc-qualifier>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>names</dc-element>
+                    <dc-qualifier>value</dc-qualifier>
                     <label>Name of Service Provider</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
@@ -1602,19 +1602,19 @@
                     <hint>An actor (organisation or person) offering this service.</hint>
                 </field>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>provider</dc-element>
-                    <dc-qualifier>id</dc-qualifier>
-                    <label>Service Provider Identifier</label>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>id</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>ROR ID of Service Provider</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
                     <required></required>
                     <hint>Persistent identifiers for the service provider</hint>
                 </field>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>provider</dc-element>
-                    <dc-qualifier>role</dc-qualifier>
+                    <dc-schema>ror</dc-schema>
+                    <dc-element>role</dc-element>
+                    <dc-qualifier></dc-qualifier>
                     <label>Provider Role</label>
                     <input-type value-pairs-name="provider_role">dropdown</input-type>
                     <repeatable>false</repeatable>
@@ -2910,131 +2910,6 @@
                     <hint>Indicates a CreativeWork that this CreativeWork is (in some sense) part of. Reverse property hasPart</hint>
                 </field>
             </row>                                                     
-        </form>
-                <!-- add new form for laboratory  -->
-        <form name="laboratoryStep">
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>title</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Name of laboratory</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the full name of the laboratory.</hint>
-                    <required>This is a required field.</required>
-                </field>
-                <field>
-                    <dc-schema>organization</dc-schema>
-                    <dc-element>alternateName</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Acronym</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the acronym of the laboratory.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>organization</dc-schema>
-                    <dc-element>parentOrganization</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>The parent organisation of the laboratory</label>
-                    <input-type>onebox</input-type>
-                    <hint>The larger organization that this organization is a subOrganization of, if any.</hint>
-                    <required></required>
-                </field>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>type</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Type of organisation the laboratory belongs to</label>
-                    <input-type value-pairs-name="legal_status">dropdown</input-type>
-                    <hint>Type or legal status of the organisation.</hint>
-                    <required>This is a required field.</required>
-                </field>
-                <field>
-                    <dc-schema>organization</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>ror</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Persistent identifier</label>
-                    <input-type>onebox</input-type>
-                    <hint>The persistent identifier of the research laboratory or institute, usually a Research Organization Registry (ROR) ID.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dcterms</dc-schema>
-                    <dc-element>spatial</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Geographic location of the laboratory</label>
-                    <input-type>onebox</input-type>
-                    <hint>The longitude and latitude of the laboratory location. For example, New York is Point(-74.0060 40.7128) and Berlin is Point(13.4050 52.5200).</hint>
-                    <required></required>
-                </field>
-                <field>
-                    <dc-schema>laboratory</dc-schema>
-                    <dc-element>country</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Country of operation</label>
-                    <input-type>onebox</input-type>
-                    <hint>The country in which the organisation is legally and professionally based.</hint>
-                    <vocabulary>country</vocabulary>
-                    <required>This is a required field.</required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>subject</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Research focus of laboratory</label>
-                    <input-type>onebox</input-type>
-                    <hint>Which domains or disciplines the laboratory has worked within or has experience within.</hint>
-                    <vocabulary>discipline</vocabulary>
-                    <required></required>
-                </field>
-                <field>
-                    <dc-schema>dcterms</dc-schema>
-                    <dc-element>references</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Research references</label>
-                    <input-type>onebox</input-type>
-                    <hint>The key references published by the research laboratory or institute.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <row>
-                <field>
-                    <dc-schema>organization</dc-schema>
-                    <dc-element>url</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Url of the Organization</label>
-                    <input-type>onebox</input-type>
-                    <hint>The webpage of the research laboratory or institute.</hint>
-                    <required></required>
-                </field>
-                <field>
-                    <dc-schema>organization</dc-schema>
-                    <dc-element>foundingDate</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>The start date of laboratory</label>
-                    <input-type>date</input-type>
-                    <hint>When did this organisation start working in this field?</hint>
-                    <required></required>
-                </field>
-            </row>
         </form>
 
         <form name="stdMethodStep"> 
