@@ -1365,7 +1365,7 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Service Identifier</label>
                     <input-type>onebox</input-type>
-                    <hint>Internal handle or identifier of the service record</hint>
+                    <hint>Provide existing identifiers for this service record if applicable.</hint>
                 </field>
             </row>
             <row>
@@ -1383,7 +1383,7 @@
                     <search-configuration>123456789/3</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Instruments involved in this service</label>
-                    <hint>Select the instrument related to this service.</hint>
+                    <hint>Select instrument records that have been previously defined in the system.</hint>
                 </relation-field>
             </row>
             <row>
@@ -1481,14 +1481,6 @@
                     <vocabulary>amgc</vocabulary>
                     <repeatable>true</repeatable>
                 </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>method</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Service Method</label>
-                    <input-type>onebox</input-type>
-                    <hint>Service related method statements should be defined in the system and represent the procedures for using individual pieces of equipment or software systems used within the service - detail of setup, methodology, procedures, etc. should all be described within this document and is also directly attached to relevant the Tool (equipment or software) records.</hint>
-                </field>
             </row>
             <row>
                 <field>
@@ -1525,7 +1517,7 @@
                     <label>Service Providers</label>
                     <input-type>inline-group</input-type>
                     <hint>Use this option if the service provider has not been defined in the system.</hint>
-                    <required>This is a mandatory field</required>
+                    <required></required>
                 </field>
             </row>
             <row>   
@@ -1534,7 +1526,7 @@
                     <search-configuration>123456789/4</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Service Providers in the system</label>
-                    <hint>Use this option if the servier provider has been defined in the system.</hint>
+                    <hint>Use this option if the service provider has been defined in the system.</hint>
                 </relation-field> 
             </row>    
             <row>
@@ -1567,15 +1559,24 @@
             </row>
             <row>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier>id</dc-qualifier>
-                    <label>Team Member</label>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>givenNames</dc-qualifier>
+                    <label>Team Members</label>
                     <input-type>inline-group</input-type>
-                    <hint>Person in the team working on this service. It can be linked to researcher entity. Alternaitvle, please enter the first name, last name, and email address, separated by commas. For example: John Doe, jane.doe@example.com</hint>
+                    <hint>Person in the team working on this service.</hint>
                     <repeatable>true</repeatable>
                 </field>          
             </row>
+            <row>   
+                <relation-field>
+                    <relationship-type>isManagedByResearcher</relationship-type>
+                    <search-configuration>123456789/19</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Team Members in the system</label>
+                    <hint>Use this option if the team member has been defined in the personnel collection of the system.</hint>
+                </relation-field> 
+            </row>  
             <row>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1634,24 +1635,46 @@
             </row>
         </form>    
 
-        <form name="serviceAccess-service-teamMember-id">
+        <form name="serviceAccess-orcid-name-givenNames">
             <row>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier>id</dc-qualifier>
-                    <label>Team Member Id or Name</label>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>givenNames</dc-qualifier>
+                    <label>Given Name</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
                     <required></required>
-                    <hint>Identifier of the person (as defined in the system). Otherwise, provide the name.</hint>
+                    <hint></hint>
                     <style>col-6</style>
                 </field>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier>role</dc-qualifier>
-                    <label>Team Member Role 1</label>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>familyName</dc-qualifier>
+                    <label>Family Name</label>
+                    <input-type>onebox</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint></hint>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>emails</dc-element>
+                    <dc-qualifier>email</dc-qualifier>
+                    <label>Work Email</label>
+                    <input-type>onebox</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint></hint>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>service</dc-element>
+                    <dc-qualifier>roleTitle</dc-qualifier>
+                    <label>Team Member Role</label>
                     <input-type value-pairs-name="member_role">dropdown</input-type>
                     <repeatable>false</repeatable>
                     <required></required>
@@ -1659,31 +1682,9 @@
                     <style>col-6</style>
                 </field>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier>role1</dc-qualifier>
-                    <label>Team Member Role 2</label>
-                    <input-type value-pairs-name="member_role">dropdown</input-type>
-                    <repeatable>false</repeatable>
-                    <required></required>
-                    <hint>The main role that the person has in the team.</hint>
-                    <style>col-6</style>
-                </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier>role2</dc-qualifier>
-                    <label>Team Member Role 3</label>
-                    <input-type value-pairs-name="member_role">dropdown</input-type>
-                    <repeatable>false</repeatable>
-                    <required></required>
-                    <hint>The main role that the person has in the team.</hint>
-                    <style>col-6</style>
-                </field>
-                <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier>startDate</dc-qualifier>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>researchResource</dc-element>
+                    <dc-qualifier>proposalStartDate</dc-qualifier>
                     <label>Start Date</label>
                     <input-type>date</input-type>
                     <repeatable>false</repeatable>
@@ -1692,9 +1693,9 @@
                     <style>col-6</style>
                 </field>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>teamMember</dc-element>
-                    <dc-qualifier>endDate</dc-qualifier>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>researchResource</dc-element>
+                    <dc-qualifier>proposalEndDate</dc-qualifier>
                     <label>End Date</label>
                     <input-type>date</input-type>
                     <repeatable>false</repeatable>
