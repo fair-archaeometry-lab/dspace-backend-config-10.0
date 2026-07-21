@@ -3250,23 +3250,22 @@
                     <required></required>
                 </field>
                 <field>
-                    <dc-schema>ror</dc-schema>
-                    <dc-element>locations</dc-element>
-                    <dc-qualifier>lat</dc-qualifier>
-                    <label>	Latitude of the Institution</label>
+                    <dc-schema>dcterms</dc-schema>
+                    <dc-element>spatial</dc-element>
+                    <dc-qualifier/>
+                    <label>Geographic Location of the Laboratory</label>
                     <input-type>onebox</input-type>
-                    <hint></hint>
-                    <required></required>
+                    <hint>The longtitude and latitude of the laboratory location. For example, New York is Point(-74.0060 40.7128) and Berlin Point(13.4050 52.5200)</hint>
                 </field>
-                <field>
-                    <dc-schema>ror</dc-schema>
-                    <dc-element>locations</dc-element>
-                    <dc-qualifier>lng</dc-qualifier>
-                    <label>	Longitude of the Institution</label>
-                    <input-type>onebox</input-type>
-                    <hint></hint>
-                    <required></required>
-                </field>
+            </row>
+            <row>
+                <relation-field>
+                    <relationship-type>ownsInstrument</relationship-type>
+                    <search-configuration>123456789/3</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Instruments Mangaged by the Laboratory</label>
+                    <hint>Select instrument records that have been previously defined in the system.</hint>
+                </relation-field>
             </row>
         </form>
     </form-definitions>
