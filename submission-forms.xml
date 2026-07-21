@@ -1987,7 +1987,7 @@
                     <label>Owner Information</label>
                     <input-type>inline-group</input-type>
                     <hint></hint>
-                    <required>This is a mandatory field</required>
+                    <required>This is a required field</required>
                     <repeatable>true</repeatable>
                 </field>
             </row>
@@ -2008,7 +2008,7 @@
                     <dc-qualifier>commissioned</dc-qualifier>
                     <label>Commissioned Date</label>
                     <input-type>date</input-type>
-                    <hint>Commissioned date</hint>
+                    <hint>The date when the instrument was commissioned</hint>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
@@ -2016,7 +2016,7 @@
                     <dc-qualifier>decommissioned</dc-qualifier>
                     <label>DeCommissioned Date</label>
                     <input-type>date</input-type>
-                    <hint>Commissioned date</hint>
+                    <hint>The date when the instrument was decommissioned</hint>
                 </field>
             </row>
         </form>
@@ -2110,7 +2110,7 @@
                     <dc-schema>instrument</dc-schema>
                     <dc-element>measuredVariable</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <label>Measureable Variables</label>
+                    <label>Measureable Parameters</label>
                     <input-type>onebox</input-type>
                     <vocabulary>parameter</vocabulary>
                     <repeatable>true</repeatable>
@@ -2137,7 +2137,7 @@
                     <dc-qualifier>name</dc-qualifier>
                     <label>Manufacturer Name</label>
                     <input-type>onebox</input-type>
-                    <hint>Name of the manufacturer or developer</hint>
+                    <hint>An extensive list of manufacturers will be provided after collecting sufficient use cases.</hint>
                     <required>This is a mandatory field</required>
                     <repeatable></repeatable>
                     <style>col-4</style>
@@ -2209,8 +2209,9 @@
                     <dc-qualifier>name</dc-qualifier>
                     <label>Instrument Type</label>
                     <input-type>onebox</input-type>
-                    <hint>Type of instrument. A control list will be provided in the future.</hint>
+                    <hint>Type of instrument. Select from a controlled list.</hint>
                     <required>This is a mandatory field</required>
+                    <vocabulary>amgc</vocabulary>
                     <repeatable></repeatable>
                     <style>col-4</style>
                 </field>
