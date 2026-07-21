@@ -259,6 +259,18 @@
         </rightCardinality>
     </type>
     <type>
+        <leftType>Software</leftType>
+        <rightType>StandardMethod</rightType>
+        <leftwardType>usesProtocol</leftwardType>
+        <rightwardType>isProtocolOfSoftware</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
+    <type>
         <leftType>Service</leftType>
         <rightType>Laboratory</rightType>
         <leftwardType>isProvidedByLab</leftwardType>

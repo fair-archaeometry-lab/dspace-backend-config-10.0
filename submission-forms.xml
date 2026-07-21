@@ -2940,7 +2940,7 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>author</dc-qualifier>
-                    <label>Author of the Protocal</label>
+                    <label>Author of the Protocol</label>
                     <input-type>onebox</input-type>
                     <hint>The creators or authors of this method. These can be persons or an organisations. Linked to PIDs</hint>
                     <required>This is a required field</required>
@@ -2978,24 +2978,20 @@
                 </field>
             </row> 
             <row>
-                <field>
-                    <dc-schema>method</dc-schema>
-                    <dc-element>relatedTool</dc-element>
-                    <dc-qualifier>device</dc-qualifier>
-                    <label>Related Device</label>
-                    <input-type>onebox</input-type>
+                <relation-field>
+                    <relationship-type>isProtocolOfInstrument</relationship-type>
+                    <search-configuration>123456789/3</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Instruments that use this method</label>
                     <hint>The device the method is designed for. It is linked with the item defined in the device submission form</hint>
+                </relation-field>
+                <relation-field>
+                    <relationship-type>isProtocolOfSoftware</relationship-type>
+                    <search-configuration>123456789/6</search-configuration>
                     <repeatable>true</repeatable>
-                </field>
-                <field>
-                    <dc-schema>method</dc-schema>
-                    <dc-element>relatedTool</dc-element>
-                    <dc-qualifier>software</dc-qualifier>
-                    <label>Related software</label>
-                    <input-type>onebox</input-type>
+                    <label>Software that uses this method</label>
                     <hint>The software the method is designed for. It is linked with the item defined in the software submission form</hint>
-                    <repeatable>true</repeatable>
-                </field>
+                </relation-field>
             </row>
             <row>
                 <field>
