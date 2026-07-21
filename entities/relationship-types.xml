@@ -354,5 +354,18 @@
             <min>0</min>
         </rightCardinality>
     </type>
+    <type>
+        <leftType>Publication</leftType>
+        <rightType>Researcher</rightType>
+        <leftwardType>isWorkOfResearcher</leftwardType>
+        <rightwardType>producesPublication</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+        <copyToLeft>true</copyToLeft>
+    </type>
 
 </relationships>

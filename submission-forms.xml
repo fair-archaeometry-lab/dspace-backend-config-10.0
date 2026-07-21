@@ -2369,6 +2369,15 @@
                 </field>
             </row>
             <row>
+                <relation-field>
+                    <relationship-type>isReferenceForMethod</relationship-type>
+                    <search-configuration>123456789/5</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Related Methods</label>
+                    <hint>The methods the reference material is designed for. It is linked with the item defined in the system.</hint>
+                </relation-field>
+            </row>
+            <row>
                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>referenceMaterial</dc-element>
@@ -3100,6 +3109,27 @@
                     <hint></hint>
                     <required></required>
                 </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>work</dc-element>
+                    <dc-qualifier>title</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Research Work</label>
+                    <input-type>inline-group</input-type>
+                    <hint>Please enter the key research outputs</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <relation-field>
+                    <relationship-type>producesPublication</relationship-type>
+                    <search-configuration>123456789/9</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Reseach Work Defined in the System</label>
+                    <hint>Choose this option if the research work has already been defined in the system.</hint>
+                </relation-field>  
             </row>         
         </form>
 
@@ -3151,6 +3181,33 @@
                     <style>col-6</style>
                 </field>
             </row> 
+        </form>
+
+        <form name="personnelCoreStep-orcid-work-title"> 
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>work</dc-element>
+                    <dc-qualifier>title</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Title of Research Work</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>work</dc-element>
+                    <dc-qualifier>citationValue</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Link to Research Work</label>
+                    <input-type>onebox</input-type>
+                    <hint></hint>
+                    <required></required>
+                    <style>col-6</style>
+                </field>
+            </row>
         </form>
             <!-- add new form laboratoryStep  -->
         <form name="laboratoryStep"> 
