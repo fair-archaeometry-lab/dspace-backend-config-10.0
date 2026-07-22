@@ -125,6 +125,7 @@
                 <entry key="123456789/2" value-ref="service"/>
                 <entry key="123456789/3" value-ref="instrument"/>
                 <entry key="123456789/4" value-ref="laboratory"/>
+                <entry key="123456789/5" value-ref="stdmethod"/>
 
                 <entry key="publication" value-ref="publication"/>
                 <!-- Same as the "publication" configuration, but does NOT filter out older versions of items -->
@@ -1743,6 +1744,68 @@
     </bean>
 
 
+        <!--set up search functions for standard method collections-->
+    <bean id="stdmethod" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype">
+        <property name="id" value="stdmethod"/>
+        <property name="indexAlways" value="true"/>
+        <!--Which sidebar facets are to be displayed-->
+        <property name="sidebarFacets">
+            <list>
+                <ref bean="searchFilterMethodAuthor"/>
+                <ref bean="searchFilterMethodTechnique"/>
+                <ref bean="searchFilterMethodType"/>
+                <ref bean="searchFilterMethodDate"/>
+            </list>
+        </property>
+        <!-- Set TagCloud configuration per discovery configuration -->
+        <property name="tagCloudFacetConfiguration" ref="stdmethodTagCloudFacetConfiguration"/>
+        <!--The search filters which can be used on the discovery search page-->
+        <property name="searchFilters">
+            <list>
+                <ref bean="searchFilterMethodAuthor"/>
+                <ref bean="searchFilterMethodTechnique"/>
+                <ref bean="searchFilterMethodType"/>
+                <ref bean="searchFilterMethodDate"/>
+            </list>
+        </property>
+        <!--The sort filters for the discovery search-->
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortScore"/>
+                        <ref bean="sortDateAccessioned"/>
+                        <ref bean="sortMethodAuthor"/>
+                        <ref bean="sortMethodDate"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+
+        <!--Any default filter queries, these filter queries will be used for all
+            queries done by discovery for this configuration -->
+        <property name="defaultFilterQueries">
+            <list>
+                <!--Only find items, communities and collections-->
+                <value>search.resourcetype:Item AND latestVersion:true AND entityType_keyword:StandardMethod</value>
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+
+        <!--The configuration for the recent submissions-->
+        <property name="recentSubmissionConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoveryRecentSubmissionsConfiguration">
+                <property name="metadataSortField" value="dc.date.accessioned" />
+                <property name="type" value="date"/>
+                <property name="max" value="20"/>
+                <!-- If enabled the collection home page will not display metadata but show a pageable list of recent submissions -->
+                <property name="useAsHomePage" value="false"/>
+            </bean>
+        </property>
+
+        <!-- When true a "did you mean" example will be displayed, value can be true or false -->
+        <property name="spellCheckEnabled" value="true"/>
+    </bean>
 
     <bean id="publication" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype">
         <property name="id" value="publication"/>
@@ -3068,7 +3131,7 @@
         </property>
     </bean>
 
-            <!--TagCloud configuration bean for laboratory collection-->
+        <!--TagCloud configuration bean for laboratory collection-->
     <bean id="laboratoryTagCloudFacetConfiguration" class="org.dspace.discovery.configuration.TagCloudFacetConfiguration">
         <!-- Actual configuration of the tagcloud (colors, sorting, etc.) -->
         <property name="tagCloudConfiguration" ref="tagCloudConfiguration"/>
@@ -3083,6 +3146,22 @@
             </list>
         </property>
     </bean>
+
+        <!--TagCloud configuration bean for standard method collection-->
+    <bean id="stdmethodTagCloudFacetConfiguration" class="org.dspace.discovery.configuration.TagCloudFacetConfiguration">
+        <!-- Actual configuration of the tagcloud (colors, sorting, etc.) -->
+        <property name="tagCloudConfiguration" ref="tagCloudConfiguration"/>
+        <!-- List of tagclouds to appear, one for every search filter, one after the other -->
+        <property name="tagCloudFacets">
+            <list>
+                <ref bean="searchFilterMethodAuthor"/>
+                <ref bean="searchFilterMethodTechnique"/>
+                <ref bean="searchFilterMethodType"/>
+                <ref bean="searchFilterMethodDate"/>
+            </list>
+        </property>
+    </bean>
+
 
     <bean id="NOTIFY.incoming" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype" parent="ldnMessageEntityBaseConfig">
         <property name="id" value="NOTIFY.incoming"/>
@@ -3596,6 +3675,71 @@
         <property name="metadataFields">
             <list>
                 <value>ror.established</value>
+            </list>
+        </property>
+        <property name="type" value="date"/>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+<!--Define individual Search filter for Laboratory Collection-->
+
+<!--Define individual Search filter for Standard Method Collection-->
+
+    <bean id="searchFilterMethodAuthor" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="methodAuthor"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.contributor.author</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterMethodTechnique" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="methodTechnique"/>
+        <property name="metadataFields">
+            <list>
+                <value>service.technique</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterMethodType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="methodType"/>
+        <property name="metadataFields">
+            <list>
+                <value>method.type</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterMethodDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="methodDate"/>
+        <property name="metadataFields">
+            <list>
+                <value>method.createDate</value>
             </list>
         </property>
         <property name="type" value="date"/>
@@ -4683,6 +4827,22 @@
     </bean>
 
     <!-- Define Sort properties for laboratory collection-->
+
+    <!-- Define Sort properties for standard method collection-->
+
+    <bean id="sortMethodAuthor" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="dc.contributor.author"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
+    <bean id="sortMethodDate" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="method.createDate"/>
+        <property name="type" value="date"/>
+        <property name="defaultSortOrder" value="desc"/>
+    </bean>
+
+    <!-- Define Sort properties for standard method collection-->
+
     <bean id="sortScore" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="defaultSortOrder" value="desc"/>
     </bean>
