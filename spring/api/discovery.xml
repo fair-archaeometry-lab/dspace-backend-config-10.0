@@ -124,6 +124,7 @@
                 <!-- <entry key="collection" value-ref="collectionConfiguration" /> -->
                 <entry key="123456789/2" value-ref="service"/>
                 <entry key="123456789/3" value-ref="instrument"/>
+                <entry key="123456789/4" value-ref="laboratory"/>
 
                 <entry key="publication" value-ref="publication"/>
                 <!-- Same as the "publication" configuration, but does NOT filter out older versions of items -->
@@ -1571,6 +1572,8 @@
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
                 <property name="sortFields">
                     <list>
+                        <ref bean="sortScore"/>
+                        <ref bean="sortDateAccessioned"/>
                         <ref bean="sortResearchDiscipline"/>
                         <ref bean="sortServiceTechnique"/>
                         <ref bean="sortPropertyClass"/>
@@ -1618,8 +1621,7 @@
                 <ref bean="searchFilterInstrumentType"/>
                 <ref bean="searchFilterMeasurableParameters"/>
                 <ref bean="searchFilterImpact"/>
-                <ref bean="searchFilterCommissionedDate"/>
-                
+                <ref bean="searchFilterCommissionedDate"/>  
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -1641,6 +1643,8 @@
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
                 <property name="sortFields">
                     <list>
+                        <ref bean="sortScore"/>
+                        <ref bean="sortDateAccessioned"/>
                         <ref bean="sortInstrumentType"/>
                         <ref bean="sortManufacturerName"/>
                         <ref bean="sortCommissionedDate"/>
@@ -1657,6 +1661,72 @@
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
+        <!--The configuration for the recent submissions-->
+        <property name="recentSubmissionConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoveryRecentSubmissionsConfiguration">
+                <property name="metadataSortField" value="dc.date.accessioned" />
+                <property name="type" value="date"/>
+                <property name="max" value="20"/>
+                <!-- If enabled the collection home page will not display metadata but show a pageable list of recent submissions -->
+                <property name="useAsHomePage" value="false"/>
+            </bean>
+        </property>
+
+        <!-- When true a "did you mean" example will be displayed, value can be true or false -->
+        <property name="spellCheckEnabled" value="true"/>
+    </bean>
+
+
+        <!--set up search functions for laboratory collections-->
+    <bean id="laboratory" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype">
+        <property name="id" value="laboratory"/>
+        <property name="indexAlways" value="true"/>
+        <!--Which sidebar facets are to be displayed-->
+        <property name="sidebarFacets">
+            <list>
+                <ref bean="searchFilterInstitutionCategory"/>
+                <ref bean="searchFilterInstitutionRole"/>
+                <ref bean="searchFilterParentOrganization"/>
+                <ref bean="searchFilterInstitutionCountry"/>
+                <ref bean="searchFilterInstitutionStartDate"/>
+            </list>
+        </property>
+        <!-- Set TagCloud configuration per discovery configuration -->
+        <property name="tagCloudFacetConfiguration" ref="laboratoryTagCloudFacetConfiguration"/>
+        <!--The search filters which can be used on the discovery search page-->
+        <property name="searchFilters">
+            <list>
+                <ref bean="searchFilterInstitutionCategory"/>
+                <ref bean="searchFilterInstitutionRole"/>
+                <ref bean="searchFilterParentOrganization"/>
+                <ref bean="searchFilterInstitutionCountry"/>
+                <ref bean="searchFilterInstitutionStartDate"/>
+            </list>
+        </property>
+        <!--The sort filters for the discovery search-->
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortScore"/>
+                        <ref bean="sortDateAccessioned"/>
+                        <ref bean="sortInstitutionCountry"/>
+                        <ref bean="sortInstitutionStartDate"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+
+        <!--Any default filter queries, these filter queries will be used for all
+            queries done by discovery for this configuration -->
+        <property name="defaultFilterQueries">
+            <list>
+                <!--Only find items, communities and collections-->
+                <value>search.resourcetype:Item AND latestVersion:true AND entityType_keyword:Laboratory</value>
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+
         <!--The configuration for the recent submissions-->
         <property name="recentSubmissionConfiguration">
             <bean class="org.dspace.discovery.configuration.DiscoveryRecentSubmissionsConfiguration">
@@ -2832,7 +2902,7 @@
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
                 <property name="sortFields">
                     <list>
-                        <ref bean="sortScore" />
+                        <ref bean="sortScore"/>
                         <ref bean="sortOrganizationLegalName"/>
                         <ref bean="sortOrganizationAddressCountry"/>
                         <ref bean="sortOrganizationAddressLocality"/>
@@ -2994,6 +3064,22 @@
                 <ref bean="searchFilterMeasurableParameters"/>
                 <ref bean="searchFilterImpact"/>
                 <ref bean="searchFilterCommissionedDate"/>
+            </list>
+        </property>
+    </bean>
+
+            <!--TagCloud configuration bean for laboratory collection-->
+    <bean id="laboratoryTagCloudFacetConfiguration" class="org.dspace.discovery.configuration.TagCloudFacetConfiguration">
+        <!-- Actual configuration of the tagcloud (colors, sorting, etc.) -->
+        <property name="tagCloudConfiguration" ref="tagCloudConfiguration"/>
+        <!-- List of tagclouds to appear, one for every search filter, one after the other -->
+        <property name="tagCloudFacets">
+            <list>
+                <ref bean="searchFilterInstitutionCategory"/>
+                <ref bean="searchFilterInstitutionRole"/>
+                <ref bean="searchFilterParentOrganization"/>
+                <ref bean="searchFilterInstitutionCountry"/>
+                <ref bean="searchFilterInstitutionStartDate"/>
             </list>
         </property>
     </bean>
@@ -3442,6 +3528,86 @@
         <property name="exposeMinAndMaxValue" value="true"/>
     </bean>
 <!--Define individual Search filter for Instrument Collection-->
+
+<!--Define individual Search filter for Laboratory Collection-->
+
+    <bean id="searchFilterInstitutionCategory" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="institutionCategory"/>
+        <property name="metadataFields">
+            <list>
+                <value>ror.types</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterInstitutionRole" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="institutionRole"/>
+        <property name="metadataFields">
+            <list>
+                <value>ror.role</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterParentOrganization" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="parentOrganization"/>
+        <property name="metadataFields">
+            <list>
+                <value>ror.relationships.label</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterInstitutionCountry" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="institutionCountry"/>
+        <property name="metadataFields">
+            <list>
+                <value>ror.locations.countryName</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterInstitutionStartDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="institutionStartDate"/>
+        <property name="metadataFields">
+            <list>
+                <value>ror.established</value>
+            </list>
+        </property>
+        <property name="type" value="date"/>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+<!--Define individual Search filter for Laboratory Collection-->
 
     <bean id="searchFilterDiscoverable" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="discoverable"/>
@@ -4502,6 +4668,21 @@
     </bean>
 
     <!-- Define Sort properties for instrument collection-->
+
+    <!-- Define Sort properties for laboratory collection-->
+
+    <bean id="sortInstitutionCountry" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="ror.locations.countryName"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
+    <bean id="sortInstitutionStartDate" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="ror.established"/>
+        <property name="type" value="date"/>
+        <property name="defaultSortOrder" value="desc"/>
+    </bean>
+
+    <!-- Define Sort properties for laboratory collection-->
     <bean id="sortScore" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="defaultSortOrder" value="desc"/>
     </bean>
