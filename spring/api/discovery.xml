@@ -1612,7 +1612,14 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
+                <ref bean="searchFilterOwnerName"/>
                 <ref bean="searchFilterManufacturerName"/>
+                <ref bean="searchFilterModelName"/>
+                <ref bean="searchFilterInstrumentType"/>
+                <ref bean="searchFilterMeasurableParameters"/>
+                <ref bean="searchFilterImpact"/>
+                <ref bean="searchFilterCommissionedDate"/>
+                
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -1620,7 +1627,13 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
+                <ref bean="searchFilterOwnerName"/>
                 <ref bean="searchFilterManufacturerName"/>
+                <ref bean="searchFilterModelName"/>
+                <ref bean="searchFilterInstrumentType"/>
+                <ref bean="searchFilterMeasurableParameters"/>
+                <ref bean="searchFilterImpact"/>
+                <ref bean="searchFilterCommissionedDate"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -1628,7 +1641,9 @@
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
                 <property name="sortFields">
                     <list>
+                        <ref bean="sortInstrumentType"/>
                         <ref bean="sortManufacturerName"/>
+                        <ref bean="sortCommissionedDate"/>
                     </list>
                 </property>
             </bean>
@@ -2972,7 +2987,13 @@
         <!-- List of tagclouds to appear, one for every search filter, one after the other -->
         <property name="tagCloudFacets">
             <list>
-                <ref bean="searchFilterManufacturerName" />
+                <ref bean="searchFilterOwnerName"/>
+                <ref bean="searchFilterManufacturerName"/>
+                <ref bean="searchFilterModelName"/>
+                <ref bean="searchFilterInstrumentType"/>
+                <ref bean="searchFilterMeasurableParameters"/>
+                <ref bean="searchFilterImpact"/>
+                <ref bean="searchFilterCommissionedDate"/>
             </list>
         </property>
     </bean>
@@ -3313,7 +3334,23 @@
         <property name="exposeMinAndMaxValue" value="true"/>
     </bean>
 
-        <!--Search filter configuration for manufacturer name-->
+        <!--Define individual Search filter for Instrument Collection-->
+
+    <bean id="searchFilterOwnerName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="owner"/>
+        <property name="metadataFields">
+            <list>
+                <value>instrument.owner.name</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
     <bean id="searchFilterManufacturerName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="manufacturer"/>
         <property name="metadataFields">
@@ -3328,6 +3365,83 @@
         <property name="pageSize" value="10"/>
         <property name="exposeMinAndMaxValue" value="true"/>
     </bean>
+
+    <bean id="searchFilterModelName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="model"/>
+        <property name="metadataFields">
+            <list>
+                <value>instrument.model.name</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterInstrumentType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="instrumentType"/>
+        <property name="metadataFields">
+            <list>
+                <value>instrument.instrumentType.name</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterMeasurableParameters" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="parameter"/>
+        <property name="metadataFields">
+            <list>
+                <value>instrument.measuredVariable</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterImpact" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="impact"/>
+        <property name="metadataFields">
+            <list>
+                <value>instrument.impact</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterCommissionedDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="commissionedDate"/>
+        <property name="metadataFields">
+            <list>
+                <value>instrument.date.commissioned</value>
+            </list>
+        </property>
+        <property name="type" value="date"/>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+<!--Define individual Search filter for Instrument Collection-->
 
     <bean id="searchFilterDiscoverable" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="discoverable"/>
@@ -4367,13 +4481,27 @@
         <property name="type" value="date"/>
         <property name="defaultSortOrder" value="desc"/>
     </bean>
+    <!--Sort properties for service collection-->
 
-    <!--Sort properties for manufacturer name-->
+    <!-- Define Sort properties for instrument collection-->
+
+    <bean id="sortInstrumentType" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="instrument.instrumentType.name"/>
+        <property name="defaultSortOrder" value="asc"/>
+    </bean>
+
     <bean id="sortManufacturerName" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="metadataField" value="instrument.manufacturer.name"/>
         <property name="defaultSortOrder" value="asc"/>
     </bean>
 
+    <bean id="sortCommissionedDate" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="instrument.date.commissioned"/>
+        <property name="type" value="date"/>
+        <property name="defaultSortOrder" value="desc"/>
+    </bean>
+
+    <!-- Define Sort properties for instrument collection-->
     <bean id="sortScore" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="defaultSortOrder" value="desc"/>
     </bean>

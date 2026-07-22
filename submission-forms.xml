@@ -2110,7 +2110,7 @@
                     <dc-schema>instrument</dc-schema>
                     <dc-element>measuredVariable</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <label>Measureable Parameters</label>
+                    <label>Measurable Parameters</label>
                     <input-type>onebox</input-type>
                     <vocabulary>parameter</vocabulary>
                     <repeatable>true</repeatable>
