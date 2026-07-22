@@ -3125,7 +3125,7 @@
             <row>
                 <relation-field>
                     <relationship-type>producesPublication</relationship-type>
-                    <search-configuration>123456789/9</search-configuration>
+                    <search-configuration>publication</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Reseach Work Defined in the System</label>
                     <hint>Choose this option if the research work has already been defined in the system.</hint>
