@@ -127,9 +127,10 @@
                 <entry key="123456789/4" value-ref="laboratory"/>
                 <entry key="123456789/5" value-ref="stdmethod"/>
                 <entry key="123456789/6" value-ref="software"/>
+                <entry key="123456789/9" value-ref="publication"/>
 
-                <entry key="publication" value-ref="publication"/>
-                <!-- Same as the "publication" configuration, but does NOT filter out older versions of items -->
+            <!--<entry key="publication" value-ref="publication"/> -->    
+             <!--    Same as the "publication" configuration, but does NOT filter out older versions of items -->
                 <!-- Used to display related items on single-item pages, because a relationship does not always point to the latest version of the related item -->
                 <entry key="publication-relationships" value-ref="publicationRelationships"/>
 
