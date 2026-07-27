@@ -79,6 +79,62 @@
                         </bean>
                     </list>
                 </entry>
+                <entry key="instrument">
+                    <list>
+                        <bean class="org.dspace.content.edit.EditItemMode">
+                            <property name="name" value="FULL" />
+                            <property name="label" value="edititem.mode.instrument.full" />
+                            <property name="security">
+                                <value type="org.dspace.content.security.CrisSecurity">
+                                    ITEM_ADMIN
+                                </value>
+                            </property>
+                            <property name="submissionDefinition" value="admin-instrument-edit" />
+                        </bean>
+                    </list>
+                </entry>
+                <entry key="software">
+                    <list>
+                        <bean class="org.dspace.content.edit.EditItemMode">
+                            <property name="name" value="FULL" />
+                            <property name="label" value="edititem.mode.software.full" />
+                            <property name="security">
+                                <value type="org.dspace.content.security.CrisSecurity">
+                                    ITEM_ADMIN
+                                </value>
+                            </property>
+                            <property name="submissionDefinition" value="admin-software-edit" />
+                        </bean>
+                    </list>
+                </entry>
+                <entry key="referencematerial">
+                    <list>
+                        <bean class="org.dspace.content.edit.EditItemMode">
+                            <property name="name" value="FULL" />
+                            <property name="label" value="edititem.mode.referencematerial.full" />
+                            <property name="security">
+                                <value type="org.dspace.content.security.CrisSecurity">
+                                    ITEM_ADMIN
+                                </value>
+                            </property>
+                            <property name="submissionDefinition" value="admin-referencematerial-edit" />
+                        </bean>
+                    </list>
+                </entry>
+                <entry key="laboratory">
+                    <list>
+                        <bean class="org.dspace.content.edit.EditItemMode">
+                            <property name="name" value="FULL" />
+                            <property name="label" value="edititem.mode.laboratory.full" />
+                            <property name="security">
+                                <value type="org.dspace.content.security.CrisSecurity">
+                                    ITEM_ADMIN
+                                </value>
+                            </property>
+                            <property name="submissionDefinition" value="admin-laboratory-edit" />
+                        </bean>
+                    </list>
+                </entry>
                 <entry key="publication">
                     <list>
                         <bean class="org.dspace.content.edit.EditItemMode">

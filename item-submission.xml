@@ -564,6 +564,15 @@
             <step id="license"/>
         </submission-process>
 
+        <!-- add edit mode for instrument entity-->
+        <submission-process name="admin-instrument-edit">
+            <step id="instIdentity"/>
+            <step id="instAccess"/>
+            <step id="instTechnical"/>
+            <step id="instResources"/>
+            <step id="upload"/>
+        </submission-process>
+
         <!-- add new submission process for ReferenceMaterial entities-->
         <submission-process name="ReferenceMaterial">
             <step id="collection"/>
@@ -573,6 +582,15 @@
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
+
+        <!-- add edit mode for reference material-->
+        <submission-process name="admin-referencematerial-edit">
+            <step id="georemMaterial"/>
+            <step id="georemChemistry"/>
+            <step id="georemCitation"/>
+            <step id="upload"/>
+        </submission-process>
+
 
         <!-- add new submission process for Software-->
         <submission-process name="Software">
@@ -584,12 +602,26 @@
             <step id="license"/>
         </submission-process>
 
+        <!-- add edit mode for software entity-->
+        <submission-process name="admin-software-edit">
+            <step id="softwareBasicStep"/>
+            <step id="softwareDevStep"/>
+            <step id="softwareAdditionStep"/>
+            <step id="upload"/>
+        </submission-process>
+
         <!-- add new submission process for Laboratory-->
         <submission-process name="Laboratory">
             <step id="collection"/>
             <step id="laboratoryStep"/>
             <step id="upload"/>
             <step id="license"/>
+        </submission-process>
+
+        <!-- add edit mode for laboratory entity-->
+        <submission-process name="admin-laboratory-edit">
+            <step id="laboratoryStep"/>
+            <step id="upload"/>
         </submission-process>
 
         <!-- add new submission process for personnel-->
