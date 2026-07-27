@@ -633,12 +633,25 @@
             <step id="license"/>
         </submission-process>
 
+        <!-- add edit mode for researcher entity-->
+        <submission-process name="admin-personnel-edit">
+            <step id="personnelCoreStep"/>
+  <!--      <step id="personnelAdditionalStep"/> -->
+            <step id="upload"/>
+        </submission-process>
+
         <!-- add new submission process for method-->
         <submission-process name="StdMethod">
             <step id="collection"/>
             <step id="stdMethodStep"/>
             <step id="upload"/>
             <step id="license"/>
+        </submission-process>
+
+        <!-- add edit mode for method-->
+        <submission-process name="admin-stdmethod-edit">
+            <step id="stdMethodStep"/>
+            <step id="upload"/>
         </submission-process>
 
         <!-- Openaire submission processes -->
