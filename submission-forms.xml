@@ -3361,6 +3361,15 @@
                 </field>
             </row>
             <row>
+                <relation-field>
+                    <relationship-type>isRelatedWorkOfResearcher</relationship-type>
+                    <search-configuration>123456789/19</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Authors Defined in the System</label>
+                    <hint>Use this option if the author has been defined in the system.Otherwise, please use the following fields</hint>
+                </relation-field> 
+            </row>
+            <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>date</dc-element>
