@@ -3343,7 +3343,7 @@
                     <label>Identifiers</label>
                     <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
                     <hint>If the item has any identification numbers or codes associated with
-                        it, please enter the types and the actual numbers or codes.
+                        it, please enter the types and the actual numbers or codes. It can also be a link.
                     </hint>
                     <required></required>
                 </field>
@@ -3353,28 +3353,11 @@
                     <dc-schema>orcid</dc-schema>
                     <dc-element>name</dc-element>
                     <dc-qualifier>givenNames</dc-qualifier>
-                    <label>First Name of Author</label>
-                    <input-type>onebox</input-type>
-                    <hint>Author's first or given names</hint>
+                    <label>Author's Information</label>
+                    <input-type>inline-group</input-type>
+                    <repeatable>true</repeatable>
+                    <hint></hint>
                     <required>This is a required field</required>
-                </field>
-                <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>name</dc-element>
-                    <dc-qualifier>familyName</dc-qualifier>
-                    <label>Family Name of Author</label>
-                    <input-type>onebox</input-type>
-                    <hint>Author's family or surname</hint>
-                    <required>This is a required field</required>
-                </field>
-                <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>orcidIdentifier</dc-element>
-                    <dc-qualifier>uri</dc-qualifier>
-                    <label>ORCID URI</label>
-                    <input-type>onebox</input-type>
-                    <hint>Full ORCID URI (e.g. https://orcid.org/0000-0002-1825-0097)</hint>
-                    <required></required>
                 </field>
             </row>
             <row>
@@ -3383,9 +3366,9 @@
                     <dc-element>date</dc-element>
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
+                    <label>Date of Publication</label>
                     <input-type>date</input-type>
-                    <hint>Date of Published.You can leave out the day and/or month if they aren't applicable.</hint>
+                    <hint>You can leave out the day and/or month if they aren't applicable.</hint>
                     <required>You must enter at least the year.</required>
                 </field>
                 <field>
@@ -3453,6 +3436,41 @@
                 </field>
             </row>
         </form>
+        <form name="relatedPublicationStep-orcid-name-givenNames">
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>givenNames</dc-qualifier>
+                    <label>Given Name</label>
+                    <input-type>onebox</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint></hint>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>familyName</dc-qualifier>
+                    <label>Family Name</label>
+                    <input-type>onebox</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint></hint>
+                    <style>col-4</style>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>orcidIdentifier</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <label>ORCID URI</label>
+                    <input-type>onebox</input-type>
+                    <hint>Full ORCID URI (e.g. https://orcid.org/0000-0002-1825-0097)</hint>
+                    <style>col-4</style>
+                </field>
+            </row>
+        </form>  
     </form-definitions>
 
 
