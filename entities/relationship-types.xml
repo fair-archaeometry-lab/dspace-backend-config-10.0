@@ -307,6 +307,18 @@
         </rightCardinality>
     </type>
     <type>
+    <leftType>Service</leftType>
+        <rightType>RelatedPublication</rightType>
+        <leftwardType>hasRelatedPublication</leftwardType>
+        <rightwardType>describesRelatedService</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
+    <type>
         <leftType>Service</leftType>
         <rightType>Researcher</rightType>
         <leftwardType>isManagedByResearcher</leftwardType>
@@ -359,6 +371,19 @@
         <rightType>Researcher</rightType>
         <leftwardType>isWorkOfResearcher</leftwardType>
         <rightwardType>producesPublication</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+        <copyToLeft>true</copyToLeft>
+    </type>
+    <type>
+        <leftType>RelatedPublication</leftType>
+        <rightType>Researcher</rightType>
+        <leftwardType>isRelatedWorkOfResearcher</leftwardType>
+        <rightwardType>producesRelatedPublication</rightwardType>
         <leftCardinality>
             <min>0</min>
         </leftCardinality>

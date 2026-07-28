@@ -2602,9 +2602,8 @@
                     <dc-qualifier>uncertaintyType</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Uncertainty Type</label>
-                    <hint>Type of uncertainty (e.g., standard deviation, standard error, confidence interval)</hint>
-                    <input-type>onebox</input-type>
-                    <vocabulary>amgc</vocabulary>
+                    <hint>Type of uncertainty (e.g., standard deviation [SD], standard error [SE], confidence interval [CI])</hint>
+                    <input-type value-pairs-name="uncertainty_type">dropdown</input-type>
                     <required></required>
                     <style>col-6</style>
                 </field>
@@ -3338,6 +3337,43 @@
     <!-- stores the associated stored-values in the database.                  -->
 
     <form-value-pairs>
+
+    <!-- add drop down list for uncertainty type  -->
+        <value-pairs value-pairs-name="uncertainty_type" dc-term="georem.chemistry.uncertaintyType">
+            <pair>
+                <displayed-value>1SD</displayed-value>
+                <stored-value>1SD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>2SD</displayed-value>
+                <stored-value>2SD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>3SD</displayed-value>
+                <stored-value>3SD</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>1SE</displayed-value>
+                <stored-value>1SE</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>2SE</displayed-value>
+                <stored-value>2SE</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>3SE</displayed-value>
+                <stored-value>3SE</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>95%CI</displayed-value>
+                <stored-value>95%CI</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>99%CI</displayed-value>
+                <stored-value>99%CI</stored-value>
+            </pair>
+        </value-pairs>      
+
 
     <!-- add drop down list(legal-status) for laboratory  -->
         <value-pairs value-pairs-name="legal_status" dc-term="type">
