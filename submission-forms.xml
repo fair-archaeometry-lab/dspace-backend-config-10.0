@@ -3320,6 +3320,139 @@
                 </relation-field>
             </row>
         </form>
+   
+
+        <form name="relatedPublicationStep">
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Title</label>
+                    <input-type>onebox</input-type>
+                    <hint>Name of the related publication or documentation</hint>
+                    <required>You must enter a main title for this item.</required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Identifiers</label>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <hint>If the item has any identification numbers or codes associated with
+                        it, please enter the types and the actual numbers or codes.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>givenNames</dc-qualifier>
+                    <label>First Name of Author</label>
+                    <input-type>onebox</input-type>
+                    <hint>Author's first or given names</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>name</dc-element>
+                    <dc-qualifier>familyName</dc-qualifier>
+                    <label>Family Name of Author</label>
+                    <input-type>onebox</input-type>
+                    <hint>Author's family or surname</hint>
+                    <required>This is a required field</required>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>orcidIdentifier</dc-element>
+                    <dc-qualifier>uri</dc-qualifier>
+                    <label>ORCID URI</label>
+                    <input-type>onebox</input-type>
+                    <hint>Full ORCID URI (e.g. https://orcid.org/0000-0002-1825-0097)</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Date of Issue</label>
+                    <input-type>date</input-type>
+                    <hint>Date of Published.You can leave out the day and/or month if they aren't applicable.</hint>
+                    <required>You must enter at least the year.</required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Publisher</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Type</label>
+                    <input-type value-pairs-name="common_types">dropdown</input-type>
+                    <hint>Select the type(s) of content of the item. To select more than one value in the list, you may
+                        have to hold down the "CTRL" or "Shift" key.
+                    </hint>
+                    <required>You must choose at least one type.</required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>language</dc-element>
+                    <dc-qualifier>iso</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Language</label>
+                    <input-type value-pairs-name="op_language">dropdown</input-type>
+                    <hint>Select the language of the main content of the item. If the language does not appear in the
+                        list, please select 'Other'. If the content does not really have a language (for example, if it
+                        is a dataset or an image) please select 'N/A'.
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of tag MUST be marked as repeatable -->
+                    <repeatable>true</repeatable>
+                    <label>Subject Keywords</label>
+                    <input-type>tag</input-type>
+                    <hint>Enter appropriate subject for the publication.</hint>
+                    <required></required>
+                    <vocabulary>discipline</vocabulary>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Abstract</label>
+                    <input-type>textarea</input-type>
+                    <hint>Enter the abstract of the publication.</hint>
+                    <required></required>
+                </field>
+            </row>
+        </form>
     </form-definitions>
 
 
@@ -4706,6 +4839,10 @@
             <pair>
                 <displayed-value>Other</displayed-value>
                 <stored-value>Other</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value>non_applicable</stored-value>
             </pair>
         </value-pairs>        
         <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">

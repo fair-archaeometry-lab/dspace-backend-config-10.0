@@ -72,6 +72,7 @@
         <name-map collection-entity-type="Laboratory" submission-name="Laboratory"/>    <!-- create a new mapping for Laboratory entitiy  -->
         <name-map collection-entity-type="Dataset" submission-name="Dataset"/>    <!-- create a new mapping for Dataset entitiy  -->
         <name-map collection-entity-type="Researcher" submission-name="Personnel"/>    <!-- create a new mapping for Researcher entitiy  -->
+        <name-map collection-entity-type="RelatedPublication" submission-name="RelatedPublication"/>    <!-- create a new mapping for RelatedPublication entitiy  -->
         <!-- Example of configuration using a community handle to map an Item Submission Process.
 
             This configuration maps the submission process to the community's descendant
@@ -293,6 +294,13 @@
 
         <!-- end: add steps for personnel collection  -->
 
+        <!-- start: add steps for related publication collection  -->
+        <step-definition id="relatedPublicationStep" mandatory="true"> <!-- add new step for RelatedPublication entity  -->
+            <heading>submit.progressbar.describe.relatedpublication.step</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+	    </step-definition>
+        <!-- end: add steps for related publication collection  -->
 
         <step-definition id="upload">
             <heading>submit.progressbar.upload</heading>
@@ -652,6 +660,14 @@
         <submission-process name="admin-stdmethod-edit">
             <step id="stdMethodStep"/>
             <step id="upload"/>
+        </submission-process>
+
+        <!-- add new submission process for related Publication-->
+        <submission-process name="RelatedPublication">
+            <step id="collection"/>
+            <step id="relatedPublicationStep"/>
+            <step id="upload"/>
+            <step id="license"/>
         </submission-process>
 
         <!-- Openaire submission processes -->
