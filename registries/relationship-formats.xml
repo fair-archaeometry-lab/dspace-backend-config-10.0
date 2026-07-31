@@ -407,5 +407,30 @@
         <scope_note>Contains all uuids of DATASETS which link to the current PUBLICATION via a "latest" relationship. In other words, this stores all relationships pointing to the current PUBLICATION from any DATASET, implying that the PUBLICATION is marked as "latest". Internally used by DSpace to support versioning. Do not manually add, remove or edit values.</scope_note>
     </dc-type>
 
+<!-- Service and Instrument relationship -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isInstrumentOfService</element>
+        <scope_note>Contains all uuids of the "latest" INSTRUMENTS that the current SERVICE links to via a relationship. In other words, this stores all relationships pointing from the current SERVICE to any INSTRUMENT where the INSTRUMENT is marked as "latest". Internally used by DSpace. Do not manually add, remove or edit values.</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>relation</schema>
+        <element>isInstrumentOfService</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>Contains all uuids of INSTRUMENTS which link to the current SERVICE via a "latest" relationship. In other words, this stores all relationships pointing to the current SERVICE from any INSTRUMENT, implying that the SERVICE is marked as "latest". Internally used by DSpace to support versioning. Do not manually add, remove or edit values.</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isServiceUsingInstrument</element>
+        <scope_note>Contains all uuids of the "latest" SERVICES that the current INSTRUMENT links to via a relationship. In other words, this stores all relationships pointing from the current INSTRUMENT to any SERVICE where the SERVICE is marked as "latest". Internally used by DSpace. Do not manually add, remove or edit values.</scope_note>
+    </dc-type>
+    <dc-type>
+        <schema>relation</schema>
+        <element>isServiceUsingInstrument</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>Contains all uuids of SERVICES which link to the current INSTRUMENT via a "latest" relationship. In other words, this stores all relationships pointing to the current INSTRUMENT from any SERVICE, implying that the INSTRUMENT is marked as "latest". Internally used by DSpace to support versioning. Do not manually add, remove or edit values.</scope_note>
+    </dc-type>
 
 </dspace-dc-types>
