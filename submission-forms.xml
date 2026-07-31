@@ -2687,7 +2687,7 @@
                     <dc-element>license</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>License type</label>
-                    <input-type value-pairs-name="openaire_license_types">dropdown</input-type>
+                    <input-type value-pairs-name="software_license_types">dropdown</input-type>
                     <hint>A simple drowndown list for different license types. In the future, a more detailed list will be provided</hint>
                 </field>
                 <field>
@@ -5043,6 +5043,127 @@
                 <stored-value>other</stored-value>
             </pair>
         </value-pairs>
+
+        <value-pairs value-pairs-name="software_license_types" dc-term="software.license">
+
+            <!-- Based on: http://readthedocs.io -->
+
+            <pair>
+                <displayed-value>Without License</displayed-value>
+                <stored-value>Without License</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Attribution (CC-BY)</displayed-value>
+                <stored-value>CC-BY-4.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Attribution, No Derivative Works (CC-BY-ND)</displayed-value>
+                <stored-value>CC-BY-ND-4.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Attribution, Share-alike (CC-BY-SA)</displayed-value>
+                <stored-value>CC-BY-SA-4.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Attribution, Non-commercial (CC-BY-NC)</displayed-value>
+                <stored-value>CC-BY-NC-4.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Attribution, Non-commercial, No Derivative Works (CC-BY-NC-ND)</displayed-value>
+                <stored-value>CC-BY-NC-ND-4.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Attribution, Non-commercial, Share-alike (CC-BY-NC-SA)</displayed-value>
+                <stored-value>CC-BY-NC-SA-4.0</stored-value>
+            </pair>
+
+            <!-- Public Domain & Dedications -->
+            <pair>
+                <displayed-value>CC0 1.0 Universal Public Domain Dedication (CC0)</displayed-value>
+                <stored-value>CC0-1.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>The Unlicense</displayed-value>
+                <stored-value>Unlicense</stored-value>
+            </pair>
+
+            <!-- Permissive Open-Source Licenses -->
+            <pair>
+                <displayed-value>MIT License</displayed-value>
+                <stored-value>MIT</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Apache License 2.0</displayed-value>
+                <stored-value>Apache-2.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>BSD 2-Clause Simplified License</displayed-value>
+                <stored-value>BSD-2-Clause</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>BSD 3-Clause New License</displayed-value>
+                <stored-value>BSD-3-Clause</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISC License</displayed-value>
+                <stored-value>ISC</stored-value>
+            </pair>
+
+            <!-- Copyleft Open-Source Licenses -->
+            <pair>
+                <displayed-value>GNU General Public License v2.0 (GPL-2.0)</displayed-value>
+                <stored-value>GPL-2.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GNU General Public License v3.0 (GPL-3.0)</displayed-value>
+                <stored-value>GPL-3.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GNU Lesser General Public License v2.1 (LGPL-2.1)</displayed-value>
+                <stored-value>LGPL-2.1</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GNU Lesser General Public License v3.0 (LGPL-3.0)</displayed-value>
+                <stored-value>LGPL-3.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GNU Affero General Public License v3.0 (AGPL-3.0)</displayed-value>
+                <stored-value>AGPL-3.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Mozilla Public License 2.0 (MPL-2.0)</displayed-value>
+                <stored-value>MPL-2.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Eclipse Public License 2.0 (EPL-2.0)</displayed-value>
+                <stored-value>EPL-2.0</stored-value>
+            </pair>
+
+            <!-- Source-Available & Commercial Frameworks -->
+            <pair>
+                <displayed-value>Business Source License 1.1 (BSL-1.1)</displayed-value>
+                <stored-value>BSL-1.1</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Server Side Public License v1 (SSPL)</displayed-value>
+                <stored-value>SSPL-1.0</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Elastic License v2 (ELv2)</displayed-value>
+                <stored-value>ELv2</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Proprietary / Commercial EULA</displayed-value>
+                <stored-value>Proprietary</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+
+        </value-pairs>
+
 
         <!-- Openaire specific value pairs -->
 
