@@ -127,6 +127,7 @@
                 <entry key="123456789/4" value-ref="laboratory"/>
                 <entry key="123456789/5" value-ref="stdmethod"/>
                 <entry key="123456789/6" value-ref="software"/>
+                <entry key="123456789/7" value-ref="refmaterial"/>
                 <entry key="123456789/9" value-ref="publication"/>
                 <entry key="123456789/19" value-ref="personnel"/>
 
@@ -1936,6 +1937,76 @@
         <property name="spellCheckEnabled" value="true"/>
     </bean>
 
+    <!--set up search functions for reference material collections-->
+    <bean id="refmaterial" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype">
+        <property name="id" value="refmaterial"/>
+        <property name="indexAlways" value="true"/>
+        <!--Which sidebar facets are to be displayed-->
+        <property name="sidebarFacets">
+            <list>
+                <ref bean="searchFilterRefmaterialCategory"/>
+                <ref bean="searchFilterRefmaterialMaterialType"/>
+                <ref bean="searchFilterRefmaterialIdentifierType"/>
+                <ref bean="searchFilterRefmaterialInstitution"/>
+                <ref bean="searchFilterRefmaterialProviderName"/>
+                <ref bean="searchFilterChemistryMethod"/>
+                <ref bean="searchFilterChemistryAnalyte"/>
+                <ref bean="searchFilterRefmaterialYear"/>
+            </list>
+        </property>
+        <!-- Set TagCloud configuration per discovery configuration -->
+        <property name="tagCloudFacetConfiguration" ref="refmaterialTagCloudFacetConfiguration"/>
+        <!--The search filters which can be used on the discovery search page-->
+        <property name="searchFilters">
+            <list>
+                <ref bean="searchFilterRefmaterialCategory"/>
+                <ref bean="searchFilterRefmaterialMaterialType"/>
+                <ref bean="searchFilterRefmaterialIdentifierType"/>
+                <ref bean="searchFilterRefmaterialInstitution"/>
+                <ref bean="searchFilterRefmaterialProviderName"/>
+                <ref bean="searchFilterChemistryMethod"/>
+                <ref bean="searchFilterChemistryAnalyte"/>
+                <ref bean="searchFilterRefmaterialYear"/>
+            </list>
+        </property>
+        <!--The sort filters for the discovery search-->
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortScore"/>
+                        <ref bean="sortDateAccessioned"/>
+                        <ref bean="sortRefmaterialYear"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+        <!--Any default filter queries, these filter queries will be used for all
+            queries done by discovery for this configuration -->
+        <property name="defaultFilterQueries">
+            <list>
+                <!--Only find items, communities and collections-->
+                <value>search.resourcetype:Item AND latestVersion:true AND entityType_keyword:ReferenceMaterial</value>
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+        <!--The configuration for the recent submissions-->
+        <property name="recentSubmissionConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoveryRecentSubmissionsConfiguration">
+                <property name="metadataSortField" value="dc.date.accessioned" />
+                <property name="type" value="date"/>
+                <property name="max" value="20"/>
+                <!-- If enabled the collection home page will not display metadata but show a pageable list of recent submissions -->
+                <property name="useAsHomePage" value="false"/>
+            </bean>
+        </property>
+
+        <!-- When true a "did you mean" example will be displayed, value can be true or false -->
+        <property name="spellCheckEnabled" value="true"/>
+    </bean>
+
+
+
     <bean id="publication" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype">
         <property name="id" value="publication"/>
         <property name="indexAlways" value="true"/>
@@ -3325,6 +3396,24 @@
         </property>
     </bean>
 
+    <!--TagCloud configuration bean for service collection-->
+    <bean id="refmaterialTagCloudFacetConfiguration" class="org.dspace.discovery.configuration.TagCloudFacetConfiguration">
+        <!-- Actual configuration of the tagcloud (colors, sorting, etc.) -->
+        <property name="tagCloudConfiguration" ref="tagCloudConfiguration"/>
+        <!-- List of tagclouds to appear, one for every search filter, one after the other -->
+        <property name="tagCloudFacets">
+            <list>
+                <ref bean="searchFilterRefmaterialCategory"/>
+                <ref bean="searchFilterRefmaterialMaterialType"/>
+                <ref bean="searchFilterRefmaterialIdentifierType"/>
+                <ref bean="searchFilterRefmaterialInstitution"/>
+                <ref bean="searchFilterRefmaterialProviderName"/>
+                <ref bean="searchFilterChemistryMethod"/>
+                <ref bean="searchFilterChemistryAnalyte"/>
+                <ref bean="searchFilterRefmaterialYear"/>
+            </list>
+        </property>
+    </bean>
 
     <bean id="NOTIFY.incoming" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype" parent="ldnMessageEntityBaseConfig">
         <property name="id" value="NOTIFY.incoming"/>
@@ -4060,7 +4149,130 @@
     </bean>
 <!--Define individual Search filter for Publication Collection-->
 
+<!--Define individual Search filter for Reference Material Collection-->
+    <bean id="searchFilterRefmaterialCategory" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialCategory"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.referenceMaterial.category</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
 
+
+    <bean id="searchFilterRefmaterialMaterialType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialMaterialType"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.referenceMaterial.materialType</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterRefmaterialIdentifierType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialIdentifierType"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.referenceMaterial.identifierType</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterRefmaterialInstitution" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialInstitution"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.referenceMaterial.institution</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterRefmaterialProviderName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialProviderName"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.provider.name</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterChemistryMethod" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialChemistryMethod"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.chemistry.method</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterChemistryAnalyte" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialChemistryAnalyte"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.chemistry.analyte</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterRefmaterialYear" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="refmaterialYear"/>
+        <property name="metadataFields">
+            <list>
+                <value>georem.referencematerial.publicationYear</value>
+            </list>
+        </property>
+        <property name="type" value="date"/>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+<!--Define individual Search filter for Reference Material Collection-->
 
     <bean id="searchFilterDiscoverable" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="discoverable"/>
@@ -5161,6 +5373,15 @@
     </bean>
 
     <!-- Define Sort properties for software collection-->
+
+    <!-- Define Sort properties for reference material collection-->
+    <bean id="sortRefmaterialYear" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
+        <property name="metadataField" value="georem.referenceMaterial.publicationYear"/>
+        <property name="type" value="date"/>
+        <property name="defaultSortOrder" value="desc"/>
+    </bean>
+
+    <!-- Define Sort properties for reference material collection-->
 
     <bean id="sortScore" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
         <property name="defaultSortOrder" value="desc"/>
