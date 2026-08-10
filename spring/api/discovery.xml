@@ -1888,6 +1888,8 @@
                 <ref bean="searchFilterAuthorFamilyName"/>
                 <ref bean="searchFilterAuthorGivenName"/>
                 <ref bean="searchFilterInstitutionCountry"/>
+                <ref bean="searchFilterInstitutionName"/>
+                <ref bean="searchFilterInstitutionType"/>
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -1898,6 +1900,8 @@
                 <ref bean="searchFilterAuthorFamilyName"/>
                 <ref bean="searchFilterAuthorGivenName"/>
                 <ref bean="searchFilterInstitutionCountry"/>
+                <ref bean="searchFilterInstitutionName"/>
+                <ref bean="searchFilterInstitutionType"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -4118,6 +4122,36 @@
 
 
 <!--Define individual Search filter for Personnel Collection-->
+    <bean id="searchFilterInstitutionName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="institutionName"/>
+        <property name="metadataFields">
+            <list>
+                <value>ror.names.value</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterInstitutionType" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="institutionType"/>
+        <property name="metadataFields">
+            <list>
+                <value>ror.types</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
     <bean id="searchFilterAuthorFamilyName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="authorFamilyName"/>
         <property name="metadataFields">
