@@ -163,6 +163,20 @@
                         </bean>
                     </list>
                 </entry>
+                <entry key="relatedpublication">
+                    <list>
+                        <bean class="org.dspace.content.edit.EditItemMode">
+                            <property name="name" value="FULL" />
+                            <property name="label" value="edititem.mode.relatedpublication.full" />
+                            <property name="security">
+                                <value type="org.dspace.content.security.CrisSecurity">
+                                    ITEM_ADMIN
+                                </value>
+                            </property>
+                            <property name="submissionDefinition" value="admin-relatedpublication-edit" />
+                        </bean>
+                    </list>
+                </entry>
                 <entry key="publication">
                     <list>
                         <bean class="org.dspace.content.edit.EditItemMode">

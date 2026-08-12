@@ -670,6 +670,12 @@
             <step id="license"/>
         </submission-process>
 
+        <!-- add edit mode for related Publication-->
+        <submission-process name="admin-relatedpublication-edit">
+            <step id="relatedPublicationStep"/>
+            <step id="upload"/>
+        </submission-process>
+
         <!-- Openaire submission processes -->
         <submission-process name="openairePublicationSubmission">
             <step id="collection"/>
