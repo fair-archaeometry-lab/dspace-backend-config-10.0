@@ -1939,12 +1939,12 @@
                     <required>This is a mandatory field</required>
                 </field>
                 <field>
-                    <dc-schema>instrument</dc-schema>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Instruemnt Identifier</label>
                     <repeatable>true</repeatable>
-                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
                     <hint>Please select type of the identifier (Handle, DOI, etc.) and enter its value</hint>
                 </field>
                 <field>
@@ -2050,7 +2050,7 @@
                     <dc-element>owner</dc-element>
                     <dc-qualifier>identifierType</dc-qualifier>
                     <label>Owner Identifier Type</label>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <hint>Identifier Type of the owner</hint>
                     <repeatable></repeatable>
                     <style>col-6</style>
@@ -2147,7 +2147,7 @@
                     <dc-element>manufacturer</dc-element>
                     <dc-qualifier>identifierType</dc-qualifier>
                     <label>Manufacturer Identifier Type</label>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <hint>Identifier Type of the manufacturer</hint>
                     <repeatable></repeatable>
                     <style>col-4</style>
@@ -2183,7 +2183,7 @@
                     <dc-element>model</dc-element>
                     <dc-qualifier>identifierType</dc-qualifier>
                     <label>Model Identifier Type</label>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <hint>Identifier Type of the model</hint>
                     <repeatable></repeatable>
                     <style>col-4</style>
@@ -2220,7 +2220,7 @@
                     <dc-element>instrumentType</dc-element>
                     <dc-qualifier>identifierType</dc-qualifier>
                     <label>Instrument Type Identifier Type</label>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <hint>Identifier Type of the instrument type</hint>
                     <repeatable></repeatable>
                     <style>col-4</style>
@@ -2279,7 +2279,7 @@
                     <dc-element>alternateIdentifier</dc-element>
                     <dc-qualifier>type</dc-qualifier>
                     <label>Type of Alternate Identifier</label>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <hint>Alternative identifier (e.g. serial number) that the instrument has.</hint>
                     <repeatable></repeatable>
                 </field>
@@ -2311,7 +2311,7 @@
                     <dc-element>relatedIdentifier</dc-element>
                     <dc-qualifier>type</dc-qualifier>
                     <label>Type of Related Identifier</label>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <hint>Related identifier (e.g. DOI, URL).</hint>
                     <repeatable></repeatable>
                 </field>
@@ -2340,9 +2340,9 @@
         <form name="georemMaterial">
             <row>
                 <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>referenceMaterial</dc-element>
-                    <dc-qualifier>name</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Name of Reference Material</label>
                     <hint>Official name or designation of the reference material (e.g., BHVO-2, NIST SRM 610).</hint>
@@ -2350,18 +2350,18 @@
                     <required>This is a mandatory field</required>
                 </field>
                 <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>referenceMaterial</dc-element>
-                    <dc-qualifier>description</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Description</label>
                     <hint>Description of the reference material including comments or locality.</hint>
                     <input-type>textarea</input-type>
                 </field>
                 <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>referenceMaterial</dc-element>
-                    <dc-qualifier>publicationYear</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Publication Year</label>
                     <hint>Year of publication for the reference material.</hint>
@@ -2401,13 +2401,16 @@
             </row>
             <row>
                 <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>referenceMaterial</dc-element>
-                    <dc-qualifier>identifierType</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
-                    <label>Reference Material Identifier</label>
-                    <hint></hint>
-                    <input-type>inline-group</input-type>
+                    <label>Identifiers</label>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+                    <hint>If the item has any identification numbers or codes associated with
+                        it, please enter the types and the actual numbers or codes. It can also be a link.
+                    </hint>
                     <required></required>
                 </field>
             </row>
@@ -2447,31 +2450,6 @@
             </row>
         </form>
 
-        <form name="georemMaterial-georem-referenceMaterial-identifierType"> 
-            <row>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>referenceMaterial</dc-element>
-                    <dc-qualifier>identifierType</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Type of Reference Material Identifier</label>
-                    <hint>Type of identifier under which the reference material is registered.</hint>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
-                    <required></required>
-                </field>
-                <field>
-                    <dc-schema>georem</dc-schema>
-                    <dc-element>referenceMaterial</dc-element>
-                    <dc-qualifier>identifier</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Reference Material Identifier Value</label>
-                    <hint>The identification number under which the reference material is registered.</hint>
-                    <input-type>onebox</input-type>
-                    <required></required>
-                </field>
-            </row>
-        </form>
-
         <form name="georemMaterial-georem-provider-name"> 
             <row>
                 <field>
@@ -2501,9 +2479,9 @@
                     <dc-element>provider</dc-element>
                     <dc-qualifier>identifierType</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Type of Identifierr</label>
+                    <label>Type of Identifier</label>
                     <hint>Type of identifier under which the manufacturer is registered.</hint>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <required></required>
                     <style>col-6</style>
                 </field>
@@ -2743,7 +2721,7 @@
                     <dc-element>discoverability</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Software Identifier</label>
-                    <input-type value-pairs-name="all_identifier">dropdown</input-type>
+                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
                     <hint>The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details</hint>
                     <repeatable>true</repeatable>
                 </field>
@@ -3341,7 +3319,7 @@
                     <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
                     <label>Identifiers</label>
-                    <input-type value-pairs-name="all_identifier">qualdrop_value</input-type>
+                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
                     <hint>If the item has any identification numbers or codes associated with
                         it, please enter the types and the actual numbers or codes. It can also be a link.
                     </hint>
@@ -4874,8 +4852,144 @@
         </value-pairs>        
         <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
             <pair>
+                <displayed-value>ARK</displayed-value>
+                <stored-value>ark</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ARXIV</displayed-value>
+                <stored-value>arxiv</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>BIBCODE</displayed-value>
+                <stored-value>bibcode</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>CROSSREF FUNDER ID</displayed-value>
+                <stored-value>crossref</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>DOI</displayed-value>
+                <stored-value>doi</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>EAN13</displayed-value>
+                <stored-value>ean13</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>EISSN</displayed-value>
+                <stored-value>eissn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GRID</displayed-value>
+                <stored-value>grid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>HANDLE</displayed-value>
+                <stored-value>handle</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>IGSN</displayed-value>
+                <stored-value>igsn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISBN</displayed-value>
+                <stored-value>isbn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISNI</displayed-value>
+                <stored-value>isni</stored-value>
+            </pair>
+            <pair>
                 <displayed-value>ISSN</displayed-value>
                 <stored-value>issn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISTC</displayed-value>
+                <stored-value>istc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>LISSN</displayed-value>
+                <stored-value>lissn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>LSID</displayed-value>
+                <stored-value>lsid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ORCID</displayed-value>
+                <stored-value>orcid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PMID</displayed-value>
+                <stored-value>pmid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PURL</displayed-value>
+                <stored-value>purl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>RAID</displayed-value>
+                <stored-value>raid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ROR</displayed-value>
+                <stored-value>ror</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>RRID</displayed-value>
+                <stored-value>rrid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>UPC</displayed-value>
+                <stored-value>upc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>URN</displayed-value>
+                <stored-value>urn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>URL</displayed-value>
+                <stored-value>url</stored-value>
+            </pair>           
+            <pair>
+                <displayed-value>UUID</displayed-value>
+                <stored-value>uuid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GUID</displayed-value>
+                <stored-value>guid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>VIAF</displayed-value>
+                <stored-value>viaf</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>W3ID</displayed-value>
+                <stored-value>w3id</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>WIKIDATA</displayed-value>
+                <stored-value>wikidata</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>SERIAL NUMBER</displayed-value>
+                <stored-value>serial_no</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GEOREM</displayed-value>
+                <stored-value>georem</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>GEOROC</displayed-value>
+                <stored-value>georoc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>PRODUCT NUMBER</displayed-value>
+                <stored-value>product_no</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Institute-Given ID</displayed-value>
+                <stored-value>in_house_id</stored-value>
             </pair>
             <pair>
                 <displayed-value>Other</displayed-value>
@@ -4892,10 +5006,6 @@
             <pair>
                 <displayed-value>URI</displayed-value>
                 <stored-value>uri</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>ISBN</displayed-value>
-                <stored-value>isbn</stored-value>
             </pair>
         </value-pairs>
 

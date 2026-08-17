@@ -1955,7 +1955,7 @@
                 <ref bean="searchFilterRefmaterialProviderName"/>
                 <ref bean="searchFilterChemistryMethod"/>
                 <ref bean="searchFilterChemistryAnalyte"/>
-                <ref bean="searchFilterRefmaterialYear"/>
+                <ref bean="searchFilterIssued"/>
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -1970,7 +1970,7 @@
                 <ref bean="searchFilterRefmaterialProviderName"/>
                 <ref bean="searchFilterChemistryMethod"/>
                 <ref bean="searchFilterChemistryAnalyte"/>
-                <ref bean="searchFilterRefmaterialYear"/>
+                <ref bean="searchFilterIssued"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -1980,7 +1980,7 @@
                     <list>
                         <ref bean="sortScore"/>
                         <ref bean="sortDateAccessioned"/>
-                        <ref bean="sortRefmaterialYear"/>
+                        <ref bean="sortDateIssued"/>
                     </list>
                 </property>
             </bean>
@@ -3414,7 +3414,7 @@
                 <ref bean="searchFilterRefmaterialProviderName"/>
                 <ref bean="searchFilterChemistryMethod"/>
                 <ref bean="searchFilterChemistryAnalyte"/>
-                <ref bean="searchFilterRefmaterialYear"/>
+                <ref bean="searchFilterIssued"/>
             </list>
         </property>
     </bean>
@@ -4282,22 +4282,6 @@
                 <value>georem.chemistry.analyte</value>
             </list>
         </property>
-        <property name="facetLimit" value="5"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="isOpenByDefault" value="true"/>
-        <property name="pageSize" value="10"/>
-        <property name="exposeMinAndMaxValue" value="true"/>
-    </bean>
-
-    <bean id="searchFilterRefmaterialYear" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
-        <property name="indexFieldName" value="refmaterialYear"/>
-        <property name="metadataFields">
-            <list>
-                <value>georem.referencematerial.publicationYear</value>
-            </list>
-        </property>
-        <property name="type" value="date"/>
         <property name="facetLimit" value="5"/>
         <property name="sortOrderSidebar" value="COUNT"/>
         <property name="sortOrderFilterPage" value="COUNT"/>
@@ -5409,11 +5393,7 @@
     <!-- Define Sort properties for software collection-->
 
     <!-- Define Sort properties for reference material collection-->
-    <bean id="sortRefmaterialYear" class="org.dspace.discovery.configuration.DiscoverySortFieldConfiguration">
-        <property name="metadataField" value="georem.referenceMaterial.publicationYear"/>
-        <property name="type" value="date"/>
-        <property name="defaultSortOrder" value="desc"/>
-    </bean>
+
 
     <!-- Define Sort properties for reference material collection-->
 
