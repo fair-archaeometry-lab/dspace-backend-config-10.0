@@ -1360,8 +1360,8 @@
                     <required>This is a mandatory field</required>
                 </field>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>id</dc-element>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Service Identifier</label>
                     <input-type>onebox</input-type>
@@ -2633,9 +2633,9 @@
                     <required>This is a required field</required>
                 </field>
                 <field>
-                    <dc-schema>software</dc-schema>
+                    <dc-schema>de</dc-schema>
                     <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier>abstract</dc-qualifier>
                     <label>Software Description</label>
                     <input-type>textarea</input-type>
                     <hint>A brief description about what the software is intended for</hint>
@@ -2706,19 +2706,20 @@
             </row> 
             <row>
                 <field>
-                    <dc-schema>software</dc-schema>
-                    <dc-element>persons</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <label>Authors</label>
-                    <input-type>onebox</input-type>
-                    <hint>Authors or developlers involved in the development of the software. It can be linked to Person or organsation schema</hint>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
                     <repeatable>true</repeatable>
+                    <label>Author</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the author's name (Family name, Given names).involved in the development of the software. It can be linked to Person or organsation schema</hint>
+                    <required>This is a required field</required>
                 </field>
             </row> 
             <row>
                 <field>
-                    <dc-schema>software</dc-schema>
-                    <dc-element>discoverability</dc-element>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Software Identifier</label>
                     <input-type value-pairs-name="common_identifiers">dropdown</input-type>
