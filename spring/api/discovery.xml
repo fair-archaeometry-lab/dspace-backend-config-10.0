@@ -128,7 +128,7 @@
                 <entry key="123456789/5" value-ref="stdmethod"/>
                 <entry key="123456789/6" value-ref="software"/>
                 <entry key="123456789/7" value-ref="refmaterial"/>
-                <entry key="123456789/9" value-ref="publication"/>
+                <entry key="123456789/33" value-ref="relatedpublication"/>
                 <entry key="123456789/19" value-ref="personnel"/>
 
             <!--<entry key="publication" value-ref="publication"/> -->    
@@ -2010,6 +2010,70 @@
     </bean>
 
 
+<!-- set up a search function for related publication -->
+
+    <bean id="relatedpublication" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype">
+        <property name="id" value="relatedpublication"/>
+        <property name="indexAlways" value="true"/>
+        <!--Which sidebar facets are to be displayed-->
+        <property name="sidebarFacets">
+            <list>
+                <ref bean="searchFilterAuthor"/>
+                <ref bean="searchFilterPublisher"/>
+                <ref bean="searchFilterSubject"/>
+                <ref bean="searchFilterIssued"/>
+                <ref bean="searchFilterType"/>
+            </list>
+        </property>
+        <!-- Set TagCloud configuration per discovery configuration -->
+        <property name="tagCloudFacetConfiguration" ref="relatedPublicationTagCloudFacetConfiguration"/>
+        <!--The search filters which can be used on the discovery search page-->
+        <property name="searchFilters">
+            <list>
+                <ref bean="searchFilterAuthor"/>
+                <ref bean="searchFilterPublisher"/>
+                <ref bean="searchFilterSubject"/>
+                <ref bean="searchFilterIssued"/>
+                <ref bean="searchFilterType"/>
+            </list>
+        </property>
+        <!--The sort filters for the discovery search-->
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortScore" />
+                        <ref bean="sortTitle" />
+                        <ref bean="sortDateIssued" />
+                    </list>
+                </property>
+            </bean>
+        </property>
+        <!--Any default filter queries, these filter queries will be used for all
+            queries done by discovery for this configuration -->
+        <property name="defaultFilterQueries">
+            <list>
+                <!--Only find items, communities and collections-->
+                <value>search.resourcetype:Item AND latestVersion:true AND entityType_keyword:RelatedPublication</value>
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+        <!--The configuration for the recent submissions-->
+        <property name="recentSubmissionConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoveryRecentSubmissionsConfiguration">
+                <property name="metadataSortField" value="dc.date.accessioned" />
+                <property name="type" value="date"/>
+                <property name="max" value="20"/>
+                <!-- If enabled the collection home page will not display metadata but show a pageable list of recent submissions -->
+                <property name="useAsHomePage" value="false"/>
+            </bean>
+        </property>
+
+        <!-- When true a "did you mean" example will be displayed, value can be true or false -->
+        <property name="spellCheckEnabled" value="true"/>
+    </bean>
+
+
 
     <bean id="publication" class="org.dspace.discovery.configuration.DiscoveryConfiguration" scope="prototype">
         <property name="id" value="publication"/>
@@ -3400,7 +3464,7 @@
         </property>
     </bean>
 
-    <!--TagCloud configuration bean for service collection-->
+    <!--TagCloud configuration bean for refmaterial collection-->
     <bean id="refmaterialTagCloudFacetConfiguration" class="org.dspace.discovery.configuration.TagCloudFacetConfiguration">
         <!-- Actual configuration of the tagcloud (colors, sorting, etc.) -->
         <property name="tagCloudConfiguration" ref="tagCloudConfiguration"/>
@@ -3415,6 +3479,22 @@
                 <ref bean="searchFilterChemistryMethod"/>
                 <ref bean="searchFilterChemistryAnalyte"/>
                 <ref bean="searchFilterIssued"/>
+            </list>
+        </property>
+    </bean>
+
+        <!--TagCloud configuration bean for relate Publication collection-->
+    <bean id="relatedPublicationTagCloudFacetConfiguration" class="org.dspace.discovery.configuration.TagCloudFacetConfiguration">
+        <!-- Actual configuration of the tagcloud (colors, sorting, etc.) -->
+        <property name="tagCloudConfiguration" ref="tagCloudConfiguration"/>
+        <!-- List of tagclouds to appear, one for every search filter, one after the other -->
+        <property name="tagCloudFacets">
+            <list>
+                <ref bean="searchFilterAuthor"/>
+                <ref bean="searchFilterPublisher"/>
+                <ref bean="searchFilterSubject"/>
+                <ref bean="searchFilterIssued"/>
+                <ref bean="searchFilterType"/>
             </list>
         </property>
     </bean>
@@ -4412,6 +4492,23 @@
         <property name="pageSize" value="10"/>
         <property name="exposeMinAndMaxValue" value="true"/>
     </bean>
+
+    <bean id="searchFilterPublisher" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="publisher"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.publisher</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+
 
     <bean id="searchFilterOrgUnit" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="organization"/>

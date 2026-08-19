@@ -3103,7 +3103,7 @@
             <row>
                 <relation-field>
                     <relationship-type>producesPublication</relationship-type>
-                    <search-configuration>publication</search-configuration>
+                    <search-configuration>123456789/33</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Reseach Work Defined in the System</label>
                     <hint>Choose this option if the research work has already been defined in the system.</hint>
@@ -3191,17 +3191,17 @@
         <form name="laboratoryStep"> 
             <row>
                 <field>
-                    <dc-schema>ror</dc-schema>
-                    <dc-element>names</dc-element>
-                    <dc-qualifier>value</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
                     <label>Name of Institution</label>
                     <input-type>onebox</input-type>
                     <hint></hint>
                     <required>This is a required field</required>
                 </field>
                 <field>
-                    <dc-schema>ror</dc-schema>
-                    <dc-element>id</dc-element>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>ROR ID</label>
                     <input-type>onebox</input-type>
@@ -3329,9 +3329,9 @@
             </row>
             <row>
                 <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>name</dc-element>
-                    <dc-qualifier>givenNames</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
                     <label>Author's Information</label>
                     <input-type>inline-group</input-type>
                     <repeatable>true</repeatable>
@@ -3424,38 +3424,27 @@
                 </field>
             </row>
         </form>
-        <form name="relatedPublicationStep-orcid-name-givenNames">
+        <form name="relatedPublicationStep-dc-contributor-author">
             <row>
                 <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>name</dc-element>
-                    <dc-qualifier>givenNames</dc-qualifier>
-                    <label>Given Name</label>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <label>Author Full Name</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
                     <required></required>
-                    <hint></hint>
-                    <style>col-4</style>
+                    <hint>Please enter the author's full name (last name, first name e.g., Smith, John)</hint>
+                    <style>col-6</style>
                 </field>
                 <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>name</dc-element>
-                    <dc-qualifier>familyName</dc-qualifier>
-                    <label>Family Name</label>
-                    <input-type>onebox</input-type>
-                    <repeatable>false</repeatable>
-                    <required></required>
-                    <hint></hint>
-                    <style>col-4</style>
-                </field>
-                <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>orcidIdentifier</dc-element>
-                    <dc-qualifier>uri</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier></dc-qualifier>
                     <label>ORCID URI</label>
                     <input-type>onebox</input-type>
                     <hint>Full ORCID URI (e.g. https://orcid.org/0000-0002-1825-0097)</hint>
-                    <style>col-4</style>
+                    <style>col-6</style>
                 </field>
             </row>
         </form>  
