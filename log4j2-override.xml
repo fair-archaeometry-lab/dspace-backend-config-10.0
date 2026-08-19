@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration strict="true"
+               xmlns="http://logging.apache.org/log4j/2.0/config">
+
+    <Properties>
+        <Property name="log.dir">/dspace/log</Property>
+    </Properties>
+
+    <Appenders>
+        <Appender name="A1"
+                  type="File"
+                  fileName="/dspace/log/dspace.log"
+                  append="true">
+            <Layout type="PatternLayout"
+                    pattern="%d %-5p %c @ %m%n"/>
+        </Appender>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="A1"/>
+        </Root>
+    </Loggers>
+</Configuration>
