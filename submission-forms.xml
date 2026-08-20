@@ -3005,13 +3005,24 @@
         <form name="personnelCoreStep"> 
             <row>
                 <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Full Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Researcher's Full Name (first name, last name e.g. John Doe)</hint>
+                    <required>This is a required field</required>
+                </field>
+            </row>        
+            <row>
+                <field>
                     <dc-schema>orcid</dc-schema>
                     <dc-element>name</dc-element>
                     <dc-qualifier>givenNames</dc-qualifier>
                     <label>Given Name</label>
                     <input-type>onebox</input-type>
-                    <hint>Researcher's first or given names</hint>
-                    <required>This is a required field</required>
+                    <hint>Researcher's first or given names (optional)</hint>
+                    <required></required>
                 </field>
                 <field>
                     <dc-schema>orcid</dc-schema>
@@ -3019,8 +3030,8 @@
                     <dc-qualifier>familyName</dc-qualifier>
                     <label>Family Name</label>
                     <input-type>onebox</input-type>
-                    <hint>Researcher's last or family name</hint>
-                    <required>This is a required field</required>
+                    <hint>Researcher's last or family name (optional)</hint>
+                    <required></required>
                 </field>
             </row>
             <row>

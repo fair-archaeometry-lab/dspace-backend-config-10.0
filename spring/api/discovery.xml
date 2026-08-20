@@ -1885,8 +1885,7 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterAuthorFamilyName"/>
-                <ref bean="searchFilterAuthorGivenName"/>
+                <ref bean="searchFilterAuthorTitle"/>
                 <ref bean="searchFilterInstitutionCountry"/>
                 <ref bean="searchFilterInstitutionName"/>
                 <ref bean="searchFilterInstitutionType"/>
@@ -1897,8 +1896,7 @@
         <!--The search filters which can be used on the discovery search page-->
         <property name="searchFilters">
             <list>
-                <ref bean="searchFilterAuthorFamilyName"/>
-                <ref bean="searchFilterAuthorGivenName"/>
+                <ref bean="searchFilterAuthorTitle"/>
                 <ref bean="searchFilterInstitutionCountry"/>
                 <ref bean="searchFilterInstitutionName"/>
                 <ref bean="searchFilterInstitutionType"/>
@@ -1911,6 +1909,7 @@
                     <list>
                         <ref bean="sortScore"/>
                         <ref bean="sortDateAccessioned"/>
+                        <ref bean="sortTitle"/>
                     </list>
                 </property>
             </bean>
@@ -3457,9 +3456,10 @@
         <!-- List of tagclouds to appear, one for every search filter, one after the other -->
         <property name="tagCloudFacets">
             <list>
-                <ref bean="searchFilterAuthorFamilyName"/>
-                <ref bean="searchFilterAuthorGivenName"/>
+                <ref bean="searchFilterAuthorTitle"/>
                 <ref bean="searchFilterInstitutionCountry"/>
+                <ref bean="searchFilterInstitutionName"/>
+                <ref bean="searchFilterInstitutionType"/>
             </list>
         </property>
     </bean>
@@ -4371,6 +4371,26 @@
     </bean>
 
 <!--Define individual Search filter for Reference Material Collection-->
+
+
+
+<!--Define individual Search filter for Personnel Collection-->
+    <bean id="searchFilterAuthorTitle" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="authorTitle"/>
+        <property name="metadataFields">
+            <list>
+                <value>dc.title</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+<!--Define individual Search filter for Personnel Collection-->
 
     <bean id="searchFilterDiscoverable" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
         <property name="indexFieldName" value="discoverable"/>
