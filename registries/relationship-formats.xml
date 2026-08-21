@@ -433,4 +433,577 @@
         <scope_note>Contains all uuids of SERVICES which link to the current INSTRUMENT via a "latest" relationship. In other words, this stores all relationships pointing to the current INSTRUMENT from any SERVICE, implying that the INSTRUMENT is marked as "latest". Internally used by DSpace to support versioning. Do not manually add, remove or edit values.</scope_note>
     </dc-type>
 
+    <!-- Instrument–StandardMethod -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasAnalyticalProtocol</element>
+        <scope_note>
+            Contains UUIDs of Standard Methods linked to the current Instrument.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasAnalyticalProtocol</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Standard Methods linked to the current Instrument.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProtocolOfInstrument</element>
+        <scope_note>
+            Contains UUIDs of Instruments linked to the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProtocolOfInstrument</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Instruments linked to the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Software–Instrument -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>controlsInstrument</element>
+        <scope_note>
+            Contains UUIDs of Instruments controlled by the current Software.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>controlsInstrument</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Instruments controlled by the current Software.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isControlledBySoftware</element>
+        <scope_note>
+            Contains UUIDs of Software linked to the current Instrument.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isControlledBySoftware</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Software linked to the current Instrument.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Software–StandardMethod -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>usesProtocol</element>
+        <scope_note>
+            Contains UUIDs of Standard Methods used by the current Software.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>usesProtocol</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Standard Methods used by the current Software.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProtocolOfSoftware</element>
+        <scope_note>
+            Contains UUIDs of Software linked to the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProtocolOfSoftware</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Software linked to the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Service–Laboratory -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProvidedByLab</element>
+        <scope_note>
+            Contains UUIDs of Laboratories providing the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProvidedByLab</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Laboratories providing the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>providesService</element>
+        <scope_note>
+            Contains UUIDs of Services provided by the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>providesService</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Services provided by the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Laboratory–Instrument -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>ownsInstrument</element>
+        <scope_note>
+            Contains UUIDs of Instruments owned by the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>ownsInstrument</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Instruments owned by the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isOwnedByLab</element>
+        <scope_note>
+            Contains UUIDs of Laboratories that own the current Instrument.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isOwnedByLab</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Laboratories that own the current Instrument.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Service–Publication -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasPublication</element>
+        <scope_note>
+            Contains UUIDs of Publications linked to the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasPublication</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Publications linked to the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>describesService</element>
+        <scope_note>
+            Contains UUIDs of Services described by the current Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>describesService</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Services described by the current Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Service–RelatedPublication -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasRelatedPublication</element>
+        <scope_note>
+            Contains UUIDs of Related Publications linked to the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasRelatedPublication</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Related Publications linked to the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>describesRelatedService</element>
+        <scope_note>
+            Contains UUIDs of Services described by the current Related Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>describesRelatedService</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Services described by the current Related Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Service–Researcher -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isManagedByResearcher</element>
+        <scope_note>
+            Contains UUIDs of Researchers managing the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isManagedByResearcher</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Researchers managing the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>managesService</element>
+        <scope_note>
+            Contains UUIDs of Services managed by the current Researcher.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>managesService</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Services managed by the current Researcher.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- StandardMethod–ReferenceMaterial -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>usesReferenceMaterial</element>
+        <scope_note>
+            Contains UUIDs of Reference Materials used by the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>usesReferenceMaterial</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Reference Materials used by the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isReferenceForMethod</element>
+        <scope_note>
+            Contains UUIDs of Standard Methods for which the current Reference Material is used.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isReferenceForMethod</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Standard Methods for which the current Reference Material is used.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Service–Dataset -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasExampleDataset</element>
+        <scope_note>
+            Contains UUIDs of Datasets linked to the current Service as examples.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasExampleDataset</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Datasets linked to the current Service as examples.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isExampleOfService</element>
+        <scope_note>
+            Contains UUIDs of Services for which the current Dataset is an example.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isExampleOfService</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Services for which the current Dataset is an example.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Dataset–Software -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProcessedBySoftware</element>
+        <scope_note>
+            Contains UUIDs of Software that process the current Dataset.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isProcessedBySoftware</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Software that process the current Dataset.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>processesDataset</element>
+        <scope_note>
+            Contains UUIDs of Datasets processed by the current Software.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>processesDataset</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Datasets processed by the current Software.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Publication–Researcher -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isWorkOfResearcher</element>
+        <scope_note>
+            Contains UUIDs of Researchers related to the current Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isWorkOfResearcher</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Researchers related to the current Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>producesPublication</element>
+        <scope_note>
+            Contains UUIDs of Publications produced by the current Researcher.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>producesPublication</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Publications produced by the current Researcher.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- RelatedPublication–Researcher -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isRelatedWorkOfResearcher</element>
+        <scope_note>
+            Contains UUIDs of Researchers related to the current Related Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isRelatedWorkOfResearcher</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Researchers related to the current Related Publication.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>producesRelatedPublication</element>
+        <scope_note>
+            Contains UUIDs of Related Publications produced by the current Researcher.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>producesRelatedPublication</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Related Publications produced by the current Researcher.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+
 </dspace-dc-types>
