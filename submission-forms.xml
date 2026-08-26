@@ -1559,9 +1559,9 @@
             </row>
             <row>
                 <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>name</dc-element>
-                    <dc-qualifier>givenNames</dc-qualifier>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
                     <label>Team Members</label>
                     <input-type>inline-group</input-type>
                     <hint>Person in the team working on this service.</hint>
@@ -1635,29 +1635,18 @@
             </row>
         </form>    
 
-        <form name="serviceAccess-orcid-name-givenNames">
+        <form name="serviceAccess-dc-contributor-author">
             <row>
                 <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>name</dc-element>
-                    <dc-qualifier>givenNames</dc-qualifier>
-                    <label>Given Name</label>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>author</dc-qualifier>
+                    <label>Full Name of Team Member</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
                     <required></required>
-                    <hint></hint>
-                    <style>col-6</style>
-                </field>
-                <field>
-                    <dc-schema>orcid</dc-schema>
-                    <dc-element>name</dc-element>
-                    <dc-qualifier>familyName</dc-qualifier>
-                    <label>Family Name</label>
-                    <input-type>onebox</input-type>
-                    <repeatable>false</repeatable>
-                    <required></required>
-                    <hint></hint>
-                    <style>col-6</style>
+                    <hint>Enter the full name (first name, last name. e.g., John, Doe)</hint>
+                    <style>col-4</style>
                 </field>
                 <field>
                     <dc-schema>orcid</dc-schema>
@@ -1668,7 +1657,7 @@
                     <repeatable>false</repeatable>
                     <required></required>
                     <hint></hint>
-                    <style>col-6</style>
+                    <style>col-4</style>
                 </field>
                 <field>
                     <dc-schema>orcid</dc-schema>
@@ -1679,7 +1668,7 @@
                     <repeatable>false</repeatable>
                     <required></required>
                     <hint>The main role that the person has in the team.</hint>
-                    <style>col-6</style>
+                    <style>col-4</style>
                 </field>
                 <field>
                     <dc-schema>orcid</dc-schema>
