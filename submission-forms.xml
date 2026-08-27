@@ -1928,13 +1928,13 @@
                     <required>This is a mandatory field</required>
                 </field>
                 <field>
-                    <dc-schema>dc</dc-schema>
+                    <dc-schema>instrument</dc-schema>
                     <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Instruemnt Identifier</label>
                     <repeatable>true</repeatable>
-                    <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-                    <hint>Please select type of the identifier (Handle, DOI, etc.) and enter its value</hint>
+                    <input-type>onebox</input-type>
+                    <hint>The existing identifier for the instrument, if applicable.</hint>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
