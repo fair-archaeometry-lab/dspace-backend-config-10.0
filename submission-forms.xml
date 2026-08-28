@@ -2622,7 +2622,7 @@
                     <required>This is a required field</required>
                 </field>
                 <field>
-                    <dc-schema>de</dc-schema>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>abstract</dc-qualifier>
                     <label>Software Description</label>
@@ -2938,7 +2938,7 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier>abstract</dc-qualifier>
                     <label>Short Description</label>
                     <input-type>textarea</input-type>
                     <hint>A short description text that explains the purpose of the protocol.</hint>
