@@ -247,7 +247,7 @@
             <row>
                 <relation-field>
                     <relationship-type>isAuthorOfPublication</relationship-type>
-                    <search-configuration>person</search-configuration>
+                    <search-configuration>123456789/45</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Author</label>
                     <hint>Enter the author's name (Family name, Given names).</hint>
@@ -391,7 +391,7 @@
             <row>
                 <relation-field>
                     <relationship-type>isPublicationOfAuthor</relationship-type>
-                    <search-configuration>publication</search-configuration>
+                    <search-configuration>123456789/42</search-configuration>
                     <label>Publication</label>
                     <hint>import a publicaton</hint>
                     <externalsources>pubmed</externalsources>

@@ -131,6 +131,7 @@
                 <entry key="123456789/33" value-ref="relatedpublication"/>
                 <entry key="123456789/19" value-ref="personnel"/>
                 <entry key="123456789/42" value-ref="publication"/>
+                <entry key="123456789/45" value-ref="person"/>
 
              <!--   <entry key="publication" value-ref="publication"/>  -->  
              <!--    Same as the "publication" configuration, but does NOT filter out older versions of items -->
@@ -142,7 +143,7 @@
                 <!-- Used to display related items on single-item pages, because a relationship does not always point to the latest version of the related item -->
                 <entry key="dataset-relationships" value-ref="datasetRelationships"/>
 
-                <entry key="person" value-ref="person"/>
+                <!-- <entry key="person" value-ref="person"/> -->
                 <!-- Same as the "person" configuration, but does NOT filter out older versions of items -->
                 <!-- Used to display related items on single-item pages, because a relationship does not always point to the latest version of the related item -->
                 <entry key="person-relationships" value-ref="personRelationships"/>

@@ -474,6 +474,12 @@
             <step id="license"/>
         </submission-process>
 
+        <submission-process name="admin-publication-edit">
+            <step id="publicationStep"/>
+            <step id="traditionalpagetwo"/>
+            <step id="upload"/>
+        </submission-process>
+
         <!--
         Submission Process for 'Person' Entities
         To enable: create a collection for Persons and add it to the <submission-map> tag linking to this process
@@ -483,6 +489,11 @@
             <step id="personStep"/>
             <step id="upload"/>
             <step id="license"/>
+        </submission-process>
+
+        <submission-process name="admin-person-edit">
+            <step id="personStep"/>
+            <step id="upload"/>
         </submission-process>
 
         <!--

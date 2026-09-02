@@ -186,7 +186,7 @@
                                     ITEM_ADMIN
                                 </value>
                             </property>
-                            <property name="submissionDefinition" value="publication-edit" />
+                            <property name="submissionDefinition" value="admin-publication-edit" />
                         </bean>
                     </list>
                 </entry>
