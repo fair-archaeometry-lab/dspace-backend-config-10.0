@@ -130,8 +130,9 @@
                 <entry key="123456789/7" value-ref="refmaterial"/>
                 <entry key="123456789/33" value-ref="relatedpublication"/>
                 <entry key="123456789/19" value-ref="personnel"/>
+                <entry key="123456789/42" value-ref="publication"/>
 
-            <!--<entry key="publication" value-ref="publication"/> -->    
+             <!--   <entry key="publication" value-ref="publication"/>  -->  
              <!--    Same as the "publication" configuration, but does NOT filter out older versions of items -->
                 <!-- Used to display related items on single-item pages, because a relationship does not always point to the latest version of the related item -->
                 <entry key="publication-relationships" value-ref="publicationRelationships"/>
@@ -2083,10 +2084,11 @@
         <property name="sidebarFacets">
             <list>
                 <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterPublisher" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
-                <ref bean="searchFilterEntityType"/>
+                 <!--<ref bean="searchFilterEntityType"/>-->
                 <ref bean="searchFilterType"/>
             </list>
         </property>
@@ -2097,6 +2099,7 @@
             <list>
                 <ref bean="searchFilterTitle" />
                 <ref bean="searchFilterAuthor" />
+                <ref bean="searchFilterPublisher" />
                 <ref bean="searchFilterSubject" />
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterContentInOriginalBundle"/>
