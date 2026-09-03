@@ -1005,5 +1005,47 @@
         </scope_note>
     </dc-type>
 
+    <!-- Service–Researcher -->
 
+    <dc-type>
+        <schema>relation</schema>
+        <element>isManagedByPerson</element>
+        <scope_note>
+            Contains UUIDs of Persons managing the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isManagedByPerson</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Persons managing the current Service.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>personManagesService</element>
+        <scope_note>
+            Contains UUIDs of Services managed by the current Person.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>personManagesService</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Services managed by the current Person.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
 </dspace-dc-types>

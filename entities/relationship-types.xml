@@ -331,6 +331,18 @@
         </rightCardinality>
     </type>
     <type>
+        <leftType>Service</leftType>
+        <rightType>Person</rightType>
+        <leftwardType>isManagedByPerson</leftwardType>
+        <rightwardType>personManagesService</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
+    <type>
         <leftType>StandardMethod</leftType>
         <rightType>ReferenceMaterial</rightType>
         <leftwardType>usesReferenceMaterial</leftwardType>
