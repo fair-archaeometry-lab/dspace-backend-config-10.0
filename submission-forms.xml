@@ -1557,7 +1557,7 @@
                     <hint>Description of limitations in access provision by the service</hint>
                 </field>
             </row>
-            <row>
+<!--             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
@@ -1567,14 +1567,22 @@
                     <hint>Person in the team working on this service.</hint>
                     <repeatable>true</repeatable>
                 </field>          
-            </row>
+            </row> -->
             <row>   
                 <relation-field>
-                    <relationship-type>isManagedByResearcher</relationship-type>
-                    <search-configuration>123456789/19</search-configuration>
+                    <relationship-type>isManagedByPerson</relationship-type>
+                    <search-configuration>123456789/45</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Team Members in the system</label>
                     <hint>Use this option if the team member has been defined in the personnel collection of the system.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>dc</dc-schema>
+                        <dc-element>contributor</dc-element>
+                        <dc-qualifier>author</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <!-- <externalsources>orcid</externalsources> -->
+                    <required></required>
                 </relation-field> 
             </row>  
             <row>
@@ -1635,7 +1643,7 @@
             </row>
         </form>    
 
-        <form name="serviceAccess-dc-contributor-author">
+<!--         <form name="serviceAccess-dc-contributor-author">
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -1693,7 +1701,7 @@
                     <style>col-6</style>
                 </field>
             </row>
-        </form>  
+        </form>   -->
 
         <form name="serviceAccess-service-cost-accessUnit">
             <row>
