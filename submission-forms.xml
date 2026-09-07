@@ -404,18 +404,26 @@
                     <label>Last name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the last name of the person</hint>
+                    <required>You must enter a last name for this person.</required>
                 </field>
-            </row>
-            <row>
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>givenName</dc-element>
                     <label>First name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the first name of the person</hint>
+                    <required>You must enter a first name for this person.</required>
                 </field>
             </row>
             <row>
+                <field>
+                    <dc-schema>person</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>orcid</dc-qualifier>
+                    <label>ORCID</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the orcid of the person in the format of https://orcid.org/0000-0000-0000-0000</hint>
+                </field>
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>email</dc-element>
@@ -424,23 +432,46 @@
                     <hint>Enter the email of the person</hint>
                 </field>
             </row>
-            <!--     <row>-->
-            <!--     <field>-->
-            <!--       <dc-schema>person</dc-schema>-->
-            <!--       <dc-element>identifier</dc-element>-->
-            <!--       <dc-qualifier>orcid</dc-qualifier>-->
-            <!--       <label>Orcid</label>-->
-            <!--       <input-type>onebox</input-type>-->
-            <!--       <hint>Enter the orcid of the person</hint>-->
-            <!--     </field>-->
-            <!--     </row>-->
             <row>
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>researchDiscipline</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Research Discipline</label>
+                    <input-type>onebox</input-type>
+                    <hint>Which domains or disciplines has this person worked within, has experience within.</hint>
+                    <required></required>
+                    <repeatable>true</repeatable>
+                    <vocabulary>discipline</vocabulary>
+                </field>
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>birthDate</dc-element>
                     <label>Birth date</label>
                     <input-type>date</input-type>
                     <hint>Enter the birth date of the person</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>researchResource</dc-element>
+                    <dc-qualifier>proposalStartDate</dc-qualifier>
+                    <label>Start Date</label>
+                    <input-type>date</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>Date when the person joined the service team.</hint>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>researchResource</dc-element>
+                    <dc-qualifier>proposalEndDate</dc-qualifier>
+                    <label>End Date</label>
+                    <input-type>date</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>Date when the person left the service team.</hint>
                 </field>
             </row>
 <!--            <row>-->
@@ -456,10 +487,29 @@
             <row>
                 <field>
                     <dc-schema>person</dc-schema>
+                    <dc-element>affiliation</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Affiliation Name</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the organizational or institutional affiliation of this person</hint>
+                </field>
+                <field>
+                    <dc-schema>person</dc-schema>
                     <dc-element>jobTitle</dc-element>
                     <label>Job title</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the job title of the person</hint>
+                </field>
+                <field>
+                    <dc-schema>orcid</dc-schema>
+                    <dc-element>service</dc-element>
+                    <dc-qualifier>roleTitle</dc-qualifier>
+                    <label>Team Member Role</label>
+                    <input-type value-pairs-name="member_role">dropdown</input-type>
+                    <repeatable>false</repeatable>
+                    <required></required>
+                    <hint>The main role that the person has in the service team.</hint>
                 </field>
             </row>
         </form>
