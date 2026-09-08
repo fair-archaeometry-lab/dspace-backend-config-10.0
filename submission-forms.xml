@@ -1558,7 +1558,7 @@
                 <!-- add new form serviceAccess   -->
 
         <form name="serviceAccess">
-            <row>
+<!--             <row>
                 <field>
                     <dc-schema>ror</dc-schema>
                     <dc-element>names</dc-element>
@@ -1569,7 +1569,7 @@
                     <hint>Use this option if the service provider has not been defined in the system.</hint>
                     <required></required>
                 </field>
-            </row>
+            </row> -->
             <row>   
                 <relation-field>
                     <relationship-type>isProvidedByLab</relationship-type>
@@ -1577,6 +1577,12 @@
                     <repeatable>true</repeatable>
                     <label>Service Providers in the system</label>
                     <hint>Use this option if the service provider has been defined in the system.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>ror</dc-schema>
+                        <dc-element>names</dc-element>
+                        <dc-qualifier>value</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
                 </relation-field> 
             </row>    
             <row>
@@ -1648,7 +1654,7 @@
             </row>
         </form>
 
-        <form name="serviceAccess-ror-names-value">
+<!--         <form name="serviceAccess-ror-names-value">
             <row>
                 <field>
                     <dc-schema>ror</dc-schema>
@@ -1691,7 +1697,7 @@
                     <hint>How can this service be reached? It can an email address or a phone number.</hint>
                 </field>
             </row>
-        </form>    
+        </form>  -->   
 
 <!--         <form name="serviceAccess-dc-contributor-author">
             <row>

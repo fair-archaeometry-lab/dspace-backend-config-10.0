@@ -27,6 +27,7 @@
                 <entry key="isDatasetOfPublication" value-ref="isDatasetOfPublicationMap"/>
                 <entry key="isPublicationOfDataset" value-ref="isPublicationOfDatasetMap"/>
                 <entry key="isManagedByPerson" value-ref="isManagedByPersonMap"/>
+                <entry key="isProvidedByLab" value-ref="isProvidedByLabMap"/>
             </map>
         </property>
     </bean>
@@ -39,9 +40,26 @@
                 <entry key="Journal" value="f.entityType=Journal,equals"/>
                 <entry key="Dataset" value="f.entityType=Dataset,equals"/>
                 <entry key="Service" value="f.entityType=Service,equals"/>
+                <entry key="Laboratory" value="f.entityType=Laboratory,equals"/>
             </map>
         </property>
     </bean>
+
+    <!-- add lab and service virutal metadata mapping -->
+
+    <util:map id="isProvidedByLabMap">
+        <entry key="ror.names.value" value-ref="serviceProviderName"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="serviceProviderName">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
+        </property>
+    </bean>
+
 
     <!-- add person and service virutal metadata mapping -->
 
