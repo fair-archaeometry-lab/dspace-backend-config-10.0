@@ -1048,4 +1048,48 @@
             Do not manually add, remove, or edit values.
         </scope_note>
     </dc-type>
+
+    <!-- Person–Instrument -->
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>ownsInstrument</element>
+        <scope_note>
+            Contains UUIDs of Instruments owned by the current Person.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>ownsInstrument</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of Instruments for which the current Person is the latest visible related entity.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isOwnedByPerson</element>
+        <scope_note>
+            Contains UUIDs of Persons who own the current Instrument.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isOwnedByPerson</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of Persons for which the current Instrument is the latest visible related entity.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
 </dspace-dc-types>

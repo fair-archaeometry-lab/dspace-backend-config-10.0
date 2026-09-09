@@ -2051,6 +2051,23 @@
         </form>
         <!-- add form instAccess -->
         <form name="instAccess">
+            <row>   
+                <relation-field>
+                    <relationship-type>isOwnedByPerson</relationship-type>
+                    <search-configuration>123456789/45</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Instrument Owner/Manager</label>
+                    <hint>You may enter the name (family name, given name, such as "Doe, John") or search for existing persons in the system.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>dc</dc-schema>
+                        <dc-element>contributor</dc-element>
+                        <dc-qualifier>author</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <!-- <externalsources>orcid</externalsources> -->
+                    <required></required>
+                </relation-field> 
+            </row>
             <row>
                 <field>
                     <dc-schema>instrument</dc-schema>

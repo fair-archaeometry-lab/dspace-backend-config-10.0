@@ -29,6 +29,7 @@
                 <entry key="isManagedByPerson" value-ref="isManagedByPersonMap"/>
                 <entry key="isProvidedByLab" value-ref="isProvidedByLabMap"/>
                 <entry key="isInstrumentOfService" value-ref="isInstrumentOfServiceMap"/>
+                <entry key="isOwnedByPerson" value-ref="isOwnedByPersonMap"/>
             </map>
         </property>
     </bean>
@@ -46,6 +47,28 @@
             </map>
         </property>
     </bean>
+
+    <!-- add person and instrument virtual metadata mapping -->
+
+    <util:map id="isOwnedByPersonMap">
+        <entry key="dc.contributor.author" value-ref="instrumentOwnerName"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Concatenate"
+        id="instrumentOwnerName">
+        <property name="fields">
+            <util:list>
+                <value>person.familyName</value>
+                <value>person.givenName</value>
+            </util:list>
+        </property>
+        <property name="separator">
+            <value>, </value>
+        </property>
+        <property name="useForPlace" value="true"/>
+        <property name="populateWithNameVariant" value="true"/>
+    </bean>
+
 
     <!-- add instrument and service virtual metadata mapping -->
 
