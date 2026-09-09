@@ -2051,12 +2051,28 @@
         </form>
         <!-- add form instAccess -->
         <form name="instAccess">
+            <row>
+                <relation-field>
+                    <relationship-type>isOwnedByLab</relationship-type>
+                    <search-configuration>123456789/4</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Instrument Owner/Manager (Organisation)</label>
+                    <hint>Enter the name of institution or laboratory that owns the instrument. You can also search the registered organisations in the system.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>instrument</dc-schema>
+                        <dc-element>owner</dc-element>
+                        <dc-qualifier>name</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <required>This is a mandatory field</required>
+                </relation-field> 
+            </row>
             <row>   
                 <relation-field>
                     <relationship-type>isOwnedByPerson</relationship-type>
                     <search-configuration>123456789/45</search-configuration>
                     <repeatable>true</repeatable>
-                    <label>Instrument Owner/Manager</label>
+                    <label>Instrument Owner/Manager (Individual)</label>
                     <hint>You may enter the name (family name, given name, such as "Doe, John") or search for existing persons in the system.</hint>
                     <linked-metadata-field>
                         <dc-schema>dc</dc-schema>
@@ -2072,6 +2088,18 @@
                 <field>
                     <dc-schema>instrument</dc-schema>
                     <dc-element>owner</dc-element>
+                    <dc-qualifier>contact</dc-qualifier>
+                    <label>Owner Contact Email</label>
+                    <input-type>onebox</input-type>
+                    <hint>Please enter the main contact email of the owner.</hint>
+                    <required>This is a mandatory field</required>
+                    <repeatable></repeatable>
+                </field>
+            </row>
+<!--             <row>
+                <field>
+                    <dc-schema>instrument</dc-schema>
+                    <dc-element>owner</dc-element>
                     <dc-qualifier>name</dc-qualifier>
                     <label>Owner Information</label>
                     <input-type>inline-group</input-type>
@@ -2079,7 +2107,7 @@
                     <required>This is a required field</required>
                     <repeatable>true</repeatable>
                 </field>
-            </row>
+            </row> -->
             <row>
                 <field>
                     <dc-schema>instrument</dc-schema>
@@ -2110,7 +2138,7 @@
             </row>
         </form>
 
-        <form name="instAccess-instrument-owner-name">
+<!--         <form name="instAccess-instrument-owner-name">
             <row>
                 <field>
                     <dc-schema>instrument</dc-schema>
@@ -2155,7 +2183,7 @@
                     <style>col-6</style>
                 </field>
             </row>
-        </form>
+        </form> -->
 
         <form name="instTechnical">
             <row>
