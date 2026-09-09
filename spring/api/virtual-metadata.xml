@@ -28,6 +28,7 @@
                 <entry key="isPublicationOfDataset" value-ref="isPublicationOfDatasetMap"/>
                 <entry key="isManagedByPerson" value-ref="isManagedByPersonMap"/>
                 <entry key="isProvidedByLab" value-ref="isProvidedByLabMap"/>
+                <entry key="isInstrumentOfService" value-ref="isInstrumentOfServiceMap"/>
             </map>
         </property>
     </bean>
@@ -41,7 +42,23 @@
                 <entry key="Dataset" value="f.entityType=Dataset,equals"/>
                 <entry key="Service" value="f.entityType=Service,equals"/>
                 <entry key="Laboratory" value="f.entityType=Laboratory,equals"/>
+                <entry key="Instrument" value="f.entityType=Instrument,equals"/>
             </map>
+        </property>
+    </bean>
+
+    <!-- add instrument and service virtual metadata mapping -->
+
+    <util:map id="isInstrumentOfServiceMap">
+        <entry key="instrument.name" value-ref="instrumentName"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="instrumentName">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
         </property>
     </bean>
 

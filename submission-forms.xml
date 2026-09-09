@@ -1406,7 +1406,7 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Service Name</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter access service name or technique name</hint>
+                    <hint>Enter access service name or technique name. For example: "Isotopic Analysis for Inorganic Materials", "Raman Spectroscopy for Polymer Characterization".</hint>
                     <required>This is a mandatory field</required>
                 </field>
                 <field>
@@ -1415,7 +1415,7 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Service Identifier</label>
                     <input-type>onebox</input-type>
-                    <hint>Provide existing identifiers for this service record if applicable.</hint>
+                    <hint>Provide an alternative identifier for this service record (the system will generate a Handle ID for the record as well).</hint>
                 </field>
             </row>
             <row>
@@ -1425,7 +1425,7 @@
                     <dc-qualifier>abstract</dc-qualifier>
                     <label>Service Summary</label>
                     <input-type>textarea</input-type>
-                    <hint>A brief description of a specific technical or access service offered, such as the use of X to investigate Y</hint>
+                    <hint>A brief description of a specific technical or access service offered, such as the use of X to investigate Y.</hint>
                     <required>This is a mandatory field</required>
                 </field>
                 <relation-field>
@@ -1433,6 +1433,12 @@
                     <search-configuration>123456789/3</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Instruments involved in this service</label>
+                    <linked-metadata-field>
+                        <dc-schema>instrument</dc-schema>
+                        <dc-element>name</dc-element>
+                        <dc-qualifier></dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
                     <hint>Select instrument records that have been previously defined in the system.</hint>
                 </relation-field>
             </row>
@@ -1444,6 +1450,7 @@
                     <label>Service Creation Date</label>
                     <input-type>date</input-type>
                     <hint>The creation date is the date from which this particular Service was offered in a formal capacity by the defined Access provider.</hint>
+                    <required>This is a mandatory field</required>
                 </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1470,7 +1477,7 @@
                     <label>Active</label>
                     <input-type value-pairs-name="yes_no">list</input-type>
                     <repeatable>false</repeatable>
-                    <hint>Whether the service is currently open for access</hint>
+                    <hint>Whether the service is currently open for access.</hint>
                     <required>This is a mandatory field</required>
                 </field>
             </row>
@@ -1539,7 +1546,7 @@
                     <dc-qualifier>class</dc-qualifier>
                     <label>Measurable property Class</label>
                     <input-type>onebox</input-type>
-                    <hint>Class of measurable property that can be studied by this service</hint>
+                    <hint>Class of measurable property that can be studied by this service.</hint>
                     <repeatable>true</repeatable>
                     <vocabulary>matprop</vocabulary>
                 </field>
@@ -1576,14 +1583,25 @@
                     <search-configuration>123456789/4</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Service Providers in the system</label>
-                    <hint>Use this option if the service provider has been defined in the system.</hint>
+                    <hint>Enter the name of institution or laboratory that provides the service. You can also search the registered providers in the system.</hint>
                     <linked-metadata-field>
                         <dc-schema>ror</dc-schema>
                         <dc-element>names</dc-element>
                         <dc-qualifier>value</dc-qualifier>
                         <input-type>onebox</input-type>
                     </linked-metadata-field>
+                    <required>This is a mandatory field</required>
                 </relation-field> 
+                <field>
+                    <dc-schema>service</dc-schema>
+                    <dc-element>contact</dc-element>
+                    <dc-qualifier>contact</dc-qualifier>
+                    <label>Service Contact</label>
+                    <input-type>onebox</input-type>
+                    <repeatable>false</repeatable>
+                    <required>This is a mandatory field</required>
+                    <hint>How can this service be reached? It can an email address or a phone number.</hint>
+                </field>
             </row>    
             <row>
                 <field>
@@ -1602,7 +1620,8 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Service Readiness Level</label>
                     <input-type value-pairs-name="readiness">dropdown</input-type>
-                    <hint>Readiness level of the service, based on a controlled list</hint>
+                    <hint>Readiness level of the service, based on a controlled list.</hint>
+                    <required>This is a mandatory field</required>
                 </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1630,7 +1649,7 @@
                     <search-configuration>123456789/45</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Team Members in the system</label>
-                    <hint>Use this option if the team member has been defined in the personnel collection of the system.</hint>
+                    <hint>You may enter the name (family name, given name, such as "John, Doe") or search for existing team members in the system. </hint>
                     <linked-metadata-field>
                         <dc-schema>dc</dc-schema>
                         <dc-element>contributor</dc-element>
@@ -1768,7 +1787,7 @@
                     <label>Access Unit</label>
                     <input-type value-pairs-name="period_unit">dropdown</input-type>
                     <repeatable>false</repeatable>
-                    <hint>please select your service costs in terms of time units or sample numbers</hint>
+                    <hint>please select your service costs in terms of time units or sample numbers.</hint>
                 </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1777,7 +1796,7 @@
                     <label>Access Unit Cost (€)</label>
                     <input-type>onebox</input-type>
                     <repeatable>false</repeatable>
-                    <hint>Service access unit cost</hint>
+                    <hint>Service access unit cost.</hint>
                 </field>
                 <field>
                     <dc-schema>service</dc-schema>
@@ -1786,7 +1805,7 @@
                     <label>Currency</label>
                     <input-type value-pairs-name="currency_unit">dropdown</input-type>
                     <repeatable>false</repeatable>
-                    <hint>currency used to calculate costs</hint>
+                    <hint>currency used to calculate costs.</hint>
                 </field>
             </row>
         </form>  
@@ -1800,7 +1819,7 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Service Link</label>
                     <input-type value-pairs-name="link_type">qualdrop_value</input-type>
-                    <hint>Digital resources related to the service. Provide type of link and its url</hint>
+                    <hint>Digital resources related to the service. Provide type of link and its URL.</hint>
                     <repeatable>true</repeatable>
                 </field>
                 <field>
@@ -1809,7 +1828,7 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Keywords</label>
                     <input-type>tag</input-type>
-                    <hint>Additional service keywords not covered by other fields</hint>
+                    <hint>You may enter additional service keywords not covered by other fields.</hint>
                     <repeatable>true</repeatable>
                 </field>
             </row>
