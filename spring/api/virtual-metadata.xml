@@ -32,6 +32,7 @@
                 <entry key="isOwnedByPerson" value-ref="isOwnedByPersonMap"/>
                 <entry key="isOwnedByLab" value-ref="isOwnedByLabMap"/>
                 <entry key="ownsInstrument" value-ref="ownsInstrumentMap"/>
+                <entry key="isChildOfLab" value-ref="isChildOfLabMap"/>
             </map>
         </property>
     </bean>
@@ -47,6 +48,21 @@
                 <entry key="Laboratory" value="f.entityType=Laboratory,equals"/>
                 <entry key="Instrument" value="f.entityType=Instrument,equals"/>
             </map>
+        </property>
+    </bean>
+
+    <!-- add lab and lab metadata mapping -->
+
+    <util:map id="isChildOfLabMap">
+        <entry key="ror.names.value" value-ref="hasParentOrganisation"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="hasParentOrganisation">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
         </property>
     </bean>
 

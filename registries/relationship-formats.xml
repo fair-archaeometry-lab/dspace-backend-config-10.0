@@ -1092,4 +1092,48 @@
             Do not manually add, remove, or edit values.
         </scope_note>
     </dc-type>
+    
+    <!-- Child → Parent (each child lab points to its parent lab) -->
+    <dc-type>
+        <schema>relation</schema>
+        <element>isChildOfLab</element>
+        <scope_note>
+            Contains UUIDs of parent Laboratories related to the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isChildOfLab</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest parent Laboratories related to the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <!-- Parent → Child (each parent lab points to its child labs) -->
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasChildLab</element>
+        <scope_note>
+            Contains UUIDs of child Laboratories related to the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>hasChildLab</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest child Laboratories related to the current Laboratory.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
 </dspace-dc-types>

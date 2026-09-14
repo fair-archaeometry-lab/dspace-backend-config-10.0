@@ -3391,11 +3391,25 @@
                     <dc-schema>ror</dc-schema>
                     <dc-element>relationships</dc-element>
                     <dc-qualifier>label</dc-qualifier>
-                    <label>Parent Organization</label>
+                    <label>Parent Organisation</label>
                     <input-type>onebox</input-type>
-                    <hint></hint>
+                    <hint>Enter the name of the parent organization. It can be the name of the institution or a different organization that has a relationship with the institution or a ROR ID</hint>
                     <required></required>
                 </field>
+                <relation-field>
+                    <relationship-type>isChildOfLab</relationship-type>
+                    <search-configuration>123456789/4</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Parent Organisation</label>
+                    <hint>Enter the name of institution that governs the laboratory. You can also search the registered organisations in the system.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>ror</dc-schema>
+                        <dc-element>names</dc-element>
+                        <dc-qualifier>value</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <required></required>
+                </relation-field> 
             </row>
             <row>
                 <field>

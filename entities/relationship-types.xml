@@ -295,6 +295,20 @@
         </rightCardinality>
     </type>
     <type>
+        <leftType>Laboratory</leftType>
+        <rightType>Laboratory</rightType>
+        <leftwardType>hasChildLab</leftwardType>
+        <rightwardType>isChildOfLab</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+            <!-- optional max, e.g. <max>unbounded</max> -->
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+            <!-- optional max, e.g. <max>1</max> if each lab has only one parent -->
+        </rightCardinality>
+    </type>
+    <type>
     <leftType>Service</leftType>
         <rightType>Publication</rightType>
         <leftwardType>hasPublication</leftwardType>
