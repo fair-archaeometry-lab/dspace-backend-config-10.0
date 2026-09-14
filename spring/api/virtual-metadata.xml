@@ -31,6 +31,7 @@
                 <entry key="isInstrumentOfService" value-ref="isInstrumentOfServiceMap"/>
                 <entry key="isOwnedByPerson" value-ref="isOwnedByPersonMap"/>
                 <entry key="isOwnedByLab" value-ref="isOwnedByLabMap"/>
+                <entry key="ownsInstrument" value-ref="ownsInstrumentMap"/>
             </map>
         </property>
     </bean>
@@ -48,6 +49,22 @@
             </map>
         </property>
     </bean>
+
+    <!-- add instrument and virtual metadata mapping -->
+
+    <util:map id="ownsInstrumentMap">
+        <entry key="instrument.name" value-ref="ownedInstrumentTitle"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="ownedInstrumentTitle">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
+        </property>
+    </bean>
+
 
     <!-- add lab and instrument virtual metadata mapping -->
 

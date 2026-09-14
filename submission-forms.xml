@@ -2007,7 +2007,7 @@
                     <dc-qualifier></dc-qualifier>
                     <label>Instrument Name</label>
                     <input-type>onebox</input-type>
-                    <hint>Name of the Instrument</hint>
+                    <hint>Enter the name of the instrument.</hint>
                     <required>This is a mandatory field</required>
                 </field>
                 <field>
@@ -2017,7 +2017,7 @@
                     <label>Instruemnt Identifier</label>
                     <repeatable>true</repeatable>
                     <input-type>onebox</input-type>
-                    <hint>The existing identifier for the instrument, if applicable.</hint>
+                    <hint>Enter other identifiers used for the instrument. This is optional, as the system will generate a Handle ID for the registered instrument.</hint>
                 </field>
                 <field>
                     <dc-schema>instrument</dc-schema>
@@ -2044,7 +2044,7 @@
                     <dc-qualifier>abstract</dc-qualifier>
                     <label>Description</label>
                     <input-type>textarea</input-type>
-                    <hint>Technical description of the instrument</hint>
+                    <hint>Please give a technical description of the instrument. You may also add a link that points to the technical documentation.</hint>
                     <required>This is a mandatory field</required>
                 </field>
             </row>
@@ -3409,6 +3409,14 @@
                     <required></required>
                 </field>
                 <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>address</dc-element>
+                    <dc-qualifier>addressLocality</dc-qualifier>
+                    <label>Address</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the address of the institution (street, city,and zip code).</hint>
+                </field>
+                <field>
                     <dc-schema>dcterms</dc-schema>
                     <dc-element>spatial</dc-element>
                     <dc-qualifier/>
@@ -3423,7 +3431,13 @@
                     <search-configuration>123456789/3</search-configuration>
                     <repeatable>true</repeatable>
                     <label>Instruments Mangaged by the Laboratory</label>
-                    <hint>Select instrument records that have been previously defined in the system.</hint>
+                    <hint>Select instrument records that have been previously defined in the system or enter a new instrument.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>instrument</dc-schema>
+                        <dc-element>name</dc-element>
+                        <dc-qualifier></dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
                 </relation-field>
             </row>
         </form>
