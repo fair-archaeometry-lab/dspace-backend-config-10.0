@@ -447,4 +447,20 @@
             <min>0</min>
         </rightCardinality>
     </type>
+
+    <type>
+        <leftType>Software</leftType>
+        <rightType>Person</rightType>
+
+        <leftwardType>isDevelopedByAuthor</leftwardType>
+        <rightwardType>isAuthorOfSoftware</rightwardType>
+
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
 </relationships>
