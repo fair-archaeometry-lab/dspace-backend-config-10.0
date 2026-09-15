@@ -463,4 +463,30 @@
             <min>0</min>
         </rightCardinality>
     </type>
+
+    <type>
+        <leftType>ReferenceMaterial</leftType>
+        <rightType>Laboratory</rightType>
+        <leftwardType>isHousedInLaboratory</leftwardType>
+        <rightwardType>storesReferenceMaterial</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
+
+    <type>
+        <leftType>ReferenceMaterial</leftType>
+        <rightType>Person</rightType>
+        <leftwardType>isCuratedByPerson</leftwardType>
+        <rightwardType>managesReferenceMaterial</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+    </type>
 </relationships>

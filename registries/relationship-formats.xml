@@ -1223,4 +1223,91 @@
             Do not manually add, remove, or edit values.
         </scope_note>
     </dc-type>
+
+
+<!-- refmaterial and laboratory -->
+    <dc-type>
+        <schema>relation</schema>
+        <element>isHousedInLaboratory</element>
+        <scope_note>
+            Contains UUIDs of Laboratories linked to the current ReferenceMaterial.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isHousedInLaboratory</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Laboratory items linked to the current ReferenceMaterial.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>storesReferenceMaterial</element>
+        <scope_note>
+            Contains UUIDs of ReferenceMaterial items linked to the current Person as curated material.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>storesReferenceMaterial</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest ReferenceMaterial items linked to the current Person as curated material.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+<!-- refmaterial and Person -->
+    <dc-type>
+        <schema>relation</schema>
+        <element>isCuratedByPerson</element>
+        <scope_note>
+            Contains UUIDs of Persons linked as curators to the current ReferenceMaterial.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isCuratedByPerson</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Person items linked as curators to the current ReferenceMaterial.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>managesReferenceMaterial</element>
+        <scope_note>
+            Contains UUIDs of ReferenceMaterial items linked to the current Person as curated material.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>managesReferenceMaterial</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest ReferenceMaterial items linked to the current Person as curated material.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
 </dspace-dc-types>

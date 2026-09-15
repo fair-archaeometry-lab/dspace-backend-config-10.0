@@ -230,11 +230,11 @@
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
             <type>submission-form</type>
 	    </step-definition>
-        <step-definition id="georemCitation" mandatory="true"> <!-- add new step for reference material entity  -->
+<!--         <step-definition id="georemCitation" mandatory="true"> add new step for reference material entity 
             <heading>submit.progressbar.describe.georem.citation</heading>
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
             <type>submission-form</type>
-	    </step-definition>
+	    </step-definition> -->
         <!-- end: add steps for reference material collection  -->
 
         <!-- start: add steps for software collection  -->
@@ -597,7 +597,7 @@
             <step id="collection"/>
             <step id="georemMaterial"/>
             <step id="georemChemistry"/>
-            <step id="georemCitation"/>
+            <!-- <step id="georemCitation"/> -->
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
@@ -606,7 +606,7 @@
         <submission-process name="admin-referencematerial-edit">
             <step id="georemMaterial"/>
             <step id="georemChemistry"/>
-            <step id="georemCitation"/>
+            <!-- <step id="georemCitation"/> -->
             <step id="upload"/>
         </submission-process>
 

@@ -2486,6 +2486,15 @@
                 </field>
             </row>
             <row>
+                <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>citation</dc-element>
+                    <dc-qualifier>url</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Citation URL</label>
+                    <hint>This could be the landing page or publication that reports the reference material.</hint>
+                    <input-type>onebox</input-type>
+                </field>
                 <relation-field>
                     <relationship-type>isReferenceForMethod</relationship-type>
                     <search-configuration>123456789/5</search-configuration>
@@ -2534,21 +2543,58 @@
                     <hint>Existing Identifiers that have been assigned to the reference material.</hint>
                     <required></required>
                 </field>
-            </row>
-            <row>
                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>provider</dc-element>
                     <dc-qualifier>name</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Name of Manufacturer</label>
+                    <hint>The manufacturer that produces reference material.</hint>
+                    <input-type>onebox</input-type>
+                    <required>This is a mandatory field</required>
+                </field>
+<!--                 <field>
+                    <dc-schema>georem</dc-schema>
+                    <dc-element>provider</dc-element>
+                    <dc-qualifier>name</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Provider</label>
+                    <label>Manufacturer</label>
                     <hint></hint>
                     <input-type>inline-group</input-type>
                     <required></required>
-                </field>
+                </field> -->
             </row>
             <row>
-                <field>
+                <relation-field>
+                    <relationship-type>isHousedInLaboratory</relationship-type>
+                    <search-configuration>123456789/4</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Curating Institution</label>
+                    <hint>Enter the name of institution or laboratory that provides the service. You can also search the registered providers in the system.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>ror</dc-schema>
+                        <dc-element>names</dc-element>
+                        <dc-qualifier>value</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <required>This is a mandatory field</required>
+                </relation-field> 
+                <relation-field>
+                    <relationship-type>isCuratedByPerson</relationship-type>
+                    <search-configuration>123456789/45</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Curator</label>
+                    <hint>Individual responsible for curating the reference material. You may enter the name (family name, given name, such as "Doe, John") or search for existing persons in the system.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>dc</dc-schema>
+                        <dc-element>contributor</dc-element>
+                        <dc-qualifier>author</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <!-- <externalsources>orcid</externalsources> -->
+                    <required></required>
+                </relation-field>
+<!--                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>institution</dc-qualifier>
@@ -2557,8 +2603,8 @@
                     <hint>The institution responsible for managing the reference materials.</hint>
                     <input-type>onebox</input-type>
                     <required></required>
-                </field>
-                <field>
+                </field> -->
+<!--                 <field>
                     <dc-schema>georem</dc-schema>
                     <dc-element>referenceMaterial</dc-element>
                     <dc-qualifier>institutionAddress</dc-qualifier>
@@ -2567,11 +2613,11 @@
                     <hint>Postal address of the institution.</hint>
                     <input-type>onebox</input-type>
                     <required></required>
-                </field>
+                </field> -->
             </row>
         </form>
 
-        <form name="georemMaterial-georem-provider-name"> 
+<!--         <form name="georemMaterial-georem-provider-name"> 
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
@@ -2618,7 +2664,7 @@
                     <style>col-6</style>
                 </field>
             </row>
-        </form>
+        </form> -->
 
 
         <form name="georemChemistry">
@@ -2709,7 +2755,7 @@
             </row>
         </form>
 
-       <form name="georemCitation">
+<!--        <form name="georemCitation">
             <row>
                 <field>
                     <dc-schema>georem</dc-schema>
@@ -2726,7 +2772,7 @@
                     <dc-qualifier>url</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Citation URL</label>
-                    <hint>URL of the citation that reports the reference material.</hint>
+                    <hint>This could be the landing page or publication that reports the reference material.</hint>
                     <input-type>onebox</input-type>
                 </field>
                 <field>
@@ -2739,7 +2785,7 @@
                     <input-type>onebox</input-type>
                 </field>
             </row>
-        </form>
+        </form> -->
 
                 <!-- add new form softwareBasicStep  -->
         <form name="softwareBasicStep"> 
