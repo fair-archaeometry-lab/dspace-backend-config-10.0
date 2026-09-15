@@ -33,6 +33,7 @@
                 <entry key="isOwnedByLab" value-ref="isOwnedByLabMap"/>
                 <entry key="ownsInstrument" value-ref="ownsInstrumentMap"/>
                 <entry key="isChildOfLab" value-ref="isChildOfLabMap"/>
+                <entry key="isProtocolOfInstrument" value-ref="isProtocolOfInstrumentMap"/>
             </map>
         </property>
     </bean>
@@ -47,9 +48,26 @@
                 <entry key="Service" value="f.entityType=Service,equals"/>
                 <entry key="Laboratory" value="f.entityType=Laboratory,equals"/>
                 <entry key="Instrument" value="f.entityType=Instrument,equals"/>
+                <entry key="StandardMethod" value="f.entityType=StandardMethod,equals"/>
             </map>
         </property>
     </bean>
+
+    <!-- add method and instrument virtual metadata mapping -->
+
+    <util:map id="isProtocolOfInstrumentMap">
+        <entry key="instrument.name" value-ref="protocolRelatedInstrument"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="protocolRelatedInstrument">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
+        </property>
+    </bean>
+
 
     <!-- add lab and lab metadata mapping -->
 

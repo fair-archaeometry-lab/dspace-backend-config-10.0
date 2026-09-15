@@ -3086,8 +3086,14 @@
                     <relationship-type>isProtocolOfInstrument</relationship-type>
                     <search-configuration>123456789/3</search-configuration>
                     <repeatable>true</repeatable>
-                    <label>Instruments that use this method</label>
-                    <hint>The device the method is designed for. It is linked with the item defined in the device submission form</hint>
+                    <label>Related Instruments</label>
+                    <hint>Select instrument records related to this method that have been previously defined in the system or enter a new instrument.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>instrument</dc-schema>
+                        <dc-element>name</dc-element>
+                        <dc-qualifier></dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
                 </relation-field>
                 <relation-field>
                     <relationship-type>isProtocolOfSoftware</relationship-type>
