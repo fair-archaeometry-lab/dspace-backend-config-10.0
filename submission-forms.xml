@@ -3101,6 +3101,12 @@
                     <repeatable>true</repeatable>
                     <label>Software that uses this method</label>
                     <hint>The software the method is designed for. It is linked with the item defined in the software submission form</hint>
+                    <linked-metadata-field>
+                        <dc-schema>software</dc-schema>
+                        <dc-element>name</dc-element>
+                        <dc-qualifier></dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
                 </relation-field>
             </row>
             <row>

@@ -34,6 +34,7 @@
                 <entry key="ownsInstrument" value-ref="ownsInstrumentMap"/>
                 <entry key="isChildOfLab" value-ref="isChildOfLabMap"/>
                 <entry key="isProtocolOfInstrument" value-ref="isProtocolOfInstrumentMap"/>
+                <entry key="isProtocolOfSoftware" value-ref="isProtocolOfSoftwareMap"/>
             </map>
         </property>
     </bean>
@@ -49,9 +50,27 @@
                 <entry key="Laboratory" value="f.entityType=Laboratory,equals"/>
                 <entry key="Instrument" value="f.entityType=Instrument,equals"/>
                 <entry key="StandardMethod" value="f.entityType=StandardMethod,equals"/>
+                <entry key="Software" value="f.entityType=Software,equals"/>
             </map>
         </property>
     </bean>
+
+
+    <!-- add method and software virtual metadata mapping -->
+
+    <util:map id="isProtocolOfSoftwareMap">
+        <entry key="software.name" value-ref="protocolRelatedSoftware"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="protocolRelatedSoftware">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
+        </property>
+    </bean>
+
 
     <!-- add method and instrument virtual metadata mapping -->
 
