@@ -2844,7 +2844,7 @@
                     <dc-element>identifier</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Software Identifier</label>
-                    <input-type value-pairs-name="common_identifiers">dropdown</input-type>
+                    <input-type>onebox</input-type>
                     <hint>The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details</hint>
                     <repeatable>true</repeatable>
                 </field>
