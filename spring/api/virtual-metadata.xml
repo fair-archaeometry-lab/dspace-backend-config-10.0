@@ -37,6 +37,7 @@
                 <entry key="isProtocolOfSoftware" value-ref="isProtocolOfSoftwareMap"/>
                 <entry key="isCreatedByAuthor" value-ref="isCreatedByAuthorMap"/>
                 <entry key="isDevelopedByAuthor" value-ref="isDevelopedByAuthorMap"/>
+                <entry key="isReferenceForMethod" value-ref="isReferenceForMethodMap"/>
             </map>
         </property>
     </bean>
@@ -53,10 +54,26 @@
                 <entry key="Instrument" value="f.entityType=Instrument,equals"/>
                 <entry key="StandardMethod" value="f.entityType=StandardMethod,equals"/>
                 <entry key="Software" value="f.entityType=Software,equals"/>
+                <entry key="ReferenceMaterial" value="f.entityType=ReferenceMaterial,equals"/>
             </map>
         </property>
     </bean>
 
+
+    <!-- add refmateril and method virtual metadata mapping -->
+
+    <util:map id="isReferenceForMethodMap">
+        <entry key="method.name" value-ref="referenceForMethod"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="referenceForMethod">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
+        </property>
+    </bean>
 
 
     <!-- add software and person virtual metadata mapping -->
