@@ -35,6 +35,7 @@
                 <entry key="isChildOfLab" value-ref="isChildOfLabMap"/>
                 <entry key="isProtocolOfInstrument" value-ref="isProtocolOfInstrumentMap"/>
                 <entry key="isProtocolOfSoftware" value-ref="isProtocolOfSoftwareMap"/>
+                <entry key="isCreatedByAuthor" value-ref="isCreatedByAuthorMap"/>
             </map>
         </property>
     </bean>
@@ -55,6 +56,28 @@
         </property>
     </bean>
 
+
+
+    <!-- add method and person virtual metadata mapping -->
+
+    <util:map id="isCreatedByAuthorMap">
+        <entry key="dc.contributor.author" value-ref="methodAuthor"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Concatenate"
+        id="methodAuthor">
+        <property name="fields">
+            <util:list>
+                <value>person.familyName</value>
+                <value>person.givenName</value>
+            </util:list>
+        </property>
+        <property name="separator">
+            <value>, </value>
+        </property>
+        <property name="useForPlace" value="true"/>
+        <property name="populateWithNameVariant" value="true"/>
+    </bean>
 
     <!-- add method and software virtual metadata mapping -->
 

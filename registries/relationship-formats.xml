@@ -1136,4 +1136,47 @@
             Do not manually add, remove, or edit values.
         </scope_note>
     </dc-type>
+
+<!-- Method and Person -->
+    <dc-type>
+        <schema>relation</schema>
+        <element>isCreatedByAuthor</element>
+        <scope_note>
+            Contains UUIDs of Persons linked as authors to the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isCreatedByAuthor</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Person items linked as authors to the current Standard Method.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isAuthorOfMethod</element>
+        <scope_note>
+            Contains UUIDs of Standard Methods linked to the current Person as authored methods.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>relation</schema>
+        <element>isAuthorOfMethod</element>
+        <qualifier>latestForDiscovery</qualifier>
+        <scope_note>
+            Contains UUIDs of the latest Standard Methods linked to the current Person as authored methods.
+            This metadata is generated and managed internally by DSpace.
+            Do not manually add, remove, or edit values.
+        </scope_note>
+    </dc-type>
 </dspace-dc-types>
