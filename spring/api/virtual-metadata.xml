@@ -40,6 +40,7 @@
                 <entry key="isReferenceForMethod" value-ref="isReferenceForMethodMap"/>
                 <entry key="isHousedInLaboratory" value-ref="isHousedInLaboratoryMap"/>
                 <entry key="isCuratedByPerson" value-ref="isCuratedByPersonMap"/>
+                <entry key="isHiredByLaboratory" value-ref="isHiredByLaboratoryMap"/>
             </map>
         </property>
     </bean>
@@ -61,6 +62,21 @@
         </property>
     </bean>
 
+
+    <!-- add person and affiliation virtual metadata mapping -->
+
+    <util:map id="isHiredByLaboratoryMap">
+        <entry key="person.affiliation.name" value-ref="hiredByLaboratory"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="hiredByLaboratory">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
+        </property>
+    </bean>
 
     <!-- add refmaterial and person virtual metadata mapping -->
 

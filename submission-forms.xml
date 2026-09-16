@@ -393,8 +393,8 @@
                     <relationship-type>isPublicationOfAuthor</relationship-type>
                     <search-configuration>123456789/42</search-configuration>
                     <label>Publication</label>
-                    <hint>import a publicaton</hint>
-                    <externalsources>pubmed</externalsources>
+                    <hint>select a publication that is published by this author.</hint>
+                    <!-- <externalsources>pubmed</externalsources> -->
                 </relation-field>
             </row>
             <row>
@@ -485,7 +485,21 @@
 <!--                </field>-->
 <!--            </row>-->
             <row>
-                <field>
+                <relation-field>
+                    <relationship-type>isHiredByLaboratory</relationship-type>
+                    <search-configuration>123456789/4</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Affiliation Name</label>
+                    <hint>Select or enter the organizational or institutional affiliation of this person.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>person</dc-schema>
+                        <dc-element>affiliation</dc-element>
+                        <dc-qualifier>name</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <required>This is a mandatory field</required>
+                </relation-field> 
+<!--            <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>affiliation</dc-element>
                     <dc-qualifier>name</dc-qualifier>
@@ -493,7 +507,7 @@
                     <label>Affiliation Name</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the organizational or institutional affiliation of this person</hint>
-                </field>
+                </field> -->
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>jobTitle</dc-element>
