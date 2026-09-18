@@ -41,6 +41,7 @@
                 <entry key="isHousedInLaboratory" value-ref="isHousedInLaboratoryMap"/>
                 <entry key="isCuratedByPerson" value-ref="isCuratedByPersonMap"/>
                 <entry key="isHiredByLaboratory" value-ref="isHiredByLaboratoryMap"/>
+                <entry key="isPublicationOfAuthor" value-ref="isPublicationOfAuthorMap"/>
             </map>
         </property>
     </bean>
@@ -59,6 +60,21 @@
                 <entry key="Software" value="f.entityType=Software,equals"/>
                 <entry key="ReferenceMaterial" value="f.entityType=ReferenceMaterial,equals"/>
             </map>
+        </property>
+    </bean>
+
+    <!-- add person and publication virtual metadata mapping -->
+
+    <util:map id="isPublicationOfAuthorMap">
+        <entry key="oaire.citation.title" value-ref="publicationByAuthor"/>
+    </util:map>
+
+    <bean class="org.dspace.content.virtual.Collected"
+        id="publicationByAuthor">
+        <property name="fields">
+            <util:list>
+                <value>dc.title</value>
+            </util:list>
         </property>
     </bean>
 

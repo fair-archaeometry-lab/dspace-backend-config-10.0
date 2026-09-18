@@ -393,7 +393,14 @@
                     <relationship-type>isPublicationOfAuthor</relationship-type>
                     <search-configuration>123456789/42</search-configuration>
                     <label>Publication</label>
+                    <repeatable>true</repeatable>
                     <hint>select a publication that is published by this author.</hint>
+                    <linked-metadata-field>
+                        <dc-schema>oaire</dc-schema>
+                        <dc-element>citation</dc-element>
+                        <dc-qualifier>title</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
                     <!-- <externalsources>pubmed</externalsources> -->
                 </relation-field>
             </row>
