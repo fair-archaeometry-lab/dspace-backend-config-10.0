@@ -197,7 +197,7 @@
                     <input-type>tag</input-type>
                     <hint>Enter appropriate subject keywords or phrases.</hint>
                     <required></required>
-                    <vocabulary>srsc</vocabulary>
+                    <vocabulary>discipline</vocabulary>
                 </field>
             </row>
             <row>
@@ -1854,8 +1854,8 @@
                     <repeatable>true</repeatable>
                 </field>
                 <field>
-                    <dc-schema>service</dc-schema>
-                    <dc-element>keyword</dc-element>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <label>Keywords</label>
                     <input-type>tag</input-type>

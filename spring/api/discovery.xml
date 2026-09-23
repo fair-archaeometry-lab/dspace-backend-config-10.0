@@ -1557,7 +1557,7 @@
                 <ref bean="searchFilterCreationDate"/>
                 <ref bean="searchFilterActive"/>
                 <ref bean="searchFilterReadinessLevel"/>
-                <ref bean="searchFilterServiceKeyword"/>
+                <ref bean="searchFilterSubject"/>
             </list>
         </property>
         <!-- Set TagCloud configuration per discovery configuration -->
@@ -1573,7 +1573,7 @@
                 <ref bean="searchFilterCreationDate"/>
                 <ref bean="searchFilterActive"/>
                 <ref bean="searchFilterReadinessLevel"/>
-                <ref bean="searchFilterServiceKeyword"/>
+                <ref bean="searchFilterSubject"/>
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -3392,7 +3392,7 @@
                 <ref bean="searchFilterCreationDate"/>
                 <ref bean="searchFilterActive"/>
                 <ref bean="searchFilterReadinessLevel"/>
-                <ref bean="searchFilterServiceKeyword"/>
+                <ref bean="searchFilterSubject"/>
             </list>
         </property>
     </bean>
