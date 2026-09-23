@@ -2371,8 +2371,12 @@
         <property name="sidebarFacets">
             <list>
                 <ref bean="searchFilterJobtitle"/>
+                <ref bean="searchFilterAffiliationName"/>
                 <ref bean="searchFilterKnowsLanguage"/>
-                <ref bean="searchFilterBirthdate"/>
+                <ref bean="searchFilterResearchDiscipline"/>
+                <ref bean="searchFilterPersonRole"/>
+                <ref bean="searchFilterPersonStartDate"/>
+             <!--   <ref bean="searchFilterBirthdate"/> -->
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page-->
@@ -2383,6 +2387,10 @@
                 <ref bean="searchFilterJobtitle"/>
                 <ref bean="searchFilterKnowsLanguage"/>
                 <ref bean="searchFilterBirthdate"/>
+                <ref bean="searchFilterAffiliationName"/>
+                <ref bean="searchFilterResearchDiscipline"/>
+                <ref bean="searchFilterPersonRole"/>
+                <ref bean="searchFilterPersonStartDate"/>
                 <ref bean="searchFilterIsOrgUnitOfPersonRelation"/>
                 <ref bean="searchFilterIsProjectOfPersonRelation"/>
                 <ref bean="searchFilterIsPublicationOfAuthorRelation"/>
@@ -2397,7 +2405,7 @@
                         <ref bean="sortScore" />
                         <ref bean="sortFamilyName"/>
                         <ref bean="sortGivenName"/>
-                        <ref bean="sortBirthDate"/>
+                     <!--   <ref bean="sortBirthDate"/> -->
                         <ref bean="sortDateAccessioned"/>
                     </list>
                 </property>
@@ -4222,6 +4230,54 @@
 
 <!--Define individual Search filter for Software Collection-->
 
+<!--Define individual Search filter for Person Collection-->
+    <bean id="searchFilterAffiliationName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="affiliationName"/>
+        <property name="metadataFields">
+            <list>
+                <value>person.affiliation.name</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterPersonRole" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="personRole"/>
+        <property name="metadataFields">
+            <list>
+                <value>orcid.service.roleTitle</value>
+            </list>
+        </property>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+    <bean id="searchFilterPersonStartDate" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <property name="indexFieldName" value="personStartDate"/>
+        <property name="metadataFields">
+            <list>
+                <value>orcid.researchResource.proposalStartDate</value>
+            </list>
+        </property>
+        <property name="type" value="date"/>
+        <property name="facetLimit" value="5"/>
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <property name="isOpenByDefault" value="true"/>
+        <property name="pageSize" value="10"/>
+        <property name="exposeMinAndMaxValue" value="true"/>
+    </bean>
+
+<!--Define individual Search filter for Person Collection-->
 
 <!--Define individual Search filter for Personnel Collection-->
     <bean id="searchFilterInstitutionName" class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">

@@ -480,6 +480,16 @@
                     <required></required>
                     <hint>Date when the person left the service team.</hint>
                 </field>
+                <field>
+                    <dc-schema>person</dc-schema>
+                    <dc-element>knowsLanguage</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <label>Language</label>
+                    <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+                    <repeatable>true</repeatable>
+                    <required></required>
+                    <hint>Select the language known by the person.</hint>
+                </field>
             </row>
 <!--            <row>-->
 <!--                <field>-->
