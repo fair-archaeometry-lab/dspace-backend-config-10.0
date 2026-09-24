@@ -3490,15 +3490,6 @@
                     <hint>Year the organization was established</hint>
                     <required></required>
                 </field>
-                <field>
-                    <dc-schema>ror</dc-schema>
-                    <dc-element>relationships</dc-element>
-                    <dc-qualifier>label</dc-qualifier>
-                    <label>Parent Organisation</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the name of the parent organization. It can be the name of the institution or a different organization that has a relationship with the institution or a ROR ID</hint>
-                    <required></required>
-                </field>
                 <relation-field>
                     <relationship-type>isChildOfLab</relationship-type>
                     <search-configuration>123456789/4</search-configuration>
