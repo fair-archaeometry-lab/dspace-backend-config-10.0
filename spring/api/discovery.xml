@@ -122,16 +122,16 @@
                 <entry key="community" value-ref="communityConfiguration" />
                 <!-- "collection" is the search configuration for collection pages -->
                 <!-- <entry key="collection" value-ref="collectionConfiguration" /> -->
-                <entry key="123456789/2" value-ref="service"/>
-                <entry key="123456789/3" value-ref="instrument"/>
-                <entry key="123456789/4" value-ref="laboratory"/>
-                <entry key="123456789/5" value-ref="stdmethod"/>
-                <entry key="123456789/6" value-ref="software"/>
-                <entry key="123456789/7" value-ref="refmaterial"/>
-                <entry key="123456789/33" value-ref="relatedpublication"/>
-                <entry key="123456789/19" value-ref="personnel"/>
-                <entry key="123456789/42" value-ref="publication"/>
-                <entry key="123456789/45" value-ref="person"/>
+                <entry key="21.T11.9992/2" value-ref="service"/>
+                <entry key="21.T11.9992/3" value-ref="instrument"/>
+                <entry key="21.T11.9992/4" value-ref="laboratory"/>
+                <entry key="21.T11.9992/5" value-ref="stdmethod"/>
+                <entry key="21.T11.9992/6" value-ref="software"/>
+                <entry key="21.T11.9992/7" value-ref="refmaterial"/>
+                <entry key="21.T11.9992/33" value-ref="relatedpublication"/>
+                <entry key="21.T11.9992/19" value-ref="personnel"/>
+                <entry key="21.T11.9992/42" value-ref="publication"/>
+                <entry key="21.T11.9992/45" value-ref="person"/>
 
              <!--   <entry key="publication" value-ref="publication"/>  -->  
              <!--    Same as the "publication" configuration, but does NOT filter out older versions of items -->

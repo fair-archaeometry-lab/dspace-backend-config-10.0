@@ -1,0 +1,7 @@
+[
+  {
+    "op": "replace",
+    "path": "/metadata/dc.identifier.uri/0/value",
+    "value": "https://hdl.handle.net/21.T11.9992/45"
+  }
+]
