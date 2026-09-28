@@ -276,7 +276,7 @@
         <leftwardType>isProvidedByLab</leftwardType>
         <rightwardType>providesService</rightwardType>
         <leftCardinality>
-            <min>1</min>
+            <min>0</min>
         </leftCardinality>
         <rightCardinality>
             <min>0</min>
